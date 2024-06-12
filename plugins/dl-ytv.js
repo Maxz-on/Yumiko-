@@ -23,7 +23,7 @@ await conn.sendMessage(m.chat, {
         }
       }, { quoted: m })
 
-await conn.sendFile(m.chat, dl_url, 'yt.jpg', `${vid.title}\n⇆ㅤㅤ◁ㅤㅤ❚❚ㅤㅤ▷ㅤㅤ↻\n00:15 ━━━━●────── ${vid.timestamp}`, m)
+await conn.sendFile(m.chat, dl_url, 'yt.jpg', `${vid.title}\n⇆ㅤㅤ◁ㅤㅤ❚❚ㅤㅤ▷ㅤㅤ↻\n01:26 ━━━━●────── ${vid.timestamp}`, m)
 await m.react('✅')
 } catch {
 try {
