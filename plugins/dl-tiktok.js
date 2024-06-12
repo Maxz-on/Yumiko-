@@ -13,14 +13,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
         if (!data.result.images) {
             let tex = `
-┌─⊷ *TIKTOK DL* 
-▢ *${mssg.name}:* ${data.result.author.nickname}
-▢ *${mssg.username}:* ${data.result.author.unique_id}
-▢ *${mssg.duration}:* ${data.result.duration}
-▢ *Likes:* ${data.result.digg_count}
-▢ *${mssg.views}:* ${data.result.play_count}
-▢ *${mssg.desc}:* ${data.result.title}
-└───────────
+𝗔𝗤𝗨𝗜 𝗧𝗜𝗘𝗡𝗘𝗦 𝗧𝗨 𝗩𝗜𝗗𝗘𝗢 🍒
 `
             conn.sendFile(m.chat, data.result.play, 'tiktok.mp4', tex, m);
             m.react(done)
