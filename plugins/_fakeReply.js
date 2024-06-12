@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 export async function before(m, { conn }) {
    let pp = await this.profilePictureUrl(m.sender, 'image').catch(_ => 'https://i.ibb.co/1ZxrXKJ/avatar-contact.jpg');
 
-  let nam = "✨  FG98 - FGMODS  ✨"
+  let nam = "✨ GENESIS PROFESIONAL ✨"
   
   // Respuesta con enlace de WhatsApp
   global.rpl = {
@@ -40,7 +40,7 @@ export async function before(m, { conn }) {
         mediaType: 'VIDEO',
         description: 'canal del grupo',
         title: packname,
-        body: 'Canal de FG98',
+        body: 'Canal de Genesis',
         thumbnailUrl: pp,
         sourceUrl: fgcanal
       }
