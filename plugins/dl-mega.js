@@ -1,3 +1,4 @@
+//código adaptado por GitHub: @karim-off
 import { File } from "megajs";
 import path from "path";
 
