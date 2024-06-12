@@ -6,7 +6,7 @@ if (!text) throw `*[❗] Ingrese un enlace de X (twitter), ejemplo: ${usedPrefix
 if (enviando) return;
     enviando = true;
 try {
-   await conn.sendMessage(m.chat, {text: global.wait}, {quoted: m}); 
+   await conn.sendMessage(m.chat, {text: global.wait}, {quoted: fkontak}); 
    const res = await TwitterDL(text);
  if (res?.result.type == 'video') {
      const caption = res?.result.caption ? res.result.caption : '*Aquí tiene su imagen*';
