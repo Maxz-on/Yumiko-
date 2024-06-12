@@ -29,8 +29,7 @@ let tags = {
   'advanced': 'AVANZADO',
 }
 const defaultMenu = {
-  before: `> %greeting %taguser
-
+  before: `
 ◈ ━━━━━ 𝙂𝙚𝙣𝙚𝙨𝙞𝙨 𝘽𝙤𝙩 ━━━━━ ◈
  
 👋🏻 Hola! *%name*
