@@ -1,14 +1,16 @@
+//import db from '../lib/database.js'
 import { promises } from 'fs'
 import { join } from 'path'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
-
+//import { plugins } from '../lib/plugins.js'
 let tags = {
   'main': 'ACERCA DE',
   'bebot': 'SUB BOTS',
   'game': 'JUEGOS',
   'econ': 'NIVEL & ECONOMIA',
   'rg': 'REGISTRO',
+  'gc': 'POPULAR',
   'sticker': 'STICKER',
   'img': 'IMAGEN',
   'maker': 'MAKER',
@@ -26,40 +28,29 @@ let tags = {
   'owner': 'OWNER', 
   'advanced': 'AVANZADO',
 }
-
 const defaultMenu = {
-  before: `> %greeting %taguser
+  before: `
+◈ ━━━━━ 𝙂𝙚𝙣𝙚𝙨𝙞𝙨 𝘽𝙤𝙩 ━━━━━ ◈
+ 
+👋🏻 Hola! *%name*
+👥 Usuarios : %totalreg
+🟢 Tiempo activo : %muptime
+%sbot
+▢ ADD
+• https://instagram.com/usxr_angelito
 
-┌–––––––––––––––––ɪ✥
-│『 *INFO USER 🍒* 』
-└┬❖
-┌┤
-┊│ 🌸 *Cliente:* %name
-┊│ 🧃 *Exp:* %exp
-┊│ 💎 *Diamantes:* %diamond
-┊│ 🍓 *Nivel:* %level
-┊│ ⚓ *Rango:* %role
-│└────────────┈ɪ ⳹
-┗–––––––––––––––––ɪ✥
-
-┌–––––––––––––––––ɪ✥
-│『 *INFO BOT ✨️* 』
-└┬❖
-┌┤
-┊│ 👑 *Creador:* Angelito
-┊│ ⏰️ *Actividad:* %muptime
-┊│ 📇 *Registrados:* %totalreg
-┊│ 🌻 *Versión* 1.0.1
-┊│ 📆 *Fecha* %date
-│└────────────┈ɪ ⳹
-┗–––––––––––––––––ɪ✥
+────────────
 %readmore
-         *乂 ⺀ ʟɪꜱᴛᴀ - ᴄᴏᴍᴀɴᴅᴏꜱ ⺀ 乂*
+  ≡ *LISTA DE MENUS*
+
+Ⓟ = Premium
+ⓓ = Diamantes
 `.trimStart(),
-  header: '┌–––––––––––––––––ɪ✥\n│『 *%category* 』\n└┬❖\n┌┤',
-  body: '┊│ 🌸 %cmd\n',
-  footer: '│└────────────┈ɪ ⳹\n┗–––––––––––––––––ɪ✥',
-  after: '',
+  header: '┌─⊷ *%category*',
+  body: '▢ %cmd %isdiamond %isPremium',
+  footer: '└───────────\n',
+  after: `
+`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
@@ -69,6 +60,10 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let name = await conn.getName(m.sender)
     let d = new Date(new Date + 3600000)
     let locale = 'es'
+    // d.getTimeZoneOffset()
+    // Offset -420 is 18.00
+    // Offset    0 is  0.00
+    // Offset  420 is  7.00
     let weton = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'][Math.floor(d / 84600000) % 5]
     let week = d.toLocaleDateString(locale, { weekday: 'long' })
     let date = d.toLocaleDateString(locale, {
@@ -118,7 +113,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let header = conn.menu.header || defaultMenu.header
     let body = conn.menu.body || defaultMenu.body
     let footer = conn.menu.footer || defaultMenu.footer
-    let after = conn.menu.after || (conn.user.jid == conn.user.jid ? '' : `Powered by https://wa.me/${conn.user.jid.split`@`[0]}`) + defaultMenu.after
+    let after = conn.menu.after || (conn.user.jid == conn.user.jid ? '' : `⭐ Powered by FG98 https://wa.me/${conn.user.jid.split`@`[0]}`) + defaultMenu.after
     let _text = [
       before,
       ...Object.keys(tags).map(tag => {
@@ -137,48 +132,44 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       after
     ].join('\n')
     let text = typeof conn.menu == 'string' ? conn.menu : typeof conn.menu == 'object' ? _text : ''
-let replace = {
-'%': '%',
-p: _p, uptime, muptime,
-me: conn.getName(conn.user.jid),
-taguser: '@' + m.sender.split("@s.whatsapp.net")[0],
-npmname: _package.name,
-npmdesc: _package.description,
-version: _package.version,
-exp: exp - min,
-maxexp: xp,
-totalexp: exp,
-xp4levelup: max - exp,
-github: _package.homepage ? _package.homepage.url || _package.homepage : '[unknown github url]',
-greeting, level, diamond, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
-readmore: readMore
-}
-text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
+    let replace = {
+      '%': '%',
+      p: _p, uptime, muptime,
+      me: conn.getName(conn.user.jid),
+      sbot: (conn.user.jid == global.conn.user.jid ? '' : `\n▢ ✨ *Sub-Bot de:*\nwa.me/${global.conn.user.jid.split`@`[0]}`), 
+      npmname: _package.name,
+      npmdesc: _package.description,
+      version: _package.version,
+      exp: exp - min,
+      maxexp: xp,
+      totalexp: exp,
+      xp4levelup: max - exp,
+      github: _package.homepage ? _package.homepage.url || _package.homepage : '[unknown github url]',
+      level, diamond, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
+      readmore: readMore
+    }
+    text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
+    let pp = './src/xb_genesis.jpg'
 
-const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+    /*conn.sendButton(m.chat, text.trim(), `▢ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
+      ['ꨄ︎ Apoyar', `${_p}donate`],
+      ['⏍ Info', `${_p}botinfo`],
+      ['⌬ Grupos', `${_p}gpdylux`]
+    ], m, rpl)*/
+    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rcanal)
 
-const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.ph/file/8e9f7bfa4a79ecb30a10c.jpg')
-
-await conn.reply(m.chat, '*ꪹ͜𓂃͡𝗖𝗮𝗿𝗴𝗮𝗻𝗱𝗼 𝗘𝗹 𝗠𝗲𝗻𝘂 𝗗𝗲𝗹 𝗕𝗼𝘁...𓏲੭*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: 'ꪶໍٜ߭۫ިׅ࣪۬߭ׄ🍫̸̷᮫ᨘ۬ׄ߭ᤢꫂꥈ Hola! ' + name, sourceUrl: redesYoshi, thumbnail: await (await fetch(pp)).buffer() }}})
-
-//await conn.reply(m.chat, '*ꪹ͜𓂃͡𝗖𝗮𝗿𝗴𝗮𝗻𝗱𝗼 𝗘𝗹 𝗠𝗲𝗻𝘂 𝗗𝗲𝗹 𝗕𝗼𝘁...𓏲੭*', m, fake,)
-
-m.react('🍎') 
-
-// conn.sendMessage(m.chat, { video: { url: [pp1, pp2].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: estilo })
-
-conn.sendMessage(m.chat, {text: text.trim(), mentions: [...text.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: { mentionedJid: [...text.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": packname, body: 'ꪶໍٜ߭۫ިׅ࣪۬߭ׄ🍫̸̷᮫ᨘ۬ׄ߭ᤢꫂꥈ Hola! ' + name, "containsAutoReply": true, "mediaType": 1, "thumbnail": imagen7, "mediaUrl": global.channel, "sourceUrl": global.channel}}}, {quoted: estilo});
+    m.react('☕') 
 
   } catch (e) {
-    conn.reply(m.chat, '🔵 Lo sentimos, el menú tiene un error', m, fake, )
+    conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error', m)
     throw e
   }
 }
-handler.help = ['menu']
-handler.tags = ['main']
-handler.command = ['menu', 'menú', 'menuall', 'allmenú', 'allmenu', 'menucompleto'] 
-handler.register = true
+//handler.help = ['help']
+//handler.tags = ['main']
+handler.command = ['allmenu','menúall'] 
+handler.register = false
 
 export default handler
 
@@ -187,38 +178,8 @@ const readMore = more.repeat(4001)
 
 function clockString(ms) {
   let d = isNaN(ms) ? '--' : Math.floor(ms / 86400000)
-  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [d, h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
+  return [d, 'd ', h, 'h ', m, 'm '].map(v => v.toString().padStart(2, 0)).join('')
 }
-
-  var ase = new Date();
-  var hour = ase.getHours();
-switch(hour){
-  case 0: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌙'; break;
-  case 1: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 💤'; break;
-  case 2: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🦉'; break;
-  case 3: hour = 'Bᴜᴇɴᴏs Dɪᴀs ✨'; break;
-  case 4: hour = 'Bᴜᴇɴᴏs Dɪᴀs 💫'; break;
-  case 5: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌅'; break;
-  case 6: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌄'; break;
-  case 7: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌅'; break;
-  case 8: hour = 'Bᴜᴇɴᴏs Dɪᴀs 💫'; break;
-  case 9: hour = 'Bᴜᴇɴᴏs Dɪᴀs ✨'; break;
-  case 10: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌞'; break;
-  case 11: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌨'; break;
-  case 12: hour = 'Bᴜᴇɴᴏs Dɪᴀs ❄'; break;
-  case 13: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌤'; break;
-  case 14: hour = 'Bᴜᴇɴᴀs Tᴀʀᴅᴇs 🌇'; break;
-  case 15: hour = 'Bᴜᴇɴᴀs Tᴀʀᴅᴇs 🥀'; break;
-  case 16: hour = 'Bᴜᴇɴᴀs Tᴀʀᴅᴇs 🌹'; break;
-  case 17: hour = 'Bᴜᴇɴᴀs Tᴀʀᴅᴇs 🌆'; break;
-  case 18: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌙'; break;
-  case 19: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌃'; break;
-  case 20: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌌'; break;
-  case 21: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌃'; break;
-  case 22: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌙'; break;
-  case 23: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌃'; break;
-}
-  var greeting = hour;
