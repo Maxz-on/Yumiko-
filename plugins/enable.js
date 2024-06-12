@@ -156,7 +156,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       break
       
     default:
-      //if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage, { quoted: fkontak })
+      //if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage, { quoted: m })
       if (!/[01]/.test(command)) return m.reply(`
 ≡ Lista de Opciones
 
