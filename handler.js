@@ -598,3 +598,32 @@ Para desactivar esta función, escriba
 `.trim(), msg, {
             mentions: [participant]
         })
+        this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
+    } catch (e) {
+        console.error(e)
+    }
+}
+
+global.dfail = (type, m, conn) => {
+    let msg = {
+        rowner: `👑 ${mssg.rownerH}`,
+        owner: `🔱 ${mssg.ownerH}`,
+        mods: `🔰 ${mssg.modsH}`,
+        premium: `💠 ${mssg.premH}`,
+        group: `⚙️ ${mssg.groupH}`,
+        private: `📮 ${mssg.privateH}`,
+        admin: `🛡️ ${mssg.adminH}`,
+        botAdmin: `💥 ${mssg.botAdmin}`,
+        unreg: `📇 ${mssg.unregH}`,
+        restrict: '🔐 Esta característica está *deshabilitada*'
+    }[type]
+    //if (msg) return conn.sendButton(m.chat, msg, mssg.ig, null, [['🔖 OK', 'khajs'], ['⦙☰ MENU', '/menu'] ], m)
+    if (msg) return m.reply(msg)
+}
+
+let file = global.__filename(import.meta.url, true)
+watchFile(file, async () => {
+    unwatchFile(file)
+    console.log(chalk.magenta("✅  Se actualizo 'handler.js'"))
+    if (global.reloadHandler) console.log(await global.reloadHandler())
+}) 
