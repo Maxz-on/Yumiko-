@@ -13,12 +13,11 @@ let m2 = `
 └──────────────
 `
     let pp = './src/fg_logo.jpg' 
-    /*conn.sendButton(m.chat, m2, mssg.ig, pp, [
-      ['⏍ Info', `${usedPrefix}botinfo`],
-      ['⌬ Grupos', `${usedPrefix}gpdylux`]
-    ],m, rpyt)*/
-    conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rpl)
-   
+
+ await conn.sendButton2(m.chat, m2, mssg.ig, thumbnail, [
+    ['💿 MP3', `${usedPrefix}fgmp3 ${url}`],
+    ['🎥 MP4', `${usedPrefix}fgmp4 ${url}`]
+  ], null, [['🍒 Canal', `${fgcanal}`]], m)
 }
 
 handler.help = ['menu2']
