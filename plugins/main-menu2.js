@@ -12,7 +12,7 @@ let m2 = `
 ▢ Sad
 └──────────────
 `
-    let pp = './src/fg_logo.jpg' 
+    let pp = './src/Menu.jpg' 
 
  await conn.sendButton2(m.chat, m2, mssg.ig, thumbnail, [
     ['📚 MENU 📚', `${usedPrefix}allmenu`],
