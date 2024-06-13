@@ -50,19 +50,12 @@ let infobt = `
 ▢ Total Chats: *${chats.length}*
 
 *≡ OWNER*
-  *FG98*
+  • *Angelito*
 ▢ Instagram :
   • ${fgig}
-▢ Telegram : 
-  • t.me/fgsupp_bot (FG) 
-  • t.me/fg98ff (canal)
-  • t.me/fgawgp (grupo)
-▢ YouTube : 
-  • https://youtube.com/fg98f
-  
- *≡ HELPERS*
-  *ANDREA*
-▢ WhatsApp : wa.me/573125484672`
+
+*≡ PROYECTO XB²*
+  • ${fg}`
 
 /*conn.sendButton(m.chat, infobt, mssg.ig, null, [
   ['ꨄ︎ Apoyar', `${usedPrefix}donate`],
