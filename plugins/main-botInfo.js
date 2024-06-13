@@ -55,7 +55,7 @@ let infobt = `
   • ${fgig}
 
 *≡ PROYECTO XB²*
-  • ${fgp}`
+  • ${bgp2}`
 
 /*conn.sendButton(m.chat, infobt, mssg.ig, null, [
   ['ꨄ︎ Apoyar', `${usedPrefix}donate`],
