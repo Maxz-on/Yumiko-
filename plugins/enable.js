@@ -1,4 +1,4 @@
- 
+
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 
   let isEnable = /true|enable|(turn)?on|1/i.test(command)
@@ -22,7 +22,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       chat.welcome = isEnable
       break
-      
+
       case 'detect':
       case 'detector':
         if (!m.isGroup) {
@@ -36,7 +36,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
        }
        chat.detect = isEnable
      break
-    
+
     case 'antidelete':
     case 'delete':
       if (m.isGroup) {
@@ -75,8 +75,8 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       chat.antiLink = isEnable
       break
-      
-      
+
+
       case 'captcha':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
@@ -95,7 +95,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       chat.antiBotClone = isEnable
       break
-      
+
       case 'nsfw':
       case '+18':
        if (m.isGroup) {
@@ -110,14 +110,14 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     isUser = true
      user.autolevelup = isEnable
      break
-     
+
      case 'chatbot':
      case 'autosimi':
      case 'autosimsimi':
       isUser = true
       user.chatbot = isEnable
      break
-     
+
     case 'restrict':
     case 'restringir':
       isAll = true
@@ -127,7 +127,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       bot.restrict = isEnable
       break
-    
+
     case 'onlypv':
     case 'onlydm':
     case 'onlymd':
@@ -140,7 +140,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       //global.opts['solopv'] = isEnable
       bot.solopv = isEnable
       break
-      
+
     case 'gponly':
     case 'onlygp':
     case 'grouponly':
@@ -154,7 +154,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       //global.opts['sologp'] = isEnable
       bot.sologp = isEnable
       break
-      
+
     default:
       //if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage, { quoted: m })
       if (!/[01]/.test(command)) return m.reply(`
@@ -185,7 +185,8 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       throw false
 }
 
-m.reply(`❱❱ 𝙁𝙐𝙉𝘾𝙄𝙊𝙉𝙀𝙎 𝙓𝙄𝘼 ❰❰\n\n» 𝙊𝙋𝘾𝙄𝙊𝙉 | *${type.toUpperCase()}*\n» 𝙀𝙎𝙏𝘼𝘿𝙊 | *${isEnable ? `𝘈𝘊𝘛𝘐𝘝𝘈𝘋𝘖` : `𝘋𝘌𝘚𝘈𝘊𝘛𝘐𝘝𝘈𝘋𝘖`}*\n» 𝙋𝘼𝙍𝘼 | ${isAll ? `𝘌𝘚𝘛𝘌 𝘊𝘏𝘈𝘛` : isUser ? '' : `𝘌𝘚𝘛𝘌 𝘊𝘏𝘈𝘛`},`},
+m.reply(`
+✅ *${type.toUpperCase()}* *${isEnable ? `${mssg.nable}` : `${mssg.disable}`}* ${isAll ? `${mssg.toBot}` : isUser ? '' : `${mssg.toGp}`}
 `.trim()) 
 
 }
