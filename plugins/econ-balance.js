@@ -16,6 +16,6 @@ let handler = async (m, {conn, usedPrefix}) => {
 }
 handler.help = ['balance']
 handler.tags = ['econ']
-handler.command = ['bal', 'diamantes', 'diamond', 'balance'] 
+handler.command = ['bal', 'monedero', 'billetera', 'balance'] 
 
 export default handler
