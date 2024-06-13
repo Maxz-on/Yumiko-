@@ -1,8 +1,6 @@
  
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-
   let isEnable = /true|enable|(turn)?on|1/i.test(command)
   let chat = global.db.data.chats[m.chat]
   let user = global.db.data.users[m.sender]
@@ -187,7 +185,7 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
       throw false
 }
 
-m.reply(`❱❱ 𝙁𝙐𝙉𝘾𝙄𝙊𝙉𝙀𝙎 𝙓𝙄𝘼 ❰❰\n\n» 𝙊𝙋𝘾𝙄𝙊𝙉 | *${type.toUpperCase()}*\n» 𝙀𝙎𝙏𝘼𝘿𝙊 | *${isEnable ? `𝘈𝘊𝘛𝘐𝘝𝘈𝘋𝘖` : `𝘋𝘌𝘚𝘈𝘊𝘛𝘐𝘝𝘈𝘋𝘖`}*\n» 𝙋𝘼𝙍𝘼 | ${isAll ? `𝘌𝘚𝘛𝘌 𝘊𝘏𝘈𝘛` : isUser ? '' : `𝘌𝘚𝘛𝘌 𝘊𝘏𝘈𝘛`},`}, {quoted: fkontak});
+m.reply(`❱❱ 𝙁𝙐𝙉𝘾𝙄𝙊𝙉𝙀𝙎 𝙓𝙄𝘼 ❰❰\n\n» 𝙊𝙋𝘾𝙄𝙊𝙉 | *${type.toUpperCase()}*\n» 𝙀𝙎𝙏𝘼𝘿𝙊 | *${isEnable ? `𝘈𝘊𝘛𝘐𝘝𝘈𝘋𝘖` : `𝘋𝘌𝘚𝘈𝘊𝘛𝘐𝘝𝘈𝘋𝘖`}*\n» 𝙋𝘼𝙍𝘼 | ${isAll ? `𝘌𝘚𝘛𝘌 𝘊𝘏𝘈𝘛` : isUser ? '' : `𝘌𝘚𝘛𝘌 𝘊𝘏𝘈𝘛`},`},
 `.trim()) 
 
 }
