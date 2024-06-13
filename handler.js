@@ -133,6 +133,8 @@ export async function handler(chatUpdate) {
                     chat.sDemote = ''
                 if (!('delete' in chat))
                     chat.delete = true
+                if (!('modohorny' in chat))          
+                    chat.modohorny = false;
                 if (!('antiLink' in chat))
                     chat.antiLink = false
                 if (!('viewonce' in chat))
@@ -157,6 +159,7 @@ export async function handler(chatUpdate) {
                     sPromote: '',
                     sDemote: '',
                     delete: true,
+                    modohorny: true,
                     antiLink: false,
                     viewonce: false,
                     useDocument: true,
