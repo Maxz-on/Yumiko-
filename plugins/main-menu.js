@@ -43,7 +43,7 @@ const defaultMenu = {
 ╰────────────────┈⊷
 `.trimStart(),
   header: '╭────────────────┈⊷\n│◦ *%category*\n╰┬───────────────┈⊷\n┌┤',
-  body: '┊◦ %cmd %isdiamond %isPremium',
+  body: '┊◦ _%cmd %isdiamond %isPremium_',
   footer: '╰────────────────┈⊷\n',
   after: `
 `,
