@@ -15,8 +15,7 @@ let m2 = `
     let pp = './src/fg_logo.jpg' 
 
  await conn.sendButton2(m.chat, m2, mssg.ig, thumbnail, [
-    ['💿 MP3', `${usedPrefix}fgmp3 ${url}`],
-    ['🎥 MP4', `${usedPrefix}fgmp4 ${url}`]
+    ['📚 MENU 📚', `${usedPrefix}allmenu`],
   ], null, [['🍒 Canal', `${fgcanal}`]], m)
 }
 
