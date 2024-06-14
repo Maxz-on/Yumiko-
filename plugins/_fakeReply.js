@@ -1,14 +1,14 @@
 
 import fetch from 'node-fetch';
 export async function before(m, { conn }) {
-   let pp = await this.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/8e9f7bfa4a79ecb30a10c.jpg'};
+   let pp = await this.profilePictureUrl(m.sender, 'image').catch(_ => 'https://i.ibb.co/1ZxrXKJ/avatar-contact.jpg');
 
-  let nam = "✨ GENESIS PROFESIONAL ✨"
-  
+  let nam = "✨ GENESIS PROFESIONALES ✨"
+
   // Respuesta con enlace de WhatsApp
   global.rpl = {
     contextInfo: {
-    	isForwarded: true,
+            isForwarded: true,
     forwardedNewsletterMessageInfo: {
       newsletterJid: id_canal,
       serverMessageId: 100,
@@ -25,11 +25,11 @@ export async function before(m, { conn }) {
       }
     }
   };
-  
+
   // Respuesta con enlace de Canal de WhatsApp
   global.rcanal = {
     contextInfo: {
-    	isForwarded: true,
+            isForwarded: true,
     forwardedNewsletterMessageInfo: {
       newsletterJid: id_canal,
       serverMessageId: 100,
@@ -46,11 +46,11 @@ export async function before(m, { conn }) {
       }
     }
   }
-  
+
     // Forwarded
   global.fwc = {
     contextInfo: {
-    	isForwarded: true,
+            isForwarded: true,
     forwardedNewsletterMessageInfo: {
       newsletterJid: id_canal,
       serverMessageId: 100,
@@ -62,7 +62,7 @@ export async function before(m, { conn }) {
   // Respuesta con enlace de PayPal
   global.rpyp = {
     contextInfo: {
-    	isForwarded: true,
+            isForwarded: true,
     forwardedNewsletterMessageInfo: {
       newsletterJid: id_canal,
       serverMessageId: 100,
@@ -83,7 +83,7 @@ export async function before(m, { conn }) {
   // Respuesta con enlace de Instagram
   global.rpig = {
     contextInfo: {
-    	isForwarded: true,
+            isForwarded: true,
     forwardedNewsletterMessageInfo: {
       newsletterJid: id_canal,
       serverMessageId: 100,
@@ -104,7 +104,7 @@ export async function before(m, { conn }) {
   // Respuesta con enlace de YouTube
   global.rpyt = {
     contextInfo: {
-    	isForwarded: true,
+            isForwarded: true,
     forwardedNewsletterMessageInfo: {
       newsletterJid: id_canal,
       serverMessageId: 100,
@@ -122,7 +122,7 @@ export async function before(m, { conn }) {
       }
     }
   }
-  
-  
-  
+
+
+
 }
