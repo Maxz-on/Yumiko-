@@ -1,6 +1,11 @@
 
 let handler = async function (m, { conn, text, usedPrefix }) {
-  
+
+    let pp = './src/Menu.jpg' 
+
+ await conn.sendButton2(m.chat, m2, mssg.ig, thumbnail, [
+    ['📚 MENU 📚', `${usedPrefix}allmenu`],
+  ], null, [['🍒 Canal', `${fgcanal}`]], m)
 let m2 = `
 ≡ Use estos comandos sin el prefijo: *${usedPrefix}*
 ┌─⊷ *AUDIOS* 
@@ -12,11 +17,6 @@ let m2 = `
 ▢ Sad
 └──────────────
 `
-    let pp = './src/Menu.jpg' 
-
- await conn.sendButton2(m.chat, m2, mssg.ig, thumbnail, [
-    ['📚 MENU 📚', `${usedPrefix}allmenu`],
-  ], null, [['🍒 Canal', `${fgcanal}`]], m)
 }
 
 handler.help = ['menu2']
