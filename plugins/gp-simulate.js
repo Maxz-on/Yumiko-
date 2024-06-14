@@ -56,7 +56,7 @@ participants: part,
 action: act
 })
 }
-handler.help = ['simulate <event> @user']
+handler.help = ['simular <event> @user']
 handler.tags = ['group']
 handler.command = ['simular', 'simulate'] 
 handler.admin = true
