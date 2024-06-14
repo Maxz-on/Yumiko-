@@ -196,7 +196,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       throw false
 }
 
-m.reply(`*❱❱ 𝙁𝙐𝙉𝘾𝙄𝙊𝙉𝙀𝙎 𝙂𝙀𝙉𝙀𝙎𝙄𝙎 ❰❰*\n\n*» 𝙊𝙋𝘾𝙄𝙊𝙉 |* _${type.toUpperCase()}_\n*» 𝙀𝙎𝙏𝘼𝘿𝙊 |* ${isEnable ? `_ACTIVADO_` : `_DESACTIVADO_`}\n*» 𝙋𝘼𝙍𝘼 |* ${isAll ? `_ESTE CHAT_` : isUser ? '' : `_ESTE CHAT_`}
+m.reply(`*❱❱ 𝙁𝙐𝙉𝘾𝙄𝙊𝙉𝙀𝙎 𝙂𝙀𝙉𝙀𝙎𝙄𝙎 ❰❰*\n\n*» 𝙊𝙋𝘾𝙄𝙊𝙉 |* _${type.toUpperCase()}_\n*» 𝙀𝙎𝙏𝘼𝘿𝙊 |* ${isEnable ? `_ACTIVADO_` : `_DESACTIVADO_`}\n*» 𝙋𝘼𝙍𝘼 |* ${isAll ? `_ESTE CHAT_` : isUser ? '' : `_ESTE CHAT_`}\n> 𝙂𝙚𝙣𝙚𝙨𝙞𝙨𝘽𝙤𝙩:𝙂𝙚𝙣𝙚𝙨𝙞𝙨𝘽𝙤𝙩
 `.trim()) 
 
 }
