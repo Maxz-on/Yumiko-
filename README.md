@@ -1,6 +1,6 @@
 ### 🍒 GÉNESIS BOT PRO 🍒
 <p align="center">
-<img src="https://telegra.ph/file/654b51d935bf8cce244ad.jpg" alt="WierBot-MD" width="900"/>
+<img src="https://telegra.ph/file/ead3021c62bc61c9b1d49.jpg" alt="GenesisBot-Pro" width="900"/>
 </p>
 
 #### Version De Génesis: Beta
