@@ -4,19 +4,14 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 
 
-  if (!text) throw `✳️ ${mssg.example} *${usedPrefix + command}* Lil Peep hate my life`
-        let res = await yts(text)
-        let vid = res.videos[0]
-        if (!vid) throw `✳️ Vídeo/Audio no encontrado`
-        let { title, description, thumbnail, videoId, timestamp, views, ago, url } = vid
-        //const url = 'https://www.youtube.com/watch?v=' + videoId
+        let pp = './src/Menu.jpg' 
         m.react('📚') 
-  let play = `
+  let m2 = `
 > *Título:* ${vid.title}
 > *Duración:* ${vid.timestamp}`
- await conn.sendButton2(m.chat, play, mssg.ig, thumbnail, [
-    ['💿 MP3', `${usedPrefix}fgmp3 ${url}`],
-    ['📀 MP4', `${usedPrefix}fgmp4 ${url}`]
+ await conn.sendButton2(m.chat, m2, mssg.ig, thumbnail, [
+    ['📚 MENU 📚', `${usedPrefix}allmenu`],
+    ['🫅 OWNER 🫅', `${usedPrefix}owner`]
   ], null, [['🍒 Canal', `${fgcanal}`]], m)
 }
 handler.help = ['play']
