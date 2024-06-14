@@ -5,9 +5,9 @@ let handler = async function (m, { conn, text, usedPrefix }) {
   let m2 = `
 > *Título:* 
 > *Duración:*`
- await conn.sendButton2(m.chat, m2, [
-    ['📚 MENU 📚', `.allmenu`],
-    ['🫅 OWNER 🫅', `.owner`],
+ await conn.sendButton2(m.chat, play, mssg.ig, thumbnail, [
+    ['📚 MENU 📚', `${usedPrefix}fgmp3 ${url}`],
+    ['🫅 OWNER 🫅', `${usedPrefix}fgmp4 ${url`]
   ], null, [['🍒 Canal', `${fgcanal}`]], m)
 }
 handler.help = ['help']
