@@ -14,9 +14,9 @@ import { xpRange } from '../lib/levelling.js'
     ['🫅 OWNER 🫅', `${usedPrefix}owner`]
   ], null, [['🍒 Canal', `${fgcanal}`]], m)
 }
-handler.help = ['play']
+handler.help = ['help']
 handler.tags = ['dl']
-handler.command = ['play', 'playvid']
+handler.command = ['menu', 'help']
 handler.disabled = false
 
 export default handler
