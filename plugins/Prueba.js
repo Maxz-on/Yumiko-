@@ -7,9 +7,8 @@ let handler = async function (m, { conn, text, usedPrefix }) {
 > *Duración:*`
  await conn.sendButton2(m.chat, m2, [
     ['📚 MENU 📚', `.allmenu`],
-    ['🫅 OWNER 🫅', `.owner`]
-  ], null, [['🍒 Canal', `${fgcanal}`]], m),
-  ], null, [['📚 MENU 📚', `.allmenu`]], m)
+    ['🫅 OWNER 🫅', `.owner`],
+  ], null, [['🍒 Canal', `${fgcanal}`]], m)
 }
 handler.help = ['help']
 handler.tags = ['dl']
