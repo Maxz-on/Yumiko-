@@ -177,6 +177,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 ▢ detect 
 ▢ document
 ▢ nsfw
+▢ modohorny
 └───────────── 
 ┌─⊷ *USERS*
 ▢ autolevelup
