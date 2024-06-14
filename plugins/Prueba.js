@@ -4,7 +4,7 @@ let handler = async function (m, { conn, text, usedPrefix }) {
   let m2 = `
 > *Título:* 
 > *Duración:*`
- await conn.sendButton(m.chat, m2, pp, [
+ await conn.sendButton2(m.chat, m2, pp, [
     ['📚 MENU 📚', `${usedPrefix}allmenu`],
     ['🫅 OWNER 🫅', `${usedPrefix}owner`]
   ], null, [['🍒 Canal', `${fgcanal}`]], m)
