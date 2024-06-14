@@ -12,8 +12,8 @@
 <p>
 
 
- <a href="http://www.instagram.com/Max_xitado.pe" target="blank"><img src="https://img.shields.io/badge/Instagram-30302f?style=flat&logo=instagram" /></a>
-<a href="https://api.whatsapp.com/send/?phone=+5493536568522&text=Hola 👋 soporte de Wier Bot &type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/Whatsapp-30302f?style=flat&logo=whatsapp" /></a>
+ <a href="http://www.instagram.com/usxr_angelito" target="blank"><img src="https://img.shields.io/badge/Instagram-30302f?style=flat&logo=instagram" /></a>
+<a href="https://api.whatsapp.com/send/?phone=+59897246324&text=Hola 👋 soporte de Génesis Bot &type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/Whatsapp-30302f?style=flat&logo=whatsapp" /></a>
 
 </p> 
 
