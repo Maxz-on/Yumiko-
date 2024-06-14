@@ -8,8 +8,7 @@ let handler = async(m, { conn, usedPrefix, command }) => {
 > *Duración:*
 `
 let img = './src/Menu.jpg'
-conn.sendFile(m.chat, img, 'img.jpg', don, m, null, rpyp)
- await conn.sendButton2(m.chat, m2, pp, [
+ await conn.sendButton2(m.chat, img, img.jpg, [
     ['📚 MENU 📚', `${usedPrefix}allmenu`],
     ['🫅 OWNER 🫅', `${usedPrefix}owner`]
   ], null, [['🍒 Canal', `${fgcanal}`]], m)
