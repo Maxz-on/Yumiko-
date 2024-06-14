@@ -7,8 +7,8 @@ import { xpRange } from '../lib/levelling.js'
         let pp = './src/Menu.jpg' 
         m.react('📚') 
   let m2 = `
-> *Título:* ${vid.title}
-> *Duración:* ${vid.timestamp}`
+> *Título:* 
+> *Duración:*`
  await conn.sendButton2(m.chat, m2, mssg.ig, thumbnail, [
     ['📚 MENU 📚', `${usedPrefix}allmenu`],
     ['🫅 OWNER 🫅', `${usedPrefix}owner`]
