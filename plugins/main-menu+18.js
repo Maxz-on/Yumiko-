@@ -1,7 +1,15 @@
+//import db from '../lib/database.js'
+import { promises } from 'fs'
+import { join } from 'path'
+import fetch from 'node-fetch'
+import { xpRange } from '../lib/levelling.js'
+//import { plugins } from '../lib/plugins.js'
+let tags = {
+  '': '',
+}
+const defaultMenu = {
+  before: `
 
-let handler = async function (m, { conn, text, usedPrefix }) {
-
-let m2 = `
 ┌「🍒 *𝙂 𝙀 𝙉 𝙀 𝙎 𝙄 𝙎  𝘽 𝙊 𝙏* 🍒」
 │◦╭─────────────
 │◦┊🍒 𝙃𝙤𝙡𝙖 %name
@@ -51,8 +59,13 @@ let m2 = `
 ┃┊🔥.𝘏𝘦𝘯𝘵𝘢𝘪𝘴𝘦𝘢𝘳𝘤𝘩 *<𝘵𝘦𝘹𝘵𝘰>*
 ┃╰───────⧟⭑⧟───────•
 ┗━━━━━━━━━━━━━━━━━━━━━┛
-`
-
+`.trimStart(),
+  header: '╭────────────────┈⊷\n│◦ *%category*\n╰┬───────────────┈⊷\n┌┤',
+  body: '┊◦ _*%cmd*_ %isdiamond %isPremium',
+  footer: '╰────────────────┈⊷\n',
+  after: `
+`,
+}
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
@@ -151,17 +164,65 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
-    let pp = './src/Menu.jpg' 
-    /*conn.sendButton(m.chat, m2, mssg.ig, pp, [
-      ['⏍ Info', `${usedPrefix}botinfo`],
-      ['⌬ Grupos', `${usedPrefix}gpdylux`]
-    ],m, rpyt)*/
-    conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rcanal)
+    let pp = './src/Menu.jpg'
 
+    /*conn.sendButton(m.chat, text.trim(), `▢ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
+      ['ꨄ︎ Apoyar', `${_p}donate`],
+      ['⏍ Info', `${_p}botinfo`],
+      ['⌬ Grupos', `${_p}gpdylux`]
+    ], m, rpl)*/
+    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rcanal)
+    m.react('🍒') 
+
+  } catch (e) {
+    conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error', m)
+    throw e
+  }
 }
-
-handler.help = ['menu+18']
-handler.tags = ['main']
-handler.command = ['menu+18', 'labiblia'] 
+//handler.help = ['help']
+//handler.tags = ['main']
+handler.command = ['allmenu','menúall'] 
+handler.register = false
 
 export default handler
+
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
+
+function clockString(ms) {
+  let d = isNaN(ms) ? '--' : Math.floor(ms / 86400000)
+  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
+  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+  return [d, 'd ', h, 'h ', m, 'm '].map(v => v.toString().padStart(2, 0)).join('')
+}
+
+  var ase = new Date();
+  var hour = ase.getHours();
+switch(hour){
+  case 0: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌙'; break;
+  case 1: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 💤'; break;
+  case 2: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🦉'; break;
+  case 3: hour = 'Bᴜᴇɴᴏs Dɪᴀs ✨'; break;
+  case 4: hour = 'Bᴜᴇɴᴏs Dɪᴀs 💫'; break;
+  case 5: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌅'; break;
+  case 6: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌄'; break;
+  case 7: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌅'; break;
+  case 8: hour = 'Bᴜᴇɴᴏs Dɪᴀs 💫'; break;
+  case 9: hour = 'Bᴜᴇɴᴏs Dɪᴀs ✨'; break;
+  case 10: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌞'; break;
+  case 11: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌨'; break;
+  case 12: hour = 'Bᴜᴇɴᴏs Dɪᴀs ❄'; break;
+  case 13: hour = 'Bᴜᴇɴᴏs Dɪᴀs 🌤'; break;
+  case 14: hour = 'Bᴜᴇɴᴀs Tᴀʀᴅᴇs 🌇'; break;
+  case 15: hour = 'Bᴜᴇɴᴀs Tᴀʀᴅᴇs 🥀'; break;
+  case 16: hour = 'Bᴜᴇɴᴀs Tᴀʀᴅᴇs 🌹'; break;
+  case 17: hour = 'Bᴜᴇɴᴀs Tᴀʀᴅᴇs 🌆'; break;
+  case 18: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌙'; break;
+  case 19: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌃'; break;
+  case 20: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌌'; break;
+  case 21: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌃'; break;
+  case 22: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌙'; break;
+  case 23: hour = 'Bᴜᴇɴᴀs Nᴏᴄʜᴇs 🌃'; break;
+}
+  var greeting = hour;
