@@ -9,7 +9,7 @@ import { xpRange } from '../lib/levelling.js'
   let m2 = `
 > *Título:* 
 > *Duración:*`
- await conn.sendButton2(m.chat, m2, mssg.ig, thumbnail, [
+ await conn.sendButton2(m.chat, m2, [
     ['📚 MENU 📚', `${usedPrefix}allmenu`],
     ['🫅 OWNER 🫅', `${usedPrefix}owner`]
   ], null, [['🍒 Canal', `${fgcanal}`]], m)
