@@ -1,8 +1,4 @@
-import { promises } from 'fs'
-import { join } from 'path'
-import fetch from 'node-fetch'
-import { xpRange } from '../lib/levelling.js'
-
+let handler = async function (m, { conn, text, usedPrefix }) {
 
         let pp = './src/Menu.jpg' 
         m.react('📚') 
