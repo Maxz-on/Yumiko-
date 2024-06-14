@@ -1,21 +1,21 @@
-import uploadFile from '../lib/uploadFile.js'
-import uploadImage from '../lib/uploadImage.js'
 
-let handler = async (m) => {
-  let q = m.quoted ? m.quoted : m
-  let mime = (q.msg || q).mimetype || ''
-  if (!mime) throw `✳️ ${mssg.replyImg}`
-  let media = await q.download()
-  let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
-  let link = await (isTele ? uploadImage : uploadFile)(media)
-  m.reply(`▢ ${media.length} Byte(s) 
-
-▢ ${isTele ? '(Sin fecha de caducidad)' : '(Desconocido)'} 
-▢ *URL :* ${link}
-  `)
+import { toAudio } from '../lib/converter.js'
+let handler = async (m, { conn, usedPrefix, command }) => {
+    try {
+    let q = m.quoted ? m.quoted : m
+   let mime = (m.quoted ? m.quoted : m.msg).mimetype || ''
+   // if (!/video|audio/.test(mime)) throw `✳️ Responda al video o nota de voz que desea convertir a mp3 con el comando :\n\n*${usedPrefix + command}*`
+    let media = await q.download?.()
+    if (!media) throw '❎ Error al descargar medios'
+    let audio = await toAudio(media, 'mp4')
+    if (!audio.data) throw '❎ Error al convertir'
+    conn.sendFile(m.chat, audio.data, 'audio.mp3', '', m, null, { mimetype: 'audio/mp4' })
+    } catch (e) {
+        m.reply(`✳️ ${mssg.toaud}:\n\n*${usedPrefix + command}*`)
+   }
 }
-handler.help = ['tourl']
-handler.tags = ['tools']
-handler.command = ['upload', 'tourl']
+handler.help = ['tomp3']
+handler.tags = ['fun']
+handler.command = ['tomp3', 'mp3', 'toudio'] 
 
 export default handler
