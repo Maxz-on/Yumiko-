@@ -16,7 +16,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (user.coin < apuesta)throw `✳️ ${mssg.coinNan}`
    if (maxap < apuesta) return m.reply(`🎰 ${mssg.betMax} *${maxap} 🪙*`) 
    	
-    let emojis = ["🕊️", "🦀", "🦎"];
+    let emojis = ["🍒", "🦀", "🦎"];
     let a = Math.floor(Math.random() * emojis.length);
     let b = Math.floor(Math.random() * emojis.length);
     let c = Math.floor(Math.random() * emojis.length);
