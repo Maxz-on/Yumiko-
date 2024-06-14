@@ -196,7 +196,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       throw false
 }
 
-m.reply(`*❱❱ 𝙁𝙐𝙉𝘾𝙄𝙊𝙉𝙀𝙎 ❰❰*\n\n*» 𝙊𝙋𝘾𝙄𝙊𝙉 | ${type.toUpperCase()}\n*» 𝙀𝙎𝙏𝘼𝘿𝙊 |* *${isEnable ? `${mssg.nable}` : `${mssg.disable}`}* ${isAll ? `${mssg.toBot}` : isUser ? '' : `${mssg.toGp}`}
+m.reply(`*❱❱ 𝙁𝙐𝙉𝘾𝙄𝙊𝙉𝙀𝙎 ❰❰*\n\n*» 𝙊𝙋𝘾𝙄𝙊𝙉 |* ${type.toUpperCase()}\n*» 𝙀𝙎𝙏𝘼𝘿𝙊 |* ${isEnable ? `${mssg.nable}` : `${mssg.disable}`}\n*» 𝙋𝘼𝙍𝘼 |* ${isAll ? `${mssg.toBot}` : isUser ? '' : `${mssg.toGp}`}
 `.trim()) 
 
 }
