@@ -76,6 +76,16 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       chat.antiLink = isEnable
       break
 
+    case 'modohorny':
+      if (m.isGroup) {
+        if (!(isAdmin || isROwner || isOwner)) {
+          global.dfail('admin', m, conn);
+          throw false
+        }
+      }
+      chat.modohorny = isEnable;
+      break
+
 
       case 'captcha':
       if (m.isGroup) {
