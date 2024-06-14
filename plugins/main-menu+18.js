@@ -140,9 +140,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     throw e
   }
 }
-//handler.help = ['help']
+//handler.help = ['menu+18']
 //handler.tags = ['main']
-handler.command = ['allmenu','menúall'] 
+handler.command = ['menu+18','labiblia'] 
 handler.register = false
 
 export default handler
