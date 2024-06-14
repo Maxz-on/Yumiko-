@@ -1,6 +1,5 @@
 let handler = async function (m, { conn, text, usedPrefix }) {
 
-        let pp = './src/Menu.jpg' 
         m.react('📚') 
   let m2 = `
 > *Título:* 
@@ -10,6 +9,8 @@ let handler = async function (m, { conn, text, usedPrefix }) {
     ['🫅 OWNER 🫅', `${usedPrefix}owner`]
   ], null, [['🍒 Canal', `${fgcanal}`]], m)
 }
+let pp = './src/Menu.jpg' 
+
 handler.help = ['help']
 handler.tags = ['dl']
 handler.command = ['menu', 'help']
