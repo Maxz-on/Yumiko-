@@ -14,7 +14,7 @@ let handler = async(m, { conn, usedPrefix, command }) => {
 • *Alias :* fgmods2
 `
 let img = 'https://i.ibb.co/37FP2bk/donate.jpg'
-conn.sendFile(m.chat, img, 'img.jpg', don, m, null, rpyp)
+conn.sendFile(m.chat, img, 'img.jpg', don, m, null, rcanal)
 //conn.sendPayment(m.chat, '2000', 'USD', don, m.sender, m)
 }
 
