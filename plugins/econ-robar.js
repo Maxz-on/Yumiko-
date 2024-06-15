@@ -9,9 +9,9 @@ const handler = async (m, {conn, usedPrefix, command}) => {
   if (!(who in global.db.data.users)) throw `*[❗] 𝙀𝙡 𝙪𝙨𝙪𝙖𝙧𝙞𝙤 𝙣𝙤 𝙨𝙚 𝙚𝙣𝙘𝙪𝙚𝙣𝙩𝙧𝙖 𝙚𝙣 𝙢𝙞 𝙗𝙖𝙨𝙚 𝙙𝙚 𝙙𝙖𝙩𝙤𝙨.*`;
   const users = global.db.data.users[who];
   const rob = Math.floor(Math.random() * ro);
-  if (users.exp < rob) return m.reply(`😔 @${who.split`@`[0]} 𝙩𝙞𝙚𝙣𝙚 𝙢𝙚𝙣𝙤𝙨 𝙙𝙚 *${ro} xp*\n𝙉𝙤 𝙧𝙤𝙗𝙚𝙨 𝙖 𝙪𝙣 𝙥𝙤𝙗𝙧𝙚, 𝙣𝙤 𝙨𝙚𝙖𝙨 𝙖𝙨𝙞 :´v`, null, {mentions: [who]});
-  global.db.data.users[m.sender].exp += rob;
-  global.db.data.users[who].exp -= rob;
+  if (users.money < rob) return m.reply(`😔 @${who.split`@`[0]} 𝙩𝙞𝙚𝙣𝙚 𝙢𝙚𝙣𝙤𝙨 𝙙𝙚 *${ro} xp*\n𝙉𝙤 𝙧𝙤𝙗𝙚𝙨 𝙖 𝙪𝙣 𝙥𝙤𝙗𝙧𝙚, 𝙣𝙤 𝙨𝙚𝙖𝙨 𝙖𝙨𝙞 :´v`, null, {mentions: [who]});
+  global.db.data.users[m.sender].money += rob;
+  global.db.data.users[who].money -= rob;
   m.reply(`*‣ 𝙌𝙪𝙚 𝙗𝙪𝙚𝙣𝙖 𝙧𝙖𝙩𝙖 𝙚𝙧𝙚𝙨, 𝙍𝙤𝙗𝙖𝙨𝙩𝙚 ${rob} 𝙓𝙋 𝙖 @${who.split`@`[0]}*`, null, {mentions: [who]});
   global.db.data.users[m.sender].lastrob = new Date * 1;
 };
