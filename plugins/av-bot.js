@@ -1,22 +1,16 @@
+import util from 'util'
+import path from 'path'
+let handler = async (m, { conn }) => {
+if (!db.data.chats[m.chat].audios && m.isGroup) throw 0
+global.db.data.users[m.sender].money += 100 
+global.db.data.users[m.sender].exp += 100
 
-let handler = async (m, { conn}) => {
-
-let name = conn.getName(m.sender)
-let av = `./src/mp3/${pickRandom(["criss", "andrea"])}.mp3`
-
-/*conn.sendButton(m.chat, `${mssg.hi} *${name}* \n\n${mssg.bohelp} \n`, mssg.ig, null, [
-      ['⦙☰ Menu', '/help'],
-      ['⦙☰ Menu 2', '/menu2'],
-      [`⌬ ${mssg.gp}s`, '/gpdylux']
-    ], m) */
-conn.sendFile(m.chat, av, 'audio.mp3', null, m, true, { type: 'audioMessage', ptt: true })
-} 
-
-handler.customPrefix = /^(bot|senna)$/i
-handler.command = new RegExp
-
-export default handler
-
-function pickRandom(list) {
-  return list[Math.floor(list.length * Math.random())]
+let vn = './media/a.mp3'
+conn.sendFile(m.chat, vn, 'a.mp3', null, m, true, { 
+type: 'audioMessage', 
+ptt: true 
+})
 }
+handler.customPrefix = /ª|a|A/
+handler.command = /^(a|ª|A?$)/
+export default handler
