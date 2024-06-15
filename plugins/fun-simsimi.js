@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
  let lang = global.db.data.users[m.sender].language
   if (!text) throw `✳️ ${mssg.notext}`
-  m.react('🗣️') 
+  m.react('💬') 
   try { 
   //let res = await fetch(`https://api.simsimi.vn/v2/?text=${text}&lc=${lang}`)
   let res = await fetch('https://api.simsimi.vn/v1/simtalk', {
