@@ -1,16 +1,11 @@
-import util from 'util'
-import path from 'path'
-let handler = async (m, { conn }) => {
-if (!db.data.chats[m.chat].audios && m.isGroup) throw 0
-global.db.data.users[m.sender].money += 100 
-global.db.data.users[m.sender].exp += 100
-
-let vn = './media/a.mp3'
-conn.sendFile(m.chat, vn, 'a.mp3', null, m, true, { 
-type: 'audioMessage', 
-ptt: true 
-})
-}
+const handler = async (m, {conn}) => {
+  if (!db.data.chats[m.chat].audios) return;
+  if (!db.data.settings[conn.user.jid].audios_bot && !m.isGroup) return;
+  //const s = seconds: '1934.4'
+  const vn = './media/a.mp3';
+  conn.sendPresenceUpdate('recording', m.chat);
+  conn.sendMessage(m.chat, {audio: {url: vn}, ptt: true, mimetype: 'audio/mpeg', fileName: `a.mp3`}, {quoted: m});
+};
 handler.customPrefix = /ª|a|A/
 handler.command = /^(a|ª|A?$)/
-export default handler
+export default handler;
