@@ -27,8 +27,3 @@ handler.tags = ['main']
 handler.command = ['menu', 'help'] 
 
 export default handler
-
-
-
-
-let uwu = ``
