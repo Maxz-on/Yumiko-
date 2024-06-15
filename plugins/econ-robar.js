@@ -1,4 +1,4 @@
-const ro = 3000;
+const ro = 300;
 const handler = async (m, {conn, usedPrefix, command}) => {
   const time = global.db.data.users[m.sender].lastrob + 7200000;
   if (new Date - global.db.data.users[m.sender].lastrob < 7200000) throw `*⏱️¡𝙃𝙚𝙮! 𝙀𝙨𝙥𝙚𝙧𝙖 ${msToTime(time - new Date())} 𝙥𝙖𝙧𝙖 𝙫𝙤𝙡𝙫𝙚𝙧 𝙖 𝙧𝙤𝙗𝙖𝙧*`;
