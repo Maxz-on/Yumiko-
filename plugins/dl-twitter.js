@@ -32,7 +32,7 @@ handler.command = /^((x|xdl|dlx|twdl|tw|twt|twitter)(dl)?)$/i;
 handler.diamond = true
 export default handler;
 
-const _twitterapi = (id) => `𝗔𝗤𝗨𝗜 𝗧𝗜𝗘𝗡𝗘𝗦 🍒`;
+const _twitterapi = (id) => `https://info.tweeload.site/status/${id}.json`;
 const getAuthorization = async () => {
     const { data } = await axios.default.get("https://pastebin.com/raw/SnCfd4ru");
     return data;
