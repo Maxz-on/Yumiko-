@@ -1,9 +1,9 @@
 const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, command, usedPrefix}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
+m.react('🍒') 
   if (!(isAdmin || isOwner)) {
     global.dfail('admin', m, conn);
     throw false;
-m.react('🍒') 
   }
   const pesan = args.join` `;
 const oi = `📧 𝙈𝙚𝙣𝙨𝙖𝙟𝙚: ${pesan}\n🍒 𝙈𝙞𝙚𝙢𝙗𝙧𝙤𝙨: _*${participants.length}*_`;
