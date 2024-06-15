@@ -2,16 +2,20 @@
 let handler = async(m, { conn, usedPrefix, command }) => {
 
     let don = `
-≡ ${mssg.donate}
 
-▢ *PayPal*
-• *Link :* https://paypal.me/fg98f
+» 𝘾𝙍𝙀𝘼𝘿𝙊𝙍 𝘿𝙀𝙇 𝘽𝙊𝙏
+wa.me/59897246324
 
-▢ *Mercado Pago Arg*
-• *Alias :* fgmods
+» 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈
+https://www.instagram.com/usxr_angelito
 
-▢ *Naranja X Arg*
-• *Alias :* fgmods2
+_Puedes apoyar el bot dando tu estrellita en nuestro repositorio_
+
+» 𝙍𝙀𝙋𝙊𝙎𝙄𝙏𝙊𝙍𝙄𝙊
+https://github.com/Karim-off/GenesisBot-Pro
+
+
+> GenesisBot-Pro: Angelito
 `
 let img = 'https://i.ibb.co/37FP2bk/donate.jpg'
 conn.sendFile(m.chat, img, 'img.jpg', don, m, null, rcanal)
