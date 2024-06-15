@@ -3,12 +3,12 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url' 
 
 global.owner = [
-  ['59168683798', 'CREADOR 🍒', true],
-  ['59168683798']
+  ['5493536568522', 'CREADOR 🔥', true],
+  ['5493536568522']
 ] //Numeros de owner 
 
 global.mods = [''] 
-global.prems = ['59168683798', '59176181985']
+global.prems = ['5493536568522', '5493536568522']
 global.APIs = { // API Prefix
   // name: 'https://website' 
   nrtm: 'https://fg-nrtm.ddns.net',
@@ -21,11 +21,11 @@ global.APIKeys = { // APIKey Here
 
 // Sticker WM
 global.packname = '𝙂𝙚𝙣𝙚𝙨𝙞𝙨 𝙋𝙧𝙤𝙛𝙚𝙨𝙨𝙞𝙤𝙣𝙖𝙡' 
-global.author = '@usxr_angelito' 
+global.author = '@max_xitado.pe' 
 
 //--info FG
 global.botName = 'Genesis'
-global.fgig = 'https://instagram.com/usxr_angelito' 
+global.fgig = 'https://instagram.com/max_xitado.pe' 
 global.fgsc = 'https://github.com/karim-off/GenesisBot-Pro' 
 global.fgyt = ''
 global.fgpyp = ''
