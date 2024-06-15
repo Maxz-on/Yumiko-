@@ -1,4 +1,8 @@
-let uwu = `╦══════════════════ ⪨
+
+let handler = async function (m, { conn, text, usedPrefix }) {
+
+let m2 = `
+╦══════════════════ ⪨
 ┃│✾ ⋟ *${ucapan()}*
 ┃│✾ ⋟ *tenemos varios tipos de menus*
 ┃│✾ ⋟ 1
@@ -7,9 +11,24 @@ let uwu = `╦══════════════════ ⪨
 ┃│✾ ⋟ *#descargasmenu*
 ┃│✾ ⋟ *ejemplo:*
 ┃│✾ ⋟ *#menucompleto*
-┃╰══ ⪨`
-conn.sendButton(m.chat, uwu, null, imagen1, [
+┃╰══ ⪨
+`
+    let pp = './src/Menu.jpg' 
+conn.sendButton(m.chat, m2, null, imagen1, [
 ['🌐 menucompleto', '.allmenu'],
 ['🧳 descargasmenu', '.descargasmenu'],
 ['👾 estado', '/estado']], null, 
 [['🎭 Grupo de WhatsApp', md]], m)}
+
+}
+
+handler.help = ['help']
+handler.tags = ['main']
+handler.command = ['menu', 'help'] 
+
+export default handler
+
+
+
+
+let uwu = ``
