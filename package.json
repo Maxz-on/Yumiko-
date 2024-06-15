@@ -1,7 +1,7 @@
 { 
-    "name": "senna-bot",
+    "name": "GenesisBot-Pro",
     "version": "3.0.0",
-    "description": "Customizable WhatsApp Bot",
+    "description": "La mejor Bot de WhatsApp",
     "main": "index.js",
     "type": "module",
     "directories": {
@@ -26,16 +26,16 @@
         "senna-bot",
         "baileys-md"
     ],
-    "homepage": "https://github.com/FG98F/senna-bot",
+    "homepage": "https://github.com/karim-off/GenesisBot-Pro",
     "author": {
         "name": "FG98"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/FG98F/senna-bot.git"
+        "url": "git+https://github.com/karim-off/GenesisBot-Pro.git"
     },
     "bugs": {
-        "url": "https://github.com/FG98F/senna-bot/issues"
+        "url": "https://github.com/karim-off/GenesisBot-Pro/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
