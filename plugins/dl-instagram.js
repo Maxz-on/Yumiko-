@@ -11,8 +11,7 @@ try {
 
     for (let item of data.result) {
         conn.sendFile(m.chat, item.url, 'igdl.jpg', `✅ ${mssg.result}`, m)
-    }
-  m.react('✅')   
+    }   
   
     } catch (error) {
         m.reply(`❎ ${mssg.error}`)
