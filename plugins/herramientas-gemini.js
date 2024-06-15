@@ -6,6 +6,7 @@ if (!text) throw `❱❱ 𝘼  𝙑  𝙄  𝙎  𝙊 ❰❰
 
 » 𝘾𝙤𝙢𝙖𝙣𝙙𝙤 𝘾𝙤𝙧𝙧𝙚𝙘𝙩𝙤: 
 𝘌𝘫𝘦𝘮𝘱𝘭𝘰: .𝘨𝘦𝘮𝘪𝘯𝘪 𝘲𝘶𝘦 𝘴𝘰𝘴?`
+  m.react('💬') 
 try {
 conn.sendPresenceUpdate('composing', m.chat);
 var apii = await fetch(`https://aemt.me/gemini?text=${text}`)
