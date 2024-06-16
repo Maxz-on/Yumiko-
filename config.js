@@ -20,7 +20,7 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = '𝙂𝙚𝙣𝙚𝙨𝙞𝙨 𝙋𝙧𝙤𝙛𝙚𝙨𝙨𝙞𝙤𝙣𝙖𝙡' 
+global.packname = '𝗪𝗶𝗲𝗿𝗯𝗼𝘁 𝙋𝙧𝙤𝙛𝙚𝙨𝙨𝙞𝙤𝙣𝙖𝙡' 
 global.author = '@max_xitado.pe' 
 
 //--info FG
