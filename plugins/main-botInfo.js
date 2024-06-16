@@ -50,7 +50,7 @@ let infobt = `
 ▢ Total Chats: *${chats.length}*
 
 *≡ OWNER*
-  • *Angelito*
+  • *Maxzito*
 ▢ Instagram :
   • ${fgig}
 
