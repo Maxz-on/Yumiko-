@@ -29,14 +29,14 @@ say('Genesis Bot', {
   align: 'center',
   gradient: ['red', 'magenta']
 })
-say(`Genesis-Bot By: Angelito`, {
+say(`Genesis-Bot By: Maxzito`, {
   font: 'console',
   align: 'center',
   gradient: ['cyan', 'magenta']
 })
 
 app.listen(port, () => {
-  console.log(chalk.green(`🌐 Puerto ${port} esta abierto`));
+  console.log(chalk.green(`🍒 Puerto ${port} esta abierto`));
 });
 
 var isRunning = false
