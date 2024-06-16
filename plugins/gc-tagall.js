@@ -7,7 +7,7 @@ m.react('🍒')
   }
   const pesan = args.join` `;
 const oi = `📧 𝙈𝙚𝙣𝙨𝙖𝙟𝙚: ${pesan}\n🍒 𝙈𝙞𝙚𝙢𝙗𝙧𝙤𝙨: _*${participants.length}*_`;
-  let teks = `🍒 𝙍𝙀𝙑𝙄𝙑𝘼𝙉 𝙋𝘼𝙅𝙄𝙉𝙀𝙎\n ${oi}\n\n\n`;
+  let teks = `🍒 𝙍𝙀𝙑𝙄𝙑𝘼𝙉 𝙋𝘼𝙅𝙄𝙉𝙀𝙎\n${oi}\n\n\n`;
   for (const mem of participants) {
     teks += `┣・🍒 @${mem.id.split('@')[0]}\n`;
   }
