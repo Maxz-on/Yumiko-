@@ -4,10 +4,10 @@ let handler = async(m, { conn, usedPrefix, command }) => {
     let don = `
 
 » 𝘾𝙍𝙀𝘼𝘿𝙊𝙍 𝘿𝙀𝙇 𝘽𝙊𝙏
-wa.me/59897246324
+wa.me/5493536568522
 
 » 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈
-https://www.instagram.com/usxr_angelito
+https://www.instagram.com/max_xitado.pe
 
 _Puedes apoyar el bot dando tu estrellita en nuestro repositorio_
 
@@ -15,7 +15,7 @@ _Puedes apoyar el bot dando tu estrellita en nuestro repositorio_
 https://github.com/Karim-off/GenesisBot-Pro
 
 
-> GenesisBot-Pro: Angelito
+> Wierbot: maxz
 `
 let img = 'https://i.ibb.co/37FP2bk/donate.jpg'
 conn.sendFile(m.chat, img, 'img.jpg', don, m, null, rcanal)
