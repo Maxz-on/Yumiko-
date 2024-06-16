@@ -11,7 +11,7 @@ const oi = `📧 𝙈𝙚𝙣𝙨𝙖𝙟𝙚: ${pesan}\n🍒 𝙈𝙞𝙚𝙢�
   for (const mem of participants) {
     teks += `┣・🍒 @${mem.id.split('@')[0]}\n`;
   }
-  teks += `┗・🍒 𝙂𝙚𝙣𝙚𝙨𝙞𝙨-𝘽𝙤𝙩-𝙋𝙧𝙤`;
+  teks += `┗・🍒 𝙒𝙞𝙚𝙧-𝘽𝙤𝙩-𝙋𝙧𝙤`;
   conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)} );
 };
 handler.help = ['tagall <mesaje>', 'invocar <mesaje>'];
