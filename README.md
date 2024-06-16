@@ -1,24 +1,24 @@
-### 🍒 WIER BOT 🍒
+### 🔥 WIER BOT-MD 🔥
 <p align="center">
-<img src="https://telegra.ph/file/ead3021c62bc61c9b1d49.jpg" alt="wierBot-Pro" width="900"/>
+<img src="https://telegra.ph/file/654b51d935bf8cce244ad.jpg" alt="WierBot-MD" width="900"/>
 </p>
 
-#### Version De Wier bot: Beta
+#### Version De Wier: Beta
 
-#### Creador y Dueño: Maxzito 🫅
+#### Creador y Dueño: Max⚡
 #### Proyecto Realizado: XB STAFF⚡
 
 ### CONTACTOS 💻
 <p>
 
 
- <a href="http://www.instagram.com/max_xitado.pe" target="blank"><img src="https://img.shields.io/badge/Instagram-30302f?style=flat&logo=instagram" /></a>
-<a href="https://api.whatsapp.com/send/?phone=+5493536568522&text=Hola 👋 soporte de wier Bot &type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/Whatsapp-30302f?style=flat&logo=whatsapp" /></a>
+ <a href="http://www.instagram.com/Max_xitado.pe" target="blank"><img src="https://img.shields.io/badge/Instagram-30302f?style=flat&logo=instagram" /></a>
+<a href="https://api.whatsapp.com/send/?phone=+5493536568522&text=Hola 👋 soporte de Wier Bot &type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/Whatsapp-30302f?style=flat&logo=whatsapp" /></a>
 
 </p> 
 
 ### 💬 DUDAS DEL BOT 
-<a href="http://wa.me/5493536568522" target="blank"><img src="https://img.shields.io/badge/ANGEL_CREADOR-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="http://wa.me/59897246324" target="blank"><img src="https://img.shields.io/badge/MAXZ_CREADOR-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 ### 🤖 GRUPO DE SOPORTE
 <a href="https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6" target="blank"><img src="https://img.shields.io/badge/GRUPO_DE_SOPORTE-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
@@ -41,6 +41,6 @@
 </details>
 
 
-### 🍒 CREADOR 
+### 🔮 CREADOR 
 [![Karim-off](https://github.com/Karim-off.png?size=100)](https://github.com/Karim-off) 
 > Copyright (c) 2024 **[Karim-off](https://github.com/Karim-off/XiaBot-Pro/blob/master/LICENSE)**.
