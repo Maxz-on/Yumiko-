@@ -15,7 +15,7 @@ _Puedes apoyar el bot dando tu estrellita en nuestro repositorio_
 https://github.com/Karim-off/GenesisBot-Pro
 
 
-> Wierbot: maxz
+> WIERBOT: MAXZ
 `
 let img = 'https://i.ibb.co/37FP2bk/donate.jpg'
 conn.sendFile(m.chat, img, 'img.jpg', don, m, null, rcanal)
