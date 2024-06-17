@@ -5,7 +5,7 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
-  'main': 'ACERCA DE 🍒',
+  'main': 'ACERCA DE 👹',
   'bebot': 'SUB BOTS 🤖',
   'game': 'JUEGOS 🎮',
   'econ': 'NIVEL & ECONOMIA 🍀',
@@ -31,7 +31,7 @@ let tags = {
 const defaultMenu = {
   before: `
 
-┌「🍒 𝙒𝙄𝙀𝙍  𝘽𝙊𝙏 🍒」
+┌「👹 𝙒𝙄𝙀𝙍  𝘽𝙊𝙏 👹」
 │◦╭─────────────
 │◦┊🍒 𝙃𝙤𝙡𝙖 %name
 │◦┊⏳ 𝙏𝙞𝙚𝙢𝙥𝙤 𝘼𝙘𝙩: %muptime %sbot
@@ -154,7 +154,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       ['⌬ Grupos', `${_p}gpdylux`]
     ], m, rpl)*/
     conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rcanal)
-    m.react('🍒') 
+    m.react('👹') 
 
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error', m)
