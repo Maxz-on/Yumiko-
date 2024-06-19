@@ -265,9 +265,9 @@ const translations = {
     adminH: 'Este comando es solo para *Admins* del grupos',
     botAdmin: '¡Para usar este comando debo ser *Administrador!*',
     unregH: 'Regístrese para usar esta función  Escribiendo:\n\n*/reg*',
-    avisoGene: '➽  `𝙾𝚁𝙳𝙴𝙽𝙴𝚂 𝚁𝙴𝙲𝙸𝚅𝙸𝙳𝙰𝚂` ✅',
-    avisoGene2: '➽ `𝙴𝙲𝙷𝙾` ✅',
-    avisoGene3: '➽ `𝙰𝙳𝚅𝙴𝚁𝚃𝙴𝙽𝙲𝙸𝙰` ⚠️',
+    avisoGene: '➤ `ORDENES RECIBIDAS` ✅',
+    avisoGene2: '➤ `HECHO` ✅',
+    avisoGene3: '➤ `ADVERTENCIA` ⚠️',
     ig: `▢ Sígueme en Instagram\n${fgig}`
 }
 
