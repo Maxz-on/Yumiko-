@@ -270,7 +270,7 @@ const translations = {
     avisoGene2: '➤ `HECHO` ✅',
     avisoGene3: '➤ `ADVERTENCIA` ⚠️',
     avisoGene4: '➤ `AVISO` 🍒',
-    ig: `▢ Sígueme en Instagram\n${fgig}`
+    ig: `➤ Sígueme en Instagram\n${fgig}`
 }
 
 export default translations
