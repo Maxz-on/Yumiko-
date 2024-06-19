@@ -7,7 +7,7 @@ const handler = async (m) => {
   const media = await q.download();
   const isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime);
   const link = await (isTele ? uploadImage : uploadFile)(media);
-  m.reply(`${mssg.avisoGene2}*ENLACE DE SU ARCHIVO:*\n${link}`);
+  m.reply(`${mssg.avisoGene2}\n\n*ENLACE DE SU ARCHIVO:*\n${link}`);
 };
 handler.help = ['tourl <reply image>'];
 handler.tags = ['sticker'];
