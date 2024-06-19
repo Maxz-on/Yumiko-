@@ -8,14 +8,14 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 	if (!vid) throw `✳️ Vídeo/Audio no encontrado`
 	let { title, description, thumbnail, videoId, timestamp, views, ago, url } = vid
 	//const url = 'https://www.youtube.com/watch?v=' + videoId
-	m.react('🗣️') 
+	m.react('🍒') 
   let play = `
 > *Título:* ${vid.title}
 > *Duración:* ${vid.timestamp}`
  await conn.sendButton2(m.chat, play, mssg.ig, thumbnail, [
-    ['🎼 MP3', `${usedPrefix}fgmp3 ${url}`],
-    ['📽️ MP4', `${usedPrefix}fgmp4 ${url}`]
-  ], null, [['👹 Canal', `${fgcanal}`]], m)
+    ['💿 MP3', `${usedPrefix}fgmp3 ${url}`],
+    ['📀 MP4', `${usedPrefix}fgmp4 ${url}`]
+  ], null, [['🍒 Canal', `${fgcanal}`]], m)
 }
 handler.help = ['play']
 handler.tags = ['dl']
