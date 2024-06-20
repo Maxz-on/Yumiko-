@@ -66,7 +66,7 @@ await conn.reply(m.chat, `*☓ Ocurrió un error inesperado*`,  m, fake,).then(_
 console.error(error)
 }}}
 handler.help = ['ytmp3 <url yt>']
-handler.tags = ['downloader']
+handler.tags = ['dl']
 handler.command = /^(fgmp3|dlmp3|getaud|yt(a|mp3))$/i
 handler.star = 2
 handler.register = true 
