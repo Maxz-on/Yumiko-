@@ -8,7 +8,7 @@ global.owner = [
 ] //Numeros de owner 
 
 global.mods = [''] 
-global.prems = ['5493536568522', '5493536568522']
+global.prems = ['59168683798', '59176181985']
 global.APIs = { // API Prefix
   // name: 'https://website' 
   nrtm: 'https://fg-nrtm.ddns.net',
@@ -20,7 +20,7 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = '𝗪𝗶𝗲𝗿𝗯𝗼𝘁 𝙋𝙧𝙤𝙛𝙚𝙨𝙨𝙞𝙤𝙣𝙖𝙡' 
+global.packname = '𝙂𝙚𝙣𝙚𝙨𝙞𝙨 𝙋𝙧𝙤𝙛𝙚𝙨𝙨𝙞𝙤𝙣𝙖𝙡' 
 global.author = '@usxr_angelito' 
 
 //--info FG
@@ -38,7 +38,7 @@ global.bgp = 'https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6'
 global.bgp2 = 'https://chat.whatsapp.com/HLjiZYOisu0GKmH3ozJzJO'
 global.bgp3 = 'https://chat.whatsapp.com/HLjiZYOisu0GKmH3ozJzJO' //--GP NSFW
 
-global.wait = '👹 𝘾𝙖𝙧𝙜𝙖𝙣𝙙𝙤....'
+global.wait = '🍒 𝘾𝙖𝙧𝙜𝙖𝙣𝙙𝙤....'
 global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✅'
