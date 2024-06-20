@@ -19,7 +19,7 @@ console.log(e)
 }}
 handler.command = ['geminis', 'gemini']
 handler.help = ['geminis', 'gemini']
-handler.tags = ['herramientas']
+handler.tags = ['ai']
 
 handler.premium = false
 
