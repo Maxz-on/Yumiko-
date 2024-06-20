@@ -21,5 +21,6 @@ await m.reply(res.data)
 } catch {
 }}}
 handler.command = /^(openai|chatgpt|ia|ai|openai2|chatgpt2|ia2)$/i;
+handler.help = ['ai']
 handler.tags = ['ai']
 export default handler;
