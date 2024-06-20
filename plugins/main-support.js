@@ -1,20 +1,21 @@
  
 let handler = async (m, { conn }) => {
+m.react('✅')
 
 m.reply(`
-≡  *${botName}ᴮᴼᵀ ┃ SUPPORT*
+≡  *GENESIS GRUPOS*
 
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈
-▢ Canal
+» Canal
 ${fgcanal}
 
-▢ Grupo *1*
+» Grupo *1*
 ${bgp}
 
-▢ Grupo *2*
+» Grupo *2*
 ${bgp2}
 
-▢ Grupo *3*
+» Grupo *3*
 ${bgp3}
 
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈`)
