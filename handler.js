@@ -120,7 +120,7 @@ export async function handler(chatUpdate) {
                 if (!('isBanned' in chat))
                     chat.isBanned = false
                 if (!('welcome' in chat))
-                    chat.welcome = false
+                    chat.welcome = true
                 if (!('detect' in chat))
                     chat.detect = false
                 if (!('sWelcome' in chat))
@@ -154,7 +154,7 @@ export async function handler(chatUpdate) {
             } else
                 global.db.data.chats[m.chat] = {
                     isBanned: false,
-                    welcome: false,
+                    welcome: true,
                     detect: false,
                     sWelcome: '',
                     sBye: '',
@@ -178,6 +178,7 @@ export async function handler(chatUpdate) {
                 if (!('self' in settings)) settings.self = false
                 if (!('autoread' in settings)) settings.autoread = false
                 if (!('restrict' in settings)) settings.restrict = false
+                if (!('antiPrivate' in settings)) settings.antiPrivate = false
                 if (!('status' in settings)) settings.status = 0
                 if (!('solopv' in settings)) settings.solopv = false // el bot responde solo por dm
                 if (!('sologp' in settings)) settings.sologp = false // el bot responde solo en grupos
@@ -185,6 +186,7 @@ export async function handler(chatUpdate) {
                 self: false,
                 autoread: false,
                 restrict: false,
+                antiPrivate: false,
                 solopv: false, 
                 sologp: false,
                 status: 0
