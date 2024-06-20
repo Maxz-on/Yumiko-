@@ -15,6 +15,12 @@ let m2 = `
 *» .labiblia 🔥*
 *» .menudescargas 📥*
 *» .menujuegos 🎮*
+
+*INFO DUEÑO*
+
+*» .owner 🍒*
+*» .reporte 📄*
+*» .grupos ✨*
 `
     let pp = './src/Menu2.png' 
     conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rcanal, {quoted: fkontak})
