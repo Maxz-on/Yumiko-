@@ -47,7 +47,7 @@ await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m).then(_ => m.rea
 //console.error(error)
 }}}
 handler.help = ['ytmp4 <url yt>']
-handler.tags = ['downloader']
+handler.tags = ['dl']
 handler.command = /^(fgmp4|dlmp4|getvid|yt(v|mp4)?)$/i;
 handler.star = 2
 handler.register = true 
