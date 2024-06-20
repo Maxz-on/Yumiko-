@@ -10,30 +10,28 @@ let m2 = `
 > » Sígueme en mi Canal 🍫
 `
     let pp = './src/Menu2.png' 
-     let listSections = [];
-    for (let index in ytres) {
-        let v = ytres[index];
-        listSections.push({
-            title: `${index}┃ ${v.title}`,
-            rows: [
-                {
-                    header: '💿 MP3',
-                    title: "",
-                    description: `▢ ⌚ *${mssg.duration}:* ${v.timestamp}\n▢ 👀 *${mssg.views}:* ${v.views}\n▢ 📌 *${mssg.title}* : ${v.title}\n▢ 📆 *${mssg.aploud}:* ${v.ago}\n`, 
-                    id: `${usedPrefix}fgmp3 ${v.url}`
-                },
-                {
-                    header: "📀 MP4",
-                    title: "" ,
-                    description: `▢ ⌚ *${mssg.duration}:* ${v.timestamp}\n▢ 👀 *${mssg.views}:* ${v.views}\n▢ 📌 *${mssg.title}* : ${v.title}\n▢ 📆 *${mssg.aploud}:* ${v.ago}\n`, 
-                    id: `${usedPrefix}fgmp4 ${v.url}`
-                }
-            ]
-        });
-    }
-
-    await conn.sendList(m.chat, '*GENESIS BOT*🔎', `\n 📀 Resultados de:\n *${text}*`, `Click Aqui`, ytres[0].image, listSections, m);
-};
+const buttonParamsJson = JSON.stringify({
+title: "VER LISTA",
+description: "Infórmate por medios oficiales sobre KatashiBot",
+sections: [
+{ title: "ℹ️ Información", highlight_label: "Popular",
+rows: [
+{ header: "✅ Redes", title: "🔓 Para: Todos", description: "Infórmate por medios oficiales sobre KatashiBot", id: usedPrefix + "cuentasgb" },
+{ header: "📢 Grupos/Canales", title: "🔓 Para: Todos", description: "¡Te esperamos!", id: usedPrefix + "grupos" },
+{ header: "🎁 Donar", title: "🔓 Para: Todos", description: "KatashiBot se mantiene funcionando gracias a donaciones ¡tú también puedes sumarte apoyando el proyecto!", id: usedPrefix + 'donar' }
+]},
+{ title: "🔖 Atajos", highlight_label: "Popular",
+rows: [
+{ header: "🆕 Ser Bot (código)", title: "🔓 Para: Todos", description: "¡Conviértete en Bot con el método de código de 8 dígitos!", id: usedPrefix + "serbot --code" },
+{ header: "🤖 Ser Bot (qr)", title: "🔓 Para: Todos", description: "Forma estándar de ser bot con código QR", id: usedPrefix + "serbot" },
+{ header: "🚄 Velocidad", title: "🔓 Para: Todos", description: "Seleccione esto si desea saber el ping del Bot", id: usedPrefix + "ping" },
+{ header: "🀄 Estado", title: "🔓 Para: Todos", description: "Conoce en que estado se encuentra KatashiBot", id: usedPrefix + "estado" }
+]},
+{ title: "Ⓜ️ Menú", highlight_label: "Popular",
+rows: [
+{ header: "⭐ Menú completo", title: "", description: "Visita todos los comandos", id: usedPrefix + "allmenu" }
+]}
+]})
 
 handler.help = ['menu']
 handler.tags = ['main']
