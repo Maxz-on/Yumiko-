@@ -21,6 +21,8 @@ let m2 = `
 *» .owner 🍒*
 *» .reporte 📄*
 *» .grupos ✨*
+
+> ©2024 | Genesis Bot Pro
 `
     let pp = './src/Menu2.png' 
     conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, {quoted: fkontak})
