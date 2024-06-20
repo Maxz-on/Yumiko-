@@ -48,6 +48,7 @@ const defaultMenu = {
   after: `
 `,
 }
+    const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
