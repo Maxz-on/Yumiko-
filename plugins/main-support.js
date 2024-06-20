@@ -4,16 +4,16 @@ m.react('✅')
 
 m.reply(`*GENESIS GRUPOS*
 
-» Canal
+*» Canal*
 ${fgcanal}
 
-» Grupo *1*
+*» Grupo Avisos*
 ${bgp}
 
-» Grupo *2*
+*» Grupo Global*
 ${bgp2}
 
-» Grupo *3*
+*» Grupo Hot*
 ${bgp3}
 `)
 
