@@ -16,7 +16,7 @@ let m2 = `
 *» .menudescargas* (menú descargas)
 `
     let pp = './src/Menu2.png' 
-    conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, {quoted: fkontak})
+    conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rcanal, {quoted: fkontak})
 
 }
 
