@@ -18,7 +18,7 @@ console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗
 console.log(e)
 }}
 handler.command = ['gemini']
-handler.help = ['geminis', 'gemini']
+handler.help = ['gemini']
 handler.tags = ['ai']
 
 handler.premium = false
