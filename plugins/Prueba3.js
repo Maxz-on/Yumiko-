@@ -10,7 +10,7 @@ let m2 = `
 > » Sígueme en mi Canal 🍫
 `
     let pp = './src/Menu2.png' 
- await conn.sendButton2(m.chat, pp, menu.jpg, m2, m, null, {quoted: fkontak}) thumbnail, [
+ await conn.sendButton(m.chat, pp, menu.jpg, m2, m, null, {quoted: fkontak}) thumbnail, [
     ['📚 Menu 📚', `${usedPrefix}fgmp3 ${url}`],
     ['🫅 Owner 🫅', `${usedPrefix}fgmp4 ${url}`]
   ], null, [['🍒 Canal 🍒', `${fgcanal}`]], m) 
