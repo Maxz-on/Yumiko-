@@ -13,8 +13,8 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 > *Título:* ${vid.title}
 > *Duración:* ${vid.timestamp}`
  await conn.sendButton2(m.chat, play, mssg.ig, thumbnail, [
-    ['💿 MP3', `${usedPrefix}fgmp3 ${url}`],
-    ['📀 MP4', `${usedPrefix}fgmp4 ${url}`]
+    ['💿 Musica', `${usedPrefix}fgmp3 ${url}`],
+    ['📀 Video', `${usedPrefix}fgmp4 ${url}`]
   ], null, [['🍒 Canal', `${fgcanal}`]], m)
 }
 handler.help = ['play']
