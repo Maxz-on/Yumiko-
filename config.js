@@ -25,7 +25,7 @@ global.author = '@max_xitado.pe'
 
 //--info FG
 global.botName = 'Genesis'
-global.fgig = 'https://instagram.com/max_xitado.pe' 
+global.fgig = 'https://instagram.com/usxr_angelito' 
 global.fgsc = 'https://github.com/karim-off/GenesisBot-Pro' 
 global.fgyt = ''
 global.fgpyp = ''
@@ -35,8 +35,8 @@ global.fglog = ''
 global.id_canal = 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y' //-ID de canal de WhatsApp
 global.fgcanal = 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'
 global.bgp = 'https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6'
-global.bgp2 = 'https://chat.whatsapp.com/J4GaLNqbzAHEkzNQy9N62O'
-global.bgp3 = 'https://chat.whatsapp.com/J4GaLNqbzAHEkzNQy9N62O' //--GP NSFW
+global.bgp2 = 'https://chat.whatsapp.com/HLjiZYOisu0GKmH3ozJzJO'
+global.bgp3 = 'https://chat.whatsapp.com/HLjiZYOisu0GKmH3ozJzJO' //--GP NSFW
 
 global.wait = '👹 𝘾𝙖𝙧𝙜𝙖𝙣𝙙𝙤....'
 global.rwait = '⌛'
