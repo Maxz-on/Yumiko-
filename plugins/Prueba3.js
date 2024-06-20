@@ -4,9 +4,10 @@ let handler = async function (m, { conn, text, usedPrefix }) {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
 let m2 = `
-> » Hola! Soy *GenesisBot ☕*
+> » Hola! Soy *GenesisBot 🍒*
+> » Bot creado el 29/05/2024 ✨
 > » Bot en desarrollo 🧑🏻‍💻
-> » Creador: Angelito
+> » Creador: Angelito 🫅
 > » Sígueme en mi Canal 🍫
 
 *LISTA DE MENUS*
