@@ -10,5 +10,5 @@ handler.help = ['agenda'];
 export default handler;
 
 global.agenda = [
-  'https://telegra.ph/file/f9ab074bd29e8a4b02bb0.jpg',
+  'https://telegra.ph/file/572a045edda28e2efb3d8.jpg',
 ];
