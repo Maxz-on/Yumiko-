@@ -1,4 +1,4 @@
-case 'menu': case 'help': {
+ case 'menu': case 'help': {
 conn.sendButton(m.chat, `╦══════════════════ ⪨
 ┃│✾ ⋟ *${ucapan()}*
 ┃│✾ ⋟ *tenemos varios tipos de menus*
