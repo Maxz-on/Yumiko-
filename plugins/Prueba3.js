@@ -10,7 +10,7 @@ let m2 = `
 > » Sígueme en mi Canal 🍫
 `
     let pp = './src/Menu2.png' 
-    conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, fkontak)
+    conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null), {quoted: fkontak});
 
 }
 
