@@ -8,6 +8,12 @@ let m2 = `
 > » Bot en desarrollo 🧑🏻‍💻
 > » Creador: Angelito
 > » Sígueme en mi Canal 🍫
+
+*LISTA DE MENUS*
+
+*» .allmenu* (menú completo 📚)
+*» .labiblia* (menú horny 🔥)
+*» .menudescargas* (menú descargas)
 `
     let pp = './src/Menu2.png' 
     conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, {quoted: fkontak})
