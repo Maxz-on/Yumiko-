@@ -19,7 +19,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 }
 
 }
-handler.help = ['bot']
+handler.help = ['simi']
 handler.tags = ['ai']
 handler.command = ['simi'] 
 
