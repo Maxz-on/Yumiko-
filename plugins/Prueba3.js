@@ -10,14 +10,14 @@ let m2 = `
 > » Creador: Angelito 🫅
 > » Sígueme en mi Canal 🍫
 
-*LISTA DE MENUS*
+*LISTA DE MENUS ⚡*
 
 *» .allmenu 📚*
 *» .labiblia 🔥*
 *» .menudescargas 📥*
 *» .menujuegos 🎮*
 
-*INFO DUEÑO*
+*INFO DUEÑO 🏷️*
 
 *» .owner 🍒*
 *» .reporte 📄*
