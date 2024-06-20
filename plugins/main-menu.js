@@ -33,7 +33,7 @@ const defaultMenu = {
 
 ┌「🍒 *𝙂 𝙀 𝙉 𝙀 𝙎 𝙄 𝙎  𝘽 𝙊 𝙏* 🍒」
 │◦ ╭──────°.♡.°‧──────···
-│◦ ├🍒 𝙃𝙤𝙡𝙖 @${m.sender.split`@`[0]}
+│◦ ├🍒 𝙃𝙤𝙡𝙖 %name
 │◦ ├⏳ 𝙏𝙞𝙚𝙢𝙥𝙤 𝘼𝙘𝙩: %muptime %sbot 
 │◦ ├📊 𝙁𝙚𝙘𝙝𝙖: %date
 │◦ ├📈 𝙐𝙨𝙪𝙖𝙧𝙞𝙤𝙨: %rtotalreg
@@ -48,7 +48,6 @@ const defaultMenu = {
   after: `
 `,
 }
-    const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
