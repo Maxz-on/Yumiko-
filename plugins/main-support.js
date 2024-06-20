@@ -2,10 +2,8 @@
 let handler = async (m, { conn }) => {
 m.react('✅')
 
-m.reply(`
-≡  *GENESIS GRUPOS*
+m.reply(`*GENESIS GRUPOS*
 
-◈ ━━━━━━━━━━━━━━━━━━━━ ◈
 » Canal
 ${fgcanal}
 
@@ -17,8 +15,7 @@ ${bgp2}
 
 » Grupo *3*
 ${bgp3}
-
-◈ ━━━━━━━━━━━━━━━━━━━━ ◈`)
+`)
 
 }
 handler.help = ['support']
