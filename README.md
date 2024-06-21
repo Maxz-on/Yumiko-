@@ -6,7 +6,7 @@
 #### Version De Génesis: Beta
 
 #### Creador y Dueño: Angelito 🫅
-#### Proyecto Realizado: XB STAFF⚡
+#### Proyecto Realizado con: XB STAFF⚡
 
 ### CONTACTOS 💻
 <p>
