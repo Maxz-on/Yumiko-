@@ -6,12 +6,12 @@ m.react('✅')
     throw false;
   }
   const pesan = args.join` `;
-const oi = `📧 𝙈𝙚𝙣𝙨𝙖𝙟𝙚: ${pesan}\n🍒 𝙈𝙞𝙚𝙢𝙗𝙧𝙤𝙨: _*${participants.length}*_`;
-  let teks = `🍒 ＲＥＶＩＶＡＮ ＰＬＡＮＴＡＳ\n\n ${oi}\n\n┏・🍒 𝙧𝙚𝙫𝙞𝙫𝙖𝙣 𝙛𝙚@𝙨 !\n`;
+const oi = `*» INFO :* ${pesan}`;
+  let teks = `*!  MENCION GENERAL  !*\n  *PARA ${participants.length} MIEMBROS* 🗣️\n\n ${oi}\n\n╭┈┈✣ 𝙂𝙚𝙣𝙚𝙨𝙞𝙨 𝙋𝙧𝙤 ✣\n`;
   for (const mem of participants) {
-    teks += `┣・🍒 @${mem.id.split('@')[0]}\n`;
+    teks += `┊» 🍒 @${mem.id.split('@')[0]}\n`;
   }
-  teks += `┗・🍒 𝙂𝙚𝙣𝙚𝙨𝙞𝙨-𝘽𝙤𝙩-𝙋𝙧𝙤`;
+  teks += `╰┈✣ 𝙂𝙚𝙣𝙚𝙨𝙞𝙨 𝙋𝙧𝙤𝙛𝙚𝙨𝙨𝙞𝙤𝙣𝙖𝙡`;
   conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)} );
 };
 handler.help = ['tagall <mesaje>', 'invocar <mesaje>'];
