@@ -20,7 +20,7 @@ var user = number + '@s.whatsapp.net'
 } catch (e) {
 } finally {
 conn.groupParticipantsUpdate(m.chat, [user], 'demote')
-m.reply(`✅ ${mssg.demote}`)
+m.reply(`${mssg.avisoGene}\n\n*EN SEGUIDA LE QUITO ADMIN*`)
 }
 
 }
