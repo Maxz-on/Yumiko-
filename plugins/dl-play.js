@@ -2,7 +2,7 @@
 import yts from 'yt-search'
 let handler = async (m, { conn, command, text, usedPrefix }) => {
 	
-  if (!text) throw `✳️ ${mssg.example} *${usedPrefix + command}* Lil Peep hate my life`
+  if (!text) throw `${mssg.avisoGene4}\n\n*INGRESA EL NOMBRE DE LA BÚSQUEDA*\n_${usedPrefix + command} brattyputy_`
 	let res = await yts(text)
 	let vid = res.videos[0]
 	if (!vid) throw `✳️ Vídeo/Audio no encontrado`
