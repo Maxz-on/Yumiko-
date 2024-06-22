@@ -8,7 +8,6 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 ▢ captcha
 ▢ welcome
 ▢ antilink
-▢ antiprivado
 ▢ detect 
 ▢ document
 ▢ nsfw
@@ -20,6 +19,7 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 └─────────────
 ┌─⊷ *OWNER*
 ▢ antibotclone
+▢ antiprivado
 ▢ public
 ▢ solopv
 ▢ sologp
