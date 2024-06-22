@@ -1,6 +1,6 @@
 import {search, download} from 'aptoide-scraper';
 const handler = async (m, {conn, usedPrefix: prefix, command, text}) => {
- if (!text) throw `${mssg.avisoGene4}\n\n*INGRESA EL NOMBRE DE LA APK*\n_Ejemplo: ${usedPrefix + command} <nombre>_`;
+ if (!text) throw `${mssg.avisoGene4}\n\n*INGRESA EL NOMBRE DE LA APK*\n_Ejemplo: .apk <nombre>_`;
   try {    
     const searchA = await search(text);
     const data5 = await download(searchA[0].id);
