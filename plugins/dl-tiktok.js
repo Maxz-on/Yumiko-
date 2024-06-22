@@ -4,6 +4,7 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
     if (!args[0])  m.reply(`🍭 Ingresa un enlace del vídeo de TikTok junto al comando.\n\nEjemplo:\n${usedPrefix + command} https://vm.tiktok.com/ZMMCYHnxf/`)
+m.react('✅') 
 
     try {
         let { title, published, quality, likes, commentCount, shareCount, views, dl_url } = await Scraper.tiktokdl(args[0])
