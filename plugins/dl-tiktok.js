@@ -7,6 +7,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     m.react(rwait) 
 
     try {
+    m.react(✅)
         let { title, published, quality, likes, commentCount, shareCount, views, dl_url } = await Scraper.tiktokdl(args[0])
             let txt = `𝘼𝙌𝙐𝙄 𝙏𝙄𝙀𝙉𝙀𝙎 🍒\n`
                 txt += `> BY: GenesisBot-Pro`
@@ -41,7 +42,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         }
     } catch {
 }}}}
-    m.react(done)
 handler.help = ['tiktok <url tt>']
 handler.tags = ['dl']
 handler.command = ['tiktok', 'ttdl', 'tiktokdl', 'tiktoknowm']
