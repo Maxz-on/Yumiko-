@@ -7,7 +7,7 @@ var number = text.split`@`[1]
 var number = text
 }
 m.react('✅')
-if(!text && !m.quoted) return conn.reply(m.chat, `${mssg.avisoGene4}\n\n*${usedPrefix + command}* @tag`, m)
+if(!text && !m.quoted) return conn.reply(m.chat, `${mssg.avisoGene4}\n\nUSE EL COMANDO\n*${usedPrefix + command}* @tag`, m)
 if(number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, `✳️ ${mssg.numError}`, m)
 try {
 if(text) {
