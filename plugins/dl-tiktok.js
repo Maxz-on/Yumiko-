@@ -3,7 +3,7 @@ import axios from 'axios'
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-    if (!args[0])  m.reply(`🍭 Ingresa un enlace del vídeo de TikTok junto al comando.\n\nEjemplo:\n${usedPrefix + command} https://vm.tiktok.com/ZMMCYHnxf/`)
+    if (!args[0])  m.reply(`${mssg.avisoGene4}\n\n*INGRESA EL LINK DEL TIKTOK*\n_${usedPrefix + command} <link>_`)
         m.react('✅')
 
     try {
