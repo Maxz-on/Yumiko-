@@ -1,25 +1,19 @@
-import fetch from 'node-fetch'
-var handler = async (m, { text,  usedPrefix, command }) => {
-if (!text) throw `❱❱ 𝘼  𝙑  𝙄  𝙎  𝙊 ❰❰
+var handler = async (m, { conn, command, text }) => {
 
-» 𝘾𝙤𝙢𝙖𝙣𝙙𝙤 𝙀𝙧𝙧𝙤𝙣𝙚𝙤.
+if (!text) throw `🍭 𝙀𝙎𝘾𝙍𝙄𝘽𝙀 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝘿𝙊𝙎 𝙋𝙀𝙍𝙎𝙊𝙉𝘼𝙎 𝙊 𝙀𝙏𝙄𝙌𝙐𝙀𝙏𝘼𝙇𝙊𝙎 𝙋𝘼𝙍𝘼 𝘾𝘼𝙇𝘾𝙐𝙇𝘼𝙍 𝙎𝙐 𝘼𝙈𝙊𝙍.`
+let [text1, ...text2] = text.split(' ')
 
-» 𝘾𝙤𝙢𝙖𝙣𝙙𝙤 𝘾𝙤𝙧𝙧𝙚𝙘𝙩𝙤: 
-𝘌𝘫𝘦𝘮𝘱𝘭𝘰: .𝘣𝘢𝘳𝘥 𝘲𝘶𝘦 𝘴𝘰𝘴?`
-try {
-conn.sendPresenceUpdate('composing', m.chat);
-var apii = await fetch(`https://aemt.me/bard?text=${text}`)
-var res = await apii.json()
-await m.reply(res.result)
-} catch (e) {
-await conn.reply(m.chat, `${lenguajeGB['smsMalError3']()}#report ${lenguajeGB['smsMensError2']()} ${usedPrefix + command}\n\n${wm}`, fkontak, m)
-console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
-console.log(e)
-}}
-handler.command = ['genesis', 'genesis']
-handler.help = ['bard', 'bard']
-handler.tags = ['ai']
+text2 = (text2 || []).join(' ')
+if (!text2) throw `🍭 𝙀𝙎𝘾𝙍𝙄𝘽𝙀 𝙊 𝙀𝙏𝙄𝙌𝙐𝙀𝙏𝘼 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝙇𝘼 𝙎𝙀𝙂𝙐𝙉𝘿𝘼 𝙋𝙀𝙍𝙎𝙊𝙉𝘼.`
+let love = `━━━━━━━━━━━━━━━
+❤️ *${text1}* 𝙏𝙐 𝙊𝙋𝙊𝙍𝙏𝙐𝙉𝙄𝘿𝘼𝘿 𝘿𝙀 𝙀𝙉𝘼𝙈𝙊𝙍𝘼𝙍𝙏𝙀 𝘿𝙀  *${text2}* 𝙀𝙎 𝘿𝙀 *${Math.floor(Math.random() * 100)}%* 👩🏻‍❤️‍👨🏻 
+━━━━━━━━━━━━━━━
+`.trim()
+m.reply(love, null, { mentions: conn.parseMention(love) })
 
-handler.premium = false
+}
+handler.help = ['love']
+handler.tags = ['fun']
+handler.command = /^(enamorar|ship)$/i
 
 export default handler
