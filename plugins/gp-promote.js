@@ -1,4 +1,8 @@
 let handler = async (m, { conn,usedPrefix, command, text}) => {
+
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+
+
 if(isNaN(text) && !text.match(/@/g)){
 
 }else if(isNaN(text)) {
@@ -7,7 +11,7 @@ var number = text.split`@`[1]
 var number = text
 }
 m.react('✅')
-if(!text && !m.quoted) return conn.reply(m.chat, `${mssg.avisoGene4}\n\n*USE EL COMANDO*\n_${usedPrefix + command} @tag_`, m)
+if(!text && !m.quoted) return conn.reply(m.chat, `${mssg.avisoGene4}\n\n*USE EL COMANDO*\n_${usedPrefix + command} @tag_`, fkontak)
 if(number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, `✳️ ${mssg.numError}`, m)
 try {
 if(text) {
