@@ -1,5 +1,8 @@
 let handler = m => m
 handler.all = async function (m) {
+
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+
 let chat = global.db.data.chats[m.chat]
 
 if (/^hola$/i.test(m.text) && chat.audios && !chat.isBanned) {
@@ -10,7 +13,7 @@ this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 
 if (!chat.isBanned && chat.audios && m.text.match(/(fino señores)/gi)) {
 let vn = './src/mp3/fino.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
-this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })} 
+this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: fkontak })} 
 
 if (!chat.isBanned && chat.audios && m.text.match(/(araara|ara ara)/gi)) {    
 let vn = './Audios/Ara.m4r'
