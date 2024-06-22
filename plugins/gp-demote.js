@@ -10,7 +10,7 @@ var number = text.split`@`[1]
 }else if(!isNaN(text)) {
 var number = text
 }
-if(!text && !m.quoted) return conn.reply(m.chat, `${mssg.avisoGene4}\n\n*PARA QUITAR ADMIN USE:*\n*${usedPrefix + command}* @tag`, fkontak)
+if(!text && !m.quoted) return conn.reply(m.chat, `${mssg.avisoGene4}\n\n*PARA QUITAR ADMIN USE:*\n_${usedPrefix + command} @tag_`, fkontak)
 if(number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, `✳️ ${mssg.numError}`, m)
   
 try {
