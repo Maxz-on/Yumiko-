@@ -24,7 +24,7 @@ var user = number + '@s.whatsapp.net'
 } catch (e) {
 } finally {
 conn.groupParticipantsUpdate(m.chat, [user], 'promote')
-m.reply(`${mssg.avisoGene}\n\n*EN SEGUIDA LE DOY ADMIN*`)
+m.reply(`${mssg.avisoGene}\n\n*EN SEGUIDA LE DOY ADMIN*`, fkontak))
 }}
 handler.help = ['promote']
 handler.tags = ['group']
