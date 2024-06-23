@@ -15,6 +15,7 @@ let m2 = `
 *📄 REGISTRADO :* ${user.registered ? 'Si':'No'}
 `
 }
+let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let pp = './src/Banco.jpg' 
     conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, mentions: [who], rcanal)
 
