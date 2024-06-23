@@ -34,7 +34,7 @@
 
 
 - ### ⚙️ Configuracion
- Clonar Repo : Yoshiko [Aqui.](https://github.com/OfcDiego/YoshikoBot-MD/fork)
+ Clonar Repo : Genesis [Aqui.](https://github.com/karim-off/GenesisBot-Pro/fork)
 
 
 - ###  ⌨️ Instalar Por Render
