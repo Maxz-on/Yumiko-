@@ -55,7 +55,7 @@ termux-setup-storage
 apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 ```bash
-git clone https://github.com/Karim-off/XiaBot-Pro && cd XiaBot-Pro
+git clone https://github.com/Karim-off/GenesisBot-Pro && cd GenesisBot-Pro
 ```
 ```bash
 yarn install
@@ -75,13 +75,13 @@ npm start
 * #### APLICACIÓN RECOMENDADA PARA EDITAR [`NÚMERO DE OWNER`](https://play.google.com/store/apps/details?id=com.rhmsoft.code)
 > **Note** Guardar los archivos en la ubicación: storage/downloads/RubyBot-MD-master/RubyBot-MD-master   
 ----
-### 💟 USAR XIA 24/7 EN TERMUX 
+### 🔥 USAR GENESIS 24/7 EN TERMUX 
 > Ejecutar estos comandos dentro de la carpeta XiaBot-MD
 ```bash
 termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ```
-### ⚡ REPLIT - XIABOT
-<a target="_blank" href="https://replit.com/github/karim-off/XiaBot-Pro"><img alt="Run on Replit" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg"></a>
+### ⚡ REPLIT - GENESIS BOT
+<a target="_blank" href="https://replit.com/github/karim-off/GenesisBot-Pro"><img alt="Run on Replit" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg"></a>
 <a href="https://replit.com/github/GataNina-Li/GataBot-MD"> <img src="https://media0.giphy.com/media/lMwu8EJAnv9kmn51KQ/giphy.gif" height="29px"></a>
 ------------------
 - [x] Resultado <details><summary>Importar Repositorio - XiaBot-Pro</summary><img src="https://i.imgur.com/GQyRnMf.jpg"></details>
