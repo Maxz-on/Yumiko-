@@ -35,8 +35,8 @@ global.fglog = ''
 global.id_canal = '120363220939514640@newsletter' //-ID de canal de WhatsApp
 global.fgcanal = 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'
 global.bgp = 'https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6'
-global.bgp2 = 'https://chat.whatsapp.com/HLjiZYOisu0GKmH3ozJzJO'
-global.bgp3 = 'https://chat.whatsapp.com/HLjiZYOisu0GKmH3ozJzJO' //--GP NSFW
+global.bgp2 = 'https://chat.whatsapp.com/EVl0wxlCww74HV3vvZq83a'
+global.bgp3 = 'https://chat.whatsapp.com/EVl0wxlCww74HV3vvZq83a' //--GP NSFW
 
 global.wait = '🍒 𝘾𝙖𝙧𝙜𝙖𝙣𝙙𝙤....'
 global.rwait = '⌛'
