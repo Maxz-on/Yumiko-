@@ -13,10 +13,10 @@ let m2 = `
 *💎 DIAMANTES:* _${user.diamond.toLocaleString()}_
 *🍒 GENECOINS:* _${user.coin.toLocaleString()}_
 *📄 REGISTRADO :* ${user.registered ? 'Si':'No'}
-`, m, { mentions: [who] })
+`
 }
     let pp = './src/Banco.jpg' 
-    conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rcanal)
+    conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, mentions: [who], rcanal)
 
 }
 
