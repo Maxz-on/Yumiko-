@@ -6,9 +6,8 @@ let handler = async function (m, { conn, text, usedPrefix }) {
     if (!(who in global.db.data.users)) throw `✳️ ${mssg.userDb}`
 let m2 = `
 🏦 *B A N C O  D E L  B O T*\n\n
- 🍒 *CLIENTE:* @${who.split('@')[0]}
 
- 💰 *C U E N T A*
+💰 *C U E N T A*
 
 *💎 DIAMANTES:* _${user.diamond.toLocaleString()}_
 *🍒 GENECOINS:* _${user.coin.toLocaleString()}_
