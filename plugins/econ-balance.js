@@ -5,7 +5,7 @@ let handler = async (m, {conn, usedPrefix}) => {
     let user = global.db.data.users[who]
     if (!(who in global.db.data.users)) throw `✳️ ${mssg.userDb}`
     conn.reply(m.chat, `🏦 *B A N C O  D E L  B O T*\n\n
- 🍒 *Nombre:* @${who.split('@')[0]}
+ 🍒 *CLIENTE:* @${who.split('@')[0]}
 
  💰 *C U E N T A*
 
