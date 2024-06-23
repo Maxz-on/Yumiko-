@@ -14,10 +14,7 @@ let handler = async (m, {conn, usedPrefix}) => {
 *📄 REGISTRADO :* ${user.registered ? 'Si':'No'}
 `, m, { mentions: [who] })
 }
-    let pp = './src/Banco.jpg' 
-    conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rcanal)
 
-}
 handler.help = ['balance']
 handler.tags = ['econ']
 handler.command = ['bal', 'monedero', 'billetera', 'balance'] 
