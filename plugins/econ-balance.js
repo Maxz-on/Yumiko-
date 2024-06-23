@@ -13,7 +13,7 @@ let handler = async (m, {conn, usedPrefix}) => {
 *💎 DIAMANTES:* _${user.diamond.toLocaleString()}_
 *🍒 GENECOINS:* _${user.coin.toLocaleString()}_
 *📄 REGISTRADO :* ${user.registered ? 'Si':'No'}
-`, m, pp, { mentions: [who] })
+`, m, { mentions: [who] })
 }
 handler.help = ['balance']
 handler.tags = ['econ']
