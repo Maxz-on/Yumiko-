@@ -79,4 +79,4 @@
 
 ### 🔮 CREADOR 
 [![Karim-off](https://github.com/Karim-off.png?size=100)](https://github.com/Karim-off) 
-> Copyright (c) 2024 **[Karim-off](https://github.com/Karim-off/XiaBot-Pro/blob/master/LICENSE)**.
+> ©️ Copyright 2024 **[Karim-off](https://github.com/Karim-off/XiaBot-Pro/blob/master/LICENSE)**.
