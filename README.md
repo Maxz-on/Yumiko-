@@ -16,7 +16,7 @@
 <a href="https://api.whatsapp.com/send/?phone=+59897246324&text=Hola 👋 soporte de Génesis Bot &type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/Whatsapp-30302f?style=flat&logo=whatsapp" /></a>
 
 > [!NOTE]
-> **Se agregó una protección para que el Bot no responda a sus propios mensajes y este genere Spam.**
+> **Este Bot recibe soporte 24/7 diariamente si presenta fallos solo repórtelo para que lo solucionemos**
 > **Se rediseño el Menu.**
 
 ***
