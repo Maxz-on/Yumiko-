@@ -40,7 +40,7 @@ let vn = './src/mp3/Es putoo.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: fkontak })}
 
-if (!chat.isBanned && chat.audios && m.text.match(/(gemi|gemido|gimeme)/gi)) {    
+if (!chat.isBanned && chat.audios && m.text.match(/(gemido|gimeme)/gi)) {    
 let vn = './src/mp3/gemi2.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: fkontak })}
@@ -70,7 +70,7 @@ let vn = './src/mp3/turip.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: fkontak })}
 
-if (!chat.isBanned && chat.audios && m.text.match(/(himno potaxie|potaxie)/gi)) {    
+if (!chat.isBanned && chat.audios && m.text.match(/(himno potaxie)/gi)) {    
 let vn = './src/mp3/himno-potaxie.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: fkontak })}
