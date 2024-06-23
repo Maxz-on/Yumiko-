@@ -1,7 +1,6 @@
 
 let handler = async (m, {conn, usedPrefix}) => {
 
-    let pp = './src/Banco.jpg' 
     let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     let user = global.db.data.users[who]
     if (!(who in global.db.data.users)) throw `✳️ ${mssg.userDb}`
@@ -14,6 +13,10 @@ let handler = async (m, {conn, usedPrefix}) => {
 *🍒 GENECOINS:* _${user.coin.toLocaleString()}_
 *📄 REGISTRADO :* ${user.registered ? 'Si':'No'}
 `, m, { mentions: [who] })
+}
+    let pp = './src/Banco.jpg' 
+    conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rcanal)
+
 }
 handler.help = ['balance']
 handler.tags = ['econ']
