@@ -87,11 +87,6 @@ termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 - [x] Resultado <details><summary>Importar Repositorio - GenesisBot-Pro</summary><img src="https://i.imgur.com/GQyRnMf.jpg"></details>
 ------------------
 
- <a href="http://www.instagram.com/usxr_angelito" target="blank"><img src="https://img.shields.io/badge/Instagram-30302f?style=flat&logo=instagram" /></a>
-<a href="https://api.whatsapp.com/send/?phone=+59897246324&text=Hola 👋 soporte de Génesis Bot &type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/Whatsapp-30302f?style=flat&logo=whatsapp" /></a>
-
-</p> 
-
 ### 🌎 GRUPO GLOBAL
 <a href="https://chat.whatsapp.com/EVl0wxlCww74HV3vvZq83a" target="blank"><img src="https://img.shields.io/badge/GRUPO_DE_SOPORTE-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
