@@ -89,6 +89,22 @@ let top = `*_💎TOP 10 L@S MEJORES INTEGRANTES👑_*
 *_10.- 👑 ${user(j)}_* 👑`
 m.reply(top, null, { mentions: conn.parseMention(top) })}
 
+if (command == 'toppotaxies') {
+let top = `*_🥑TOP 10 L@S MEJORES POTAXIES🥑_*
+    
+*_1.- 🥑 ${user(a)}_* 🥑
+*_2.- 🥑 ${user(b)}_* 🥑
+*_3.- 🥑 ${user(c)}_* 🥑
+*_4.- 🥑 ${user(d)}_* 🥑
+*_5.- 🥑 ${user(e)}_* 🥑
+*_6.- 🥑 ${user(f)}_* 🥑
+*_7.- 🥑 ${user(g)}_* 🥑
+*_8.- 🥑 ${user(h)}_* 🥑
+*_9.- 🥑 ${user(i)}_* 🥑
+*_10.- 🥑 ${user(j)}_* 🥑`
+m.reply(top, null, { mentions: conn.parseMention(top) })}
+
+
 if (command == 'topintegrante') {
 let top = `*_💎TOP 10 L@S MEJORES INTEGRANTES👑_*
     
