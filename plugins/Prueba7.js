@@ -16,10 +16,6 @@ let m2 = `
 `, m, { mentions: [who] })
 }
     let pp = './src/Banco.jpg' 
-    /*conn.sendButton(m.chat, m2, mssg.ig, pp, [
-      ['⏍ Info', `${usedPrefix}botinfo`],
-      ['⌬ Grupos', `${usedPrefix}gpdylux`]
-    ],m, rpyt)*/
     conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rcanal)
 
 }
