@@ -14,6 +14,7 @@ let handler = async (m, {conn, usedPrefix}) => {
 *📄 REGISTRADO :* ${user.registered ? 'Si':'No'}
 `, m, { mentions: [who] })
 }
+    let pp = './src/Banco.jpg'
 handler.help = ['balance']
 handler.tags = ['econ']
 handler.command = ['bal', 'monedero', 'billetera', 'balance'] 
