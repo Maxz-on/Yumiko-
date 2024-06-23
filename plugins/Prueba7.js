@@ -13,7 +13,8 @@ let m2 = `
 *💎 DIAMANTES:* _${user.diamond.toLocaleString()}_
 *🍒 GENECOINS:* _${user.coin.toLocaleString()}_
 *📄 REGISTRADO :* ${user.registered ? 'Si':'No'}
-`
+`, m, { mentions: [who] })
+}
     let pp = './src/Banco.jpg' 
     /*conn.sendButton(m.chat, m2, mssg.ig, pp, [
       ['⏍ Info', `${usedPrefix}botinfo`],
