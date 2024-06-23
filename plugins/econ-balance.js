@@ -11,6 +11,7 @@ let handler = async (m, {conn, usedPrefix}) => {
 
 *💎 DIAMANTES:* _${user.diamond.toLocaleString()}_
 *🍒 GENECOINS:* _${user.coin.toLocaleString()}_
+*📄 REGISTRADO :* ${user.registered ? 'Yes':'No'}
 `, m, { mentions: [who] })
 }
 handler.help = ['balance']
