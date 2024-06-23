@@ -1,7 +1,6 @@
 
 let handler = async function (m, { conn, text, usedPrefix }) {
-
-m.react('✅') 
+ 
     let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     let user = global.db.data.users[who]
     if (!(who in global.db.data.users)) throw `✳️ ${mssg.userDb}`
@@ -15,6 +14,7 @@ let m2 = `
 *📄 REGISTRADO :* ${user.registered ? 'Si':'No'}
 `
 }
+m.react('✅')
     let pp = './src/Banco.jpg' 
     conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rcanal)
 
