@@ -8,7 +8,7 @@
     m.react('💻')
 
   //  conn.sendMessage(m.chat, { video: { url: [pp, pp2, pp3, pp4].getRandom() }, gifPlayback: true, caption: text.trim(), mentions: [m.sender] }, { quoted: m })
-let listsections = []    
+  const sections = [...listSections]   
 listSections.push({
 title: '',
 rows: [{ header: "Menu Completo", title: "", id: `.allmenu`, description: `Para ver todos los comandos\n` }, { header: "SudBot", title: "", id: `.serbot --code`, description: `Para volverte sudbot con código de 8 dígitos 🤖\n` },
