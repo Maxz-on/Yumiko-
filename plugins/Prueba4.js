@@ -131,7 +131,7 @@ let headers = `
 │※ Total users: ${tUser}
 │※ Total Hits: ${totalHit}
 │※ Total registrados: ${userReg}
-│※ Owner: ${global.info.nomerown}
+│※ Owner: 
 ╰──────────•\n\n`
 
   if (cmd === 'list') {
