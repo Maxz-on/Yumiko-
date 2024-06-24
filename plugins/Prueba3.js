@@ -31,6 +31,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                     title: "" ,
                     description: `para ver el número del dueño\n`, 
                     id: `.owner`
+                }
             ]
         });
     }
