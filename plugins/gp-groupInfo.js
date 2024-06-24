@@ -17,13 +17,13 @@ let handler = async (m, { conn, participants, groupMetadata }) => {
 ➤ *🕵🏻‍♂️${mssg.admin}:* ${groupAdmins.length}
 
 ➤ *🪢 ${mssg.gpConf}:*
-• 📮 *Welcome:* ${welcome ? '✅' : '❎'}
-• 🔥 *ModoHorny:* ${modohorny ? '✅' : '❎'}
-• ❕ *Detect:* ${detect ? '✅' : '❎'}
-• 🔞 *Nsfw:* ${nsfw ? '✅' : '❎'}
-• 🚨 *Anti Link Wha:* ${antiLink ? '✅' : '❎'}
-• 🧬 *Captcha:* ${captcha ? '✅' : '❎'}
-• 📑 *Document:* ${useDocument ? '✅' : '❎'}
+• 📮 *Welcome:* ${welcome ? '✔️' : '✖️'}
+• 🔥 *ModoHorny:* ${modohorny ? '✔️' : '✖️'}
+• ❕ *Detect:* ${detect ? '✔️' : '✖️'}
+• 🔞 *Nsfw:* ${nsfw ? '✔️' : '✖️'}
+• 🚨 *Anti Link Wha:* ${antiLink ? '✔️' : '✖️'}
+• 🧬 *Captcha:* ${captcha ? '✔️' : '✖️'}
+• 📑 *Document:* ${useDocument ? '✔️' : '✖️'}
 
 ➤  *📬 ${mssg.gpConfMsg}:*
 • *Welcome:* ${sWelcome}
