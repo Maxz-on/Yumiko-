@@ -8,7 +8,7 @@ let handler = async (m, {conn, isPrems }) => {
   m.reply(`🎉 *${isPrems ? prem : free} El oro ha sido agregado a tu billetera*`)
   global.db.data.users[m.sender].lastclaim = new Date * 1
 }
-handler.help = ['daily']
+handler.help = ['daily2']
 handler.tags = ['economy']
 handler.command = ['daily2'] 
 
