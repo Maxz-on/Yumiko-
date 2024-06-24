@@ -4,6 +4,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     if (!text) throw `✳️ ${mssg.example} *${usedPrefix + command}* Lil Peep hate my life`;
     m.react('✅');
 
+    let pp = './src/Menu.jpg' 
     let result = await yts(text);
     let ytres = result.videos;
 
@@ -36,7 +37,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         });
     }
 
-    await conn.sendList(m.chat, '👋🏻 Hola¡! Bienvenido A Mi Sub Menú\n\n*Creador:* Angelito\n*Versión:* 1.0.0\n\n🍒 si hay algún error puedes contactarme, usa el comando: #owner\n\nGracias¡! 🔴', `\n> © 2024 GENESISBOT`, `OPCIONES`, ytres[0].image, listSections, m);
+    await conn.sendList(m.chat, pp, 'menu.jpg', '👋🏻 Hola¡! Bienvenido A Mi Sub Menú\n\n*Creador:* Angelito\n*Versión:* 1.0.0\n\n🍒 si hay algún error puedes contactarme, usa el comando: #owner\n\nGracias¡! 🔴', `\n> © 2024 GENESISBOT`, `OPCIONES`, ytres[0].image, listSections, m);
 };
 
 handler.help = ['main']
