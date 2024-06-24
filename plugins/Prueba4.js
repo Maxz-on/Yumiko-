@@ -119,20 +119,7 @@ let handler = async (m, { conn, usedPrefix, command, args }) => {
    let userReg = Object.values(global.db.data.users).filter(user => user.registered == true).length
    
 let headers = `
-╭───[ Dashboard ]───✧
-│※ Nombre: ${m.pushName || 'Usuario Promedio'}
-│※ Limites: ${data.limit}
-│※ Dinero: ${data.money}
-╰──────────•
-╭───[ Info bot ]───✧
-│※ Modo: ${global.opts['self'] ? 'Privadl' : 'Publico'}
-│※ Total menu: ${Object.keys(tagCount).length}
-│※ Total cmd: ${fitur.length}
-│※ Total users: ${tUser}
-│※ Total Hits: ${totalHit}
-│※ Total registrados: ${userReg}
-│※ Owner: 
-╰──────────•\n\n`
+hola`
 
   if (cmd === 'list') {
     const daftarTag = Object.keys(tagCount)
