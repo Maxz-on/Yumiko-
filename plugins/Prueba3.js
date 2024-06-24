@@ -2,7 +2,7 @@
 import yts from 'yt-search';
 let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     if (!text) throw `✳️ ${mssg.example} *${usedPrefix + command}* Lil Peep hate my life`;
-    m.react('📀');
+    m.react('✅');
 
     let result = await yts(text);
     let ytres = result.videos;
@@ -21,11 +21,16 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                     id: `.allmenu`
                 },
                 {
-                    header: "📀 MP4",
+                    header: "Menu Audios",
                     title: "" ,
-                    description: `▢ ⌚ *${mssg.duration}:* ${v.timestamp}\n▢ 👀 *${mssg.views}:* ${v.views}\n▢ 📌 *${mssg.title}* : ${v.title}\n▢ 📆 *${mssg.aploud}:* ${v.ago}\n`, 
-                    id: `${usedPrefix}fgmp4 ${v.url}`
-                }
+                    description: `Para ver todos los audios\n`, 
+                    id: `.menu2`
+                },
+                {
+                    header: "Owner",
+                    title: "" ,
+                    description: `para ver el número del dueño\n`, 
+                    id: `.owner`
             ]
         });
     }
