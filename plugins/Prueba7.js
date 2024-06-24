@@ -30,7 +30,7 @@ ${line}
 *💎 DIAMANTES:* _${user.diamond.toLocaleString()}_
 *🍒 GENECOINS:* _${user.coin.toLocaleString()}_
 
-💼 *NIVEL DE RIQUEZA*: ${wealthLevel()} ${randomEmoji()}
+💼 *NIVEL DE RIQUEZA*: ${wealthLevel()}
 ${line}
 `;
 
