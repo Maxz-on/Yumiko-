@@ -1,15 +1,10 @@
 
-import yts from 'yt-search';
-let handler = async (m, { conn, usedPrefix, text, args, command }) => {
-    if (!text) throw `✳️ ${mssg.example} *${usedPrefix + command}* Lil Peep hate my life`;
-    m.react('✅');
+let handler = async function (m, { conn, text, usedPrefix }) {
 
-    let pp = './src/Menu.jpg' 
-    let result = await yts(text);
-    let ytres = result.videos;
-
-
-    let listSections = [];
+let m2 = `
+👋🏻 Hola¡! Bienvenido A Mi Sub Menú\n\n*Creador:* Angelito\n*Versión:* 1.0.0\n\n🍒 si hay algún error puedes contactarme, usa el comando: #owner\n\nGracias¡! 🔴
+`
+let listSections = [];
     for (let index in ytres) {
         let v = ytres[index];
         listSections.push({
@@ -37,12 +32,17 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         });
     }
 
-    await conn.sendList(m.chat, pp, 'menu.jpg', '👋🏻 Hola¡! Bienvenido A Mi Sub Menú\n\n*Creador:* Angelito\n*Versión:* 1.0.0\n\n🍒 si hay algún error puedes contactarme, usa el comando: #owner\n\nGracias¡! 🔴', `\n> © 2024 GENESISBOT`, `OPCIONES`, listSections, m);
-};
+    let pp = './src/Menu.jpg' 
+    /*conn.sendButton(m.chat, m2, mssg.ig, pp, [
+      ['⏍ Info', `${usedPrefix}botinfo`],
+      ['⌬ Grupos', `${usedPrefix}gpdylux`]
+    ],m, rpyt)*/
+    await conn.sendList(m.chat, pp, 'menu.jpg', `OPCIONES`, listSections, m);
 
-handler.help = ['main']
-handler.tags = ['help']
+}
+
+handler.help = ['menu']
+handler.tags = ['main']
 handler.command = ['menu', 'help'] 
-handler.disabled = false
 
 export default handler
