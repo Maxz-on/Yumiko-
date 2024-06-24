@@ -9,6 +9,8 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
 
 
     let listSections = [];
+    for (let index in ytres) {
+        let v = ytres[index];
         listSections.push({
             title: `LISTAS DE MENUS GENESIS`,
             rows: [
