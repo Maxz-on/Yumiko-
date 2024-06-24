@@ -29,11 +29,10 @@ ${line}
 
 *💎 DIAMANTES:* _${user.diamond.toLocaleString()}_
 *🍒 GENECOINS:* _${user.coin.toLocaleString()}_
+*🪙 ORO*: ${user.credit} ${randomEmoji()}
+*🏦BÓVEDA*: ${user.bank} ${randomEmoji()}
 
-${randomEmoji()} *ORO*: ${user.credit} ${randomEmoji()}
-${randomEmoji()} *BÓVEDA*: ${user.bank} ${randomEmoji()}
-
-${randomEmoji()} *NIVEL DE RIQUEZA*: ${wealthLevel()} ${randomEmoji()}
+💼 *NIVEL DE RIQUEZA*: ${wealthLevel()} ${randomEmoji()}
 ${line}
 `;
 
