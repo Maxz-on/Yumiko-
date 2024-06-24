@@ -30,7 +30,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         });
     }
 
-    await conn.sendList(m.chat, '*GENESIS BOT*🔎', `\n 📀 Resultados de:\n *${text}*`, `Click Aqui`, ytres[0].image, listSections, m);
+    await conn.sendList(m.chat, 'q👋🏻 Hola¡! Bienvenido A Mi Sub Menú\n\n*Creador:* Angelito\n*Versión:* 1.0.0\n\n💮 si hay algún error puedes contactarme, usa el comando: #owner\n\nGracias¡! 🔴', `OPCIONES`, ytres[0].image, listSections, m);
 };
 
 handler.help = ['menu']
