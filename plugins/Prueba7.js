@@ -10,13 +10,13 @@ let handler = async (m, { conn, usedPrefix }) => {
     const line = '━━━━━━━━━━━━━━━━━';
 
     const wealthLevel = () => {
-        if (user.bank <= 3000) return '𝙷𝚄𝙼𝙸𝙻𝙳𝙴';
-        else if (user.bank <= 6000) return '𝙳𝙴 𝙱𝙰𝙹𝙾𝚂 𝚁𝙴𝙲𝚄𝚁𝚂𝙾𝚂';
-        else if (user.bank <= 100000) return '𝙲𝙻𝙰𝚂𝙴 𝙼𝙴𝙳𝙸𝙰';
-        else if (user.bank <= 1000000) return '𝚁𝙸𝙺𝙾';
-        else if (user.bank <= 10000000) return '𝙼𝙸𝙻𝙻𝙾𝙽𝙰𝚁𝙸𝙾';
-        else if (user.bank <= 1000000000) return '𝙼𝚄𝙻𝚃𝙸𝙼𝙸𝙻𝙻𝙾𝙽𝙰𝚁𝙸𝙾';
-        else if (user.bank <= 10000000000) return '𝙱𝙸𝙻𝙻𝙾𝙽𝙰𝚁𝙸𝙾';
+        if (user.bank <= 300) return '𝙷𝚄𝙼𝙸𝙻𝙳𝙴';
+        else if (user.bank <= 600) return '𝙳𝙴 𝙱𝙰𝙹𝙾𝚂 𝚁𝙴𝙲𝚄𝚁𝚂𝙾𝚂';
+        else if (user.bank <= 1000) return '𝙲𝙻𝙰𝚂𝙴 𝙼𝙴𝙳𝙸𝙰';
+        else if (user.bank <= 10000) return '𝚁𝙸𝙺𝙾';
+        else if (user.bank <= 100000) return '𝙼𝙸𝙻𝙻𝙾𝙽𝙰𝚁𝙸𝙾';
+        else if (user.bank <= 1000000) return '𝙼𝚄𝙻𝚃𝙸𝙼𝙸𝙻𝙻𝙾𝙽𝙰𝚁𝙸𝙾';
+        else if (user.bank <= 10000000) return '𝙱𝙸𝙻𝙻𝙾𝙽𝙰𝚁𝙸𝙾';
     };
 
     const emojis = ['🌟', '💼', '💰', '🏦', '📈', '📊', '📉', '💹', '💵', '💲', '💱', '🏧', '💳', '💸', '🧾'];
@@ -29,8 +29,6 @@ ${line}
 
 *💎 DIAMANTES:* _${user.diamond.toLocaleString()}_
 *🍒 GENECOINS:* _${user.coin.toLocaleString()}_
-*🪙 ORO*: ${user.credit} ${randomEmoji()}
-*🏦BÓVEDA*: ${user.bank} ${randomEmoji()}
 
 💼 *NIVEL DE RIQUEZA*: ${wealthLevel()} ${randomEmoji()}
 ${line}
