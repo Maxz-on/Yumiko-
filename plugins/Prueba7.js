@@ -24,7 +24,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 
     const bankMessage = `
 ${line}
-${randomEmoji()} *BANK | ${username}* ${randomEmoji()}
+🏦 *BANK | ${username}* 👤
 ${line}
 
 *💎 DIAMANTES:* _${user.diamond.toLocaleString()}_
