@@ -12,7 +12,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     for (let index in ytres) {
         let v = ytres[index];
         listSections.push({
-            title: `${index}┃ ${v.title}`,
+            title: `LISTAS DE MENUS GENESIS`,
             rows: [
                 {
                     header: 'Menu Completo',
