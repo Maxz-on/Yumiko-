@@ -27,6 +27,9 @@ ${line}
 ${randomEmoji()} *BANK | ${username}* ${randomEmoji()}
 ${line}
 
+*💎 DIAMANTES:* _${user.diamond.toLocaleString()}_
+*🍒 GENECOINS:* _${user.coin.toLocaleString()}_
+
 ${randomEmoji()} *ORO*: ${user.credit} ${randomEmoji()}
 ${randomEmoji()} *BÓVEDA*: ${user.bank} ${randomEmoji()}
 
