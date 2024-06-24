@@ -18,6 +18,7 @@ let handler = async (m, { conn, usedPrefix }) => {
         else if (user.bank <= 1000000) return '𝙼𝚄𝙻𝚃𝙸𝙼𝙸𝙻𝙻𝙾𝙽𝙰𝚁𝙸𝙾';
         else if (user.bank <= 10000000) return '𝙱𝙸𝙻𝙻𝙾𝙽𝙰𝚁𝙸𝙾';
     };
+        m.react('✅')
 
     const emojis = ['🌟', '💼', '💰', '🏦', '📈', '📊', '📉', '💹', '💵', '💲', '💱', '🏧', '💳', '💸', '🧾'];
     const randomEmoji = () => emojis[Math.floor(Math.random() * emojis.length)];
