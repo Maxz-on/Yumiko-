@@ -35,7 +35,7 @@ ${line}
 `;
 
     try {
-        const imgUrl = 'https://i.imgur.com/3bFa81j.png';
+        const imgUrl = 'https://telegra.ph/file/61c329015eb99bc2ab588.jpg';
         const responseImg = await axios.get(imgUrl, { responseType: 'arraybuffer' });
         await conn.sendFile(m.chat, responseImg.data, "thumbnail.jpg", bankMessage, m);
     } catch (e) {
