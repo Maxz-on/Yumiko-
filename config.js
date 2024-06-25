@@ -38,6 +38,16 @@ global.bgp = 'https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6'
 global.bgp2 = 'https://chat.whatsapp.com/EVl0wxlCww74HV3vvZq83a'
 global.bgp3 = 'https://chat.whatsapp.com/EVl0wxlCww74HV3vvZq83a' //--GP NSFW
 
+//* *******Tiempo***************
+global.d = new Date(new Date + 3600000);
+global.locale = 'es';
+global.dia = d.toLocaleDateString(locale, {weekday: 'long'});
+global.fecha = d.toLocaleDateString('es', {day: 'numeric', month: 'numeric', year: 'numeric'});
+global.mes = d.toLocaleDateString('es', {month: 'long'});
+global.año = d.toLocaleDateString('es', {year: 'numeric'});
+global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
+//* ****************************
+
 global.wait = '🍒 𝘾𝙖𝙧𝙜𝙖𝙣𝙙𝙤....'
 global.rwait = '⌛'
 global.dmoji = '🤭'
