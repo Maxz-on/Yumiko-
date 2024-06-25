@@ -39,8 +39,8 @@ let msg = generateWAMessageFromContent(m.chat, {
     }
   }
 }, {})
-
-await conn.relayMessage(msg.key.remoteJid, msg.message, { messageId: msg.key.id })
+    let pp = './src/Menu.jpg' 
+await conn.relayMessage(msg.key.remoteJid, pp, 'menu.jpg', msg.message, { messageId: msg.key.id })
 
 }
 handler.command = /^(menu)$/i
