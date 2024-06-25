@@ -1,21 +1,23 @@
-
 import { toAudio } from '../lib/converter.js'
+
 let handler = async (m, { conn, usedPrefix, command }) => {
-    try {
-    let q = m.quoted ? m.quoted : m
-   let mime = (m.quoted ? m.quoted : m.msg).mimetype || ''
-   // if (!/video|audio/.test(mime)) throw `✳️ Responda al video o nota de voz que desea convertir a mp3 con el comando :\n\n*${usedPrefix + command}*`
-    let media = await q.download?.()
-    if (!media) throw '❎ Error al descargar medios'
-    let audio = await toAudio(media, 'mp4')
-    if (!audio.data) throw '❎ Error al convertir'
-    conn.sendFile(m.chat, audio.data, 'audio.mp3', '', m, null, { mimetype: 'audio/mp4' })
-    } catch (e) {
-        m.reply(`✳️ ${mssg.toaud}:\n\n*${usedPrefix + command}*`)
-   }
-}
+let q = m.quoted ? m.quoted : m
+let mime = (m.quoted ? m.quoted : m.msg).mimetype || ''
+if (!/video|audio/.test(mime)) return conn.reply(m.chat, `ðŸš© Responde al *Video* o *Nota de Voz* que desea convertir a mp3.`, m, rcanal)
+await m.react('ðŸ•“')
+try {
+let media = await q.download?.()
+if (!media) return await m.react('âœ–ï¸')
+let audio = await toAudio(media, 'mp4')
+if (!audio.data) return await m.react('âœ–ï¸')
+await conn.sendFile(m.chat, audio.data, 'audio.mp3', '', m, null, { mimetype: 'audio/mp4' })
+await m.react('✅')
+} catch {
+await m.react('✅')
+}}
 handler.help = ['tomp3']
 handler.tags = ['convertir']
-handler.command = ['tomp3', 'mp3', 'toudio'] 
+handler.command = ['tomp3', 'toaudio', 'mp3'] 
+handler.register = true
 
 export default handler
