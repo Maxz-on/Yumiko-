@@ -34,7 +34,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"🍒 CANAL\",\"url\":\"https://www.google.com\",\"merchant_url\":\"https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y\"}"
+                 "buttonParamsJson": "{\"display_text\":\"🍒 CANAL\",\"url\":\"https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y\",\"merchant_url\":\"https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y\"}"
               }
        ],
    })
