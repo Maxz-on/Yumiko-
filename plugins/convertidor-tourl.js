@@ -11,6 +11,6 @@ m.react('✅')
   m.reply(`${mssg.avisoGene2}\n\n*ENLACE DE SU ARCHIVO:*\n${link}`);
 };
 handler.help = ['tourl <reply image>'];
-handler.tags = ['sticker'];
+handler.tags = ['convertir'];
 handler.command = /^(upload|tourl)$/i;
 export default handler;
