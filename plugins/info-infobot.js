@@ -65,7 +65,7 @@ let infobt = `
 
 }
 handler.help = ['info']
-handler.tags = ['main']
+handler.tags = ['info']
 handler.command = ['info', 'infobot', 'botinfo']
 
 export default handler
