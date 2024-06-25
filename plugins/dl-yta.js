@@ -44,8 +44,8 @@ let { thumbnail, url } = vid
 
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`,  m, fake,).then(_ => m.react('✖️'))
 
-await conn.sendMessage(m.chat, {
-        text: `  🍭 *Título ∙* ${title}\n\n⚖️ *Tamaño ∙* ${size}\n\n*↻ Espera @${m.sender.split`@`[0]}, soy lenta. . .* .`,
+await conn.sendMessage(m.chat, rcanal, {
+        text: `  💿 _CARGANDO..._\nEspera @${m.sender.split`@`[0]},`,
         contextInfo: { 
           mentionedJid: [m.sender],
         }
