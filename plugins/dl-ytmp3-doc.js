@@ -5,6 +5,9 @@ import fetch from 'node-fetch'
 let limit = 200
 
 let handler = async (m, { conn: star, args, text, isPrems, isOwner, usedPrefix, command }) => {
+
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+
 if (!args || !args[0]) return star.reply(m.chat, 'ðŸš© Ingresa el enlace del vÃ­deo de YouTube junto al comando.\n\n`Ejemplo:`\n' + `> *${usedPrefix + command}* https://youtu.be/QSvaCSt8ixs`, m, rcanal)
 if (!args[0].match(/youtu/gi)) return star.reply(m.chat, `Verifica que el enlace sea de YouTube.`, m, rcanal).then(_ => m.react('✅'))
 let q = '128kbps'
@@ -25,8 +28,8 @@ if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas
        txt += `🍀 *CALIDAD* : ${q}\n`
        txt += `🗃️ *TAMAÑO* : ${size}\n\n`
        txt += `> *${mssg.ig}*`
-await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal)
-await star.sendMessage(m.chat, { document: { url: dl_url }, caption: '', mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, { quoted: m })
+await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, fkontak)
+await star.sendMessage(m.chat, { document: { url: dl_url }, caption: '', mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, { quoted: fkontak })
 await m.react('✅')
 } catch {
 try {
@@ -42,8 +45,8 @@ if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas
        txt += `🍀 *CALIDAD* : ${q}\n`
        txt += `🗃️ *TAMAÑO* : ${size}\n\n`
        txt += `> *${mssg.ig}*`
-await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal)
-await star.sendMessage(m.chat, { document: { url: dl_url }, caption: '', mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, { quoted: m })
+await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, fkontak)
+await star.sendMessage(m.chat, { document: { url: dl_url }, caption: '', mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, { quoted: fkontak })
 await m.react('✅')
 } catch {
 try {
@@ -57,8 +60,8 @@ if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas
        txt += `🍀 *CALIDAD* : ${q}\n`
        txt += `🗃️ *TAMAÑO* : ${size}\n\n`
        txt += `> *${mssg.ig}*`
-await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal)
-await star.sendMessage(m.chat, { document: { url: dl_url }, caption: '', mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, { quoted: m })
+await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, fkontak)
+await star.sendMessage(m.chat, { document: { url: dl_url }, caption: '', mimetype: 'audio/mpeg', fileName: `${title}.mp3`}, { quoted: fkontak })
 await m.react('✅')
 } catch {
 await m.react('✅')
