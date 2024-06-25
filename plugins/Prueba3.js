@@ -3,7 +3,6 @@ const { generateWAMessageFromContent, proto } = pkg
 
 var handler = async (m, { conn, usedPrefix }) => {
 
-let pp = './src/Menu.jpg' 
 m.react('✅') 
 let msg = generateWAMessageFromContent(m.chat, { 
   viewOnceMessage: {
@@ -40,8 +39,8 @@ let msg = generateWAMessageFromContent(m.chat, {
     }
   }
 }, {})
-     
-await conn.sendFile(m.chat, pp, 'menu.jpg', msg.key.remoteJid, msg.message, { messageId: msg.key.id })
+
+await conn.relayMessage(msg.key.remoteJid, msg.message, { messageId: msg.key.id })
 
 }
 handler.command = /^(menu)$/i
