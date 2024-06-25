@@ -15,6 +15,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
  await conn.sendButton2(m.chat, play, mssg.ig, thumbnail, [
     ['📁 𝗠𝗣𝟯 𝗗𝗢𝗖', `${usedPrefix}ytmp3doc ${url}`],
     ['📁 𝗠𝗣𝟰 𝗗𝗢𝗖', `${usedPrefix}ytmp4doc ${url}`]
+    ['🍀 𝗠𝗘𝗡𝗨', `${usedPrefix}allmenu`]
   ], null, [['🍒 𝗖𝗔𝗡𝗔𝗟', `${fgcanal}`]], m)
 }
 handler.help = ['play3']
