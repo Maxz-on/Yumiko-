@@ -25,7 +25,7 @@ let msg = generateWAMessageFromContent(m.chat, {
           }),
           header: proto.Message.InteractiveMessage.Header.create({
             title: "👋🏻 Hola¡! Bienvenid@ A Mi Sub Menú\n🌿 Soy Génesis Bot Pro\n\n*🫅 Creador:* Angelito\n*♻️ Versión:* 1.1.0\n\n🍒 si hay algún error puedes contactarme, usa el comando: #owner\n\n*⚠️ Si el menu no te funciana prueba con #allmenu*\n\nGracias¡! ‼️",
-            subtitle: "",
+            subtitle: "• BY: GÉNESIS - ANGELITO",
             hasMediaAttachment: false
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
