@@ -33,7 +33,7 @@ let handler = async (m, {args,conn,command}) => {
     } else return m.reply("Uso *bardimg (texto/media)*")
 }
 handler.help = ['bardimg']
-handler.tags = ['ia']
+handler.tags = ['ai']
 handler.command = ['bardimg']
 
 export default handler
