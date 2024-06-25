@@ -64,7 +64,7 @@ await m.react('âœ…')
 await m.react('âœ–ï¸')
 }}}}
 handler.help = ['ytmp3doc *<link yt>*']
-handler.tags = ['downloader']
+handler.tags = ['dl']
 handler.command = ['ytmp3doc', 'ytadoc'] 
 //handler.limit = 1
 handler.register = true 
