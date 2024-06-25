@@ -25,8 +25,9 @@ let msg = generateWAMessageFromContent(m.chat, {
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [
               {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".allmenu\",\"id\":\"message\"}"
+                "name": "single_select", 
+                "buttonParamsJson": JSON.stringify({
+                "title: buttonText,"
               },
               {
                 "name": "quick_reply",
@@ -61,3 +62,27 @@ await conn.relayMessage(msg.key.remoteJid, msg.message, { messageId: msg.key.id 
 handler.command = /^(menu|help|ayuda)$/i
 
 export default handler
+
+const message = {
+            interactiveMessage: {
+                header: {title: title, 
+                hasMediaAttachment: false,
+                imageMessage: img ? img.imageMessage : null,
+                videoMessage: video ? video.videoMessage : null 
+                   } ,
+                body: {text: text}, 
+                nativeFlowMessage: {
+                    buttons: [
+                        {
+                            name: 'single_select',
+                            buttonParamsJson: JSON.stringify({
+                                title: buttonText,
+                                sections
+                            })
+                        }
+                    ],
+                    messageParamsJson: ''
+                }
+            }
+        };
+        
