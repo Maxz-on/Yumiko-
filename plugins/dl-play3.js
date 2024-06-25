@@ -23,9 +23,9 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
     ['🍀 𝗠𝗘𝗡𝗨', `${usedPrefix}allmenu`]
   ], null, [['🍒 𝗖𝗔𝗡𝗔𝗟', `${fgcanal}`]], m)
 }
-handler.help = ['play']
+handler.help = ['play3']
 handler.tags = ['dl']
-handler.command = ['play', 'playvid']
+handler.command = ['play3', 'playvid']
 handler.disabled = false
 
 export default handler
