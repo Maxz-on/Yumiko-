@@ -29,7 +29,7 @@ if (size.split('GB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas
        txt += `*Calidad* : ${q}\n`
        txt += `*Tamaño* : ${size}\n\n`
        txt += `> *El video se esta enviando espera un momento*`
-await star.sendFile(m.chat, img, 'thumbnail.jpg', hola, m, null, fkontak)
+await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, fkontak)
 await star.sendMessage(m.chat, { document: { url: dl_url }, caption: '', mimetype: 'video/mp4', fileName: `${title}` + `.mp4`}, {quoted: fkontak })
 await m.react('✅')
 } catch {
@@ -47,7 +47,7 @@ if (size.split('GB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas
        txt += `*Calidad* : ${q}\n`
        txt += `*Tamaño* : ${size}\n\n`
        txt += `> *El video se esta enviando espera un momento*`
-await star.sendFile(m.chat, img, 'thumbnail.jpg', hola, m, null, fkontak)
+await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, fkontak)
 await star.sendMessage(m.chat, { document: { url: dl_url }, caption: '', mimetype: 'video/mp4', fileName: `${title}` + `.mp4`}, {quoted: fkontak })
 await m.react('✅')
 } catch {
@@ -63,7 +63,7 @@ if (size.split('GB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas
        txt += `*Calidad* : ${q}\n`
        txt += `*Tamaño* : ${size}\n\n`
        txt += `> *El video se esta enviando espera un momento*`
-await star.sendFile(m.chat, img, 'thumbnail.jpg', hlla, m, null, rcanal)
+await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, fkontak)
 await star.sendMessage(m.chat, { document: { url: dl_url }, caption: '', mimetype: 'video/mp4', fileName: `${title}` + `.mp4`}, {quoted: fkontak })
 await m.react('✅')
 } catch {
