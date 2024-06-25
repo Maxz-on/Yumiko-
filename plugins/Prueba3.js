@@ -4,13 +4,13 @@ const { generateWAMessageFromContent, proto } = pkg
 var handler = async (m, { conn, usedPrefix }) => {
 
 let msg = generateWAMessageFromContent(m.chat, {
+ m.react('✅') 
   viewOnceMessage: {
     message: {
       "messageContextInfo": {
       "deviceListMetadata": {},
       "deviceListMetadataVersion": 2
         },
-        m.react('✅')
         interactiveMessage: proto.Message.InteractiveMessage.create({
           body: proto.Message.InteractiveMessage.Body.create({
             text: ""
