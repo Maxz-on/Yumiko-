@@ -25,7 +25,8 @@ global.author = '@usxr_angelito'
 
 //--info FG
 global.botName = 'Genesis'
-global.fgig = 'https://instagram.com/usxr_angelito' 
+global.fgig = '' 
+global.fgigt = 'https://instagram.com/usxr_angelito' 
 global.fgsc = 'https://github.com/karim-off/GenesisBot-Pro' 
 global.fgyt = ''
 global.fgpyp = ''
