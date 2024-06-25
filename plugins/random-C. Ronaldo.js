@@ -6,6 +6,6 @@ const handler = async (m, {conn, usedPrefix, command}) => {
 };
 // conn.sendButton(m.chat, "*Siiiuuuuuu*", author, ronaldo, [['⚽ SIGUIENTE ⚽', `${usedPrefix + command}`]], m)}
 handler.help = ['cristianoronaldo', 'cr7'];
-handler.tags = ['internet'];
+handler.tags = ['random'];
 handler.command = /^(cristianoronaldo|cr7)$/i;
 export default handler;
