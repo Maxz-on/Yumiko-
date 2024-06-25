@@ -23,7 +23,7 @@ conn.sendFile(m.chat, img, 'img.jpg', don, m, null, rcanal)
 }
 
 handler.help = ['donate']
-handler.tags = ['main']
+handler.tags = ['info']
 handler.command = ['apoyar', 'donate', 'donar'] 
 
 export default handler
