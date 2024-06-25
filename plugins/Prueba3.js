@@ -1,52 +1,75 @@
-// COMBINACIÓN DE MENSAJES
-// Adaptar el simple.js
-let handler = async (m, { conn, usedPrefix, command, text }) => {
+import pkg from '@whiskeysockets/baileys';
+const { generateWAMessageFromContent, proto } = pkg
 
-// MENSAJE CARUSEL CON TODOS LOS BOTONES DISPONIBLES
-// Si las ids no te funciona con usedPrefix, tendrás que definirlas, ejemplo /menu
-const sections = [{
-title: `Título de la sección`,
-rows: [
-{ header: 'Encabezado1', title: "Título1", description: 'Descripción1', id: usedPrefix + "menu" }, 
-{ header: 'Encabezado2', title: "Título2", description: 'Descripción2', id: "Id2" }, 
-{ header: 'Encabezado3', title: "Título3", description: 'Descripción3', id: "Id3" }, 
-{ header: 'Encabezado4', title: "Título4", description: 'Descripción4', id: "Id4" }, 
-]},]  
-const messages = [[ // CARRUSEL 1
-'Descripción de Carrusel 1', 
-'Footer de Carrusel 1',
-'https://telegra.ph/file/24b24c495b5384b218b2f.jpg',
-[['Botón1', usedPrefix + 'menu'], ['Botón2', 'Id2'] /* etc... */],
-[['Texto para copiar 1'], ['Texto para copiar 2'] /* etc... */],
-[['Enlace1', usedPrefix + 'allmenu'], ['Enlace2', 'https://example.com/link2'] /* etc... */],
-[['Botón Lista 1', sections], ['Botón Lista 2', sections] /* etc... */]
-], [ // CARRUSEL 2
-'Descripción de Carrusel 2',
-'Footer de Carrusel 2',
-'https://telegra.ph/file/e9239fa926d3a2ef48df2.jpg',
-[['Botón1', 'Id1'], ['Botón2', 'Id2']],
-[['Texto para copiar 1'], ['Texto para copiar 2']],
-[['Enlace1', 'https://example.com/link1'], ['Enlace2', 'https://example.com/link2']],
-[['Botón Lista 1', sections], ['Botón Lista 2', sections]]
-], [ // CARRUSEL 3
-'Descripción de Carrusel 3',
-'Footer de Carrusel 3',
-'https://telegra.ph/file/ec725de5925f6fb4d5647.jpg',
-[['Botón1', 'Id1'], ['Botón2', 'Id2']],
-[['Texto para copiar 1'], ['Texto para copiar 2']],
-[['Enlace1', 'https://example.com/link1'], ['Enlace2', 'https://example.com/link2']],
-[['Botón Lista 1', sections], ['Botón Lista 2', sections]]
-], [ // CARRUSEL 4
-'Descripción de Carrusel 4',
-'Footer de Carrusel 4',
-'https://telegra.ph/file/7acad0975febb71446da5.jpg',
-[['Botón1', 'Id1'], ['Botón2', 'Id2']],
-[['Texto para copiar 1'], ['Texto para copiar 2']],
-[['Enlace1', 'https://example.com/link1'], ['Enlace2', 'https://example.com/link2']],
-[['Botón Lista 1', sections], ['Botón Lista 2', sections]]
-]] /* etc... */
-await conn.sendCarousel(m.chat, 'Texto', 'Footer', 'Titulo de Carrusel', messages, m)            
+var handler = async (m, { conn, usedPrefix }) => {
+
+let msg = generateWAMessageFromContent(m.chat, {
+  viewOnceMessage: {
+    message: {
+      "messageContextInfo": {
+      "deviceListMetadata": {},
+      "deviceListMetadataVersion": 2
+        },
+        interactiveMessage: proto.Message.InteractiveMessage.create({
+          body: proto.Message.InteractiveMessage.Body.create({
+            text: "test"
+          }),
+          footer: proto.Message.InteractiveMessage.Footer.create({
+            text: "test"
+          }),
+          header: proto.Message.InteractiveMessage.Header.create({
+            title: "test",
+            subtitle: "test",
+            hasMediaAttachment: false
+          }),
+          nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
+            buttons: [
+              {
+                "name": "single_select",
+                "buttonParamsJson": "{\"title\":\"title\",\"sections\":[{\"title\":\"title\",\"highlight_label\":\"label\",\"rows\":[{\"header\":\"header\",\"title\":\"title\",\"description\":\"description\",\"id\":\"id\"},{\"header\":\"header\",\"title\":\"title\",\"description\":\"description\",\"id\":\"id\"}]}]}"
+              },
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\".estado\",\"id\":\"message\"}"
+              },
+              {
+                 "name": "cta_url",
+                 "buttonParamsJson": "{\"display_text\":\"url\",\"url\":\"https://www.google.com\",\"merchant_url\":\"https://www.google.com\"}"
+              },
+              {
+                 "name": "cta_call",
+                 "buttonParamsJson": "{\"display_text\":\"call\",\"id\":\"message\"}"
+              },
+              {
+                 "name": "cta_copy",
+                 "buttonParamsJson": "{\"display_text\":\"copy\",\"id\":\"123456789\",\"copy_code\":\"message\"}"
+              },
+              {
+                 "name": "cta_reminder",
+                 "buttonParamsJson": "{\"display_text\":\"cta_reminder\",\"id\":\"message\"}"
+              },
+              {
+                 "name": "cta_cancel_reminder",
+                 "buttonParamsJson": "{\"display_text\":\"cta_cancel_reminder\",\"id\":\"message\"}"
+              },
+              {
+                 "name": "address_message",
+                 "buttonParamsJson": "{\"display_text\":\"address_message\",\"id\":\"message\"}"
+              },
+              {
+                 "name": "send_location",
+             "buttonParamsJson": ""
+       }
+       ],
+   })
+    })
+    }
+  }
+}, {})
+
+await conn.relayMessage(msg.key.remoteJid, msg.message, { messageId: msg.key.id })
 
 }
-handler.command = /^(carousel)$/i
+handler.command = /^(tu)$/i
+
 export default handler
