@@ -4,7 +4,7 @@ const handler = async (m, {conn, text, command}) => {
   conn.sendMessage(m.chat, {image: {url: url}, caption: 'ʀᴀɴᴅᴏᴍ ʟᴏʟɪ - ɪѕ ᴄᴜᴛᴇ 🥺'}, {quoted: m});
 };
 handler.command = /^(loli)$/i;
-handler.tags = ['anime'];
+handler.tags = ['random'];
 handler.help = ['loli'];
 export default handler;
 
