@@ -15,7 +15,7 @@ await m.react('âœ…')
 await m.react('âœ–ï¸')
 }}
 handler.help = ['toimg *<sticker>*']
-handler.tags = ['convertidor']
+handler.tags = ['convertir']
 handler.command = ['toimg', 'jpg', 'aimg'] 
 handler.register = true
 
