@@ -9,7 +9,7 @@ m.reply(`*${toM(a)},* _le tocó donar una sala estás de mala suerte hoy bájate
 mentions: [a, b]
 })}
 handler.help = ['formarpareja']
-handler.tags = ['']
+handler.tags = ['pop']
 handler.command = ['donarsala']
 handler.group = true
 export default handler
