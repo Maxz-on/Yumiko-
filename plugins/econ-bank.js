@@ -44,7 +44,7 @@ ${line}
     }
 }
 handler.help = ['bank'];
-handler.tags = ['economy'];
+handler.tags = ['econ'];
 handler.command = ['bank', 'banco'];
 
 export default handler;
