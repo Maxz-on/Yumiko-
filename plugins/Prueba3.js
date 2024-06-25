@@ -4,7 +4,7 @@ const { generateWAMessageFromContent, proto } = pkg
 var handler = async (m, { conn, usedPrefix }) => {
 
 m.react('✅') 
-await conn.reply(m.chat, '⏱ _Cargando Menu_', m )
+await conn.reply(m.chat, '⏱ _Cargando Menu_', m, rcanal)
     let date = d.toLocaleDateString(locale, {
       day: 'numeric',
       month: 'long',
