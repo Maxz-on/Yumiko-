@@ -26,11 +26,11 @@ let msg = generateWAMessageFromContent(m.chat, {
             buttons: [
               {
                 "name": "single_select",
-                "buttonParamsJson": "{\"title\":\"title\",\"sections\":[{\"title\":\"title\",\"highlight_label\":\"label\",\"rows\":[{\"header\":\"header\",\"title\":\"title\",\"description\":\"description\",\"id\":\"id\"},{\"header\":\"header\",\"title\":\"title\",\"description\":\"description\",\"id\":\"id\"}]}]}"
+                "buttonParamsJson": "{\"title\":\"title\",\"sections\":[{\"title\":\"title\",\"highlight_label\":\"new\",\"rows\":[{\"header\":\"header\",\"title\":\"title\",\"description\":\"description\",\"id\":\"id\"},{\"header\":\"header\",\"title\":\"title\",\"description\":\"description\",\"id\":\"id\"}]}]}"
               },
               {
                 "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\"DUEÑO 🍒\".owner\",\"id\":\"message\"}"
+                "buttonParamsJson": "{\"display_text\":\".owner\",\"id\":\"message\"}"
               },
               {
                  "name": "cta_url",
