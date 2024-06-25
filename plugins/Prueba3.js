@@ -4,6 +4,11 @@ const { generateWAMessageFromContent, proto } = pkg
 var handler = async (m, { conn, usedPrefix }) => {
 
 m.react('✅') 
+    let date = d.toLocaleDateString(locale, {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    })
 let msg = generateWAMessageFromContent(m.chat, { 
   viewOnceMessage: {
     message: {
