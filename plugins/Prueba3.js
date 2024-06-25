@@ -32,11 +32,11 @@ let msg = generateWAMessageFromContent(m.chat, {
             buttons: [
               {
                 "name": "single_select",
-                "buttonParamsJson": "{\"title\":\"OPCIONES\",\"sections\":[{\"title\":\"🔖 LISTA MENUS DE GENESIS\",\"highlight_label\":\"new\",\"rows\":[{\"header\":\"MENU 📚\",\"title\":\"\",\"description\":\"Menu Completo 🍒\",\"id\":\".allmenu\"},{\"header\":\"MENU AUDIOS 🔊\",\"title\":\"\",\"description\":\"Menu Audios 🎶\",\"id\":\".menuaudios\"},{\"header\":\"MENU  JUEGOS 🎮\",\"title\":\"\",\"description\":\"Menu juegos 🎮\",\"id\":\".menugames\"}]}]}"
+                "buttonParamsJson": "{\"title\":\"𝙊𝙋𝘾𝙄𝙊𝙉𝙀𝙎\",\"sections\":[{\"title\":\"🔖 LISTA MENUS DE GENESIS\",\"highlight_label\":\"new\",\"rows\":[{\"header\":\"MENU 📚\",\"title\":\"\",\"description\":\"Menu Completo 🍒\",\"id\":\".allmenu\"},{\"header\":\"MENU AUDIOS 🔊\",\"title\":\"\",\"description\":\"Menu Audios 🎶\",\"id\":\".menuaudios\"},{\"header\":\"MENU  JUEGOS 🎮\",\"title\":\"\",\"description\":\"Menu juegos 🎮\",\"id\":\".menugames\"}]}]}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"🍒 CANAL\",\"url\":\"https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y\",\"merchant_url\":\"https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y\"}"
+                 "buttonParamsJson": "{\"display_text\":\"🍒 𝘾𝘼𝙉𝘼𝙇\",\"url\":\"https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y\",\"merchant_url\":\"https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y\"}"
               }
        ],
    })
