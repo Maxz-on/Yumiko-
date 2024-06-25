@@ -10,6 +10,7 @@ let msg = generateWAMessageFromContent(m.chat, {
       "deviceListMetadata": {},
       "deviceListMetadataVersion": 2
         },
+        m.react('✅')
         interactiveMessage: proto.Message.InteractiveMessage.create({
           body: proto.Message.InteractiveMessage.Body.create({
             text: ""
