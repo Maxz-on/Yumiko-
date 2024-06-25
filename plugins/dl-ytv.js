@@ -20,7 +20,7 @@ let vid = (await yts(text)).all[0]
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m).then(_ => m.react('✖️'))
 
 await conn.sendMessage(m.chat, {
-        text: `📀 *_CARGANDO..._*\n🍒 *_ESPERA_* @${m.sender.split`@`[0]},`,
+        text: `📀 *_CARGANDO..._*\n🍒 *_ESPERA_* @${m.sender.split`@`[0]}`,
         contextInfo: { 
           mentionedJid: [m.sender],
         }
@@ -37,7 +37,7 @@ let vid = (await yts(text)).all[0]
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m).then(_ => m.react('✖️'))
 
 await conn.sendMessage(m.chat, {
-        text: `📀 *_CARGANDO..._*\n🍒 *_ESPERA_* @${m.sender.split`@`[0]},`,
+        text: `📀 *_CARGANDO..._*\n🍒 *_ESPERA_* @${m.sender.split`@`[0]}`,
         contextInfo: { 
           mentionedJid: [m.sender],
         }
