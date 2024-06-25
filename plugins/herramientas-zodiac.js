@@ -23,7 +23,7 @@ Signo zodical : ${zodiac}
     m.reply(teks)
 }
 handler.help = ['zodiac *2002 02 25*']
-handler.tags = ['tools']
+handler.tags = ['herramientas']
 //handler.limit = 1
 handler.register = true 
 handler.command = /^zodia[kc]$/i
