@@ -13,7 +13,7 @@ m.reply(`
 }
 
 handler.help = ['script']
-handler.tags = ['tools']
+handler.tags = ['info']
 handler.command = ['sc', 'git', 'script'] 
 
 export default handler
