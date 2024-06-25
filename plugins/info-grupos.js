@@ -19,7 +19,7 @@ ${bgp3}
 
 }
 handler.help = ['support']
-handler.tags = ['main']
+handler.tags = ['info']
 handler.command = ['grupos', 'groups', 'support'] 
 
 export default handler
