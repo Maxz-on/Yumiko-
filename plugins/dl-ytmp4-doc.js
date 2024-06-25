@@ -40,12 +40,12 @@ let vid = (await yts(text)).all[0]
 let { thumbnail, url } = vid
 
 let img = await (await fetch(`${vid.thumbnail}`)).buffer()  
-if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se cancelÃ³ la Descarga.`, m, rcanal).then(_ => m.react('✅'))
-if (size.split('GB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se cancelÃ³ la Descarga.`, m, rcanal).then(_ => m.react('✅'))
-        let txt = '`M P 4 - D O C`\n\n'
-       txt += `*Titulo* : ${title}\n`
-       txt += `*Calidad* : ${q}\n`
-       txt += `*Tamaño* : ${size}\n\n`
+if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se cancela la Descarga.`, m, rcanal).then(_ => m.react('✅'))
+if (size.split('GB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se cancela la Descarga.`, m, rcanal).then(_ => m.react('✅'))
+        let txt = '`G E N E S I S - D O C`\n\n'
+       txt += `*📌 Titulo* : ${title}\n`
+       txt += `*🍀 Calidad* : ${q}\n`
+       txt += `*🗃️ Tamaño* : ${size}\n\n`
        txt += `> *El video se esta enviando espera un momento*`
 await star.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, fkontak)
 await star.sendMessage(m.chat, { document: { url: dl_url }, caption: '', mimetype: 'video/mp4', fileName: `${title}` + `.mp4`}, {quoted: fkontak })
@@ -56,7 +56,7 @@ let yt = await fg.ytmp4(args[0], q)
 let { title, size, dl_url, thumb } = yt
 
 let img = await (await fetch(`${thumb}`)).buffer()
-if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se cancelÃ³ la Descarga.`, m, rcanal).then(_ => m.react('✅'))
+if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se cancela la Descarga.`, m, rcanal).then(_ => m.react('✅'))
 if (size.split('GB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se cancelÃ³ la Descarga.`, m, rcanal).then(_ => m.react('✅'))
         let txt = '`M P 4 - D O C`\n\n'
        txt += `*Titulo* : ${title}\n`
