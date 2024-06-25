@@ -4,6 +4,7 @@ const { generateWAMessageFromContent, proto } = pkg
 var handler = async (m, { conn, usedPrefix }) => {
 
 m.react('✅') 
+await conn.reply(m.chat, '⏱ _Cargando Menu_', m )
     let date = d.toLocaleDateString(locale, {
       day: 'numeric',
       month: 'long',
@@ -48,6 +49,9 @@ let msg = generateWAMessageFromContent(m.chat, {
 await conn.relayMessage(msg.key.remoteJid, msg.message, { messageId: msg.key.id })
 
 }
-handler.command = /^(menu|help|ayuda)$/i
+handler.help = ['menu']
+handler.tags = ['main']
+handler.command = /^(menu|help|ayuda|menú)$/i
+handler.register = true 
 
 export default handler
