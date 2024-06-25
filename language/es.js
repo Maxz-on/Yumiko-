@@ -271,7 +271,7 @@ const translations = {
     avisoGene3: '➤ `ADVERTENCIA` ⚠️',
     avisoGene4: '➤ `AVISO` 🍒',
     igt: `➤ Sígueme en Instagram\n${fgig}`,
-    ig: `© Copyright 2024 | By: Génesis Bot.`
+    ig: `© 2024 | By: Génesis Bot.`
 }
 
 export default translations
