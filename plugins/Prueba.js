@@ -37,7 +37,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         },
         message: {
             contactMessage: {
-                displayName: `\n|━━━〔 ${botname} 〕━━━| \n${greeting} ${username}\n𝐀𝐪𝐮𝐢 𝐓𝐢𝐞𝐧𝐞𝐬 𝐄𝐥 𝐌𝐞𝐧𝐮`,
+                displayName: `\nGenesis Bot \n${greeting} ${username}\n𝐀𝐪𝐮𝐢 𝐓𝐢𝐞𝐧𝐞𝐬 𝐄𝐥 𝐌𝐞𝐧𝐮`,
                 vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${username}\nitem1.TEL;waid=${m.sender.split("@")[0]}:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
             },
         },
@@ -66,7 +66,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let listSections = [];
 
     listSections.push({
-        title: `AVISO: LA BOT TODAVIA ESTA EN BETA`,
+        title: `MENUS DISPONIBLES DE XIA`,
         rows: [
             {
                 header: "allmenu",
