@@ -1,18 +1,6 @@
 const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, isROwner}) => {
 
-    global.fcontact = {
-        key: {
-            fromMe: false,
-            participant: `0@s.whatsapp.net`,
-            remoteJid: "status@broadcast",
-        },
-        message: {
-            contactMessage: {
-                displayName: `\nɢᴇɴᴇꜱɪꜱ ᴘʀᴏꜰᴇꜱɪᴏɴᴀʟ \nᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛꜱᴀᴘᴘ`,
-                vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${username}\nitem1.TEL;waid=${m.sender.split("@")[0]}:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
-            },
-        },
-    };
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
   const optionsFull = `≡ Lista de Opciones
 
@@ -339,10 +327,10 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       chat.antiArab2 = isEnable;
       break;
     default:
-      if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, {text: optionsFull}, {quoted: fcontact});
+      if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, {text: optionsFull}, {quoted: fkontak});
       throw false;
   }
-  conn.sendMessage(m.chat, {text: `*❱❱ 𝙁𝙐𝙉𝘾𝙄𝙊𝙉𝙀𝙎 𝙂𝙀𝙉𝙀𝙎𝙄𝙎 ❰❰*\n\n*» 𝙊𝙋𝘾𝙄𝙊𝙉 |* _${type.toUpperCase()}_\n*» 𝙀𝙎𝙏𝘼𝘿𝙊 |* ${isEnable ? '𝘈𝘊𝘛𝘐𝘝𝘈𝘋𝘖' : '𝘋𝘌𝘚𝘈𝘊𝘛𝘐𝘝𝘈𝘋𝘖'}\n*» 𝙋𝘼𝙍𝘼 |* ${isAll ? '𝘌𝘚𝘛𝘌 𝘊𝘏𝘈𝘛' : isUser ? '' : '𝘌𝘚𝘛𝘌 𝘊𝘏𝘈𝘛'}\n> 𝙂𝙚𝙣𝙚𝙨𝙞𝙨𝘽𝙤𝙩:𝙂𝙚𝙣𝙚𝙨𝙞𝙨𝘽𝙤𝙩`}, {quoted: fcontact});
+  conn.sendMessage(m.chat, {text: `*❱❱ 𝙁𝙐𝙉𝘾𝙄𝙊𝙉𝙀𝙎 𝙂𝙀𝙉𝙀𝙎𝙄𝙎 ❰❰*\n\n*» 𝙊𝙋𝘾𝙄𝙊𝙉 |* _${type.toUpperCase()}_\n*» 𝙀𝙎𝙏𝘼𝘿𝙊 |* ${isEnable ? '𝘈𝘊𝘛𝘐𝘝𝘈𝘋𝘖' : '𝘋𝘌𝘚𝘈𝘊𝘛𝘐𝘝𝘈𝘋𝘖'}\n*» 𝙋𝘼𝙍𝘼 |* ${isAll ? '𝘌𝘚𝘛𝘌 𝘊𝘏𝘈𝘛' : isUser ? '' : '𝘌𝘚𝘛𝘌 𝘊𝘏𝘈𝘛'}\n> 𝙂𝙚𝙣𝙚𝙨𝙞𝙨𝘽𝙤𝙩:𝙂𝙚𝙣𝙚𝙨𝙞𝙨𝘽𝙤𝙩`}, {quoted: fkontak});
 };
 handler.help = ['en', 'dis'].map((v) => v + 'able <option>');
 handler.tags = ['nable', 'owner'];
