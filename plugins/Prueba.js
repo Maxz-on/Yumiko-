@@ -37,7 +37,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         },
         message: {
             contactMessage: {
-                displayName: `\nGenesis Bot \n${greeting} ${username}\n𝐀𝐪𝐮𝐢 𝐓𝐢𝐞𝐧𝐞𝐬 𝐄𝐥 𝐌𝐞𝐧𝐮`,
+                displayName: `\nɢᴇɴᴇꜱɪꜱ ᴘʀᴏꜰᴇꜱɪᴏɴᴀʟ \nᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛꜱᴀᴘᴘ`,
                 vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${username}\nitem1.TEL;waid=${m.sender.split("@")[0]}:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
             },
         },
@@ -48,54 +48,67 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
 
     await conn.reply(m.chat, '⏱ *_`Cargando Menu`_*', fcontact);
 
-    m.react("💬");
+    m.react("📚");
     let menu = ``;
 
     let txt = ""
+    txt += "${greeting} ${username}\n\n";
     txt += "ꕥ─────────────────ꕥ\n\n";
     txt += "\t\t*`玖 Iɴꜰᴏ - Bᴏᴛ 玖`*\n\n";
     txt += `${sbot}\n`;
     txt += '> *`⚙ 𝘗𝘳𝘦𝘧𝘪𝘫𝘰 :`*' + ` [  ${usedPrefix}  ]\n`;
-    txt += '> *`👑 𝘔𝘪 𝘊𝘳𝘦𝘢𝘥𝘰𝘳 𝘌𝘴 :`*' + ` JTxs\n`;
+    txt += '> *`🫅 𝘔𝘪 𝘊𝘳𝘦𝘢𝘥𝘰𝘳 𝘌𝘴 :`*' + ` Angelito\n`;
     txt += '> *`🤖 𝘚𝘶𝘣 - 𝘉𝘰𝘵𝘴 𝘈𝘤𝘵𝘪𝘷𝘰𝘴:`*' + ` ${totalUsers || '0'}\n`;
-    txt += '> *`👥 𝘜𝘴𝘶𝘢𝘳𝘪𝘰𝘴 :`*' + ` ${totalusr} \n`;
-    txt += '> *`🗃 𝘙𝘦𝘨𝘪𝘴𝘵𝘳𝘢𝘥𝘰𝘴 :`*' + ` ${rtotalreg}\n`;
-    txt += '> *`⏱ 𝘓𝘭𝘦𝘷𝘰 𝘈𝘤𝘵𝘪𝘷𝘢 :`*' + ` ${uptime}\n\n`;
+    txt += '> *`🍀 𝘜𝘴𝘶𝘢𝘳𝘪𝘰𝘴 :`*' + ` ${totalusr} \n`;
+    txt += '> *`🍃 𝘙𝘦𝘨𝘪𝘴𝘵𝘳𝘢𝘥𝘰𝘴 :`*' + ` ${rtotalreg}\n`;
+    txt += '> *`⌚ 𝘓𝘭𝘦𝘷𝘰 𝘈𝘤𝘵𝘪𝘷𝘢 :`*' + ` ${uptime}\n\n`;
     txt += "ꕥ─────────────────ꕥ\n";
 
     let listSections = [];
 
     listSections.push({
-        title: `MENUS DISPONIBLES DE XIA`,
+        title: `🔖 MENUS DE GENESIS `,
         rows: [
             {
-                header: "allmenu",
-                title: "ᴍᴇɴᴜ ᴄᴏᴍᴘʟᴇᴛᴏ",
-                description: `ᴘᴀʀᴀ ᴠᴇʀ ᴛᴏᴅᴏꜱ ʟᴏꜱ ᴄᴏᴍᴀɴᴅᴏꜱ`,
+                header: "🍀 𝗠𝗘𝗡𝗨 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗢",
+                title: "",
+                description: `ᴍᴇɴᴜ ᴄᴏᴍᴘʟᴇᴛᴏ 📚`,
                 id: `${usedPrefix}allmenu`,
             },
             {
-                header: ".",
-                title: ".",
-                description: `.`,
-                id: `${usedPrefix}test`,
+                header: "🍀 𝗠𝗘𝗡𝗨 𝗔𝗨𝗗𝗜𝗢𝗦",
+                title: "",
+                description: `ᴍᴇɴᴜ ᴀᴜᴅɪᴏꜱ 🔊`,
+                id: `${usedPrefix}menuaudios`,
+            },
+            {
+                header: "🍀 𝗠𝗘𝗡𝗨 𝗛𝗢𝗧",
+                title: "",
+                description: `ᴍᴇɴᴜ ʜᴏᴛ 🔥`,
+                id: `${usedPrefix}labiblia`,
+            },
+            {
+                header: "🍀 𝗠𝗘𝗡𝗨 𝗥𝗔𝗡𝗗𝗢𝗠",
+                title: "",
+                description: `ᴍᴇɴᴜ ʀᴀɴᴅᴏᴍ ♻️`,
+                id: `${usedPrefix}menurandom`,
             },
         ],
     });
 
-    let vid = "https://telegra.ph/file/f4dd227597359d218c2d1.mp4";
-    let img = "https://telegra.ph/file/50b12cf2397cfd8b7c070.jpg";
-    let img2 = "https://i.ibb.co/gwm5mXm/file.png";
-    let img3 = "https://i.ibb.co/0s8V5FM/file.png";
-    let img4 = "https://telegra.ph/file/d81ef3219d7e6b292e7c4.jpg";
-    let img5 = "https://telegra.ph/file/da4501c9a8fda0b9c96b1.jpg";
-    let img6 = "https://telegra.ph/file/ce57807eed899516484c7.jpg";
-    let img8 = "https://telegra.ph/file/3594f35921ce75d5c5e16.jpg";
-    let img9 = "https://telegra.ph/file/4f89789a5b1f874622ffd.jpg";
-    let img10 = "https://i.ibb.co/SKm0T9S/file.jpg";
-    let img11 = "https://telegra.ph/file/20633f54b3d054c95cd58.jpg";
+    let vid = "https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg";
+    let img = "https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg";
+    let img2 = "https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg";
+    let img3 = "https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg";
+    let img4 = "https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg";
+    let img5 = "https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg";
+    let img6 = "https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg";
+    let img8 = "https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg";
+    let img9 = "https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg";
+    let img10 = "https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg";
+    let img11 = "https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg";
 
-    await conn.sendList(m.chat, menu, txt, `𝐋𝐢𝐬𝐭𝐚 𝐌𝐞𝐧𝐮𝐬`, [vid, img, img2, img3, img4, img5, img6, img8, img9, img10, img11].getRandom(), listSections, m);
+    await conn.sendList(m.chat, menu, txt, `𝗠𝗘𝗡𝗨𝗦 𝗚𝗘𝗡𝗘𝗦𝗜𝗦`, [vid, img, img2, img3, img4, img5, img6, img8, img9, img10, img11].getRandom(), listSections, m);
 };
 
 handler.command = ["menu", "help", "menú"];
