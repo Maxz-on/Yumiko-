@@ -18,7 +18,7 @@ let handler = async (m, {
     }
 
 }
-handler.help = ["chatai"]
+handler.help = ["genesis"]
 handler.tags = ["ai"];
 handler.command = /^(chatAi|genesis)$/i
 export default handler
