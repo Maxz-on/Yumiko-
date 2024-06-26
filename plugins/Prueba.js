@@ -71,10 +71,10 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         rows: [
             {
                 header: "🐈‍⬛ 𝗠𝗲𝗻𝘂 𝗖𝗼𝗺𝗽𝗹𝗲𝘁𝗼",
-                highlight_label: "new"
                 title: "",
                 description: `ᴍᴇɴᴜ ᴄᴏᴍᴘʟᴇᴛᴏ 📚`,
                 id: `${usedPrefix}allmenu`,
+                highlight_label: "new"
             },
             {
                 header: "🐈‍⬛ 𝗠𝗲𝗻𝘂 𝗔𝘂𝗱𝗶𝗼𝘀",
