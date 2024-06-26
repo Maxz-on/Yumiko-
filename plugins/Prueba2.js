@@ -5,12 +5,15 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
-  'main': 'ACERCA DE 📍',
+  'ai': 'IA-BOT 🍃',
+  'info': 'INFORMACIÓN 🍃',
+  'main': 'ACERCA DE 🍒',
   'bebot': 'SUB BOTS 🤖',
   'game': 'JUEGOS 🎮',
+  'convertir': 'CONVERTIR ♻️',
   'econ': 'NIVEL & ECONOMIA 🍀',
-  'rg': 'REGISTRO 📈',
-  'gc': 'POPULAR 🅿️',
+  'rpg': 'REGISTRO 📈',
+  'pop': 'POPULAR 🅿️',
   'sticker': 'STICKER ☕',
   'img': 'IMAGEN 🌱',
   'maker': 'MAKER ✍️',
@@ -26,7 +29,7 @@ let tags = {
   'nsfw': 'NSFW 🔞',
   'ansfw': 'NSFW ANIME 🔞', 
   'owner': 'OWNER 🫅', 
-  'advanced': 'AVANZADO 📍',
+  'advanced': 'AVANZADO 👹',
 }
 const defaultMenu = {
   before: `
