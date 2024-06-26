@@ -33,11 +33,11 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-*_◌⃘࣭࣪࣪࣪۬🍒─ׅ  𝙂 𝙀 𝙉 𝙀 𝙎 𝙄 𝙎  𝘽 𝙊 𝙏  ──◌⃘࣭ٜ࣪࣪࣪۬🍒_*
+*_◌⃘࣭࣪࣪࣪۬🐈‍⬛─ׅ  𝙂 𝙀 𝙉 𝙀 𝙎 𝙄 𝙎  𝘽 𝙊 𝙏  ──◌⃘࣭ٜ࣪࣪࣪۬🐈‍⬛_*
 
-*Hola %name soy Genesis espero te encuentres muy bien el día de hoy*
+*${greeting} %name soy Genesis espero te encuentres muy bien*
 
-*╭──「 INFORMACION 🍒」*
+*╭──「 INFORMACION 🐈‍⬛」*
 *┊ ⏳ Tiempo Act:* %muptime %sbot  
 *┊ 📊 Fecha:* %date
 *┊ 📈 Usuarios:* %rtotalreg
@@ -45,7 +45,7 @@ const defaultMenu = {
 *╰─────────────────┈°❀*\n
 `.trimStart(),
   header: '*╭──「 %category 」*',
-  body: '*┊ »*🍒 _*%cmd*_ %isdiamond %isPremium',
+  body: '*┊ »*🐈‍⬛ _*%cmd*_ %isdiamond %isPremium',
   footer: '*╰─────────────────┈°❀*\n\n',
   after: `
 `,
@@ -148,15 +148,30 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
+global.fcontact = {
+        key: {
+            fromMe: false,
+            participant: `0@s.whatsapp.net`,
+            remoteJid: "status@broadcast",
+        },
+        message: {
+            contactMessage: {
+                displayName: `\n ɢᴇɴᴇꜱɪꜱ ᴘʀᴏꜰᴇꜱɪᴏɴᴀʟ`,
+                vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:xd\nitem1.TEL;waid=${m.sender.split("@")[0]}:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
+            },
+        },
+    };
+
     let pp = './src/Menu.jpg'
+    await conn.reply(m.chat, '⏱ *_`Cargando Menu`_*', fcontact);
 
     /*conn.sendButton(m.chat, text.trim(), `▢ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
       ['⏍ Info', `${_p}botinfo`],
       ['⌬ Grupos', `${_p}gpdylux`]
     ], m, rpl)*/
-    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m, null, rcanal)
-    m.react('🍒') 
+    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), fcontact, null, rcanal)
+    m.react('🐈‍⬛') 
 
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error', m)
