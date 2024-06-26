@@ -49,7 +49,7 @@ global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
 
-global.wait = '🍒 𝘾𝙖𝙧𝙜𝙖𝙣𝙙𝙤....'
+global.wait = '🐈‍⬛ 𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢....'
 global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✅'
