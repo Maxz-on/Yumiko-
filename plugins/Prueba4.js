@@ -39,7 +39,7 @@ let handler = async (m, {
     }
 }
 handler.help = ["boredchatimg"].map(v => v + " (img)");
-handler.tags = ["tools"];
+handler.tags = ["ai"];
 handler.command = /^(boredchatimg)$/i;
 handler.limit = true;
 export default handler;
