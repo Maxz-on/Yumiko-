@@ -93,34 +93,6 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                 description: `ᴍᴇɴᴜ ʀᴀɴᴅᴏᴍ ♻️`,
                 id: `${usedPrefix}menurandom`,
             },
-            {
-    listSections.push({
-        title: `🔖 MENUS DE GENIS `,
-        rows: [
-            {
-                header: "🐈‍⬛ 𝗠𝗲𝗻𝘂 𝗖𝗼𝗹𝗲𝘁𝗼",
-                title: "",
-                description: `ᴍᴇɴᴜ ᴄᴏᴍᴘʟᴇᴛᴏ 📚`,
-                id: `${usedPrefix}allmenu`,
-            },
-            {
-                header: "🐈‍⬛ 𝗠𝗲𝗻𝘂 𝗔𝘂𝗼𝘀",
-                title: "",
-                description: `ᴍᴇɴᴜ ᴀᴜᴅɪᴏꜱ 🔊`,
-                id: `${usedPrefix}menuaudios`,
-            },
-            {
-                header: "🐈‍⬛ 𝗠𝗲𝗻𝘂 𝗛",
-                title: "",
-                description: `ᴍᴇɴᴜ ʜᴏᴛ 🔥`,
-                id: `${usedPrefix}labiblia`,
-            },
-            {
-                header: "🐈‍⬛ 𝗠𝗲𝗻𝘂 𝗥𝗮𝗻",
-                title: "",
-                description: `ᴍᴇɴᴜ ʀᴀɴᴅᴏᴍ ♻️`,
-                id: `${usedPrefix}menurandom`,
-            },
         ],
     });
 
@@ -136,7 +108,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let img10 = "https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg";
     let img11 = "https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg";
 
-    await conn.sendList(m.chat, menu, txt, `𝗠𝗘𝗡𝗨𝗦 𝗚𝗘𝗡𝗘𝗦𝗜𝗦`, [vid, img, img2, img3, img4, img5, img6, img8, img9, img10, img11].getRandom(), listSections, m);
+    await conn.sendList(m.chat, menu, txt, `𝗠𝗘𝗡𝗨𝗦 𝗚𝗘𝗡𝗘𝗦𝗜𝗦`, [vid, img, img2, img3, img4, img5, img6, img8, img9, img10, img11].getRandom(), listSections, fcontact);
 };
 
 handler.command = ["menu", "help", "menú"];
