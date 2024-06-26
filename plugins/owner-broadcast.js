@@ -11,7 +11,7 @@ let handler = async (m, { conn, text }) => {
 }
 handler.help = ['tx']
 handler.tags = ['owner']
-handler.command = /^(broadcast|bc|tx)$/i
+handler.command = /^(broadcast|bc|avisowner)$/i
 handler.owner = true
 
 export default handler
