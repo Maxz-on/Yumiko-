@@ -35,7 +35,7 @@ const defaultMenu = {
   before: `
 *_◌⃘࣭࣪࣪࣪۬🍒─ׅ  𝙂 𝙀 𝙉 𝙀 𝙎 𝙄 𝙎  𝘽 𝙊 𝙏  ──◌⃘࣭ٜ࣪࣪࣪۬🍒_*
 
-*Hola %name soy Genesis espero te encuentres muy bien el día de hoy*
+*${greeting} %name soy Genesis espero te encuentres muy bien*
 
 *╭──「 INFORMACION 🍒」*
 *┊ ⏳ Tiempo Act:* %muptime %sbot  
