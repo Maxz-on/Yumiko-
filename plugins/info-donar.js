@@ -1,19 +1,7 @@
 
 let handler = async(m, { conn, usedPrefix, command }) => {
 
-    global.fcontact = {
-        key: {
-            fromMe: false,
-            participant: `0@s.whatsapp.net`,
-            remoteJid: "status@broadcast",
-        },
-        message: {
-            contactMessage: {
-                displayName: `\nɢᴇɴᴇꜱɪꜱ ᴘʀᴏꜰᴇꜱɪᴏɴᴀʟ \nᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛꜱᴀᴘᴘ`,
-                vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${username}\nitem1.TEL;waid=${m.sender.split("@")[0]}:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
-            },
-        },
-    };
+let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
     let don = `
 
@@ -32,7 +20,7 @@ https://github.com/Karim-off/GenesisBot-Pro
 > WIERBOT: MAXZ
 `
 let img = 'https://i.ibb.co/37FP2bk/donate.jpg'
-conn.sendFile(m.chat, img, 'img.jpg', don, fcontact, null, rcanal)
+conn.sendFile(m.chat, img, 'img.jpg', don, fkontak, null, rcanal)
 //conn.sendPayment(m.chat, '2000', 'USD', don, m.sender, m)
 }
 
