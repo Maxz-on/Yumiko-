@@ -62,7 +62,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     txt += '> *`🍀 𝘜𝘴𝘶𝘢𝘳𝘪𝘰𝘴 :`*' + ` ${totalusr} \n`;
     txt += '> *`🍃 𝘙𝘦𝘨𝘪𝘴𝘵𝘳𝘢𝘥𝘰𝘴 :`*' + ` ${rtotalreg}\n`;
     txt += '> *`⌚ 𝘓𝘭𝘦𝘷𝘰 𝘈𝘤𝘵𝘪𝘷𝘢 :`*' + ` ${uptime}\n\n`;
-    txt += "*_◌⃘࣭࣪࣪࣪۬🐈‍⬛─ׅ───────────────◌⃘࣭ٜ࣪࣪࣪۬🐈‍⬛_*\n";
+    txt += "*_◌⃘࣭࣪࣪࣪۬🐈‍⬛─ׅ─────────────◌⃘࣭ٜ࣪࣪࣪۬🐈‍⬛_*\n";
 
     let listSections = [];
 
