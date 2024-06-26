@@ -1,3 +1,4 @@
+*// créditos para MauroAzcurra
 import fetch from "node-fetch"
 import uploadImage from "../lib/uploadImage.js"
 import {
