@@ -139,6 +139,8 @@ export async function handler(chatUpdate) {
                     chat.audios = false;
                 if (!('antiLink' in chat))
                     chat.antiLink = false
+                if (!('antiLink2' in chat)) 
+                    chat.antiLink2 = false;
                 if (!('viewonce' in chat))
                     chat.viewonce = false
                 if (!('captcha' in chat))
@@ -164,6 +166,7 @@ export async function handler(chatUpdate) {
                     modohorny: true,
                     audios: true,
                     antiLink: false,
+                    antiLink2: false,
                     viewonce: false,
                     useDocument: true,
                     captcha: false,
