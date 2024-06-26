@@ -20,6 +20,8 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
 ▢ captcha
 ▢ welcome
 ▢ antilink
+▢ antilink2
+▢ antitoxic
 ▢ detect
 ▢ audios 
 ▢ document
