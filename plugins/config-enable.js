@@ -134,6 +134,15 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
       }
       chat.antiLink2 = isEnable;
       break;
+     case 'nsfw':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn);
+          throw false;
+        }
+      }
+      chat.nsfw = isEnable;
+      break;
     case 'antiviewonce':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
