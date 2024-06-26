@@ -143,6 +143,8 @@ export async function handler(chatUpdate) {
                     chat.antiLink2 = false;
                 if (!('viewonce' in chat))
                     chat.viewonce = false
+                if (!('antiToxic' in chat)) 
+                    chat.antiToxic = false;
                 if (!('captcha' in chat))
                     chat.captcha = false
                 if (!('antiBotClone' in chat))
@@ -168,6 +170,7 @@ export async function handler(chatUpdate) {
                     antiLink: false,
                     antiLink2: false,
                     viewonce: false,
+                    antiToxic: false,
                     useDocument: true,
                     captcha: false,
                     antiBotClone: false,
