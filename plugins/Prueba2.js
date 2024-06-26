@@ -33,11 +33,11 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-*_◌⃘࣭࣪࣪࣪۬🍒─ׅ  𝙂 𝙀 𝙉 𝙀 𝙎 𝙄 𝙎  𝘽 𝙊 𝙏  ──◌⃘࣭ٜ࣪࣪࣪۬🍒_*
+*_◌⃘࣭࣪࣪࣪۬🐈‍⬛─ׅ  𝙂 𝙀 𝙉 𝙀 𝙎 𝙄 𝙎  𝘽 𝙊 𝙏  ──◌⃘࣭ٜ࣪࣪࣪۬🐈‍⬛_*
 
 *${greeting} %name soy Genesis espero te encuentres muy bien*
 
-*╭──「 INFORMACION 🍒」*
+*╭──「 INFORMACION 🐈‍⬛」*
 *┊ ⏳ Tiempo Act:* %muptime %sbot  
 *┊ 📊 Fecha:* %date
 *┊ 📈 Usuarios:* %rtotalreg
@@ -45,7 +45,7 @@ const defaultMenu = {
 *╰─────────────────┈°❀*\n
 `.trimStart(),
   header: '*╭──「 %category 」*',
-  body: '*┊ »*🍒 _*%cmd*_ %isdiamond %isPremium',
+  body: '*┊ »*🐈‍⬛ _*%cmd*_ %isdiamond %isPremium',
   footer: '*╰─────────────────┈°❀*\n\n',
   after: `
 `,
