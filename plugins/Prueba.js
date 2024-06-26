@@ -70,8 +70,8 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         title: `🔖 MENUS DE GENESIS `,
         rows: [
             {
-                highlight_label: "new"
                 header: "🐈‍⬛ 𝗠𝗲𝗻𝘂 𝗖𝗼𝗺𝗽𝗹𝗲𝘁𝗼",
+                highlight_label: "new"
                 title: "",
                 description: `ᴍᴇɴᴜ ᴄᴏᴍᴘʟᴇᴛᴏ 📚`,
                 id: `${usedPrefix}allmenu`,
