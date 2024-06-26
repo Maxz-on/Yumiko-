@@ -9,7 +9,7 @@ let handler = async (m, {
     command
 }) => {
     if (!text) return m.reply(usedPrefix+command+" hola")
-    await m.react('🔮');
+    await m.react('🐈‍⬛');
     try {
         const result = await chatAi(text);
         await m.reply(result);
@@ -20,7 +20,7 @@ let handler = async (m, {
 }
 handler.help = ["chatai"]
 handler.tags = ["ai"];
-handler.command = /^(chatAi)$/i
+handler.command = /^(chatAi|genesis)$/i
 export default handler
 
 async function chatAi(inputValue) {
