@@ -2,8 +2,10 @@
 let handler = async function (m, { conn, text, usedPrefix }) {
 
 let m2 = `
-🐈‍⬛ 𝗛𝗢𝗟𝗔 𝗦𝗢𝗬 𝗚𝗘𝗡𝗘𝗦𝗜𝗦 𝗕𝗢𝗧 
-𝗧𝗘 𝗣𝗥𝗘𝗦𝗘𝗡𝗧𝗢 𝗘𝗟 𝗠𝗘𝗡𝗨 𝗗𝗘 𝗔𝗨𝗗𝗜𝗢𝗦
+*_◌⃘࣭࣪࣪࣪۬🐈‍⬛─ׅ  𝙂 𝙀 𝙉 𝙀 𝙎 𝙄 𝙎  𝘽 𝙊 𝙏  ──◌⃘࣭ٜ࣪࣪࣪۬🐈‍⬛_*
+
+🐈‍⬛ 𝗛𝗼𝗹𝗮 𝘀𝗼𝘆 𝗚𝗲𝗻𝗲𝘀𝗶𝘀 𝗕𝗼𝘁 
+🐈‍⬛ 𝗧𝗲 𝗽𝗿𝗲𝘀𝗲𝗻𝘁𝗼 𝗺𝗶 𝗺𝗲𝗻𝘂 𝗱𝗲 𝗮𝘂𝗱𝗶𝗼𝘀
 
 (Use estos comandos sin el prefijo: *${usedPrefix}*)
 
