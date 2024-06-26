@@ -74,7 +74,6 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                 title: "",
                 description: `ᴍᴇɴᴜ ᴄᴏᴍᴘʟᴇᴛᴏ 📚`,
                 id: `${usedPrefix}allmenu`,
-                highlight_label: "new"
             },
             {
                 header: "🐈‍⬛ 𝗠𝗲𝗻𝘂 𝗔𝘂𝗱𝗶𝗼𝘀",
@@ -105,6 +104,18 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                 title: "",
                 description: `ɢʀᴜᴘᴏꜱ ɢᴇɴᴇꜱɪꜱ 🐈‍⬛`,
                 id: `${usedPrefix}grupos`,
+            },
+{
+                header: "🚀 𝗩𝗲𝗹𝗼𝗰𝗶𝗱𝗮𝗱",
+                title: "",
+                description: `ᴠᴇʟᴏᴄɪᴅᴀᴅ ɢᴇɴᴇꜱɪꜱ 🚀`,
+                id: `${usedPrefix}ping`,
+            },
+{
+                header: "🎁 𝗗𝗼𝗻𝗮𝗿",
+                title: "",
+                description: `ᴅᴏɴᴀʀ ɢᴇɴᴇꜱɪꜱ 🎁`,
+                id: `${usedPrefix}donate`,
             },
         ],
     });
