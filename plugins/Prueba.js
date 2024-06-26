@@ -48,7 +48,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
 
     await conn.reply(m.chat, '⏱ *_`Cargando Menu`_*', fcontact);
 
-    m.react("📚");
+    m.react("🐈‍⬛");
     let menu = ``;
 
     let txt = ""
