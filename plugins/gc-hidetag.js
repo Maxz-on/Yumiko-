@@ -8,13 +8,13 @@ let c = m.quoted ? m.quoted : m.msg
 const msg = conn.cMod(m.chat,
 generateWAMessageFromContent(m.chat, {
 [c.toJSON ? q.mtype : 'extendedTextMessage']: c.toJSON ? c.toJSON() : {
-text: c || 'hola'
+text: c || ''
 }
 }, {
 quoted: m,
 userJid: conn.user.id
 }),
-text || q.text, conn.user.jid, { mentions: users }
+text || q.text, conn.user.jid, { mentions: users }\n hola
 )
 await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id })
 }
