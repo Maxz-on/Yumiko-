@@ -56,6 +56,22 @@ let m2 = `
 *╰─────────────────┈°❀*
 `
     let pp = './src/Menu.jpg' 
+
+global.fcontact = {
+        key: {
+            fromMe: false,
+            participant: `0@s.whatsapp.net`,
+            remoteJid: "status@broadcast",
+        },
+        message: {
+            contactMessage: {
+                displayName: `\nɢᴇɴᴇꜱɪꜱ ᴘʀᴏꜰᴇꜱɪᴏɴᴀʟ \nᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛꜱᴀᴘᴘ`,
+                vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:xd\nitem1.TEL;waid=${m.sender.split("@")[0]}:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
+            },
+        },
+    };
+
+    await conn.reply(m.chat, '⏱ *_`Cargando Menu`_*', fcontact);
     /*conn.sendButton(m.chat, m2, mssg.ig, pp, [
       ['⏍ Info', `${usedPrefix}botinfo`],
       ['⌬ Grupos', `${usedPrefix}gpdylux`]
