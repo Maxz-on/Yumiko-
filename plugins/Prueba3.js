@@ -12,7 +12,7 @@ let handler = async (m, {
         text = args.slice(0).join(" ")
     } else if (m.quoted && m.quoted.text) {
         text = m.quoted.text
-    } else throw "`AVISO 🐈‍⬛`\n\n*AGREGA TU IDEA DE IMAGEN*\n_.bing Gatito Tierno_"
+    } else throw "➤ `AVISO` 🐈‍⬛\n\n*AGREGA TU IDEA DE IMAGEN*\n_.bing Gatito Tierno_"
     await m.reply(wait)
 
     try {
