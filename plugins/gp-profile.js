@@ -33,7 +33,7 @@ let str = `
 「📄」𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝗮𝗱𝗼: ${registered ? '✅': '❎'}
 「🎫」𝗣𝗿𝗲𝗺𝗶𝘂𝗺: ${premG ? '✅' : '❎'}
 
-> `
+> ${mssg.ig}`
     conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
     m.react(done)
 
