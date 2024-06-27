@@ -1,4 +1,4 @@
-const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, command, usedPrefix}) => {
+const handler = async (fkontak, {isOwner, isAdmin, conn, text, participants, args, command, usedPrefix}) => {
 
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
@@ -15,7 +15,7 @@ const oi = `*» INFO :* ${pesan}`;
     teks += `┊» 🐈‍⬛ @${mem.id.split('@')[0]}\n`;
   }
   teks += `╰┈✣ 𝙂𝙚𝙣𝙚𝙨𝙞𝙨 𝙋𝙧𝙤𝙛𝙚𝙨𝙨𝙞𝙤𝙣𝙖𝙡`;
-  conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)}, fkontak);
+  conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)} );
 };
 handler.help = ['tagall <mesaje>', 'invocar <mesaje>'];
 handler.tags = ['group'];
