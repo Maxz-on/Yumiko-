@@ -7,7 +7,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => './src/Menu.jpg')
  if (user.registered === true) throw `✳️ ${mssg.regIsOn}\n\n${usedPrefix}unreg <sn>`
 
-  let te = `${mssg.avisoGene4}\n\n*🍒 PARA REGISTRARSE USE*\n_${usedPrefix + command} Nombre+Edad+Genero_\n\n*» GENEROS DISPONIBLES*:\n*- M* = ${mssg.man}\n*- F* = ${mssg.woman}\n*- N* = ${mssg.other}`
+  let te = `${mssg.avisoGene4}\n\n*🐈‍⬛ PARA REGISTRARSE USE*\n_${usedPrefix + command} Nombre+Edad+Genero_\n\n*» GENEROS DISPONIBLES*:\n*- M* = ${mssg.man}\n*- F* = ${mssg.woman}\n*- N* = ${mssg.other}\n*- B* = ${mssg.nonbinary}`
   if (!Reg.test(text)) throw te
   let [_, name, splitter, age, splitter2, gen] = text.match(Reg)
   if (!name) throw te
@@ -16,8 +16,8 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   age = parseInt(age)
   if (age > 60) throw `👴🏻 ${mssg.oldReg}`
   if (age < 10) throw '🚼 Vaya a ver la vaca lola'
-  let genStr = gen && gen.toUpperCase() === 'M' ? `♂️ ${mssg.man}` : (gen && gen.toUpperCase() === 'F' ? `♀️ ${mssg.woman}` : (gen && gen.toUpperCase() === 'N' ? `⚧ ${mssg.other}` : null))
-  if (!genStr) throw `✳️ ${mssg.genderList}: M, F o N\n\n*- M* = ${mssg.man}\n*- F*- ${mssg.woman}\n*- N* = ${mssg.other}`
+  let genStr = gen && gen.toUpperCase() === 'M' ? `♂️ ${mssg.man}` : (gen && gen.toUpperCase() === 'F' ? `♀️ ${mssg.woman}` : (gen && gen.toUpperCase() === 'N' ? `⚧ ${mssg.other}` : (gen && gen.toUpperCase() === 'B' ? `🍀 ${mssg.nonbinary}` : null))
+  if (!genStr) throw `✳️ ${mssg.genderList}: M, F,N O B\n\n*- M* = ${mssg.man}\n*- F*- ${mssg.woman}\n*- N* = ${mssg.other}\n*- B* = ${mssg.nonbinary}`
   user.name = name.trim()
   user.age = age
   user.genero = genStr
