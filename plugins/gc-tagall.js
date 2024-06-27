@@ -5,7 +5,7 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
 m.react('✅') 
   if (!(isAdmin || isOwner)) {
-    global.dfail('admin', m, conn);
+    global.dfail('admin', m, conn, fkontak);
     throw false;
   }
   const pesan = args.join` `;
