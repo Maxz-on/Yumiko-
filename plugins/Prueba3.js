@@ -19,7 +19,7 @@ let handler = async (m, {
         let data = await generateImage(text)
         if (data && data.imgs.length > 0) {
             for (let i = 0; i < data.imgs.length; i++) {
-                await conn.sendFile(m.chat, data.imgs[i], '', `🐈‍⬛ 𝗥𝗘𝗦𝗨𝗟𝗧𝗔𝗗𝗢 : *(${i + 1}/${data.imgs.length})*\n> ${smsg:ig}`, m, false, {
+                await conn.sendFile(m.chat, data.imgs[i], '', `🐈‍⬛ 𝗥𝗘𝗦𝗨𝗟𝗧𝗔𝗗𝗢 : *(${i + 1}/${data.imgs.length})*`, m, false, {
                     mentions: [m.sender]
                 });
             }
