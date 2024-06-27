@@ -264,7 +264,7 @@ const translations = {
     privateH: 'Este comando solo se puede usar en el chat *privado del Bot*',
     adminH: 'Este comando es solo para *Admins* del grupos',
     botAdmin: '¡Para usar este comando debo ser *Administrador!*',
-    unregH: 'Regístrese para usar esta función  Escribiendo:\n\n*/reg*',
+    unregH: 'Regístrese para usar esta función  Escribiendo:\n\n*/reg nombre+edad+genero*',
     avisoEnable: '`❱❱ 𝙁𝙐𝙉𝘾𝙄𝙊𝙉𝙀𝙎 𝙂𝙀𝙉𝙀𝙎𝙄𝙎 ❰❰`',
     avisoGene: '➤ `ORDENES RECIBIDAS` ✅',
     avisoGene2: '➤ `HECHO` ✅',
