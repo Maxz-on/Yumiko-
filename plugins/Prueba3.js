@@ -1,4 +1,4 @@
-*// créditos para MauroAzcurra
+// créditos para MauroAzcurra
 import fetch from "node-fetch"
 
 let handler = async (m, {
