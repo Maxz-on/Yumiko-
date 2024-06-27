@@ -16,22 +16,24 @@ let premG = global.prems.includes(who.split`@`[0]) || prem
 let sn = createHash('md5').update(who).digest('hex')
 
 let str = `
-┌───「 *${mssg.profile.toUpperCase()}* 」
-▢ *🔖${mssg.name}:* 
-   • ${username} ${registered ? '\n   • ' + name + ' ': ''}
-   • @${who.replace(/@.+/, '')}
-▢ *📱${mssg.number}:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
-▢ *🔗${mssg.link}:* wa.me/${who.split`@`[0]}${registered ? `\n▢ *🎈${mssg.age}:* ${age}\n▢ *🧬${mssg.gender}:* ${genero}` : ''}
-▢ *🌎${mssg.lang}:* ${language}
-▢ *⚠️${mssg.warns}:* ${warn}/${maxwarn}
-▢ *🪙${mssg.money}:* ${coin.toLocaleString()}
-▢ *💎${mssg.dmd}:* ${diamond.toLocaleString()}
-▢ *🆙${mssg.lvl}:* ${level}
-▢ *⬆️XP:* ${mssg.total} ${exp} (${user.exp - min} / ${xp})\n${math <= 0 ? `${mssg.xpUp} *${usedPrefix}levelup*` : `_*${math}xp*_ ${mssg.upNan}`}
-▢ *🏆${mssg.rank}:* ${role}
-▢ *📇${mssg.regOn}:* ${registered ? '✅': '❎'}
-▢ *🎟️${mssg.prem}:* ${premG ? '✅' : '❎'}
-└──────────────`
+🐈‍⬛ 𝗣 𝗘 𝗥 𝗙 𝗜 𝗟 🐈‍⬛
+
+「🐈‍⬛」𝗨𝘀𝘂𝗮𝗿𝗶𝗼: @${who.replace(/@.+/, '')}
+「🐈‍⬛」𝗡𝗼𝗺𝗯𝗿𝗲𝘀:
+ • ${username} ${registered ? '\n   • ' + name + ' ': ''}
+「📱」𝗡𝘂𝗺𝗲𝗿𝗼: ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
+「📱」𝗟𝗶𝗻𝗸: wa.me/${who.split`@`[0]}${registered ? `\n「🍀」𝗘𝗱𝗮𝗱: ${age}\n「🧬」𝗚𝗲𝗻𝗲𝗿𝗼: ${genero}` : ''}
+「🌎」𝗜𝗱𝗶𝗼𝗺𝗮: ${language}
+「⚠️」𝗔𝗱𝘃𝗲𝗿𝘁𝗲𝗻𝗰𝗶𝗮𝘀: ${warn}/${maxwarn}
+「🐈‍⬛」𝗚𝗲𝗻𝗲𝗖𝗼𝗶𝗻𝘀: ${coin.toLocaleString()}
+「💎」𝗗𝗶𝗮𝗺𝗮𝗻𝘁𝗲𝘀: ${diamond.toLocaleString()}
+「🆙」𝗡𝗶𝘃𝗲𝗹: ${level}
+「⬆️」𝗫𝗣: ${mssg.total} ${exp}
+「🏆」𝗥𝗮𝗻𝗴𝗼: ${role}
+「📄」𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝗮𝗱𝗼: ${registered ? '✅': '❎'}
+「🎫」𝗣𝗿𝗲𝗺𝗶𝘂𝗺: ${premG ? '✅' : '❎'}
+
+> `
     conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
     m.react(done)
 
