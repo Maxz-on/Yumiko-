@@ -39,9 +39,9 @@ let handler = async (m, {
         throw error;
     }
 }
-handler.help = ["boredchatimg"].map(v => v + " (img)");
+handler.help = ["genesisimg"].map(v => v + " (img)");
 handler.tags = ["ai"];
-handler.command = /^(boredchatimg)$/i;
+handler.command = /^(genesisimg)$/i;
 handler.limit = true;
 export default handler;
 
