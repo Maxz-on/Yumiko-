@@ -518,8 +518,8 @@ export async function participantsUpdate({ id, participants, action }) {
             if (chat.welcome) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
-                    let pp = 'https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg'
-                    let ppgp = 'https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg'
+                    let pp = 'https://i.ibb.co/jHctydb/Genesis-Bot.jpg'
+                    let ppgp = 'https://i.ibb.co/jHctydb/Genesis-Bot.jpg'
                     try {
                         pp = await this.profilePictureUrl(user, 'image')
                         ppgp = await this.profilePictureUrl(id, 'image')
@@ -533,7 +533,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                background: 'https://telegra.ph/file/1f0e2efacaf9ce3798da4.jpg'
+                                background: 'https://i.ibb.co/BP2NQZ8/Welcome-Genesis-Bot.jpg'
                             }, 'apikey')
 
                             let lea = API('fgmods', '/api/goodbye2', {
@@ -542,7 +542,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                background: 'https://telegra.ph/file/43de531b766c43566e9b1.jpg'
+                                background: 'https://i.ibb.co/vZgTw15/Bye-Genesis-Bot.jpg'
                             }, 'apikey')
 
                             this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
@@ -558,7 +558,7 @@ export async function participantsUpdate({ id, participants, action }) {
         case 'promote':
             text = (chat.sPromote || this.spromote || conn.spromote || '@user ahora es administrador')
         case 'demote':
-            let pp = await this.profilePictureUrl(participants[0], 'image').catch(_ => 'https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg') 
+            let pp = await this.profilePictureUrl(participants[0], 'image').catch(_ => 'https://i.ibb.co/jHctydb/Genesis-Bot.jpg') 
             if (!text)
                 text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ya no es administrador')
             text = text.replace('@user', '@' + participants[0].split('@')[0])
