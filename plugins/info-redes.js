@@ -21,6 +21,8 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 
 » 𝗖𝗢𝗥𝗥𝗘𝗢
 🐈‍⬛ agasistencia2@gmail.com
+
+> ${mssg.ig}
 `
 let img = 'https://i.ibb.co/jHctydb/Genesis-Bot.jpg'
 conn.sendFile(m.chat, img, 'img.jpg', don, fkontak, null, rcanal)
