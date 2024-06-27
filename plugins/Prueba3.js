@@ -10,8 +10,8 @@ let handler = async (m, {
     let text
     if (args.length >= 1) {
         text = args.slice(0).join(" ")
-    } else if (fkontak.quoted && m.quoted.text) {
-        text = fkontak.quoted.text
+    } else if (m.quoted && m.quoted.text) {
+        text = m.quoted.text
     } else throw "➤ `AVISO` 🐈‍⬛\n\n*AGREGA TU IDEA DE IMAGEN*\n_.bing Gatito Tierno_"
     await m.reply(wait)
 
