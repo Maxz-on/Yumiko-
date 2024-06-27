@@ -58,7 +58,7 @@ let m2 = `
 *┊ »*🐈‍⬛ _*.hentai*_ (ⓓ)
 *╰─────────────────┈°❀*
 `
-    let pp = './src/Menu.jpg' 
+    let pp = 'https://i.ibb.co/jHctydb/Genesis-Bot.jpg' 
 
 global.fcontact = {
         key: {
