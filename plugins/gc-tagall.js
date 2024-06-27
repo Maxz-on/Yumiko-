@@ -15,7 +15,7 @@ const oi = `*» INFO :* ${pesan}`;
     teks += `┊» 🐈‍⬛ @${mem.id.split('@')[0]}\n`;
   }
   teks += `╰┈✣ 𝙂𝙚𝙣𝙚𝙨𝙞𝙨 𝙋𝙧𝙤𝙛𝙚𝙨𝙨𝙞𝙤𝙣𝙖𝙡`;
-  conn.sendMessage(m.chat, fkontak, {text: teks, mentions: participants.map((a) => a.id)} );
+  conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)fkontak} );
 };
 handler.help = ['tagall <mesaje>', 'invocar <mesaje>'];
 handler.tags = ['group'];
