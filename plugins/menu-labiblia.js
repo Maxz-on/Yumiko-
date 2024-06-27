@@ -71,7 +71,7 @@ global.fcontact = {
         },
     };
 
-    await conn.reply(m.chat, '⏱ *_`Cargando Menu`_*', fcontact);
+    await conn.reply(m.chat, '🐈‍⬛ `𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢 𝗠𝗘𝗡𝗨....`', fcontact);
     /*conn.sendButton(m.chat, m2, mssg.ig, pp, [
       ['⏍ Info', `${usedPrefix}botinfo`],
       ['⌬ Grupos', `${usedPrefix}gpdylux`]
