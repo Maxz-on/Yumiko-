@@ -28,9 +28,9 @@ let handler = async (m, {
         await m.reply(eror)
     }
 }
-handler.help = ["bing-img2"]
+handler.help = ["bing"]
 handler.tags = ["ai"];
-handler.command = /^(bing-img2|bingimg2)$/i
+handler.command = /^(bing|bingimg2)$/i
 handler.register = handler.limit = true
 export default handler
 
