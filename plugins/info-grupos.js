@@ -8,17 +8,17 @@ m.react('✅')
     let don = `
 🐈‍⬛ 𝗥 𝗘 𝗗 𝗘 𝗦  𝗚 𝗘 𝗡 𝗘 𝗦 𝗜 𝗦 🐈‍⬛
 
-*» Canal*
+» 𝗖𝗔𝗡𝗔𝗟
 ${fgcanal}
 
-*» Grupo Avisos*
+» 𝗔𝗩𝗜𝗦𝗢𝗦
 ${bgp}
 
-*» Grupo Global*
+» 𝗚𝗟𝗢𝗕𝗔𝗟
 ${bgp2}
 
-*» Grupo Hot*
-${bgp3}
+» 𝗚𝗘𝗡𝗘𝗦𝗜𝗦 𝗫 𝗪𝗜𝗘𝗥 𝗕𝗢𝗧
+https://chat.whatsapp.com/GO5l3kShGE30eV9dN82elb
 
 > ${mssg.ig}
 `
