@@ -2,7 +2,7 @@
 import fg from 'api-dylux';
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
   
-if (!args[0]) throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛';
+if (!args[0]) throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*INGRESA EL ENLACE*\n_.ig <link>_';
   m.react(rwait);
 
   try {
