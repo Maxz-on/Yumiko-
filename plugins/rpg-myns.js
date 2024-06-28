@@ -7,7 +7,7 @@ await m.reply(`» *NÚMERO DE SERIE 🍒*`.trim())
 m.reply(`${sn}`.trim())
 }
 handler.help = ['mysn']
-handler.tags = ['rg']
+handler.tags = ['rpg']
 handler.command = ['nserie', 'sn', 'myns'] 
 handler.register = true
 
