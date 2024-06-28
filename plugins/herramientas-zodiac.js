@@ -15,10 +15,10 @@ let handler = (m, { usedPrefix, command, text }) => {
     const cekusia = bulan === birth[1] && tanggal === birth[2] ? `${age} - Feliz cumpleaÃ±os ðŸ¥³` : age
 
     const teks = `
-Fecha de nacimiento: : ${birth.join('-')}
-Proximo cumpleaños : ${birthday.join('-')}
-Edad : ${cekusia}
-Signo zodical : ${zodiac}
+🐈‍⬛ 𝗙𝗘𝗖𝗛𝗔 𝗡𝗔𝗖𝗜𝗠𝗜𝗘𝗡𝗧𝗢: ${birth.join('-')}
+🐈‍⬛ 𝗣𝗥𝗢𝗫𝗜𝗠𝗢 𝗖𝗨𝗠𝗣𝗟𝗘: ${birthday.join('-')}
+🐈‍⬛ 𝗘𝗗𝗔𝗗: ${cekusia}
+🐈‍⬛ 𝗦𝗜𝗚𝗡𝗢 𝗭𝗢𝗗𝗜𝗔𝗖𝗔𝗟: ${zodiac}
 `.trim()
     m.reply(teks)
 }
