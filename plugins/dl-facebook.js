@@ -23,3 +23,4 @@ handler.command = /^((facebook|fb)(downloder|dl)?)$/i;
 handler.diamond = true;
 
 export default handler;
+
