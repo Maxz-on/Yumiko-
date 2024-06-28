@@ -26,7 +26,7 @@ global.fcontact = {
 
         if (file.size >= 300000000) return m.reply('Error: El archivo es grande (Maximo tamaño: 300MB)');
 
-    await conn.reply(m.chat, '🐈‍⬛ `𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢 𝗠𝗘𝗡𝗨....`', fcontact);
+    await conn.reply(m.chat, '🐈‍⬛ `𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢....`', fcontact);
 
         const caption = `🐈‍⬛ 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖 𝙚𝙭𝙞𝙩𝙤𝙨𝙖....\n\n» 𝙉𝙤𝙢𝙗𝙧𝙚: ${file.name}\n» 𝙋𝙚𝙨𝙤: ${formatBytes(file.size)}\n» 𝙁𝙚𝙘𝙝𝙖: ${fecha}`;
 
