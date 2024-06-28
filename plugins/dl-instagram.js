@@ -1,52 +1,24 @@
-import fetch from 'node-fetch';
-
-const apiURL = 'https://delirius-api-oficial.vercel.app/api/instagram';
-
+import Scraper from '@SumiFX/Scraper'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-  if (!args[0] || !args[0].match(/instagram\.com/i)) 
-    throw `Usa el comando así: ${usedPrefix}${command} [enlace de Instagram]`;
+if (!args[0]) return m.reply('💥 Ingresa un enlace de Instagram.')
+try {
+conn.reply(m.chat, wait, m, {
+contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
+title: packname,
+body: wm,
+previewType: 0, thumbnail: icons,
+sourceUrl: channel }}})
+let { dl_url } = await Scraper.igdl(args[0])
+await conn.sendMessage(m.chat, { video: { url: dl_url }, caption: `✅️ *Su Video De Instagram*\n${botname}` }, { quoted: fkontak})
+} catch (e) {
+  console.log(e)
+  m.reply('☘️ Ocurrió un error inesperado.')
+}}
 
-  const url = args[0].trim();
-  const apiUrl = `${apiURL}?url=${encodeURIComponent(url)}`;
+handler.help = ['ig <enlace>']
+handler.tags = ['downloader']
+handler.command = ['ig', 'instagram']
+handler.register = true
+handler.limit = 1
 
-  const response = await fetch(apiUrl);
-  if (!response.ok) {
-    console.error('Error al buscar el contenido de Instagram:', response.statusText);
-    throw 'Ocurrió un error al buscar el contenido de Instagram';
-  }
-
-  const data = await response.json();
-  const mediaData = data.data;
-
-  if (!mediaData || mediaData.length === 0) 
-    throw 'No se encontraron datos válidos de la publicación de Instagram';
-
-  for (const media of mediaData) {
-    if (!media.url) continue;
-
-    const mediaResponse = await fetch(media.url);
-    if (!mediaResponse.ok) {
-      console.error('Error al descargar el contenido de Instagram:', mediaResponse.statusText);
-      throw 'Ocurrió un error al descargar el contenido de Instagram';
-    }
-
-    const mediaBuffer = await mediaResponse.buffer();
-
-    const caption = `𝙳𝙴𝚂𝙲𝙰𝙶𝙰𝚁𝙳𝙾𝚁 𝙳𝙴 𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼:\n${url}\n𝙲𝚁𝙴𝙰𝙳𝙾𝚁 𝙳𝙴𝙻 𝙱𝙾𝚃 - 𝙲𝚄𝚁𝙸`;
-
-    conn.sendFile(
-      m.chat,
-      mediaBuffer,
-      'video.mp4',
-      caption,
-      m
-    );
-  }
-};
-
-handler.help = ['instagram <enlace>'];
-handler.tags = ['downloader'];
-handler.command = ['instagram', 'ig'];
-handler.register = true;
-
-export default handler;
+export default handler
