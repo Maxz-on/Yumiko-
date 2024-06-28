@@ -4,17 +4,17 @@ import path from "path";
 
 let handler = async (m, { conn, args, usedPrefix, text, command }) => {
     try {
-        if (!text) return m.reply(`❱❱ 𝙄 𝙉 𝙁 𝙊 𝙍 𝙈 𝘼 𝘾 𝙄 𝙊 𝙉 ❰❰\n\n🔮 𝙁𝙤𝙧𝙢𝙖𝙩𝙤 𝙞𝙣𝙘𝙤𝙧𝙧𝙚𝙘𝙩𝙤\n\n» 𝙐𝙨𝙚 𝙚𝙡 𝙘𝙤𝙢𝙖𝙣𝙙𝙤:\n𝘌𝘫𝘦𝘮𝘱𝘭𝘰: *${usedPrefix + command}* <link>`);
+        if (!text) return m.reply(`${mssg.avisoGene4}\n\n*INGRESA EL LINK*\n_.mega <link>_`);
 
         const file = File.fromURL(text);
         await file.loadAttributes();
 
         if (file.size >= 300000000) return m.reply('Error: El archivo es grande (Maximo tamaño: 300MB)');
 
-        const downloadingMessage = `𝘾𝙖𝙧𝙜𝙖𝙣𝙙𝙤... 🔮`;
+        const downloadingMessage = ``;
         m.reply(downloadingMessage);
 
-        const caption = `🔮 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖 𝙚𝙭𝙞𝙩𝙤𝙨𝙖....\n\n» 𝙉𝙤𝙢𝙗𝙧𝙚: ${file.name}\n» 𝙋𝙚𝙨𝙤: ${formatBytes(file.size)}\n» 𝙁𝙚𝙘𝙝𝙖: ${fecha}`;
+        const caption = `🐈‍⬛ 𝘿𝙚𝙨𝙘𝙖𝙧𝙜𝙖 𝙚𝙭𝙞𝙩𝙤𝙨𝙖....\n\n» 𝙉𝙤𝙢𝙗𝙧𝙚: ${file.name}\n» 𝙋𝙚𝙨𝙤: ${formatBytes(file.size)}\n» 𝙁𝙚𝙘𝙝𝙖: ${fecha}`;
 
         const data = await file.downloadBuffer();
 
