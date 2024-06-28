@@ -1,6 +1,6 @@
 import Scraper from '@SumiFX/Scraper'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (!args[0]) return m.reply(''➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*INGRESA EL ENLACE*\n_.ig <link>_')
+if (!args[0]) return m.reply('➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*INGRESA EL ENLACE*\n_.ig <link>_')
 try {
 conn.reply(m.chat, wait, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
