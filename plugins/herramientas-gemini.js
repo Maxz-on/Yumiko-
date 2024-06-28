@@ -1,12 +1,7 @@
 import fetch from 'node-fetch'
 var handler = async (m, { text,  usedPrefix, command }) => {
-if (!text) throw `❱❱ 𝘼  𝙑  𝙄  𝙎  𝙊 ❰❰
-
-» 𝘾𝙤𝙢𝙖𝙣𝙙𝙤 𝙀𝙧𝙧𝙤𝙣𝙚𝙤.
-
-» 𝘾𝙤𝙢𝙖𝙣𝙙𝙤 𝘾𝙤𝙧𝙧𝙚𝙘𝙩𝙤: 
-𝘌𝘫𝘦𝘮𝘱𝘭𝘰: .wier 𝘲𝘶𝘦 𝘴𝘰𝘴?`
-  m.react('💬') 
+if (!text) throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*PARA USAR GEMINI IA*\n_Ejemplo: .gemini que sos?_';
+  m.react('🐈‍⬛') 
 try {
 conn.sendPresenceUpdate('composing', m.chat);
 var apii = await fetch(`https://aemt.me/gemini?text=${text}`)
