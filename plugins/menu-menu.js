@@ -162,8 +162,8 @@ global.fcontact = {
         },
     };
 
-    let pp = './src/Menu.jpg'
-    await conn.reply(m.chat, '⏱ *_`Cargando Menu`_*', fcontact);
+    let pp = ''
+    await conn.reply(m.chat, '🐈‍⬛ `𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢 𝗠𝗘𝗡𝗨....`', fcontact);
 
     /*conn.sendButton(m.chat, text.trim(), `▢ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
