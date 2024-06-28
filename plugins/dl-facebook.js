@@ -8,7 +8,7 @@ if (!args[0]) throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*INGRESA EL ENLACE
   try {
     let result = await fg.fbdl(args[0]);
     let tex = `
-𝗢𝗕𝗝𝗘𝗧𝗢 𝗗𝗘 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 𝗗𝗘𝗦𝗖𝗔𝗥𝗚𝗔𝗗𝗢`;
+𝗢𝗕𝗝𝗘𝗧𝗢 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 🐈‍⬛`;
     conn.sendFile(m.chat, result.videoUrl, 'fb.mp4', tex, m);
     m.react(done);
   } catch (error) {
