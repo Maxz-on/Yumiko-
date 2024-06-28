@@ -29,14 +29,14 @@ say('Genesis Bot', {
   align: 'center',
   gradient: ['red', 'magenta']
 })
-say(`Genesis-Bot By: Maxzito`, {
+say(`Genesis-Bot By: Angelito`, {
   font: 'console',
   align: 'center',
   gradient: ['cyan', 'magenta']
 })
 
 app.listen(port, () => {
-  console.log(chalk.green(`🍒 Puerto ${port} esta abierto`));
+  console.log(chalk.green(`🐈‍⬛ Puerto ${port} esta abierto`));
 });
 
 var isRunning = false
@@ -88,7 +88,7 @@ async function start(file) {
   console.log(chalk.yellow(`💾 Total RAM: ${ramInGB.toFixed(2)} GB`));
   const freeRamInGB = os.freemem() / (1024 * 1024 * 1024);
   console.log(chalk.yellow(`💽 Free RAM: ${freeRamInGB.toFixed(2)} GB`));
-  console.log(chalk.yellow(`📃 Script by FG98`));
+  console.log(chalk.yellow(`📃 Script by Angelito`));
 
   const packageJsonPath = path.join(path.dirname(currentFilePath), './package.json');
     try {
