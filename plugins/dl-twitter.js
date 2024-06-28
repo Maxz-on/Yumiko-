@@ -1,7 +1,7 @@
 import axios from 'axios';
 let enviando = false;
 const handler = async (m, {conn, text, usedPrefix, command}) => {
-if (!text) throw `*[❗] Ingrese un enlace de X (twitter), ejemplo: ${usedPrefix + command}* https://twitter.com/auronplay/status/1586487664274206720?s=20&t=3snvkvwGUIez5iWYQAehpw`;
+if (!text) throw `${mssg.avisoGene4}\n\n*INGRESA EL ENLACE*\n_.x <link>_`;
 if (enviando) return;
     enviando = true;
 try {
