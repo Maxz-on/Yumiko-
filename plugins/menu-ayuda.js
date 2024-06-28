@@ -26,8 +26,8 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
 
     let sbot =
         conn.user.jid == global.conn.user.jid
-        ? "> *`🐈‍⬛ 𝘉𝘰𝘵 :`* 𝘗𝘳𝘪𝘯𝘤𝘪𝘱𝘢𝘭"
-        : "> *`🐈‍⬛ 𝘉𝘰𝘵 : 𝘚𝘶𝘣 - 𝘣𝘰𝘵 𝘥𝘦`* " + `  Wa.me/${global.conn.user.jid.split`@`[0]}`;
+        ? "*🐈‍⬛ `𝘉𝘰𝘵 :`* 𝘗𝘳𝘪𝘯𝘤𝘪𝘱𝘢𝘭"
+        : "*🐈‍⬛ `𝘉𝘰𝘵 : 𝘚𝘶𝘣 - 𝘣𝘰𝘵 𝘥𝘦`* " + `  Wa.me/${global.conn.user.jid.split`@`[0]}`;
 
     global.fcontact = {
         key: {
@@ -53,14 +53,14 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
 
     let txt = ""
     txt += "*_◌⃘࣭࣪࣪࣪۬🐈‍⬛─ׅ─  𝙂 𝙀 𝙉 𝙀 𝙎 𝙄 𝙎  ──◌⃘࣭ٜ࣪࣪࣪۬🐈‍⬛_*\n\n";
-    txt += '*`🫅 𝘔𝘪 𝘊𝘳𝘦𝘢𝘥𝘰𝘳:`*' + ` Angelito\n`;
-    txt += '*`📚 𝘓𝘪𝘣𝘳𝘦𝘳𝘪𝘢:`*' + ` _Baileys_\n`;
+    txt += '*🫅 `𝘔𝘪 𝘊𝘳𝘦𝘢𝘥𝘰𝘳:`*' + ` Angelito\n`;
+    txt += '*📚 `𝘓𝘪𝘣𝘳𝘦𝘳𝘪𝘢:`*' + ` _Baileys_\n`;
     txt += `${sbot}\n`;
-    txt += '*`⚙ 𝘗𝘳𝘦𝘧𝘪𝘫𝘰:`*' + ` [  ${usedPrefix}  ]\n`;
-    txt += '*`🤖 𝘚𝘶𝘣-𝘉𝘰𝘵𝘴 𝘈𝘤𝘵𝘪𝘷𝘰𝘴:`*' + ` ${totalUsers || '0'}\n`;
-    txt += '*`🍀 𝘜𝘴𝘶𝘢𝘳𝘪𝘰𝘴:`*' + ` ${totalusr} \n`;
-    txt += '*`🪪 𝘙𝘦𝘨𝘪𝘴𝘵𝘳𝘢𝘥𝘰𝘴:`*' + ` ${rtotalreg}\n`;
-    txt += '*`⌚ 𝘓𝘭𝘦𝘷𝘰 𝘈𝘤𝘵𝘪𝘷𝘢:`*' + ` ${uptime}\n\n`;
+    txt += '*⚙ `𝘗𝘳𝘦𝘧𝘪𝘫𝘰:`*' + ` [  ${usedPrefix}  ]\n`;
+    txt += '*🤖 `𝘚𝘶𝘣-𝘉𝘰𝘵𝘴 𝘈𝘤𝘵𝘪𝘷𝘰𝘴:`*' + ` ${totalUsers || '0'}\n`;
+    txt += '*🍀 `𝘜𝘴𝘶𝘢𝘳𝘪𝘰𝘴:`*' + ` ${totalusr} \n`;
+    txt += '*🪪 `𝘙𝘦𝘨𝘪𝘴𝘵𝘳𝘢𝘥𝘰𝘴:`*' + ` ${rtotalreg}\n`;
+    txt += '*⌚ `𝘓𝘭𝘦𝘷𝘰 𝘈𝘤𝘵𝘪𝘷𝘢:`*' + ` ${uptime}\n\n`;
     txt += '> _© 2024 |_ ' + `𝘉𝘺: 𝘎𝘦𝘯𝘦𝘴𝘪𝘴 𝘉𝘰𝘵.\n\n`;
     txt += "*_◌⃘࣭࣪࣪࣪۬🐈‍⬛─ׅ────────────◌⃘࣭ٜ࣪࣪࣪۬🐈‍⬛_*\n";
 
