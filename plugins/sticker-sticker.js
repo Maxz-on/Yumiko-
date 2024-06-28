@@ -15,7 +15,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       if (/video/g.test(mime)) if ((q.msg || q).seconds > 11) return m.reply('Máximo 10 segundos')
       let img = await q.download?.()
       if (!img) throw `✳️ Responde a una imagen o video con*${usedPrefix + command}*`
-m.react('👹') 
+m.react('🐈‍⬛') 
       let out
       try {
         stiker = await sticker(img, false, f, g)
@@ -39,7 +39,7 @@ m.react('👹')
     if (!stiker) stiker = e
   } finally {
     if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, null, rpl)
-    else throw `${mssg.stickError}`
+    else throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*RESPONDE UNA IMG/VIDEO*';
   }
 }
 handler.help = ['sticker']
