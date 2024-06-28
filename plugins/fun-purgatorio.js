@@ -10,5 +10,5 @@ handler.help = ['purgatorio'];
 export default handler;
 
 global.purgatorio = [
-  'https://telegra.ph/file/36a3e9ba22292f41d8738.jpg',
+  'https://telegra.ph/file/1ec8c948a58fa4e3bb52d.jpg',
 ];
