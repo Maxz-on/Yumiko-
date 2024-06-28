@@ -53,7 +53,8 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
 
     let txt = ""
     txt += "*_◌⃘࣭࣪࣪࣪۬🐈‍⬛─ׅ─  𝙂 𝙀 𝙉 𝙀 𝙎 𝙄 𝙎  ──◌⃘࣭ٜ࣪࣪࣪۬🐈‍⬛_*\n\n";
-    txt += '*🫅 `𝘔𝘪 𝘊𝘳𝘦𝘢𝘥𝘰𝘳:`*' + ` Angelito\n`;
+    txt += '*🫅 `𝘔𝘪 𝘊𝘳𝘦𝘢𝘥𝘰𝘳:`*' + ` _Angelito_\n`;
+    txt += '*🐈‍⬛ `𝘝𝘦𝘳𝘴𝘪𝘰𝘯:`*' + ` _1.1.0_\n`;
     txt += '*📚 `𝘓𝘪𝘣𝘳𝘦𝘳𝘪𝘢:`*' + ` _Baileys_\n`;
     txt += `${sbot}\n`;
     txt += '*⚙ `𝘗𝘳𝘦𝘧𝘪𝘫𝘰:`*' + ` [  ${usedPrefix}  ]\n`;
