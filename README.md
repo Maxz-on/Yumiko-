@@ -1,5 +1,5 @@
 #### Version De Génesis: 1.1.0
-### 🍒 GÉNESIS BOT PRO 🍒
+### 🐈‍⬛ GÉNESIS BOT PRO 🐈‍⬛
 <p align="center">
 <img src="https://i.ibb.co/jHctydb/Genesis-Bot.jpg" alt="GenesisBot-Pro" width="900"/>
 </p>
