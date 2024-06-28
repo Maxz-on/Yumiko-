@@ -8,6 +8,7 @@ let handler = async (m, {
     text,
     command
 }) => {
+
  if (!text) throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*PARA USAR GENESIS IA*\n_Ejemplo: .genesis que sos?_';
     await m.react('🐈‍⬛');
     try {
