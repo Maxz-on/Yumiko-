@@ -21,14 +21,14 @@
         "js-whatsapp",
         "whatsapp",
         "dylux-bot",
-        "senna",
+        "genesis",
         "multi-device",
-        "senna-bot",
+        "genesis-bot",
         "baileys-md"
     ],
     "homepage": "https://github.com/karim-off/GenesisBot-Pro",
     "author": {
-        "name": "FG98"
+        "name": "Angelito"
     },
     "repository": {
         "type": "git",
