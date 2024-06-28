@@ -8,7 +8,7 @@ let handler = async (m, {
     text,
     command
 }) => {
-    if (!text) return m.reply(usedPrefix+command+" hola")
+    if (!text) return '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*PARA USAR GENESIS IA*\n_Ejemplo: .genesis quien te creo?_';
     await m.react('🐈‍⬛');
     try {
         const result = await chatAi(text);
