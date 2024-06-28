@@ -8,7 +8,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
     try {
         let { title, published, quality, likes, commentCount, shareCount, views, dl_url } = await Scraper.tiktokdl(args[0])
-            let txt = `𝘼𝙌𝙐𝙄 𝙏𝙄𝙀𝙉𝙀𝙎 🍒\n`
+            let txt = `𝘼𝙌𝙐𝙄 𝙏𝙄𝙀𝙉𝙀𝙎 🐈‍⬛\n`
                 txt += `> BY: GenesisBot-Pro`
 
         await conn.sendMessage(m.chat, { video: { url: dl_url }, caption: txt }, { quoted: m })
@@ -19,7 +19,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
         if (data.status) {
             const { author, view, comment, play, share, download, duration, title, video } = data.data;
-            let txt = `𝘼𝙌𝙐𝙄 𝙏𝙄𝙀𝙉𝙀𝙎 🍒\n`
+            let txt = `𝘼𝙌𝙐𝙄 𝙏𝙄𝙀𝙉𝙀𝙎 🐈‍⬛\n`
                 txt += `> BY: GenesisBot-Pro`
 
             await conn.sendMessage(m.chat, { video: { url: video }, caption: txt }, { quoted: m })
@@ -34,7 +34,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
             const publishedDate = formatDate(published)
             const fileSize = convertBytesToMB(meta.media[0].size_org)
 
-            let txt = `𝘼𝙌𝙐𝙄 𝙏𝙄𝙀𝙉𝙀𝙎 🍒\n`
+            let txt = `𝘼𝙌𝙐𝙄 𝙏𝙄𝙀𝙉𝙀𝙎 🐈‍⬛\n`
                 txt += `> BY: GenesisBot-Pro`
                 
             await conn.sendMessage(m.chat, { video: { url: meta.media[0].org }, caption: txt }, { quoted: m })
