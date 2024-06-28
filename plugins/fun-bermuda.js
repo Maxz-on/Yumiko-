@@ -10,5 +10,5 @@ handler.help = ['bermuda'];
 export default handler;
 
 global.bermuda = [
-  'https://telegra.ph/file/7be9328036d1cc3345523.jpg',
+  'https://telegra.ph/file/8b598a77e4be7d1b51c14.jpg',
 ];
