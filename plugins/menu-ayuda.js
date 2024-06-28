@@ -58,10 +58,10 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     txt += '*📚 `𝘓𝘪𝘣𝘳𝘦𝘳𝘪𝘢:`*' + ` _Baileys_\n`;
     txt += `${sbot}\n`;
     txt += '*⚙ `𝘗𝘳𝘦𝘧𝘪𝘫𝘰:`*' + ` [  ${usedPrefix}  ]\n`;
-    txt += '*🤖 `𝘚𝘶𝘣-𝘉𝘰𝘵𝘴 𝘈𝘤𝘵𝘪𝘷𝘰𝘴:`*' + ` ${totalUsers || '0'}\n`;
-    txt += '*🍀 `𝘜𝘴𝘶𝘢𝘳𝘪𝘰𝘴:`*' + ` ${totalusr} \n`;
-    txt += '*🪪 `𝘙𝘦𝘨𝘪𝘴𝘵𝘳𝘢𝘥𝘰𝘴:`*' + ` ${rtotalreg}\n`;
-    txt += '*⌚ `𝘓𝘭𝘦𝘷𝘰 𝘈𝘤𝘵𝘪𝘷𝘢:`*' + ` ${uptime}\n\n`;
+    txt += '*🤖 `𝘚𝘶𝘣-𝘉𝘰𝘵𝘴 𝘈𝘤𝘵𝘪𝘷𝘰𝘴:`*' + ` _${totalUsers || '0'}_\n`;
+    txt += '*🍀 `𝘜𝘴𝘶𝘢𝘳𝘪𝘰𝘴:`*' + ` _${totalusr}_\n`;
+    txt += '*🪪 `𝘙𝘦𝘨𝘪𝘴𝘵𝘳𝘢𝘥𝘰𝘴:`*' + ` _${rtotalreg}_\n`;
+    txt += '*⌚ `𝘓𝘭𝘦𝘷𝘰 𝘈𝘤𝘵𝘪𝘷𝘢:`*' + ` _${uptime}_\n\n`;
     txt += '> _© 2024 |_ ' + `𝘉𝘺: 𝘎𝘦𝘯𝘦𝘴𝘪𝘴 𝘉𝘰𝘵.\n\n`;
     txt += "*_◌⃘࣭࣪࣪࣪۬🐈‍⬛─ׅ────────────◌⃘࣭ٜ࣪࣪࣪۬🐈‍⬛_*\n";
 
