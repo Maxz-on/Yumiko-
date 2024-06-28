@@ -31,19 +31,19 @@ handler.command = /^zodia[kc]$/i
 export default handler
 
 const zodiak = [
-    ["Capricornio", new Date(1970, 0, 1)],
-    ["Acuario", new Date(1970, 0, 20)],
-    ["Piscis", new Date(1970, 1, 19)],
-    ["Aries", new Date(1970, 2, 21)],
-    ["Tauro", new Date(1970, 3, 21)],
-    ["Geminis", new Date(1970, 4, 21)],
-    ["Cancer", new Date(1970, 5, 22)],
-    ["Leo", new Date(1970, 6, 23)],
-    ["Virgo", new Date(1970, 7, 23)],
-    ["Libra", new Date(1970, 8, 23)],
-    ["Scorpion", new Date(1970, 9, 23)],
-    ["Sagitario", new Date(1970, 10, 22)],
-    ["Capricornio", new Date(1970, 11, 22)]
+    ["Capricornio ♑", new Date(1970, 0, 1)],
+    ["Acuario ♒", new Date(1970, 0, 20)],
+    ["Piscis ♓", new Date(1970, 1, 19)],
+    ["Aries ♈", new Date(1970, 2, 21)],
+    ["Tauro ♉", new Date(1970, 3, 21)],
+    ["Geminis ♊", new Date(1970, 4, 21)],
+    ["Cancer ♋", new Date(1970, 5, 22)],
+    ["Leo ♌", new Date(1970, 6, 23)],
+    ["Virgo ♍", new Date(1970, 7, 23)],
+    ["Libra ♎", new Date(1970, 8, 23)],
+    ["Scorpion ♏", new Date(1970, 9, 23)],
+    ["Sagitario ♐", new Date(1970, 10, 22)],
+    ["Capricornio ♑", new Date(1970, 11, 22)]
 ].reverse()
 
 function getZodiac(month, day) {
