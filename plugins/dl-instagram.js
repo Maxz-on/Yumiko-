@@ -1,14 +1,52 @@
-import hx from 'hxz-api'
-import fetch from 'node-fetch'
+import fetch from 'node-fetch';
+
+const apiURL = 'https://delirius-api-oficial.vercel.app/api/instagram';
+
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (!(args[0])) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽 𝙴𝙽𝙻𝙰𝙲𝙴 𝙳𝙴 𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼, 𝙴𝙹𝙴𝙼𝙿𝙻𝙾: ${usedPrefix + command} https://www.instagram.com/reel/Cc0NuYBg8CR/?utm_source=ig_web_copy_link*`
-hx.igdl(args[0]).then(async (r) => {
-for (let i = 0; i < r.medias.length; i++) {
-let shortUrl = await (await fetch(`https://tinyurl.com/api-create.php?url=${r.medias[i].url}`)).text()
-let txt = `🔗 *Url:* ${shortUrl}`.trim()
-await conn.sendFile(m.chat, r.medias[i].url, '', txt, m)
-}})}
-handler.command = /^instagramdl|instagram|igdl|ig$/i
-handler.exp = 70
-handler.dfail = null
-export default handler
+  if (!args[0] || !args[0].match(/instagram\.com/i)) 
+    throw `Usa el comando así: ${usedPrefix}${command} [enlace de Instagram]`;
+
+  const url = args[0].trim();
+  const apiUrl = `${apiURL}?url=${encodeURIComponent(url)}`;
+
+  const response = await fetch(apiUrl);
+  if (!response.ok) {
+    console.error('Error al buscar el contenido de Instagram:', response.statusText);
+    throw 'Ocurrió un error al buscar el contenido de Instagram';
+  }
+
+  const data = await response.json();
+  const mediaData = data.data;
+
+  if (!mediaData || mediaData.length === 0) 
+    throw 'No se encontraron datos válidos de la publicación de Instagram';
+
+  for (const media of mediaData) {
+    if (!media.url) continue;
+
+    const mediaResponse = await fetch(media.url);
+    if (!mediaResponse.ok) {
+      console.error('Error al descargar el contenido de Instagram:', mediaResponse.statusText);
+      throw 'Ocurrió un error al descargar el contenido de Instagram';
+    }
+
+    const mediaBuffer = await mediaResponse.buffer();
+
+    const caption = `descargado con exito`;
+
+    conn.sendFile(
+      m.chat,
+      mediaBuffer,
+      'video.mp4',
+      caption,
+      m
+    );
+  }
+};
+
+handler.help = ['instagram <enlace>'];
+handler.tags = ['downloader'];
+handler.command = ['instagram', 'ig'];
+handler.register = true;
+
+export default handler;
