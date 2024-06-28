@@ -65,8 +65,8 @@ const txt1 = `✨ *ENLACE | URL:* ${shortUrl1}\n\n${wm}`.trim();
 await conn.sendFile(m.chat, videoig, 'error.mp4', txt1, m);
 await conn.sendMessage(m.chat, {text: waittttt, edit: key})
 } catch (e) {
-conn.sendMessage(m.chat, {text: `${lenguajeGB['smsMalError3']()}#report ${lenguajeGB['smsMensError2']()} ${usedPrefix + command}\n\n${wm}`, edit: key});
-console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+conn.sendMessage(m.chat, {text: `hola ${usedPrefix + command}\n\n${wm}`, edit: key});
+console.log(`intenta ${usedPrefix + command} ❗❗`)
 console.log(e)
 }}}}}}}}
 handler.help = ['instagram <link ig>']
