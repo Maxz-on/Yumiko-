@@ -133,7 +133,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     let img10 = "https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg";
     let img11 = "https://telegra.ph/file/e6dd71bd907a92ef9ec03.jpg";
 
-    await conn.sendList(m.chat, menu, txt, `𝗠𝗘𝗡𝗨𝗦 𝗚𝗘𝗡𝗘𝗦𝗜𝗦`, [vid, img, img2, img3, img4, img5, img6, img8, img9, img10, img11].getRandom(), listSections, fcontact);
+    await conn.sendListB(m.chat, menu, txt, `𝗠𝗘𝗡𝗨𝗦 𝗚𝗘𝗡𝗘𝗦𝗜𝗦`, [vid, img, img2, img3, img4, img5, img6, img8, img9, img10, img11].getRandom(), listSections, fcontact);
 };
 
 handler.command = ["menu", "help", "menú"];
