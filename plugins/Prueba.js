@@ -1,3 +1,4 @@
+//código creado por Karim-off
 let handler = async (m, { conn, command, usedPrefix }) => {
 let pp = 'https://telegra.ph/file/50fd9ea68114f67f4d4c2.jpg'
 	m.react('🐈‍⬛') 
