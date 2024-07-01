@@ -30,7 +30,7 @@ let estado = `
 
 `
 await conn.sendButton(m.chat, estado, 'GenesisBot-Pro', pp, [
-['DUEÑO 🐈‍⬛', '.Perfil'], ['GRUPOS ☘️', '/allmenu']], null, [['CANAL 🐈‍⬛', `${fgcanal}`]], m)
+['DUEÑO 🐈‍⬛', '.owner'], ['GRUPOS ☘️', '/grupos']], null, [['CANAL 🐈‍⬛', `${fgcanal}`]], m)
 }
 handler.help = ['donate']
 handler.tags = ['info']
