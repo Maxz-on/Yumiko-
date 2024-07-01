@@ -13,7 +13,7 @@ let estado = `
 ᥀·࣭࣪̇˖🧑‍💻◗ 𝘉𝘰𝘵 𝘦𝘯 𝘥𝘦𝘴𝘢𝘳𝘳𝘰𝘭𝘭𝘰
 ᥀·࣭࣪̇˖🫧◗ 𝘚𝘪𝘨𝘶𝘦𝘮𝘦 𝘦𝘯 𝘮𝘪 𝘤𝘢𝘯𝘢𝘭
 `
-await conn.sendButton(m.chat, estado, 'GenesisBot-Pro', pp, [
+await conn.sendButton(m.chat, estado, '‎ ', pp, [
 ['📚 Menu 📚', '.allmenu'], ['🫅 Creador 🫅', '.owner']], null, [['🐈‍⬛ Canal 🐈‍⬛', `${fgcanal}`]], m)
 }
 handler.help = ['prueba1']
