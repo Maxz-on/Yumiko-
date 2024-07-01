@@ -1,9 +1,26 @@
 
-let handler = async(m, { conn, usedPrefix, command }) => {
+let handler = async (m, { conn, command, usedPrefix }) => {
+let pp = 'https://telegra.ph/file/50fd9ea68114f67f4d4c2.jpg'
+let name = await conn.getName(m.sender)
+let _uptime = process.uptime() * 1000
+let _muptime
+if (process.send) { process.send('uptime')
+_muptime = await new Promise(resolve => { process.once('message', resolve) 
+setTimeout(resolve, 1000) }) * 1000}
+let uptime = clockString(_uptime)
+let estado = `
+᥀·࣭࣪̇˖🐈‍⬛◗ 𝘊𝘙𝘌𝘈𝘋𝘖𝘙:
+• Angelito
 
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+᥀·࣭࣪̇˖🐈‍⬛◗ 𝘈𝘚𝘐𝘚𝘛𝘌𝘕𝘊𝘐𝘈:
+• wa.me/59897246324
 
-    let don = `
+᥀·࣭࣪̇˖🐈‍⬛◗ 𝘈𝘊𝘛𝘐𝘝𝘐𝘋𝘈𝘋:
+• ${uptime}
+
+᥀·࣭࣪̇˖🐈‍⬛◗ 𝘉𝘖𝘛:
+• GenesisBot 
+
 🐈‍⬛ 𝗗 𝗢 𝗡 𝗔 𝗥  𝗚 𝗘 𝗡 𝗘 𝗦 𝗜 𝗦 🐈‍⬛
 
 » 𝗖𝗥𝗘𝗔𝗗𝗢𝗥 𝗗𝗘𝗟 𝗕𝗢𝗧
@@ -17,14 +34,18 @@ _Puedes apoyar el bot dando tu estrellita en nuestro repositorio_
 
 > ${mssg.ig}
 `
-let img = 'https://i.ibb.co/37FP2bk/donate.jpg'
-conn.sendFile(m.chat, img, 'img.jpg', don, fkontak, null, rcanal)
-//conn.sendPayment(m.chat, '2000', 'USD', don, m.sender, m)
+await conn.sendButton(m.chat, estado, 'GenesisBot-Pro', pp, [
+['MI PERFIL ☁️', '.Perfil'], ['MENU 📚', '/allmenu']], null, [['CANAL 🐈‍⬛', `${fgcanal}`]], m)
 }
-
 handler.help = ['donate']
 handler.tags = ['info']
-handler.command = ['apoyar', 'donate', 'donar'] 
+handler.command = /^(apoyar|donate|donar?)$/i
 
 export default handler
+
+function clockString(ms) {
+let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}
 
