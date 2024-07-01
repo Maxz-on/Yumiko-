@@ -1,34 +1,40 @@
 
-let handler = async(m, { conn, usedPrefix, command }) => {
-
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-
+let handler = async (m, { conn, command, usedPrefix }) => {
+let pp = 'https://telegra.ph/file/50fd9ea68114f67f4d4c2.jpg'
 m.react('✅')
+let name = await conn.getName(m.sender)
+let _uptime = process.uptime() * 1000
+let _muptime
+if (process.send) { process.send('uptime')
+_muptime = await new Promise(resolve => { process.once('message', resolve) 
+setTimeout(resolve, 1000) }) * 1000}
+let uptime = clockString(_uptime)
+let estado = `
+᥀·࣭࣪̇˖🐈‍⬛◗ 𝘊𝘈𝘕𝘈𝘓:
+• ${fgcanal}
 
-    let don = `
-🐈‍⬛ 𝗥 𝗘 𝗗 𝗘 𝗦  𝗚 𝗘 𝗡 𝗘 𝗦 𝗜 𝗦 🐈‍⬛
+᥀·࣭࣪̇˖🐈‍⬛◗ 𝘎𝘓𝘖𝘉𝘈𝘓:
+• ${bgp2}
 
-» 𝗖𝗔𝗡𝗔𝗟
-${fgcanal}
+᥀·࣭࣪̇˖🐈‍⬛◗ 𝘈𝘝𝘐𝘚𝘖𝘚:
+• ${bgp}
 
-» 𝗔𝗩𝗜𝗦𝗢𝗦
-${bgp}
-
-» 𝗚𝗟𝗢𝗕𝗔𝗟
-${bgp2}
-
-» 𝗚𝗘𝗡𝗘𝗦𝗜𝗦 𝗫 𝗪𝗜𝗘𝗥 𝗕𝗢𝗧
-https://chat.whatsapp.com/GO5l3kShGE30eV9dN82elb
-
-> ${mssg.ig}
+᥀·࣭࣪̇˖🐈‍⬛◗ 𝘎𝘌𝘕𝘌𝘚𝘐𝘚 𝘟 𝘞𝘐𝘌𝘙:
+• https://chat.whatsapp.com/GO5l3kShGE30eV9dN82elb
 `
-let img = 'https://i.ibb.co/jHctydb/Genesis-Bot.jpg'
-conn.sendFile(m.chat, img, 'img.jpg', don, fkontak, null, rcanal)
-//conn.sendPayment(m.chat, '2000', 'USD', don, m.sender, m)
+await conn.sendButton(m.chat, estado, 'GenesisBot-Pro', pp, [
+['DUEÑO 🐈‍⬛', '.Perfil'], ['GRUPOS ☘️', '/allmenu']], null, [['CANAL 🐈‍⬛', `${fgcanal}`]], m)
 }
-
 handler.help = ['grupos']
 handler.tags = ['info']
-handler.command = ['grupos', 'groups', 'support']
+handler.command = /^(grupos|groups|support?)$/i
 
 export default handler
+
+function clockString(ms) {
+let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}
+
+
