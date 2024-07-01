@@ -23,7 +23,7 @@ let estado = `
 • https://chat.whatsapp.com/GO5l3kShGE30eV9dN82elb
 `
 await conn.sendButton(m.chat, estado, 'GenesisBot-Pro', pp, [
-['DUEÑO 🐈‍⬛', '.Perfil'], ['GRUPOS ☘️', '/allmenu']], null, [['CANAL 🐈‍⬛', `${fgcanal}`]], m)
+['DUEÑO 🐈‍⬛', '.owner'], ['DONAR 🫧', '.donate']], null, [['CANAL 🐈‍⬛', `${fgcanal}`]], m)
 }
 handler.help = ['grupos']
 handler.tags = ['info']
