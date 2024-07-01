@@ -21,21 +21,16 @@ let estado = `
 ᥀·࣭࣪̇˖🐈‍⬛◗ 𝘉𝘖𝘛:
 • GenesisBot 
 
-🐈‍⬛ 𝗗 𝗢 𝗡 𝗔 𝗥  𝗚 𝗘 𝗡 𝗘 𝗦 𝗜 𝗦 🐈‍⬛
+᥀·࣭࣪̇˖🐈‍⬛◗ 𝘋𝘖𝘕𝘈𝘙:
+• Puedes apoyar el bot dando tu estrellita en nuestro repositorio
 
-» 𝗖𝗥𝗘𝗔𝗗𝗢𝗥 𝗗𝗘𝗟 𝗕𝗢𝗧
-🐈‍⬛ wa.me/59897246324
-
-_Puedes apoyar el bot dando tu estrellita en nuestro repositorio_
-
-» 𝗥𝗘𝗣𝗢𝗦𝗜𝗧𝗢𝗥𝗜𝗢
-🐈‍⬛ https://github.com/Karim-off/GenesisBot-Pro
+᥀·࣭࣪̇˖🐈‍⬛◗ 𝘙𝘌𝘗𝘖𝘚𝘐𝘛𝘖𝘙𝘐𝘖:
+• https://github.com/Karim-off/GenesisBot-Pro
 
 
-> ${mssg.ig}
 `
 await conn.sendButton(m.chat, estado, 'GenesisBot-Pro', pp, [
-['MI PERFIL ☁️', '.Perfil'], ['MENU 📚', '/allmenu']], null, [['CANAL 🐈‍⬛', `${fgcanal}`]], m)
+['DUEÑO 🐈‍⬛', '.Perfil'], ['GRUPOS ☘️', '/allmenu']], null, [['CANAL 🐈‍⬛', `${fgcanal}`]], m)
 }
 handler.help = ['donate']
 handler.tags = ['info']
