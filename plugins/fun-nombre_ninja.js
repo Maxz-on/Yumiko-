@@ -4,8 +4,8 @@ conn.reply(m.chat, '⁖🧡꙰  Buscando El Nombre....', m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
 title: packname,
 body: packname,
-previewType: 0, thumbnail: ,
-sourceUrl: channel }}})
+previewType: 0, thumbnail: fgcanal,
+sourceUrl: fgcanal }}})
 let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
 m.reply(teks.replace(/[a-z]/gi, v => {
 return {
