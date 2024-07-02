@@ -162,7 +162,7 @@ global.fcontact = {
         },
     };
 
-    let pp = 'https://telegra.ph/file/94afb1c46a0fdea844d8f.mp4'
+    let pp = 'https://tinyurl.com/2npcbu2h'
     await conn.reply(m.chat, '🐈‍⬛ `𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢 𝗠𝗘𝗡𝗨....`', fcontact);
 
     /*conn.sendButton(m.chat, text.trim(), `▢ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
