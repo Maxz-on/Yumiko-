@@ -38,7 +38,7 @@ return {
 }[v.toLowerCase()] || v }))}
 
 handler.help = ['nombreninja *<texto>*']
-handler.tags = ['fun']
+handler.tags = ['pop']
 handler.command = ['nombreninja']
 handler.register = true
 
