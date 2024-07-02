@@ -162,7 +162,7 @@ global.fcontact = {
         },
     };
 
-    let pp = 'https://i.ibb.co/jHctydb/Genesis-Bot.jpg'
+    let pp = 'https://telegra.ph/file/d3f406f004ef59df401c6.mp4'
     await conn.reply(m.chat, '🐈‍⬛ `𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢 𝗠𝗘𝗡𝗨....`', fcontact);
 
     /*conn.sendButton(m.chat, text.trim(), `▢ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
