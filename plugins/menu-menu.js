@@ -165,7 +165,6 @@ global.fcontact = {
     let pp = ''
     await conn.reply(m.chat, '🐈‍⬛ `𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢 𝗠𝗘𝗡𝗨....`', fcontact);
 
-
 conn.sendMessage(m.chat, {
       video: {url: "https://telegra.ph/file/1d1dee7e2f0d6e5e2716e.mp4"},
       gifPlayback: true,
