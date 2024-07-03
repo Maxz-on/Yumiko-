@@ -6,7 +6,7 @@ import axios from "axios"
 let handler = async (m, { conn, text }) => {
     if (!text) throw 'how i can assist you today??';
     try {
-        conn.reply(m.chat, wait, m);
+        conn.reply(m.chat, m);
         let data = await chatGpt(text)
         conn.reply(m.chat, data, m);
     } catch (err) {
