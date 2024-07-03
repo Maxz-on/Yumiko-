@@ -8,5 +8,5 @@ conn.sendButton(m.chat, `${command}`, packname, json.url, [['🐈‍⬛ SIGUIENT
 }
 handler.help = ['waifu']
 handler.tags = ['random']
-handler.command = /^(waifu)$/i
+handler.command = /^(waifu2)$/i
 export default handler
