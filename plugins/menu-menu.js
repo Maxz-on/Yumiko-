@@ -170,7 +170,20 @@ global.fcontact = {
       ['⏍ Info', `${_p}botinfo`],
       ['⌬ Grupos', `${_p}gpdylux`]
     ], m, rpl)*/
-    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), null, m)
+conn.sendMessage(m.chat, {
+      video: {url: "https://telegra.ph/file/1d1dee7e2f0d6e5e2716e.mp4"},
+      gifPlayback: true,
+      caption: text.trim(),
+      contextInfo: {
+      externalAdReply: {
+      title: "◌⃘࣭࣪࣪࣪۬🐈‍⬛─ׅ  𝙂 𝙀 𝙉 𝙀 𝙎 𝙄 𝙎  𝘽 𝙊 𝙏  ──◌⃘࣭ٜ࣪࣪࣪۬🐈‍⬛",
+      body: '',
+      thumbnailUrl: pp,
+      souceUrl: "https://wa.me/59897246324",
+      mediaType: 1,
+      renderLargerThumbnail: true
+      }}}, {quoted: m})
+//    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), null, m)
     m.react('🐈‍⬛') 
 
   } catch (e) {
