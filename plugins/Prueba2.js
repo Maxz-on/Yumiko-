@@ -14,9 +14,9 @@ const handler = async (m, {conn, usedPrefix, command}) => {
   throw `᥀·࣭࣪̇˖⛔◗ 𝙊𝙘𝙪𝙧𝙧𝙞𝙤 𝙪𝙣 𝙚𝙧𝙧𝙤𝙧 𝙞𝙣𝙚𝙨𝙥𝙚𝙧𝙖𝙙𝙤 𝙖𝙡 𝙘𝙤𝙣𝙫𝙚𝙧𝙩𝙞𝙧 𝙡𝙖 𝙞𝙢𝙖𝙜𝙚𝙣 𝙚𝙣 𝙃𝘿, 𝙞𝙣𝙩𝙚𝙣𝙩𝙖𝙡𝙤 𝙙𝙚 𝙣𝙪𝙚𝙫𝙤.`;
  }
 };
-handler.help = ["remini", "hd", "enhance"];
-handler.tags = ["ai", "tools"];
-handler.command = ["remini", "hd", "enhance"];
+handler.help = ["remini", "hd"];
+handler.tags = ["convertir"];
+handler.command = ["remini", "hd"];
 export default handler;
 async function remini(imageData, operation) {
 return new Promise(async (resolve, reject) => {
