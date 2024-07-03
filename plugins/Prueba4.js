@@ -1,22 +1,48 @@
-import Starlights from '@StarlightsTeam/Scraper'
+import axios from 'axios';
+import fs from 'fs';
 
-let handler = async (m, { conn, args, command, usedPrefix }) => {
-if (!global.db.data.chats[m.chat].nsfw) return conn.reply(m.chat, `🚩 El grupo no admite contenido *Nsfw.*\n\n> Para activarlo un *Administrador* debe usar el comando */nsfw on*`, m, rcanal)
-if (!args[0]) return conn.reply(m.chat, `🚩 Ingresa el enlace del vídeo de Xvideos*`, m, rcanal)
+const handler = async (m, { conn, args, command }) => {
+  if (!args[0]) throw 'Where\'s the URL?';
+  const userUrl = args[0];
 
-let user = global.db.data.users[m.sender]
-await m.react('🕓')
-try {
-let { title, dl_url } = await Starlights.xvideosdl(args[0])
-await conn.sendFile(m.chat, dl_url, title + '.mp4', `*» Título* : ${title}`, m, false, { asDocument: user.useDocument })
-await m.react('✅')
-} catch {
-await m.react('✖️')
-}}
-handler.help = ['xvideosdl *<url>*']
-handler.tags = ['downloader', 'nsfw']
-handler.command = ['xvideosdl']
-//handler.limit = 200
-handler.register = true 
-handler.group = true 
-export default handler
+  const apiUrl = `https://skizo.tech/api/download?url=${encodeURIComponent(userUrl)}&apikey=${global.xzn}`;
+
+  try {
+    const response = await axios.get(apiUrl);
+    const videoUrl = response.data.url[0].url;
+
+    await m.reply(`Downloading video from ${videoUrl}`);
+
+    const videoResponse = await axios({
+      method: 'GET',
+      url: videoUrl,
+      responseType: 'stream',
+    });
+
+    const videoName = `video-${Date.now()}.mp4`;
+    const videoPath = `./${videoName}`;
+
+    const writer = fs.createWriteStream(videoPath);
+    videoResponse.data.pipe(writer);
+
+    writer.on('finish', async () => {
+      await conn.sendFile(m.chat, fs.readFileSync(videoPath), videoName, '', m);
+
+      fs.unlinkSync(videoPath);
+
+      m.reply('Video successfully downloaded and sent!');
+    });
+
+    writer.on('error', (err) => {
+      m.reply(`Error occurred while downloading the video: ${err.message}`);
+    });
+  } catch (error) {
+    m.reply(`Error occurred: ${error.message}`);
+  }
+};
+
+handler.help = ['all'].map((v) => v + ' <url>');
+handler.tags = ['downloader'];
+handler.command = /^(all|semua)$/i;
+
+export default handler;
