@@ -165,22 +165,11 @@ global.fcontact = {
     let pp = ''
     await conn.reply(m.chat, '🐈‍⬛ `𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢 𝗠𝗘𝗡𝗨....`', fcontact);
 
-    /*conn.sendButton(m.chat, text.trim(), `▢ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
-      ['ꨄ︎ Apoyar', `${_p}donate`],
-      ['⏍ Info', `${_p}botinfo`],
-      ['⌬ Grupos', `${_p}gpdylux`]
-    ], m, rpl)*/
+
 conn.sendMessage(m.chat, {
       video: {url: "https://telegra.ph/file/1d1dee7e2f0d6e5e2716e.mp4"},
       gifPlayback: true,
       caption: text.trim(),
-      contextInfo: {
-      externalAdReply: {
-      title: "",
-      body: '',
-      souceUrl: "",
-      mediaType: 1,
-      renderLargerThumbnail: true
       }}}, {quoted: fcontact})
 //    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), null, rcanal)
     m.react('🐈‍⬛') 
