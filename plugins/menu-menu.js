@@ -182,7 +182,7 @@ conn.sendMessage(m.chat, {
       souceUrl: "https://wa.me/59897246324",
       mediaType: 1,
       renderLargerThumbnail: true
-      }}}, {quoted: m})
+      }}}, {quoted: rcanal})
 //    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), null, rcanal)
     m.react('🐈‍⬛') 
 
