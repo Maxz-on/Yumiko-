@@ -2,7 +2,7 @@ import axios from 'axios'
 import cheerio from 'cheerio'
 
 let handler = async (m, { conn, args }) => {
-        if (!args[0]) throw 'Input URL'
+        if (!args[0]) throw '${mssg.avisoGene4}\n\n*INGRESA EL NOMBRE DE LA APK*\n_Ejemplo: . danbooru <link>_'
         if (!/danbooru\.donmai\.us\/posts\/[0-9]+$/i.test(args[0])) throw `Invalid *URL*`
 await m.react('🕓')
         let data = await danbooruDl(args[0]), img = data.url
