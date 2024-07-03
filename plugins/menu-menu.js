@@ -162,13 +162,20 @@ global.fcontact = {
         },
     };
 
-    let pp = ''
+    let pp = 'https://imgur.com/gallery/menu-h9s67Ld'
     await conn.reply(m.chat, '🐈‍⬛ `𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢 𝗠𝗘𝗡𝗨....`', fcontact);
 
+    /*conn.sendButton(m.chat, text.trim(), `▢ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
+      ['ꨄ︎ Apoyar', `${_p}donate`],
+      ['⏍ Info', `${_p}botinfo`],
+      ['⌬ Grupos', `${_p}gpdylux`]
+    ], m, rpl)*/
 conn.sendMessage(m.chat, {
       video: {url: "https://telegra.ph/file/1d1dee7e2f0d6e5e2716e.mp4"},
       gifPlayback: true,
-      caption: text.trim(), null, rcanal)
+      caption: text.trim(),
+      }, {quoted: m})
+//    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), null, m)
     m.react('🐈‍⬛') 
 
   } catch (e) {
