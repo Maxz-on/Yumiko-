@@ -178,7 +178,7 @@ conn.sendMessage(m.chat, {
       externalAdReply: {
       title: "◌⃘࣭࣪࣪࣪۬🐈‍⬛─ׅ  𝙂 𝙀 𝙉 𝙀 𝙎 𝙄 𝙎  𝘽 𝙊 𝙏  ──◌⃘࣭ٜ࣪࣪࣪۬🐈‍⬛",
       body: '',
-      thumbnailUrl: m,
+      thumbnailUrl: rcanal,
       souceUrl: "https://wa.me/59897246324",
       mediaType: 1,
       renderLargerThumbnail: true
