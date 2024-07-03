@@ -5,7 +5,7 @@ let nek = ne.split('\n')
 let neko = pickRandom(nek)
 conn.sendButton(m.chat, command, wm, neko, [['🐈‍⬛ SIGUIENTE 🐈‍⬛', `/${command}`]], null, null, m)
 }
-handler.command = /^(neko)$/i
+handler.command = /^(neko2)$/i
 handler.tags = ['anime']
 handler.help = ['neko2']
 export default handler
