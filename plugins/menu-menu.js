@@ -182,7 +182,7 @@ conn.sendMessage(m.chat, {
       souceUrl: "",
       mediaType: 1,
       renderLargerThumbnail: true
-      }}}, {quoted: m})
+      }}}, {quoted: fcontact})
 //    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), null, rcanal)
     m.react('🐈‍⬛') 
 
