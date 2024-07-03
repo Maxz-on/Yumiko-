@@ -4,11 +4,13 @@ import cheerio from 'cheerio'
 let handler = async (m, { conn, args }) => {
         if (!args[0]) throw 'Input URL'
         if (!/danbooru\.donmai\.us\/posts\/[0-9]+$/i.test(args[0])) throw `Invalid *URL*`
+await m.react('🕓')
         await m.reply('Sedang diproses...')
         let data = await danbooruDl(args[0]), img = data.url
         delete data.url
         let capt = Object.keys(data).map((x) => `${x}: ${data[x]}`).join`\n`
         await conn.sendFile(m.chat, img, '', capt, m)
+await m.react('✅')
 }
 handler.help = ['danbooru <link>'].map(v => v + ' <url>')
 handler.tags = ['dl']
