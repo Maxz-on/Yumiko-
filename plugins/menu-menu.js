@@ -178,7 +178,6 @@ conn.sendMessage(m.chat, {
       externalAdReply: {
       title: "",
       body: '',
-      thumbnailUrl: pp,
       souceUrl: "",
       mediaType: 1,
       renderLargerThumbnail: true
