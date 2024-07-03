@@ -6,7 +6,7 @@ let json = await res.json()
 if (!json.url) throw `${errorBB}`
 conn.sendButton(m.chat, `${command}`, packname, json.url, [['🐈‍⬛ SIGUIENTE 🐈‍⬛', `/${command}`]], null, null, m)
 }
-handler.help = ['waifu']
+handler.help = ['waifu2']
 handler.tags = ['random']
 handler.command = /^(waifu2)$/i
 export default handler
