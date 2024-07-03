@@ -183,7 +183,7 @@ conn.sendMessage(m.chat, {
       mediaType: 1,
       renderLargerThumbnail: true
       }}}, {quoted: m})
-//    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), null, m)
+//    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), null, rcanal)
     m.react('🐈‍⬛') 
 
   } catch (e) {
