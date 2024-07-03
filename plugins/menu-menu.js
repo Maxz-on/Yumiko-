@@ -179,10 +179,10 @@ conn.sendMessage(m.chat, {
       title: "",
       body: '',
       thumbnailUrl: pp,
-      souceUrl: "https://wa.me/59897246324",
+      souceUrl: "",
       mediaType: 1,
       renderLargerThumbnail: true
-      }}}, {quoted: rcanal})
+      }}}, {quoted: m})
 //    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), null, rcanal)
     m.react('🐈‍⬛') 
 
