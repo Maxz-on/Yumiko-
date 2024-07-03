@@ -14,8 +14,8 @@ let handler = async (m, { conn, text }) => {
     }
 }
 
-handler.command = handler.help = ['gptdemo'];
-handler.tags = ['gptdemo'];
+handler.command = handler.help = ['demo'];
+handler.tags = ['ia'];
 handler.limit = 3;
 
 export default handler;
