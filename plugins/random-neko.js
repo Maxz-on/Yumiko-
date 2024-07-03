@@ -1,13 +1,12 @@
-import fetch from 'node-fetch';
-const handler = async (m, {conn, command}) => {
-  const ne = await (await fetch('https://raw.githubusercontent.com/ArugaZ/grabbed-results/main/random/anime/neko.txt')).text();
-  const nek = ne.split('\n');
-  const neko = await nek[Math.floor(Math.random() * nek.length)];
-  if (neko == '') throw 'Error';
-  conn.sendFile(m.chat, neko, 'error.jpg', `Nyaww~ 🐾💗`, m);
-};
-// conn.sendButton(m.chat, 'Nyaww~ 🐾💗', wm, neko, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]],m)}
-handler.command = /^(neko)$/i;
-handler.tags = ['random'];
-handler.help = ['neko'];
-export default handler;
+import fetch from 'node-fetch'
+let handler = async (m, { conn, usedPrefix, command }) => {
+let res = await fetch('https://raw.githubusercontent.com/ArugaZ/grabbed-results/main/random/anime/neko.txt')
+if (!res.ok) throw await res.text()
+let json = await res.json()
+if (!json.url) throw `${errorBB}`
+conn.sendButton(m.chat, `${command}`, packname, json.url, [['🐈‍⬛ SIGUIENTE 🐈‍⬛', `/${command}`]], null, null, m)
+}
+handler.help = ['neko']
+handler.tags = ['random']
+handler.command = /^(neko)$/i
+export default handler
