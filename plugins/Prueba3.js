@@ -1,2 +1,134 @@
-    /** By @MoonContentCreator || https://github.com/MoonContentCreator/BixbyBot-Md **/ 
-const _0x58352b=_0x2c6e;(function(_0x2b2bc5,_0x2258b3){const _0x15a21b=_0x2c6e,_0x42169b=_0x2b2bc5();while(!![]){try{const _0x40756e=-parseInt(_0x15a21b(0x171))/0x1*(-parseInt(_0x15a21b(0x179))/0x2)+parseInt(_0x15a21b(0x165))/0x3+parseInt(_0x15a21b(0x162))/0x4*(-parseInt(_0x15a21b(0x16b))/0x5)+-parseInt(_0x15a21b(0x17c))/0x6*(parseInt(_0x15a21b(0x16c))/0x7)+-parseInt(_0x15a21b(0x180))/0x8*(-parseInt(_0x15a21b(0x16e))/0x9)+parseInt(_0x15a21b(0x160))/0xa+-parseInt(_0x15a21b(0x178))/0xb;if(_0x40756e===_0x2258b3)break;else _0x42169b['push'](_0x42169b['shift']());}catch(_0x3fb82e){_0x42169b['push'](_0x42169b['shift']());}}}(_0x3b4e,0x68082));import _0x5665ce from'node-fetch';function _0x2c6e(_0x3e27c7,_0x27cd81){const _0x3b4e1b=_0x3b4e();return _0x2c6e=function(_0x2c6e9b,_0x37250b){_0x2c6e9b=_0x2c6e9b-0x15f;let _0x3b0824=_0x3b4e1b[_0x2c6e9b];return _0x3b0824;},_0x2c6e(_0x3e27c7,_0x27cd81);}const handler=async(_0x6b7487,{conn:_0xf3c1a5,command:_0x5ef42d,text:_0x3c3413,isAdmin:_0x5530bc})=>{const _0x4ccc11=_0x2c6e;if(_0x5ef42d===_0x4ccc11(0x15f)){if(!_0x5530bc)throw _0x4ccc11(0x184);let _0x590e21=_0x6b7487[_0x4ccc11(0x17d)][0x0]?_0x6b7487[_0x4ccc11(0x17d)][0x0]:_0x6b7487[_0x4ccc11(0x161)]?_0x6b7487[_0x4ccc11(0x161)][_0x4ccc11(0x173)]:_0x3c3413;if(_0x590e21===_0xf3c1a5[_0x4ccc11(0x176)][_0x4ccc11(0x16f)])throw _0x4ccc11(0x17e);let _0x4311f1=global['db'][_0x4ccc11(0x177)][_0x4ccc11(0x186)][_0x590e21],_0x246f97={'key':{'participants':_0x4ccc11(0x185),'fromMe':![],'id':_0x4ccc11(0x164)},'message':{'locationMessage':{'name':_0x4ccc11(0x166),'jpegThumbnail':await(await _0x5665ce(_0x4ccc11(0x168)))[_0x4ccc11(0x172)](),'vcard':_0x4ccc11(0x187)}},'participant':_0x4ccc11(0x185)},_0x43d9a4=_0x4ccc11(0x163);if(!_0x6b7487['mentionedJid'][0x0]&&!_0x6b7487['quoted'])return _0xf3c1a5[_0x4ccc11(0x175)](_0x6b7487['chat'],_0x43d9a4,_0x6b7487);if(_0x4311f1[_0x4ccc11(0x169)]===!![])throw _0x4ccc11(0x17b);_0xf3c1a5[_0x4ccc11(0x175)](_0x6b7487['chat'],_0x4ccc11(0x17f),_0x246f97,null,{'mentions':[_0x590e21]}),global['db'][_0x4ccc11(0x177)][_0x4ccc11(0x186)][_0x590e21]['muto']=!![];}else{if(_0x5ef42d==='unmute'){if(!_0x5530bc)throw _0x6b7487[_0x4ccc11(0x175)](_0x4ccc11(0x184));let _0x1f0973=_0x6b7487[_0x4ccc11(0x17d)][0x0]?_0x6b7487[_0x4ccc11(0x17d)][0x0]:_0x6b7487[_0x4ccc11(0x161)]?_0x6b7487[_0x4ccc11(0x161)][_0x4ccc11(0x173)]:_0x3c3413,_0x5746e0=global['db'][_0x4ccc11(0x177)][_0x4ccc11(0x186)][_0x1f0973],_0x44ec58={'key':{'participants':_0x4ccc11(0x185),'fromMe':![],'id':'Halo'},'message':{'locationMessage':{'name':_0x4ccc11(0x174),'jpegThumbnail':await(await _0x5665ce(_0x4ccc11(0x182)))[_0x4ccc11(0x172)](),'vcard':_0x4ccc11(0x187)}},'participant':_0x4ccc11(0x185)},_0x2a46e1=_0x4ccc11(0x16d);if(_0x1f0973===_0x6b7487[_0x4ccc11(0x173)])throw _0x4ccc11(0x17a);if(!_0x6b7487[_0x4ccc11(0x17d)][0x0]&&!_0x6b7487[_0x4ccc11(0x161)])return _0xf3c1a5['reply'](_0x6b7487[_0x4ccc11(0x16a)],_0x2a46e1,_0x6b7487);if(_0x5746e0[_0x4ccc11(0x169)]===![])throw _0x4ccc11(0x181);global['db'][_0x4ccc11(0x177)]['users'][_0x1f0973][_0x4ccc11(0x169)]=![],_0xf3c1a5[_0x4ccc11(0x175)](_0x6b7487[_0x4ccc11(0x16a)],'🌹\x20𝙏𝙐𝙎\x20𝙈𝙀𝙉𝙎𝘼𝙅𝙀𝙎\x20𝙉𝙊\x20𝙎𝙀𝙍𝘼𝙉\x20𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝙊𝙎',_0x44ec58,null,{'mentions':[_0x1f0973]});}}};function _0x3b4e(){const _0x30baeb=['16XLxIGA','✨\x20𝙀𝙎𝙏𝙀\x20𝙐𝙎𝙐𝘼𝙍𝙄𝙊\x20𝙉𝙊\x20𝙃𝘼\x20𝙎𝙄𝘿𝙊\x20𝙎𝙄𝙇𝙀𝙉𝘾𝙄𝘼𝘿𝙊','https://telegra.ph/file/aea704d0b242b8c41bf15.png','command','🌟\x20𝙎𝙊𝙇𝙊\x20𝙐𝙉\x20𝘼𝘿𝙈𝙄𝙉𝙄𝙎𝙏𝙍𝘼𝘿𝙊𝙍\x20𝙋𝙐𝙀𝘿𝙀\x20𝙀𝙅𝙀𝘾𝙐𝙏𝘼𝙍\x20𝙀𝙎𝙏𝘼\x20𝙁𝙐𝙉𝘾𝙄𝙊𝙉','0@s.whatsapp.net','users','BEGIN:VCARD\x0aVERSION:3.0\x0aN:;Unlimited;;;\x0aFN:Unlimited\x0aORG:Unlimited\x0aTITLE:\x0aitem1.TEL;waid=19709001746:+1\x20(970)\x20900-1746\x0aitem1.X-ABLabel:Unlimited\x0aX-WA-BIZ-DESCRIPTION:ofc\x0aX-WA-BIZ-NAME:Unlimited\x0aEND:VCARD','mute','2178540ahxTRu','quoted','418172PXgQsG','✿\x20𝙈𝙀𝙉𝘾𝙄𝙊𝙉𝘼\x20𝘼\x20𝙇𝘼\x20𝙋𝙀𝙍𝙎𝙊𝙉𝘼\x20𝙌𝙐𝙀\x20𝘿𝙀𝙎𝙀𝘼𝙎\x20𝙎𝙄𝙇𝙀𝙉𝘾𝙄𝘼𝙍','Halo','955977GlIHRX','𝗨𝘀𝘂𝗮𝗿𝗶𝗼\x20𝗺𝘂𝘁𝗮𝗱𝗼','botAdmin','https://telegra.ph/file/f8324d9798fa2ed2317bc.png','muto','chat','40gpwvND','3553669SzDAHd','✿\x20𝙈𝙀𝙉𝘾𝙄𝙊𝙉𝘼\x20𝘼\x20𝙇𝘼\x20𝙋𝙀𝙍𝙎𝙊𝙉𝘼\x20𝙋𝘼𝙍𝘼\x20𝙌𝙐𝙀\x20𝘿𝙀𝙅𝙀\x20𝘿𝙀\x20𝙀𝙎𝙏𝘼𝙍\x20𝙎𝙄𝙇𝙀𝙉𝘾𝙄𝘼𝘿𝙊(𝘼)','3368151uHNSZl','jid','group','55300xfpoQh','buffer','sender','𝗨𝘀𝘂𝗮𝗿𝗶𝗼\x20𝗱𝗲𝗺𝘂𝘁𝗮𝗱𝗼','reply','user','data','746526OrNPED','20mNXrxX','𖤐\x20𝙎𝙊𝙇𝙊\x20𝙊𝙏𝙍𝙊\x20𝘼𝘿𝙈𝙄𝙉𝙄𝙎𝙏𝙍𝘼𝘿𝙊𝙍\x20𝙋𝙐𝙀𝘿𝙀\x20𝘿𝙀𝙎𝙄𝙇𝙀𝙉𝘾𝙄𝘼𝙍𝙏𝙀','⧎\x20𝙀𝙎𝙏𝙀\x20𝙐𝙎𝙐𝘼𝙍𝙄𝙊\x20𝙔𝘼\x20𝙃𝘼\x20𝙎𝙄𝘿𝙊\x20𝙎𝙄𝙇𝙀𝙉𝘾𝙄𝘼𝘿𝙊','6xwamCD','mentionedJid','彡\x20𝙉𝙊\x20𝙋𝙐𝙀𝘿𝙀𝙎\x20𝙎𝙄𝙇𝙀𝙉𝘾𝙄𝘼𝙍\x20𝘼𝙇\x20𝘽𝙊𝙏','𖥑 𝙏𝙐𝙎\x20𝙈𝙀𝙉𝙎𝘼𝙅𝙀𝙎\x20𝙎𝙀𝙍𝘼𝙉\x20𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝙊𝙎'];_0x3b4e=function(){return _0x30baeb;};return _0x3b4e();}handler[_0x58352b(0x183)]=/^(mute|unmute)$/i,handler[_0x58352b(0x170)]=!![],handler['admin']=!![],handler[_0x58352b(0x167)]=!![];export default handler;
+/* -------------------------------------------------------*/
+/* [❗]                      [❗]                      [❗] */
+/*                                                       */
+/*       |- [ ⚠ ] - CREDITOS DEL CODIGO - [ ⚠ ] -|      */
+/*     —◉ DESAROLLADO POR OTOSAKA:                       */
+/*     ◉ Otosaka (https://github.com/6otosaka9)          */
+/*                                                       */
+/*     —◉ FT:                                            */
+/*     ◉ BrunoSobrino (https://github.com/BrunoSobrino)  */
+/*                                                       */
+/* [❗]                      [❗]                      [❗] */
+/* -------------------------------------------------------*/
+import fetch from 'node-fetch';
+import gtts from 'node-gtts';
+import {readFileSync, unlinkSync} from 'fs';
+import {join} from 'path';
+import axios from 'axios';
+import translate from '@vitalets/google-translate-api';
+import {Configuration, OpenAIApi} from 'openai';
+const configuration = new Configuration({organization: global.openai_org_id, apiKey: global.openai_key});
+const openaiii = new OpenAIApi(configuration);
+const idioma = 'es'
+//const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
+const sistema1 = `Actuaras como un Bot de WhatsApp el cual fue creado por GataNina-Li, tu seras GataBot-MD`;
+const handler = async (m, {conn, text, usedPrefix, command}) => {
+if (usedPrefix == 'a' || usedPrefix == 'A') return;
+if (!text) throw `*${lenguajeMY['smsAvisoMG']()}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙐𝙉𝘼 𝙋𝙀𝙏𝙄𝘾𝙄𝙊𝙉 𝙊 𝙐𝙉𝘼 𝙊𝙍𝘿𝙀𝙉 𝙋𝘼𝙍𝘼 𝙐𝙎𝘼𝙍 𝙇𝘼 𝙁𝙐𝙉𝘾𝙄𝙊𝙉 𝘿𝙀𝙇 𝘾𝙃𝘼𝙏𝙂𝙋𝙏\n\n❏ 𝙀𝙅𝙀𝙈𝙋𝙇𝙊 𝘿𝙀 𝙋𝙀𝙏𝙄𝘾𝙄𝙊𝙉𝙀𝙎 𝙔 𝙊𝙍𝘿𝙀𝙉𝙀𝙎\n❏ ${usedPrefix + command} Recomienda un top 10 de películas de acción\n❏ ${usedPrefix + command} Codigo en JS para un juego de cartas` 
+try {
+conn.sendPresenceUpdate('recording', m.chat);
+async function getOpenAIChatCompletion(texto) {
+const openaiAPIKey = global.openai_key;
+let chgptdb = global.chatgpt.data.users[m.sender];
+chgptdb.push({ role: 'user', content: texto });
+const url = "https://api.openai.com/v1/chat/completions";
+const headers = { "Content-Type": "application/json", "Authorization": `Bearer ${openaiAPIKey}` };
+const data = { "model": "gpt-3.5-turbo", "messages": [{ "role": "system", "content": sistema1 }, ...chgptdb, ]};
+const response = await fetch(url, {method: "POST", headers: headers, body: JSON.stringify(data)});
+const result = await response.json();
+const finalResponse = result.choices[0].message.content;
+return finalResponse;
+};
+let respuesta = await getOpenAIChatCompletion(text);
+if (respuesta == 'error' || respuesta == '' || !respuesta) return XD; // causar error undefined para usar otra api
+const audio1 = await tts(respuesta, idioma);
+await conn.sendMessage(m.chat, {audio: audio1, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
+} catch {
+try {
+const botIA222 = await openaiii.createCompletion({model: 'text-davinci-003', prompt: text, temperature: 0.3, max_tokens: 4097, stop: ['Ai:', 'Human:'], top_p: 1, frequency_penalty: 0.2, presence_penalty: 0});
+if (botIA222.data.choices[0].text == 'error' || botIA222.data.choices[0].text == '' || !botIA222.data.choices[0].text) return XD; // causar error undefined para usar otra api
+const audio2 = await tts(botIA222.data.choices[0].text, idioma);
+await conn.sendMessage(m.chat, {audio: audio2, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});    
+} catch {
+try {
+const fgapi1 = await fetch(`https://api-fgmods.ddns.net/api/info/openai?text=${text}&symsg=${sistema1}&apikey=XlwAnX8d`);
+const fgjson1 = await fgapi1.json();
+if (fgjson1.result == 'error' || fgjson1.result == '' || !fgjson1.result) return XD; // causar error undefined para lanzar msg de error
+const audio3 = await tts(fgjson1.result, idioma);
+await conn.sendMessage(m.chat, {audio: audio3, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});    
+} catch {
+try {
+const vihangayt1 = await fetch(`https://vihangayt.me/tools/chatgpt?q=${text}`);
+const vihangaytjson1 = await vihangayt1.json();
+if (vihangaytjson1.data == 'error' || vihangaytjson1.data == '' || !vihangaytjson1.data) return XD; // causar error undefined para usar otra api
+const audio4 = await tts(vihangaytjson1.data, idioma);
+await conn.sendMessage(m.chat, {audio: audio4, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});            
+} catch {
+try {
+const vihangayt2 = await fetch(`https://vihangayt.me/tools/chatgpt2?q=${text}`);
+const vihangaytjson2 = await vihangayt2.json();
+if (vihangaytjson2.data == 'error' || vihangaytjson2.data == '' || !vihangaytjson2.data) return XD; // causar error undefined para usar otra api
+const audio5 = await tts(vihangaytjson2.data, idioma);
+await conn.sendMessage(m.chat, {audio: audio5, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});            
+} catch {
+try {
+const vihangayt3 = await fetch(`https://vihangayt.me/tools/chatgpt3?q=${text}`);
+const vihangaytjson3 = await vihangayt3.json();
+if (vihangaytjson3.data == 'error' || vihangaytjson3.data == '' || !vihangaytjson3.data) return XD; // causar error undefined para usar otra api
+const audio6 = await tts(vihangaytjson3.data, idioma);
+await conn.sendMessage(m.chat, {audio: audio6, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});            
+} catch {
+try {
+const tioress22 = await fetch(`https://api.lolhuman.xyz/api/openai?apikey=${lolkeysapi}&text=${text}&user=${m.sender}`);
+const hasill22 = await tioress22.json();
+if (hasill22.result == 'error' || hasill22.result == '' || !hasill22.result) return XD; // causar error undefined para usar otra api
+const hasill22_result = await translate(`${hasill22.result}`, {to: idioma, autoCorrect: true});
+const audio7 = await tts(hasill22_result.text, idioma);
+await conn.sendMessage(m.chat, {audio: audio7, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});            
+} catch {
+try {
+const searchString2 = ' Indonesia ';
+const replacementString2 = ' español ';
+const rres = await fetch(`https://api.ibeng.tech/api/others/chatgpt?q=Hola&apikey=eMlBNRzUXv`);
+const jjson = await rres.json();
+if (jjson.data == 'error' || jjson.data == '' || !jjson.data) return XD; // causar error undefined para usar otra api
+const hahaha = await translate(`${jjson.data}`, {to: idioma, autoCorrect: true});
+const sextS = hahaha.text;
+const replacedText = sextS.replace(searchString2, replacementString2).trim();
+const audio8 = await tts(replacedText, idioma);
+await conn.sendMessage(m.chat, {audio: audio8, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});            
+} catch {
+try {
+const akuariapi2 = await fetch(`https://api.akuari.my.id/ai/gpt?chat=${text}`);
+const akuariapijson2 = await akuariapi2.json();
+if (akuariapijson2.respon == 'error' || akuariapijson2.respon == '' || !akuariapijson2.respon) return XD; // causar error undefined para lanzar msg de error
+const akuariapiresult2 = await translate(`${akuariapijson2.respon}`, {to: 'es', autoCorrect: true});
+const audio9 = await tts(akuariapiresult2.text, idioma);
+await conn.sendMessage(m.chat, {audio: audio9, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});                   
+} catch {
+try {
+const akuariapi1 = await fetch(`https://api.akuari.my.id/ai/gbard?chat=${text}`);
+const akuariapijson1 = await akuariapi1.json();
+if (akuariapijson1.respon == 'error' || akuariapijson1.respon == '' || !akuariapijson1.respon) return XD; // causar error undefined para usar otra api
+const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'es', autoCorrect: true});
+const audio10 = await tts(akuariapiresult1.text, idioma);
+await conn.sendMessage(m.chat, {audio: audio10, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});                           
+} catch {
+}}}}}}}}}}}
+handler.command = /^(openaivoz|chatgptvoz|iavoz|robotvoz|openai2voz|chatgpt2voz|ia2voz|robot2voz|Mysticvoz|MysticBotvoz|gptvoz|ai_voz|ai_voce)$/i;
+export default handler;
+
+async function tts(text = 'error', lang = 'es') {
+return new Promise((resolve, reject) => {
+try {
+const tts = gtts(lang);
+const filePath = join(global.__dirname(import.meta.url), '../tmp', (1 * new Date) + '.wav');
+tts.save(filePath, text, () => {
+resolve(readFileSync(filePath));
+unlinkSync(filePath);
+});
+} catch (e) {
+reject(e);
+}
+});
+}
