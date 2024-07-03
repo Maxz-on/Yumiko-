@@ -8,5 +8,5 @@ conn.sendButton(m.chat, `${command}`, packname, json.url, [['🐈‍⬛ SIGUIENT
 }
 handler.help = ['neko']
 handler.tags = ['random']
-handler.command = /^(neko)$/i
+handler.command = /^(neko2)$/i
 export default handler
