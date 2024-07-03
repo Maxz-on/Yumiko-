@@ -7,5 +7,5 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw `᥀·࣭࣪̇˖🗿◗
 conn.sendButton(m.chat, `🔥🐻🍃 _${command}_ 🍃🐻🔥`.trim(), packname, haha, [['🥃 𝙎𝙞𝙜𝙪𝙞𝙚𝙣𝙩𝙚 🥃', `${usedPrefix + command}`]], null, null, m)    
 }
 handler.command = handler.help = ['takeda', 'asuma', 'endeavor']
-handler.tags = ['anime']
+handler.tags = ['nsfw']
 export default handler
