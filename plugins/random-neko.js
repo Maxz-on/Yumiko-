@@ -5,9 +5,9 @@ let nek = ne.split('\n')
 let neko = pickRandom(nek)
 conn.sendButton(m.chat, command, packname, neko, [['🐈‍⬛ SIGUIENTE 🐈‍⬛', `/${command}`]], null, null, m)
 }
-handler.command = /^(neko2)$/i
+handler.command = /^(neko)$/i
 handler.tags = ['anime']
-handler.help = ['neko2']
+handler.help = ['neko']
 export default handler
 function pickRandom(list) {
 return list[Math.floor(Math.random() * list.length)]
