@@ -7,6 +7,6 @@ if (!json.url) throw `${errorBB}`
 conn.sendButton(m.chat, `${command}`, packname, json.url, [['🐈‍⬛ SIGUIENTE 🐈‍⬛', `/${command}`]], null, null, m)
 }
 handler.help = ['waifu']
-handler.tags = ['anime']
+handler.tags = ['random']
 handler.command = /^(waifu)$/i
 export default handler
