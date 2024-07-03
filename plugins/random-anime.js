@@ -1,5 +1,6 @@
 import axios from 'axios';
 const handler = async (m, {command, conn, usedPrefix}) => {
+        m.react('✅')
   const res = (await axios.get(`https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/JSON/anime-${command}.json`)).data;
   const haha = await res[Math.floor(res.length * Math.random())];
  conn.sendButton(m.chat, `_${command}_`.trim(), packname, haha, [['🐈‍⬛ SIGUIENTE 🐈‍⬛', `${usedPrefix + command}`]], m)
