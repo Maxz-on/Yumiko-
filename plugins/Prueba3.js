@@ -1,23 +1,53 @@
-import fetch from 'node-fetch';
+//Thanks to https://github.com/NajmyW
+
+import { randomBytes } from "crypto"
+import axios from "axios"
 
 let handler = async (m, { conn, text }) => {
-    if (!text) throw m.reply('how can I assist you today?')
+    if (!text) throw 'how i can assist you today??';
     try {
-        conn.reply(m.chat, `_Please wait! This process may take up to several minutes._`, m);
-        let data = await fetch(`https://api.ibeng.tech/api/ai/bingcreate?q=${text}&apikey=uYmf6Sgjxl`);
-        let json = await data.json();
-        let results = await json.result;
-        if (!results || results.length === 0) throw 'No results found.';
-
-        let links = results.map((link, index) => `*(${index + 1}).* [${link}]`).join('\n');
-        conn.sendFile(m.chat, results[0], 'bing.png', `*The following are the results of a search with the query:*\n_${text}_\n\n*Following are the photo links generated from Bing AI:*\n${links}\n\n\n*How to retrieve media using the link above:*\n_.get <link>_\n*Example:*\n_.get ${results.getRandom()}_`, m);
+        conn.reply(m.chat, wait, m);
+        let data = await chatGpt(text)
+        conn.reply(m.chat, data, m);
     } catch (err) {
-        m.reply('Error: ' + err.reason);
+        m.reply('error cik:/ ' + err);
     }
-};
+}
 
-handler.command = handler.help = ['bing2'];
-handler.tags = ['ai'];
-handler.premium = true 
+handler.command = handler.help = ['gptdemo'];
+handler.tags = ['gptdemo'];
+handler.limit = 3;
 
 export default handler;
+
+async function chatGpt(query){
+try {
+
+const { id_ }= (await axios.post("https://chat.chatgptdemo.net/new_chat",{user_id: "crqryjoto2h3nlzsg"},{headers:{
+"Content-Type": "application/json",
+
+}})).data
+
+const json = {"question":query,"chat_id": id_,"timestamp":new Date().getTime()}
+
+
+const { data } = await axios.post("https://chat.chatgptdemo.net/chat_api_stream",json,{headers:{
+"Content-Type": "application/json",
+
+}})
+const cek = data.split("data: ")
+
+let res = []
+
+for (let i=1; i < cek.length; i++){
+if (cek[i].trim().length > 0){
+res.push(JSON.parse(cek[i].trim()))
+}}
+
+return res.map((a) => a.choices[0].delta.content).join("")
+
+} catch (error) {
+console.error("Error parsing JSON:",error)
+return 404
+}
+}
