@@ -174,7 +174,8 @@ conn.sendMessage(m.chat, {
       video: {url: "https://telegra.ph/file/1d1dee7e2f0d6e5e2716e.mp4"},
       gifPlayback: true,
       caption: text.trim(),
-      }, null, rcanal)
+      }, {quoted: fcontact})
+//    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), null, m)
     m.react('🐈‍⬛') 
 
   } catch (e) {
