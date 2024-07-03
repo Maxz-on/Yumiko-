@@ -1,4 +1,5 @@
 const handler = async (m, {conn, usedPrefix, command}) => {
+        m.react('✅')
   const res = await lolivid[Math.floor(Math.random() * lolivid.length)];
   conn.sendMessage(m.chat, {video: {url: res}, caption: `*ʟᴏʟɪ ɪѕ ᴄᴜᴛᴇ 🥺*`}, {quoted: m});
 };
