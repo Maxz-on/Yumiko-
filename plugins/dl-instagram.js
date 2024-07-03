@@ -1,24 +1,18 @@
-import Scraper from '@SumiFX/Scraper'
+import Starlights from '@StarlightsTeam/Scraper'
+
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (!args[0]) return m.reply('➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*INGRESA EL ENLACE*\n_.ig <link>_')
+if (!args[0]) return conn.reply(m.chat, '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*INGRESA EL ENLACE*\n_.ig <link>_', m, rcanal)
+await m.react('🕓')
 try {
-conn.reply(m.chat, wait, m, {
-contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
-title: packname,
-body: wm,
-previewType: 0, thumbnail: icons,
-sourceUrl: channel }}})
-let { dl_url } = await Scraper.igdl(args[0])
-await conn.sendMessage(m.chat, { video: { url: dl_url }, caption: `🐈‍⬛ *Su Video De Instagram*` }, { quoted: fkontak})
-} catch (e) {
-  console.log(e)
-  m.reply('🐈‍⬛ Ocurrió un error inesperado.')
+let { dl_url } = await Starlights.igdl(args[0])
+await conn.sendFile(m.chat, dl_url, 'igdl.mp4', listo, m, null, rcanal)
+await m.react('✅')
+} catch {
+await m.react('✖️')
 }}
-
-handler.help = ['ig <enlace>']
+handler.help = ['instagram *<link ig>*']
 handler.tags = ['dl']
-handler.command = ['ig', 'instagram']
-handler.register = true
-handler.limit = 1
-
+handler.command = /^(instagramdl|instagram|igdl|ig)$/i
+//handler.limit = 1
+handler.register = true 
 export default handler
