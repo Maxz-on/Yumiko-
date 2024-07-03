@@ -1,10 +1,13 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) return m.reply(`Masukan Format Dengan Benar!\n\nExample\n${usedPrefix + command} Ruok`)
-  let res = API('https://api.lolhuman.xyz', '/api/ephoto1/logogaming', { text: text }, 'apikey')
-  conn.sendFile(m.chat, res, 'gaming.jpg', 'Ini Dia Kak', m)
+  let [teks1, teks2] = text.split('|')
+  if (!teks1 || !teks2) return m.reply(`Masukan Format Dengan Benar!\n\nExample\n${usedPrefix + command} Ninja`)
+  let res = API('https://api.lolhuman.xyz', '/api/textprome2/ninjalogo', { text1: teks1, text2: teks2 }, 'apikey')
+  conn.sendFile(m.chat, res, 'ninja.jpg', 'Sudah Jadi Kak', m, false)
 }
-handler.help = ['logogaming']
+handler.help = ['logoninja']
 handler.tags = ['nulis']
-handler.command = /^(logogaming)$/i
-handler.premium = true
+handler.command = /^(logoninja)$/i
+
+handler.limit = true
+
 export default handler
