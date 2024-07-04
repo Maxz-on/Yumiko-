@@ -1,7 +1,7 @@
 #### Version De Génesis: 1.1.0
 ### 🐈‍⬛ GÉNESIS BOT PRO 🐈‍⬛
 <p align="center">
-<img src="https://telegra.ph/file/d6ab45352704f345d368f.mp4" alt="GenesisBot-Pro" width="900"/>
+<img src="https://i.ibb.co/jHctydb/Genesis-Bot.jpg" alt="GenesisBot-Pro" width="900"/>
 </p>
 
 #### Creador y Dueño: Angelito 🫅
