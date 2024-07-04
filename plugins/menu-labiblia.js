@@ -85,7 +85,7 @@ conn.sendMessage(m.chat, {
       video: {url: "https://telegra.ph/file/376a262f5339c27e3ee9c.mp4"},
       gifPlayback: true,
       caption: m2.trim(),
-      }, {quoted: fcontact})
+      })
 
 }
 
