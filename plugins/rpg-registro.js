@@ -4,7 +4,7 @@ let Reg = /\|?(.*)([.|+] *?)([0-9]*)([.|+] *?)([MFNO])?$/i
 let handler = async function (m, { conn, text, usedPrefix, command }) {
   let user = global.db.data.users[m.sender]
   let name2 = conn.getName(m.sender)
-  let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://i.ibb.co/jHctydb/Genesis-Bot.jpg')
+  let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://i.ibb.co/41KQjDk/file.jpg')
  if (user.registered === true) throw `✳️ ${mssg.regIsOn}\n\n${usedPrefix}unreg <sn>`
 
   let te = `${mssg.avisoGene4}\n\n*🐈‍⬛ PARA REGISTRARSE USE*\n_${usedPrefix + command} Nombre+Edad+Genero_\n\n*» GENEROS DISPONIBLES*:\n*- M* = ${mssg.man}\n*- F* = ${mssg.woman}\n*- N* = ${mssg.other}\n*- B* = ${mssg.nonbinary}`
