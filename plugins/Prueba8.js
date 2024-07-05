@@ -1,32 +1,62 @@
-let handler = async (m, { conn, usedPrefix, isOwner }) => {
-m.react('🐈‍⬛')
+import PhoneNumber from 'awesome-phonenumber'
 
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-
-let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:ANGELITO 🐈‍⬛\nFN:ANGELITO 🐈‍⬛\nORG:ANGELITO 🐈‍⬛\nTITLE:\nitem1.TEL;waid=59897246324:59897246324\nitem1.X-ABLabel:Angelito 🐈‍⬛\nX-WA-BIZ-DESCRIPTION:ᴇsᴄʀɪʙɪ sᴏʟᴏ ᴘᴏʀ ᴄᴏsᴀs ᴅᴇʟ ʙᴏᴛ.\nX-WA-BIZ-NAME:ANGELITO 🐈‍⬛\nEND:VCARD`
-await conn.sendMessage(m.chat, { contacts: { displayName: 'ANGELITO 🐈‍⬛', contacts: [{ vcard }] }}, {quoted: fkontak})
-}
-handler.help = ['owner']
-handler.tags = ['main']
-handler.command = ['owner3', 'creator', 'creador', 'dueño'] 
-
-export default handler
-
-import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, text, args, command }) => {
+//m.react('⚙️')
 let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+let pp = await conn.profilePictureUrl(who).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
+let biografia = await conn.fetchStatus('573012482597' +'@s.whatsapp.net').catch(_ => 'Sin Biografía')
+let biografiaBot = await conn.fetchStatus(`${conn.user.jid.split('@')[0]}` +'@s.whatsapp.net').catch(_ => 'Sin Biografía')
+let bio = biografia.status?.toString() || 'Sin Biografía'
+let biobot = biografiaBot.status?.toString() || 'Sin Biografía'
 let name = await conn.getName(who)
-let edtr = `@${m.sender.split`@`[0]}`
 
-let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:WhatsApp;ARIL MD\nNICKNAME:👑 Owner ARIL MD\nORG:ARIL MD\nTITLE:soft\nitem1.TEL;waid=6282220427314:+62 822-2042-7314\nitem1.X-ABLabel:📞 Nomor Owner\nitem2.URL:https://github.com/Aril-MD/ElainaMultiDevice\nitem2.X-ABLabel:💬 More\nitem3.EMAIL;type=INTERNET:arilmd368@gmail.com\nitem3.X-ABLabel:💌 Mail Owner ARIL MD\nitem4.ADR:;;🇮🇩 Indonesia;;;;\nitem4.X-ABADR:💬 More\nitem4.X-ABLabel:📍 Lokasi Saya\nBDAY;value=date:🐦 12-04-2007\nEND:VCARD`
-const tag_own = await conn.sendMessage(m.chat, { contacts: { displayName: wm, contacts: [{ vcard }] }}, { quoted: global.fkontak })
-let caption = `👋 Hai *${edtr}*, Nih Owner *${conn.user.name}* kak`
-    await conn.reply(m.chat, caption, tag_own, { mentions: conn.parseMention(caption) })
+  await sendContactArray(conn, m.chat, [
+     [`${nomorown}`, `👑 Propietario`, `☁️ 𝗢𝗳𝗰𝗗𝗶𝗲𝗴𝗼`, dev, 'argumedod44@gmail.com', `🇨🇴 Colombia`, `${global.yt}`, bio],
+[`${conn.user.jid.split('@')[0]}`, `Es Una Bot 🤍`, `${packname}`, `📵 No Hacer Spam`, 'theluffybot@gmail.com', `🇨🇴 Colombia`, `https://github.com/OfcDiego/LuffyBot-MD`, biobot]
+], m)
+  //m.reply(`Hola @${m.sender.split(`@`)[0]} este es el contacto de mi creador, no hagas spam!!`)
+  } 
 
-}
-handler.help = ['owner', 'creator']
-handler.tags = ['info']
-
-handler.command = /^(owner|pengembang|creator)$/i
-
+handler.help = ["creador3","owner3"]
+handler.tags = ["info"]
+handler.command = /^(owner|creador)$/i
 export default handler
+
+async function sendContactArray(conn, jid, data, quoted, options) {
+        if (!Array.isArray(data[0]) && typeof data[0] === 'string') data = [data]
+                let contacts = []
+        for (let [number, name, isi, isi1, isi2, isi3, isi4, isi5] of data) {
+            number = number.replace(/[^0-9]/g, '')
+            let njid = number + '@s.whatsapp.net'
+            let biz = await conn.getBusinessProfile(njid).catch(_ => null) || {}
+            // N:;${name.replace(/\n/g, '\\n').split(' ').reverse().join(';')};;;
+            let vcard = `
+BEGIN:VCARD
+VERSION:3.0
+N:Sy;Bot;;;
+FN:${name.replace(/\n/g, '\\n')}
+item.ORG:${isi}
+item1.TEL;waid=${number}:${PhoneNumber('+' + number).getNumber('international')}
+item1.X-ABLabel:${isi1}
+item2.EMAIL;type=INTERNET:${isi2}
+item2.X-ABLabel:📧 Email
+item3.ADR:;;${isi3};;;;
+item3.X-ABADR:ac
+item3.X-ABLabel:🏷 Region
+item4.URL:${isi4}
+item4.X-ABLabel:Website
+item5.X-ABLabel:${isi5}
+END:VCARD`.trim()
+            contacts.push({ vcard, displayName: name })
+        }
+        return await conn.sendMessage(jid, {
+            contacts: {
+                displayName: (contacts.length > 1 ? `2013 kontak` : contacts[0].displayName) || null,
+                contacts,
+            }
+        },
+        {
+            quoted,
+            ...options
+        })
+        }
