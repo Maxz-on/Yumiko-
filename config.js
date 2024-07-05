@@ -22,6 +22,7 @@ global.APIKeys = { // APIKey Here
 // Sticker WM
 global.packname = '𝙂𝙚𝙣𝙚𝙨𝙞𝙨 𝙋𝙧𝙤𝙛𝙚𝙨𝙨𝙞𝙤𝙣𝙖𝙡' 
 global.author = '@usxr_angelito' 
+global.descripcion = 'Solo Preguntas Del Bot'
 
 //--info FG
 global.botName = 'Genesis'
