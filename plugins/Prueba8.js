@@ -11,7 +11,7 @@ let biobot = biografiaBot.status?.toString() || 'Sin Biografía'
 let name = await conn.getName(who)
 
   await sendContactArray(conn, m.chat, [
-     [`59897246324`, `🐈‍⬛ Propietario`, `🫧 Angelito`, descripcion, 'agasistencia2@gmail.com', `🇦🇷 Argentina`, `${global.fgcanal}`, bio],
+     [`59897246324`, `🐈‍⬛ Propietario`, `🫧 Angelito`, fgig, 'agasistencia2@gmail.com', `🇦🇷 Argentina`, `${global.fgcanal}`, bio],
 [`${conn.user.jid.split('@')[0]}`, `Es Una Bot 🤍`, `${packname}`, `📵 No Hacer Spam`, 'theluffybot@gmail.com', `🇨🇴 Colombia`, `https://github.com/OfcDiego/LuffyBot-MD`, biobot]
 ], m)
   //m.reply(`Hola @${m.sender.split(`@`)[0]} este es el contacto de mi creador, no hagas spam!!`)
