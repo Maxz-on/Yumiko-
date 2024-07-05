@@ -26,7 +26,7 @@ global.descripcion = 'Solo Preguntas Del Bot'
 
 //--info FG
 global.botName = 'Genesis'
-global.fgig = '' 
+global.fgig = 'Solo Preguntas Del Bot' 
 global.fgigt = 'https://instagram.com/usxr_angelito' 
 global.fgsc = 'https://github.com/karim-off/GenesisBot-Pro' 
 global.fgyt = ''
