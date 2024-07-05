@@ -13,6 +13,6 @@ let caption = `👋 Hai *${edtr}*, Nih Owner *${conn.user.name}* kak`
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
 
-handler.command = /^(owner|pengembang|creator)$/i
+handler.command = /^(owner2|creator2)$/i
 
 export default handler
