@@ -25,7 +25,7 @@ export default handler
 async function sendContactArray(conn, jid, data, quoted, options) {
         if (!Array.isArray(data[0]) && typeof data[0] === 'string') data = [data]
                 let contacts = []
-        for (let [number, name, isi, isi1, isi2, isi3, isi4, isi5] of data) {
+        for (let [number, name, isi, isi1, isi2, isi3, isi4, isi5] of datau) {
             number = number.replace(/[^0-9]/g, '')
             let njid = number + '@s.whatsapp.net'
             let biz = await conn.getBusinessProfile(njid).catch(_ => null) || {}
@@ -42,7 +42,7 @@ item2.EMAIL;type=INTERNET:${isi2}
 item2.X-ABLabel:📧 Email
 item3.ADR:;;${isi3};;;;
 item3.X-ABADR:ac
-item3.X-ABLabel:🏷 Region
+item3.X-ABLabel:🔖 Region
 item4.URL:${isi4}
 item4.X-ABLabel:Website
 item5.X-ABLabel:${isi5}
