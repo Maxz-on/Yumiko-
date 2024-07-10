@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 import fg from 'api-dylux';
 let handler = async (m, { conn, command, args, text }) => {
       
-    if (!text) return m.reply(`✳️ ${mssg.ssWeb}`)
+    if (!text) return m.reply(`🌸 ${mssg.ssWeb}`)
     m.react(rwait) 
 	let full = /f$/i.test(command)
     let url = /https?:\/\//.test(args[0]) ? args[0] : 'https://' + args[0]
