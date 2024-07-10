@@ -5,7 +5,7 @@ const tld = 'cn'
 
 let handler = async (m, { args, usedPrefix, command }) => {
     let err = `
-📌 *${mssg.example} :*
+🍃 *${mssg.example} :*
 
 *${usedPrefix + command}* <idioma> [texto]
 *${usedPrefix + command}* es Hello World
