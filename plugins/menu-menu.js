@@ -5,9 +5,9 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
-  'ai': 'IA-BOT 🍃',
-  'info': 'INFORMACIÓN 🍃',
-  'main': 'ACERCA DE 🍒',
+  'ai': 'IA-BOT 🌸',
+  'info': 'INFORMACIÓN ☠️',
+  'main': 'ACERCA DE 🪐',
   'bebot': 'SUB BOTS 🤖',
   'game': 'JUEGOS 🎮',
   'convertir': 'CONVERTIR ♻️',
@@ -20,8 +20,8 @@ let tags = {
   'prem': 'PREMIUM 🎫',
   'group': 'GRUPO 👥',
   'nable': 'ON/OFF OPCIONES 🟢', 
-  'nime': 'ANIME 🌸',
-  'rnime': 'ANIME REACCION 🌸',
+  'nime': 'ANIME 🕊️',
+  'rnime': 'ANIME REACCION 🕊️',
   'dl': 'DESCARGAS 📥',
   'tools': 'TOOLS 🧸',
   'fun': 'FUN 🔮',
@@ -47,7 +47,7 @@ const defaultMenu = {
 ╭─────────────►
 ┆  Info user 
 ╰─────────────►
-┌┆  _*🤔 Nombre*_: %name
+┌┆  _*☁️ Nombre*_: %name
 ┆  _*💵 coins*_ : %limit
 ┆  _*📊Nivel*_ : %level
 ┆  *🖇️ XP* : %totalexp
@@ -172,7 +172,7 @@ global.fcontact = {
     };
 
     let pp = 'https://imgur.com/gallery/menu-h9s67Ld'
-    await conn.reply(m.chat, '🐈‍⬛ `𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢 𝗠𝗘𝗡𝗨....`', fcontact);
+    await conn.reply(m.chat, 'Aguarde xfavor 🌸....', fcontact);
 
     /*conn.sendButton(m.chat, text.trim(), `▢ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
@@ -185,7 +185,7 @@ conn.sendMessage(m.chat, {
       caption: text.trim(),
       })
 //    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), null, m)
-    m.react('🐈‍⬛') 
+    m.react('🌸') 
 
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error', m)
