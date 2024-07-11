@@ -15,7 +15,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       if (!img) return conn.reply(m.chat, '*`🌸 Responda a una Imagen o Vídeo.`*🌸', m, rcanal)
       let out
       try {
-    m.react('👻') 
+    m.react('🌸') 
     stiker = await sticker(img, false, global.packname, global.author)
       } catch (e) {
         console.error(e)
