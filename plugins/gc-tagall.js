@@ -1,6 +1,6 @@
 const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, command, usedPrefix}) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
-m.react('👻') 
+m.react('🌸') 
   if (!(isAdmin || isOwner)) {
     global.dfail('admin', m, conn);
     throw false;
