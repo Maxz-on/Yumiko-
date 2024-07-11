@@ -1,10 +1,10 @@
 let handler = async (m, { conn, usedPrefix, isOwner }) => {
-m.react('🐈‍⬛')
+m.react('🌸')
 
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
-let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:ANGELITO 🐈‍⬛\nFN:ANGELITO 🐈‍⬛\nORG:ANGELITO 🐈‍⬛\nTITLE:\nitem1.TEL;waid=59897246324:59897246324\nitem1.X-ABLabel:Angelito 🐈‍⬛\nX-WA-BIZ-DESCRIPTION:ᴇsᴄʀɪʙɪ sᴏʟᴏ ᴘᴏʀ ᴄᴏsᴀs ᴅᴇʟ ʙᴏᴛ.\nX-WA-BIZ-NAME:ANGELITO 🐈‍⬛\nEND:VCARD`
-await conn.sendMessage(m.chat, { contacts: { displayName: 'ANGELITO 🐈‍⬛', contacts: [{ vcard }] }}, {quoted: fkontak})
+let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:MAXZ 🌸\nFN:MAXZ 🌸\nORG:MAXZ 🌸\nTITLE:\nitem1.TEL;waid=59897246324:59897246324\nitem1.X-ABLabel:MAXZ 🌸\nX-WA-BIZ-DESCRIPTION:ᴇsᴄʀɪʙɪ sᴏʟᴏ ᴘᴏʀ ᴄᴏsᴀs ᴅᴇʟ ʙᴏᴛ.\nX-WA-BIZ-NAME:MAXZ 🌸\nEND:VCARD`
+await conn.sendMessage(m.chat, { contacts: { displayName: 'MAXZ 🌸', contacts: [{ vcard }] }}, {quoted: fkontak})
 }
 handler.help = ['owner']
 handler.tags = ['main']
