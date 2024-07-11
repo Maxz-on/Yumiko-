@@ -26,7 +26,7 @@ let estado = `
 🌸─► 𝘉𝘖𝘛:
 • Yumiko Bot
 `
-await conn.sendButton(m.chat, estado, 'GenesisBot-Pro', pp, [
+await conn.sendButton(m.chat, estado, '@by Maxz', pp, [
 ['MI PERFIL ☁️', '.Perfil'], ['MENU 📚', '/allmenu']], null, [['🌸 CANAL 🌸', `${fgcanal}`]], m)
 }
 handler.help = ['estado']
