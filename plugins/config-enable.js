@@ -2,34 +2,48 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
 
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
-  const optionsFull = `≡ Lista de Opciones
+  const optionsFull = `╭─────────────►
+┆🍃 Yumiko Bot 🍃
+╰─────────────►
 
-┌─⊷ *ADMIN*
-▢ captcha
-▢ welcome
-▢ antilink
-▢ antilink2
-▢ antitoxic
-▢ detect
-▢ audios 
-▢ document
-▢ nsfw
-▢ modohorny
-└───────────── 
-┌─⊷ *USERS*
-▢ autolevelup
-▢ chatbot 
-└─────────────
-┌─⊷ *OWNER*
-▢ antibotclone
-▢ antiprivado
-▢ public
-▢ solopv
-▢ sologp
-└─────────────
-*📌 Ejemplo :*
-*${usedPrefix}on* welcome
-*${usedPrefix}off* welcome`.trim();
+
+╭─────────────►
+┆ 🍃 Admins 🍃
+╰─────────────►
+> ￫. _Captcha_
+> ￫. _Welcome_
+> ￫. _Antilink_
+> ￫. _Detect_ 
+> ￫. _Document_
+> ￫. _Nsfw_
+> ￫. _Modohorny_
+> ￫. _Promote_ (_dar_)
+> ￫. _Demote_ (_sacar_)
+> *l┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈l*
+╭─────────────►
+┆🍃 Usuarios 🍃
+╰─────────────►
+> ￫. _Autolevelup_
+> ￫. _Chatbot_ 
+> *l┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈l*
+╭─────────────►
+┆🍃 owner 🍃
+╰─────────────►
+> ￫. _Antibotclone_
+> ￫. _Public_
+> ￫. _Solopv_
+> ￫. _Sologp_
+> *l┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈l*
+╭─────────────►
+┆🍃 Ejemplo 🍃
+╰─────────────►
+> ￫ .on welcome
+> ￫ .off welcome
+> ￫ .on welcome
+> ￫ .off welcome
+ 
+ ${usedPrefix}on antiprivado 
+ ${usedPrefix}off antiprivado`.trim();
 
   const isEnable = /true|enable|(turn)?on|1/i.test(command);
   const chat = global.db.data.chats[m.chat];
@@ -135,15 +149,6 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
         }
       }
       chat.antiLink2 = isEnable;
-      break;
-     case 'nsfw':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          global.dfail('admin', m, conn);
-          throw false;
-        }
-      }
-      chat.nsfw = isEnable;
       break;
     case 'antiviewonce':
       if (m.isGroup) {
@@ -330,9 +335,11 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
       if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, {text: optionsFull}, {quoted: fkontak});
       throw false;
   }
-  conn.sendMessage(m.chat, {text: `*❱❱ 𝙁𝙐𝙉𝘾𝙄𝙊𝙉𝙀𝙎 𝙂𝙀𝙉𝙀𝙎𝙄𝙎 ❰❰*\n\n*» 𝙊𝙋𝘾𝙄𝙊𝙉 |* _${type.toUpperCase()}_\n*» 𝙀𝙎𝙏𝘼𝘿𝙊 |* ${isEnable ? '𝘈𝘊𝘛𝘐𝘝𝘈𝘋𝘖' : '𝘋𝘌𝘚𝘈𝘊𝘛𝘐𝘝𝘈𝘋𝘖'}\n*» 𝙋𝘼𝙍𝘼 |* ${isAll ? '𝘌𝘚𝘛𝘌 𝘊𝘏𝘈𝘛' : isUser ? '' : '𝘌𝘚𝘛𝘌 𝘊𝘏𝘈𝘛'}\n> 𝙂𝙚𝙣𝙚𝙨𝙞𝙨𝘽𝙤𝙩:𝙂𝙚𝙣𝙚𝙨𝙞𝙨𝘽𝙤𝙩`}, {quoted: fkontak});
+  conn.sendMessage(m.chat, {text: `╭─────────────►
+┆🍃 Yumiko Bot 🍃
+╰─────────────►\n┆ Opción: ${type.toUpperCase()}\n╰─────────────►\n┆ Estado: ${isEnable ? '𝖠ctivado' : 'Desactivado'}\n╰─────────────►\n┆ Para: ${isAll ? 'Este chat' : isUser ? '' : 'Este chat'}\n╰─────────────►`}, {quoted: fkontak});
 };
 handler.help = ['en', 'dis'].map((v) => v + 'able <option>');
-handler.tags = ['nable', 'owner'];
+handler.tags = ['group', 'owner'];
 handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
 export default handler;
