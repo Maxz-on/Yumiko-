@@ -20,7 +20,7 @@ global.APIKeys = { // APIKey Here
 
 // Sticker WM
 global.packname = 'Yumiko Bot' 
-global.author = '@max_xitado.pe' 
+global.author = '@mxz.18l' 
 global.descripcion = 'Solo Preguntas Del Bot'
 
 //--info FG
