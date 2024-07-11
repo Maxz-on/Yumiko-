@@ -14,12 +14,12 @@ let estado = `
 🌸─►𝘉𝘰𝘵 𝘦𝘯 𝘥𝘦𝘴𝘢𝘳𝘳𝘰𝘭𝘭𝘰
 🌸─►𝘚𝘪𝘨𝘶𝘦𝘮𝘦 𝘦𝘯 𝘮𝘪 𝘤𝘢𝘯𝘢𝘭
 `
-await conn.sendButton(m.chat, estado, '‎_BY: @usxr_angelito_', pp, [
+await conn.sendButton(m.chat, estado, '‎_BY: @max_xitado.pe_', pp, [
 ['📚 Menu 📚', '.allmenu'], ['🫅 Creador 🫅', '.owner']], null, [['🌸 Canal 🌸', `${fgcanal}`]], m)
 }
 handler.help = ['help']
 handler.tags = ['info']
-handler.command = /^(prueba1?)$/i
+handler.command = /^(help?)$/i
 export default handler
 
 function clockString(ms) {
