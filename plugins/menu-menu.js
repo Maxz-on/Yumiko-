@@ -53,7 +53,7 @@ const defaultMenu = {
 ┆  *🖇️ XP* : %totalexp
 ╰─────────────►
 `.trimStart(),
-  header: '*╭──「 %category 」*',
+  header: '╭──►%category ',
   body: '┊  %cmd %isdiamond %isPremium',
   footer: '╰─────────────►\n\n',
   after: `
