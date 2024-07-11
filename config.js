@@ -3,8 +3,7 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url' 
 
 global.owner = [
-  ['5493536568522', 'CREADOR 🐈‍⬛', true],
-  ['5491140951814', 'COLAB 🐈‍⬛', true],
+  ['5493536568522', 'CREADOR ', true],
 ] //Numeros de owner 
 
 global.mods = [''] 
@@ -20,14 +19,14 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = '𝙂𝙚𝙣𝙚𝙨𝙞𝙨 𝙋𝙧𝙤𝙛𝙚𝙨𝙨𝙞𝙤𝙣𝙖𝙡' 
-global.author = '@usxr_angelito' 
+global.packname = 'Yumiko Bot' 
+global.author = '@max_xitado.pe' 
 global.descripcion = 'Solo Preguntas Del Bot'
 
 //--info FG
-global.botName = 'Genesis'
+global.botName = 'Yumiko'
 global.fgig = 'Solo Preguntas Del Bot' 
-global.fgigt = 'https://instagram.com/usxr_angelito' 
+global.fgigt = 'https://instagram.com/max_xitado.pe' 
 global.fgsc = 'https://github.com/karim-off/GenesisBot-Pro' 
 global.fgyt = ''
 global.fgpyp = ''
@@ -50,7 +49,7 @@ global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
 
-global.wait = '🐈‍⬛ `𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢....`'
+global.wait = '*🌸 `LOADING....*'
 global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✅'
