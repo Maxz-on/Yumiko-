@@ -3,12 +3,12 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
   const optionsFull = `╭─────────────►
-┆🍃 Yumiko Bot 🍃
+┆🌸 Yumiko Bot 🌸
 ╰─────────────►
 
 
 ╭─────────────►
-┆ 🍃 Admins 🍃
+┆  Admins 
 ╰─────────────►
 > ￫. _Captcha_
 > ￫. _Welcome_
@@ -21,13 +21,13 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 > ￫. _Demote_ (_sacar_)
 > *l┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈l*
 ╭─────────────►
-┆🍃 Usuarios 🍃
+┆ Usuarios 
 ╰─────────────►
 > ￫. _Autolevelup_
 > ￫. _Chatbot_ 
 > *l┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈l*
 ╭─────────────►
-┆🍃 owner 🍃
+┆ owner 
 ╰─────────────►
 > ￫. _Antibotclone_
 > ￫. _Public_
@@ -35,7 +35,7 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 > ￫. _Sologp_
 > *l┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈l*
 ╭─────────────►
-┆🍃 Ejemplo 🍃
+┆ Ejemplo 
 ╰─────────────►
 > ￫ .on welcome
 > ￫ .off welcome
@@ -336,7 +336,7 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
       throw false;
   }
   conn.sendMessage(m.chat, {text: `╭─────────────►
-┆🍃 Yumiko Bot 🍃
+┆🌸 Yumiko Bot 🌸
 ╰─────────────►\n┆ Opción: ${type.toUpperCase()}\n╰─────────────►\n┆ Estado: ${isEnable ? '𝖠ctivado' : 'Desactivado'}\n╰─────────────►\n┆ Para: ${isAll ? 'Este chat' : isUser ? '' : 'Este chat'}\n╰─────────────►`}, {quoted: fkontak});
 };
 handler.help = ['en', 'dis'].map((v) => v + 'able <option>');
