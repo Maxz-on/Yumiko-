@@ -8,26 +8,26 @@ _muptime = await new Promise(resolve => { process.once('message', resolve)
 setTimeout(resolve, 1000) }) * 1000}
 let uptime = clockString(_uptime)
 let estado = `
-🌸─►𝘊𝘙𝘌𝘈𝘋𝘖𝘙:
+ 🌸 𝘊𝘙𝘌𝘈𝘋𝘖𝘙 🌸
 • Maxzito
 
-🌸─► 𝘔𝘖𝘋𝘖:
+ 🌸 𝘔𝘖𝘋𝘖 🌸
 • publico.
 
-🌸─► 𝘛𝘐𝘗𝘖 𝘋𝘌 𝘉𝘖𝘛:
+ 🌸 𝘛𝘐𝘗𝘖 𝘋𝘌 𝘉𝘖𝘛 🌸
 • ${(conn.user.jid == global.conn.user.jid ? 'Bot Oficial' : `*Sub Bot de: https://wa.me/${global.conn.user.jid.split`@`[0]}*`) || ''}
 
-🌸─► 𝘌𝘚𝘛𝘈𝘋𝘖:
+ 🌸 𝘌𝘚𝘛𝘈𝘋𝘖 🌸
 • Activo.
 
-🌸─► 𝘈𝘊𝘛𝘐𝘝𝘐𝘋𝘈𝘋:
+ 🌸 𝘈𝘊𝘛𝘐𝘝𝘐𝘋𝘈𝘋 🌸
 • ${uptime}
 
-🌸─► 𝘉𝘖𝘛:
+ 🌸 𝘉𝘖𝘛 🌸
 • Yumiko Bot
 `
 await conn.sendButton(m.chat, estado, '@by Maxz', pp, [
-['MI PERFIL ☁️', '.Perfil'], ['MENU 📚', '/allmenu']], null, [['🌸 CANAL 🌸', `${fgcanal}`]], m)
+['☁️ MI PERFIL ☁️', '.Perfil'], ['📚 MENU 📚', '/allmenu']], null, [['🌸 CANAL 🌸', `${fgcanal}`]], m)
 }
 handler.help = ['estado']
 handler.tags = ['main']
