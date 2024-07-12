@@ -10,13 +10,13 @@ if (!effects.includes(effect)) throw `
 ${effects.map(effect => `▢ ${effect}`).join('\n')}
 └───────────
 
-📌 *Ejemplo:* 
+🌸 *Ejemplo:* 🌸
 ${usedPrefix + command} wasted 
 `.trim()
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || ''
-if (!mime) throw '✳️ Responde a una imagen'
-if (!/image\/(jpe?g|png)/.test(mime)) throw `✳️ Formato no soportado`
+if (!mime) throw '🌸 Responde a una imagen 🌸'
+if (!/image\/(jpe?g|png)/.test(mime)) throw `🌸 Formato no soportado 🌸`
 let img = await q.download()
 let url = await uploadImage(img)
 let apiUrl = global.API('https://some-random-api.com/canvas/', encodeURIComponent(effect), {
