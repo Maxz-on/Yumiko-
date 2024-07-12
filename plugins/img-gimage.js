@@ -1,7 +1,7 @@
 
 import fg from 'api-dylux';
 let handler  = async (m, { conn, args, text, usedPrefix, command }) => {
-  if (!text) throw `✳️ ${mssg.example}: *${usedPrefix + command}* Billie Eilish`
+  if (!text) throw `🌸 ${mssg.example}:🌸 *${usedPrefix + command}* Billie Eilish`
   let res = await fg.googleImage(text)
   conn.sendFile(m.chat, res.getRandom(), 'img.png', `
 ✅ ${mssg.result}`.trim(), m)
