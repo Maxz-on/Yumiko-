@@ -4,7 +4,7 @@ import { format } from 'util'
 let handler = async (m, { conn, usedPrefix, command }) => {
  
   if (!global.support.convert && !global.support.magick && !global.support.gm) return handler.disabled = true  
-    if (!m.quoted) throw `✳️ ${mssg.replyStick}`
+    if (!m.quoted) throw `🌸 ${mssg.replyStick} 🌸`
     let q = m.quoted
     if (/sticker/.test(q.mediaType)) {
         let sticker = await q.download()
@@ -19,7 +19,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
         im.on('exit', () => {
             conn.sendFile(m.chat, Buffer.concat(bufs), 'img.png', `*✅ ${mssg.result}*`, m)
         })
-    } else throw `✳️ ${mssg.replyStick}`
+    } else throw `🌸 ${mssg.replyStick} 🌸`
 }
 handler.help = ['toimg <sticker>']
 handler.tags = ['sticker']
