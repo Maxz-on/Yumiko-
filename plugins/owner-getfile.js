@@ -24,7 +24,7 @@ ${usedPrefix + command} main-menu
       
       *Lista de Plugins*
 ╭──►
-${pluginNames.map(name => `▢ ${name}`).join('\n')}
+${pluginNames.map(name => `┆ ${name}`).join('\n')}
 ╰────────────►
     `);
   }
