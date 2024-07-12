@@ -4,8 +4,8 @@ import { Pixiv } from '@ibaraki-douji/pixivts'
 const pixiv = new Pixiv()
 
 let handler = async (m, { conn, text }) => {
-if (!text) return m.reply('🐈‍⬛ Ingresa un texto junto al comando.')
-await m.react('🕓')
+if (!text) return m.reply('🌸 Ingresa un texto junto al comando.🌸')
+await m.react('✅')
 try {
 let res = await pixivDl(text)
 for (let i = 0; i < res.media.length; i++) {
