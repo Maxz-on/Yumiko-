@@ -10,20 +10,20 @@ _muptime = await new Promise(resolve => { process.once('message', resolve)
 setTimeout(resolve, 1000) }) * 1000}
 let uptime = clockString(_uptime)
 let estado = `
-᥀·࣭࣪̇˖🐈‍⬛◗ 𝘊𝘈𝘕𝘈𝘓:
+ 🌸 𝘊𝘈𝘕𝘈𝘓 🌸
 • ${fgcanal}
 
-᥀·࣭࣪̇˖🐈‍⬛◗ 𝘎𝘓𝘖𝘉𝘈𝘓:
+ 🌸 𝘎𝘓𝘖𝘉𝘈𝘓 🌸
 • ${bgp2}
 
-᥀·࣭࣪̇˖🐈‍⬛◗ 𝘈𝘝𝘐𝘚𝘖𝘚:
+ 🌸 𝘈𝘝𝘐𝘚𝘖𝘚 🌸
 • ${bgp}
 
-᥀·࣭࣪̇˖🐈‍⬛◗ 𝘎𝘌𝘕𝘌𝘚𝘐𝘚 𝘟 𝘞𝘐𝘌𝘙:
+ 🌸 𝘎𝘌𝘕𝘌𝘚𝘐𝘚 𝘟 𝘞𝘐𝘌𝘙 🌸
 • https://chat.whatsapp.com/GO5l3kShGE30eV9dN82elb
 `
 await conn.sendButton(m.chat, estado, 'GenesisBot-Pro', pp, [
-['DUEÑO 🐈‍⬛', '.owner'], ['DONAR 🫧', '.donate']], null, [['CANAL 🐈‍⬛', `${fgcanal}`]], m)
+['🤴 DUEÑO 🤴', '.owner'], ['☁️ DONAR ☁️', '.donate']], null, [['🌸 CANAL 🌸', `${fgcanal}`]], m)
 }
 handler.help = ['grupos']
 handler.tags = ['info']
