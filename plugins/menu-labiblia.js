@@ -4,13 +4,13 @@ let handler = async function (m, { conn, text, usedPrefix }) {
     m.react('🔞')
 
 let m2 = `
-*_◌⃘࣭࣪࣪࣪۬🐈‍⬛─ׅ  𝙂 𝙀 𝙉 𝙀 𝙎 𝙄 𝙎  𝘽 𝙊 𝙏  ──◌⃘࣭ٜ࣪࣪࣪۬🐈‍⬛_*
+*_◌⃘࣭࣪࣪࣪۬🌸─ׅ YUMIKO BOT ──◌⃘࣭ٜ࣪࣪࣪۬🌸_*
 
 🐈‍⬛ 𝗛𝗼𝗹𝗮 𝘀𝗼𝘆 𝗚𝗲𝗻𝗲𝘀𝗶𝘀 𝗕𝗼𝘁 
 🐈‍⬛ 𝗧𝗲 𝗽𝗿𝗲𝘀𝗲𝗻𝘁𝗼 𝗺𝗶 𝗺𝗲𝗻𝘂 +18
 
 
-*╭──「 NSFW 🔞 」*
+*╭──► NSFW 🔞 *
 *┊᥀·࣭࣪̇˖🐈‍⬛◗*  _*.nsfwloli*_
 *┊᥀·࣭࣪̇˖🐈‍⬛◗*  _*.nsfwfoot*_
 *┊᥀·࣭࣪̇˖🐈‍⬛◗*  _*.nsfwass*_
