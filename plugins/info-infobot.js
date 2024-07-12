@@ -42,19 +42,19 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   let speed = neww - old
   
 let infobt = `
-≡ *INFO BOT*
+🌸 *INFO BOT* 🌸
   
-*ESTADO*
+ 🌸 *ESTADO* 🌸
 ▢ ${mssg.gp}s: *${groupsIn.length}*
 ▢ Chats: *${chats.length - groupsIn.length}*
 ▢ Total Chats: *${chats.length}*
 
-*≡ OWNER*
+ 🌸 *OWNER* 🌸
   • *Maxzito*
 ▢ Instagram :
   • ${fgig}
 
-*≡ PROYECTO XB²*
+ 🌸 *PROYECTO XB²* 🌸
   • ${bgp}`
 
 /*conn.sendButton(m.chat, infobt, mssg.ig, null, [
