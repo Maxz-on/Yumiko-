@@ -3,7 +3,7 @@ import fg from 'api-dylux'
 import fetch from 'node-fetch'
 import { sticker } from '../lib/sticker.js'
 let handler = async (m, { conn, args, text, usedPrefix, command }) => {
-    if (!args[0]) throw `✳️ ${mssg.notext} \n\n📌 *${mssg.example}:*\n${usedPrefix + command} peepo`
+    if (!args[0]) throw `🌸 ${mssg.notext} 🌸 \n\n📌 *${mssg.example}:*\n${usedPrefix + command} peepo`
     
     try {
    /*let res = await fetch(global.API('fgmods', '/api/getsticker', { q:text }, 'apikey'))
