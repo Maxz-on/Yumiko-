@@ -6,8 +6,8 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 const openaiii = new OpenAIApi(configuration);
 const handler = async (m, {conn, text, usedPrefix, command}) => {
 if (usedPrefix == 'a' || usedPrefix == 'A') return;
-if (!text) throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*PARA USAR CHAT GPT*\n_Ejemplo: .ia que sos?_';
-  m.react('🐈‍⬛')     
+if (!text) throw '🌸 *YUMIKO BOT* 🌸\n\n*PARA USAR CHAT GPT*\n_Ejemplo: .ia que sos?_';
+  m.react('🌸')     
 try {
 conn.sendPresenceUpdate('composing', m.chat);
 let gpt = await fetch(`https://delirius-api-oficial.vercel.app/api/ia2?text=${text}`)
