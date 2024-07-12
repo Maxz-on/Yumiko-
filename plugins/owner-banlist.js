@@ -6,7 +6,7 @@ let handler = async (m, { conn, usedPrefix, isOwner }) => {
     let te = `
 🌸 *USUARIOS BANEADOS* 🌸
 
-─► ${mssg.total} : *${users.length}* 
+► ${mssg.total} : *${users.length}* 
 
 ${users ? '\n' + users.map(([jid], i) => `
 ${i + 1}. ${conn.getName(jid) == undefined ? 'Desconocido' : conn.getName(jid)}
