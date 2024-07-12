@@ -65,7 +65,8 @@ global.fcontact = {
         },
         message: {
             contactMessage: {
-                displayName: `\nɢᴇɴᴇꜱɪꜱ ᴘʀᴏꜰᴇꜱɪᴏɴᴀʟ \nᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛꜱᴀᴘᴘ`,
+                displayName: `\n 🌸 𝗬𝗨𝗠𝗜𝗞𝗢 𝗕𝗢𝗧 🌸 \n
+𝗘𝗟 𝗠𝗘𝗝𝗢𝗥 𝗥𝗘𝗬`,
                 vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:xd\nitem1.TEL;waid=${m.sender.split("@")[0]}:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
             },
         },
