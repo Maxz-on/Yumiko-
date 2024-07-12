@@ -12,8 +12,8 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 🌸 𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠 🌸
  https://www.instagram.com/maxz.18l
 
-» 𝗚𝗜𝗧 𝗛𝗨𝗕
-🐈‍⬛ https://github.com/Karim-off
+🌸 𝗚𝗜𝗧 𝗛𝗨𝗕 🌸
+https://github.com/Maxz-on/Yumiko-.git
 
 > ${mssg.ig}
 `
