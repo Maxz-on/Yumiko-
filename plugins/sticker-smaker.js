@@ -8,7 +8,7 @@ if (!effects.includes(effect)) throw `
 
 ╭──► *EFECTOS*
 ${effects.map(effect => `┆ ${effect}`).join('\n')}
-╰────────────►
+╰──────────►
 
 🌸 *Ejemplo:* 🌸
 ${usedPrefix + command} wasted 
