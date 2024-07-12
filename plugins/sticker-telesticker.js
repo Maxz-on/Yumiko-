@@ -2,7 +2,7 @@
 import fetch from 'node-fetch'
 import { sticker } from '../lib/sticker.js'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) throw `✳️ ${mssg.tgStick}`
+  if (!text) throw `🌸 ${mssg.tgStick} 🌸`
   if (!text.includes('t.me')) return m.reply(`❎ ${mssg.tgStick}`)
   m.react(rwait)
   let stick = await (await fetch(global.API('fgmods', '/api/downloader/telesticker', { url: text }, 'apikey'))).json()
