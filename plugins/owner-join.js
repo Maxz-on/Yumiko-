@@ -7,12 +7,12 @@ let handler = async (m, { conn, text, usedPrefix, command, args, participants, i
  
   let name = m.sender 
   let [_, code] = text.match(linkRegex) || []
-  if (!args[0]) throw `✳️ Envie el link del Grupo\n\n 📌 Ejemplo:\n *${usedPrefix + command}* <linkwa> <dias>\n\n_el número son los días que el bot estará en el grupo_` 
-  if (!code) throw `✳️ Link inválido`
-  if (!args[1]) throw `📌 Falta el número de días\n\n Ejemplo:\n *${usedPrefix + command}* <linkwa> 2`
-  if (isNaN(args[1])) throw `✳️ Solo número, que representa los días que el bot estará en el grupo!`
+  if (!args[0]) throw `🌸 Envie el link del Grupo 🌸\n\n 🌸 *Ejemplo* 🌸\n *${usedPrefix + command}* <linkwa> <dias>\n\n_el número son los días que el bot estará en el grupo_` 
+  if (!code) throw `🌸 Link inválido 🌸`
+  if (!args[1]) throw `🌸 Falta el número de días\n\n Ejemplo:\n *${usedPrefix + command}* <linkwa> 2`
+  if (isNaN(args[1])) throw `🌸 Solo número, que representa los días que el bot estará en el grupo! 🌸`
   let owbot = global.owner[1] 
-  m.reply(`😎 Espere 3 segundos, me uniré al grupo`)
+  m.reply(`🌸 Espere 3 segundos, me uniré al grupo 🌸`)
   await delay(3000)
   try {
   let res = await conn.groupAcceptInvite(code)
@@ -26,7 +26,7 @@ let handler = async (m, { conn, text, usedPrefix, command, args, participants, i
   else global.db.data.chats[res].expired = now + nDays
   if (e.length) await m.reply(`✅ Me uni correctamente al grupo \n\n≡ Info del grupo \n\n *Nombre :* ${await conn.getName(res)}\n\nEl bot saldrá automáticamente después de \n\n${msToDate(global.db.data.chats[res].expired - now)}`)
  
- if (e.length) await conn.reply(res, `🏮 Hola shavales
+ if (e.length) await conn.reply(res, `🌸 Hola shavales 🌸
 
 @${owbot} es mi creador  si tiene alguna duda
 fui invitado por *${m.name}*`, m, {
@@ -34,10 +34,10 @@ fui invitado por *${m.name}*`, m, {
      }).then(async () => {
      await delay(7000)
      }).then( async () => {
-     await conn.reply(res, `vale todos relajaos 🤭`, 0)
-     await conn.reply(global.owner[1]+'@s.whatsapp.net', `≡ *INVITACIÓN A GRUPO*\n\n@${m.sender.split('@')[0]} ha invitado a *${conn.user.name}* al grupo\n\n*${await conn.getName(res)}*\n\n*ID* : ${res}\n\n📌 Enlace : ${args[0]}\n\nEl bot saldrá automáticamente después de \n\n${msToDate(global.db.data.chats[res].expired - now)}`, null, {mentions: [m.sender]})
+     await conn.reply(res, `:v`, 0)
+     await conn.reply(global.owner[1]+'@s.whatsapp.net', `≡ *INVITACIÓN A GRUPO*\n\n@${m.sender.split('@')[0]} ha invitado a *${conn.user.name}* al grupo\n\n*${await conn.getName(res)}*\n\n*ID* : ${res}\n\n🌸 Enlace 🌸 ${args[0]}\n\nEl bot saldrá automáticamente después de \n\n${msToDate(global.db.data.chats[res].expired - now)}`, null, {mentions: [m.sender]})
      })
-     if (!e.length) await conn.reply(global.owner[1]+'@s.whatsapp.net', `≡ *INVITACIÓN A GRUPO*\n\n@${m.sender.split('@')[0]} ha invitado a *${conn.user.name}* al grupo\n\n*${await conn.getName(res)}*\n\n*ID* : ${res}\n\n📌 Enlace : ${args[0]}\n\nEl bot saldrá automáticamente después de\n\n ${msToDate(global.db.data.chats[res].expired - now)}`, null, {mentions: [m.sender]})
+     if (!e.length) await conn.reply(global.owner[1]+'@s.whatsapp.net', `≡ *INVITACIÓN A GRUPO*\n\n@${m.sender.split('@')[0]} ha invitado a *${conn.user.name}* al grupo\n\n*${await conn.getName(res)}*\n\n*ID* : ${res}\n\n🌸 Enlace 🌸 ${args[0]}\n\nEl bot saldrá automáticamente después de\n\n ${msToDate(global.db.data.chats[res].expired - now)}`, null, {mentions: [m.sender]})
      if (!e.length) await m.reply(`✅ Se invito al bot al grupo\n\n${await conn.getName(res)}\n\nEl bot saldrá automáticamente después de \n${msToDate(global.db.data.chats[res].expired - now)}`).then(async () => {
      let mes = `Hola a todos 👋🏻
      
@@ -54,7 +54,7 @@ para ver el Menu del bot escribe
      })
     } catch (e) {
       conn.reply(global.owner[1]+'@s.whatsapp.net', e)
-      throw `✳️ Lo siento, el bot no puede unirse a grupos`
+      throw `🌸 Lo siento, el bot no puede unirse a grupos 🌸`
       }
 }
 handler.help = ['join <chat.whatsapp.com> <dias>']
