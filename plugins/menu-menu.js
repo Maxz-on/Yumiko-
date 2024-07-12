@@ -165,7 +165,7 @@ global.fcontact = {
         },
         message: {
             contactMessage: {
-                displayName: `\🌸 *YUMIKO BOT* 🌸\nᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛꜱᴀᴘᴘ`,
+                displayName: `\🌸 𝙔𝙐𝙈𝙄𝙆𝙊 𝘽𝙊𝙏 🌸\𝙀𝙇 𝙈𝙀𝙅𝙊𝙍 𝘿𝙀 𝙈𝙄 𝘾𝘼𝙎𝘼`,
                 vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:xd\nitem1.TEL;waid=${m.sender.split("@")[0]}:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
             },
         },
