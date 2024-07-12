@@ -10,9 +10,9 @@ _muptime = await new Promise(resolve => { process.once('message', resolve)
 setTimeout(resolve, 1000) }) * 1000}
 let uptime = clockString(_uptime)
 let estado = `
-🌸─►𝘏𝘰𝘭𝘢! 𝘴𝘰𝘺 *_Yumiko Bot_*
-🌸─►𝘉𝘰𝘵 𝘦𝘯 𝘥𝘦𝘴𝘢𝘳𝘳𝘰𝘭𝘭𝘰
-🌸─►𝘚𝘪𝘨𝘶𝘦𝘮𝘦 𝘦𝘯 𝘮𝘪 𝘤𝘢𝘯𝘢𝘭
+🌸 𝘏𝘰𝘭𝘢! 𝘴𝘰𝘺 *_Yumiko Bot_* 🌸
+🌸 𝘉𝘰𝘵 𝘦𝘯 𝘥𝘦𝘴𝘢𝘳𝘳𝘰𝘭𝘭𝘰 🌸
+🌸 𝘚𝘪𝘨𝘶𝘦𝘮𝘦 𝘦𝘯 𝘮𝘪 𝘤𝘢𝘯𝘢𝘭 🌸
 `
 await conn.sendButton(m.chat, estado, '‎_BY: @mxz.18l_', pp, [
 ['📚 Menu 📚', '.allmenu'], ['🫅 Creador 🫅', '.owner']], null, [['🌸 Canal 🌸', `${fgcanal}`]], m)
