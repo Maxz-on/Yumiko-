@@ -7,7 +7,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
   if (!chat.nsfw) throw `🚫 ${mssg.gpNsfw(usedPrefix)}`
   let user = global.db.data.users[m.sender].age
   if (user < 17) throw `❎ ${mssg.nsfwAge}`
-  if (!text) throw `✳️ ${mssg.searchTo('xnxx.com', usedPrefix, command)}`
+  if (!text) throw `🌸 ${mssg.searchTo('xnxx.com', usedPrefix, command)} 🌸`
     
     m.react(rwait)
     if (text.includes('http://') || text.includes('https://')) {
@@ -15,9 +15,9 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
         try {
             let xn = await fg.xnxxdl(text)
             conn.sendFile(m.chat, xn.url_dl, xn.title + '.mp4', `
-≡  *XNXX DL*
+  🌸 *XNXX DL* 🌸
             
-*📌${mssg.title}*: ${xn.title}
+*🌸${mssg.title}*: ${xn.title}
 *⌚${mssg.duration}:* ${xn.duration}
 *🎞️${mssg.quality}:* ${xn.quality}
 `.trim(), m, false, { asDocument: chat.useDocument })
@@ -28,7 +28,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
     } else {
         try {
             let res = await fg.xnxxSearch(text)
-             let fgg = res.result.map((v, i) => `*📌${mssg.title}* : ${v.title}\n*🔗${mssg.link}:* ${v.link}\n`).join('─────────────────\n\n') 
+             let fgg = res.result.map((v, i) => `*🌸${mssg.title}* 🌸: ${v.title}\n*🔗${mssg.link}:* ${v.link}\n`).join('─────────────────\n\n') 
               if (res.status) m.reply(fgg)       
               } catch (e) {
               m.reply(`🔴 ${mssg.error}`)
