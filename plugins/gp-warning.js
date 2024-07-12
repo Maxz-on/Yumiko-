@@ -4,9 +4,9 @@ let handler = async (m, { conn, text, args, groupMetadata, usedPrefix, command }
         let who
         if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
         else who = m.chat
-        if (!who) throw `✳️ ${mssg.noMention}\n\n📌 ${mssg.example}: ${usedPrefix + command} @user`
-        if (conn.user.jid.includes(who)) return m.reply(`✳️ Menciona a un usuario que no sea Bot`)
-        if (!(who in global.db.data.users)) throw `✳️ ${mssg.userDb}`
+        if (!who) throw `🌸 ${mssg.noMention} 🌸\n\n ${mssg.example}: ${usedPrefix + command} @user`
+        if (conn.user.jid.includes(who)) return m.reply(`🌸 Menciona a un usuario que no sea Bot 🌸`)
+        if (!(who in global.db.data.users)) throw `🌸 ${mssg.userDb} 🌸`
         let txt = text.replace('@' + who.split`@`[0], '').trim()
         let name = conn.getName(m.sender)
         let warn = global.db.data.users[who].warn
