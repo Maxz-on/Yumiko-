@@ -6,9 +6,9 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
 let effect = text.trim().toLowerCase()
 if (!effects.includes(effect)) throw `
 
-┌─⊷ *EFECTOS*
+╭──►*EFECTOS*
 ${effects.map(effect => `▢ ${effect}`).join('\n')}
-└───────────
+╰────────────►
 
 🌸 *Ejemplo:* 🌸
 ${usedPrefix + command} wasted 
