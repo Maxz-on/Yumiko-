@@ -12,8 +12,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 		var number = text
   }
 
-    if(!text && !m.quoted) return m.reply(`✳️ ${mssg.noMention}\n\n📌 ${mssg.examples}: ${usedPrefix + command} @user`)
-    if(isNaN(number)) return m.reply(`✳️ El número que ingresaste no es válido`)
+    if(!text && !m.quoted) return m.reply(`🌸 ${mssg.noMention} 🌸\n\n ${mssg.examples}: ${usedPrefix + command} @user`)
+    if(isNaN(number)) return m.reply(`🌸 El número que ingresaste no es válido 🌸`)
 
       try {
 		if(text) {
@@ -29,7 +29,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         let num = global.db.data.users[user]
         num.banned = true
         conn.reply(m.chat, `
-✅ BANEADO
+🌸 BANEADO 🌸
 
 ───────────
 @${number} ${mssg.banUser}`, m, { mentions: [user] })
