@@ -12,7 +12,7 @@ let handler = async (m, { conn, isROwner, usedPrefix, command, text }) => {
     throw `
 🌸 ${mssg.useCmd} 🌸: ${usedPrefix + command} <name file>
       
-🌸 ${mssg.example} 🌸:
+🌸 *${mssg.example}* 🌸:
 ${usedPrefix + command} main-menu
 `.trim();
   }
