@@ -2,7 +2,7 @@
 import fg from 'api-dylux'
 let handler = async (m, {conn, text }) => {
   let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : ''
-   if (!teks) throw `🌸 ${mssg.notext}`
+   if (!teks) throw `🌸 ${mssg.notext} 🌸`
    try {
  let res = await fg.lyrics(text);
  let mes = `▢ *${res.title}*
