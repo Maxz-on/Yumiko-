@@ -13,14 +13,14 @@ let handler = async (m, {
         text = args.slice(0).join(" ")
     } else if (m.quoted && m.quoted.text) {
         text = m.quoted.text
-    } else throw "➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*AGREGA TU IDEA DE IMAGEN*\n_.bing Gatito Tierno_"
+    } else throw "🌸 *YUMIKO BOT* 🌸\n\n*AGREGA TU IDEA DE IMAGEN*\n_.bing Gatito Tierno_"
     await m.reply(wait)
 
     try {
         let data = await generateImage(text)
         if (data && data.imgs.length > 0) {
             for (let i = 0; i < data.imgs.length; i++) {
-                await conn.sendFile(m.chat, data.imgs[i], '', `🐈‍⬛ 𝗥𝗘𝗦𝗨𝗟𝗧𝗔𝗗𝗢 : *(${i + 1}/${data.imgs.length})*`, m, false, {
+                await conn.sendFile(m.chat, data.imgs[i], '', `🌸 𝗥𝗘𝗦𝗨𝗟𝗧𝗔𝗗𝗢 🌸 *(${i + 1}/${data.imgs.length})*`, m, false, {
                     mentions: [m.sender]
                 });
             }
