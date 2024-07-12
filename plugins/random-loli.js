@@ -2,7 +2,7 @@ let handler = async(m, { conn, text, command }) => {
 let yh = global.loli
 let url = yh[Math.floor(Math.random() * yh.length)]
         m.react('✅')
-conn.sendButton(m.chat, `🌌 _${command}_ 🌌`.trim(), packname, url, [['🌸 SIGUIENTE 🌸', `/${command}`]], null, null, m)
+conn.sendButton(m.chat, `${command}`.trim(), packname, url, [['🌸 SIGUIENTE 🌸', `/${command}`]], null, null, m)
 }
 handler.command = /^(loli)$/i
 handler.tags = ['anime']
