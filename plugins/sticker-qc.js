@@ -8,13 +8,13 @@ let text
         text = args.slice(0).join(" ");
     } else if (m.quoted && m.quoted.text) {
         text = m.quoted.text;
-    } else throw "🌸 YUMIKO BOT 🌸\n\n*PONGA UN TEXTO*\n_Ejemplo: .qc Hola_";
-   if (!text) return m.reply('➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*PONGA UN TEXTO*\n_Ejemplo: .qc Hola_');
+    } else throw "🌸 *YUMIKO BOT* 🌸\n\n*PONGA UN TEXTO*\n_Ejemplo: .qc Hola_";
+   if (!text) return m.reply('🌸 *YUMIKO BOT* 🌸\n\n*PONGA UN TEXTO*\n_Ejemplo: .qc Hola_');
     const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender; 
     const mentionRegex = new RegExp(`@${who.split('@')[0].replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*`, 'g');
     const mishi = text.replace(mentionRegex, '');
-   if (mishi.length > 30) return m.reply('➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*EL TEXTO NO PUEDE TENER MAS DE 30 CARACTERES*');
-m.react('🐈‍⬛') 
+   if (mishi.length > 30) return m.reply('🌸 *YUMIKO BOT* 🌸\n\n*EL TEXTO NO PUEDE TENER MAS DE 30 CARACTERES*');
+m.react('🌸') 
     const pp = await conn.profilePictureUrl(who).catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
     const nombre = await conn.getName(who)
     const obj = {"type": "quote", "format": "png", "backgroundColor": "#000000", "width": 512, "height": 768, "scale": 2, "messages": [{"entities": [], "avatar": true, "from": {"id": 1, "name": `${who?.name || nombre}`, "photo": {url: `${pp}`}}, "text": mishi, "replyMessage": {}}]};
