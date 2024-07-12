@@ -7,7 +7,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://i.ibb.co/WFX3GhG/file.jpg')
  if (user.registered === true) throw `🌸 ${mssg.regIsOn} 🌸\n\n${usedPrefix}unreg <sn>`
 
-  let te = `${mssg.avisoGene4}\n\n*🐈‍⬛ PARA REGISTRARSE USE*\n_${usedPrefix + command} Nombre+Edad+Genero_\n\n*» GENEROS DISPONIBLES*:\n*- M* = ${mssg.man}\n*- F* = ${mssg.woman}\n*- N* = ${mssg.other}\n*- B* = ${mssg.nonbinary}`
+  let te = `${mssg.avisoGene4}\n\n*🌸 PARA REGISTRARSE USE* 🌸\n_${usedPrefix + command} Nombre+Edad+Genero_\n\n*» GENEROS DISPONIBLES*:\n*- M* = ${mssg.man}\n*- F* = ${mssg.woman}\n*- N* = ${mssg.other}\n*- B* = ${mssg.nonbinary}`
   if (!Reg.test(text)) throw te
   let [_, name, splitter, age, splitter2, gen] = text.match(Reg)
   if (!name) throw te
