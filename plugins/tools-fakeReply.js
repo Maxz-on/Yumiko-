@@ -1,6 +1,6 @@
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) return m.reply(`🌸 ${mssg.useCmd} 🌸\n\n*${usedPrefix + command} * hola que? @${m.sender.split`@`[0]} nada y tu`, null, { mentions: [m.sender] })
+  if (!text) return m.reply(`🌸 ${mssg.useCmd} 🌸\n\n*${usedPrefix + command}* hola que? @${m.sender.split`@`[0]} nada y tu`, null, { mentions: [m.sender] })
   let cm = copy(m)
   let who
   if (text.includes('@0')) who = '0@s.whatsapp.net'
