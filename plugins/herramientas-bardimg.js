@@ -13,7 +13,7 @@ let handler = async (m, {args,conn,command}) => {
 
   let q = m.quoted ? m.quoted : m
   let mime = (q.msg || q).mimetype || ''
-  if (!mime) throw `✳️ ${mssg.replyImg}`
+  if (!mime) throw `🌸 ${mssg.replyImg} 🌸`
   let media = await q.download()
   let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
   let link = await (isTele ? uploadImage : uploadFile)(media)
