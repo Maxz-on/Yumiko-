@@ -23,7 +23,7 @@ let thumbnail = await yt.thumbnail
 
 let img = await (await fetch(`${thumbnail}`)).buffer()  
 if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se cancelÃ³ la Descarga.`, m, rcanal).then(_ => m.react('✅'))
-        let txt = '`G E N E S I S - D O C`\n\n'
+        let txt = '🌸 YUMIKO BOT - D O C 🌸\n\n'
        txt += `📌 *TÍTULO* : ${title}\n`
        txt += `🍀 *CALIDAD* : ${q}\n`
        txt += `🗃️ *TAMAÑO* : ${size}\n\n`
@@ -40,7 +40,7 @@ let { thumbnail, url } = vid
 
 let img = await (await fetch(`${vid.thumbnail}`)).buffer()  
 if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se cancelÃ³ la Descarga.`, m, rcanal).then(_ => m.react('✅'))
-        let txt = '`G E N E S I S - D O C`\n\n'
+        let txt = '🌸 YUMIKO BOT - D O C 🌸\n\n'
        txt += `📌 *TITULO* : ${title}\n`
        txt += `🍀 *CALIDAD* : ${q}\n`
        txt += `🗃️ *TAMAÑO* : ${size}\n\n`
@@ -55,7 +55,7 @@ let { title, dl_url, size, thumb } = yt
 
 let img = await (await fetch(`${thumb}`)).buffer()
 if (size.split('MB')[0] >= limit) return star.reply(m.chat, `El archivo pesa mas de ${limit} MB, se cancelÃ³ la Descarga.`, m, rcanal).then(_ => m.react('✅'))
-        let txt = '`G E N E S I S - D O C`\n\n'
+        let txt = '🌸 YUMIKO BOT - D O C 🌸\n\n'
        txt += `📌 *TÍTULO* : ${title}\n`
        txt += `🍀 *CALIDAD* : ${q}\n`
        txt += `🗃️ *TAMAÑO* : ${size}\n\n`
