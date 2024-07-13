@@ -10,23 +10,23 @@ import fetch from 'node-fetch'
 let limit = 320
 let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, command }) => {
   
-    if (!text) throw `✳️ ${mssg.example} *${usedPrefix + command}* Lil Peep hate my life`
+    if (!text) throw `🌸 ${mssg.example} 🌸 *${usedPrefix + command}* Lil Peep hate my life`
   let chat = global.db.data.chats[m.chat]
   let res = await yts(text)
   //let vid = res.all.find(video => video.seconds < 3600)
   let vid = res.videos[0]
-  if (!vid) throw `✳️ Vídeo/Audio no encontrado`
+  if (!vid) throw `🌸 Vídeo/Audio no encontrado 🌸`
   let isVideo = /vid$/.test(command)
   m.react('🎧') 
   
   let play = `
-	≡ *FG MUSIC*
-┌──────────────
-▢ 📌 *${mssg.title}:* ${vid.title}
-▢ 📆 *${mssg.aploud}:* ${vid.ago}
-▢ ⌚ *${mssg.duration}:* ${vid.timestamp}
-▢ 👀 *${mssg.views}:* ${vid.views.toLocaleString()}
-└──────────────
+	🌸 *FG MUSIC* 🌸
+╭────────────►
+┆ *${mssg.title}:* ${vid.title}
+┆ 📆 *${mssg.aploud}:* ${vid.ago}
+┆ ⌚ *${mssg.duration}:* ${vid.timestamp}
+┆ 👀 *${mssg.views}:* ${vid.views.toLocaleString()}
+╰────────────►
 
 _Enviando..._` 
 conn.sendFile(m.chat, vid.thumbnail, 'play', play, m, null, rcanal)
@@ -44,7 +44,7 @@ try {
      await conn.loadingMsg(m.chat, '📥 Descargando', ` ${isLimit ? `≡  *FG YTDL*\n\n▢ *⚖️${mssg.size}*: ${size}\n▢ *🎞️${mssg.quality}*: ${quality}\n\n▢ _${mssg.limitdl}_ *+${limit} MB*` : '✅ Descarga Completada' }`, ["▬▭▭▭▭▭", "▬▬▭▭▭▭", "▬▬▬▭▭▭", "▬▬▬▬▭▭", "▬▬▬▬▬▭", "▬▬▬▬▬▬"], m)
      
 	  if(!isLimit) conn.sendFile(m.chat, dl_url, title + '.mp' + (3 + /vid$/.test(command)), `
- ≡  *FG YTDL*
+ 🌸  *FG YTDL* 🌸
   
 ▢ *📌Título* : ${title}
 ▢ *🎞️Calidad* : ${quality}
@@ -60,7 +60,7 @@ try {
 
      await conn.loadingMsg(m.chat, '📥 Descargando', ` ${isLimit ? `≡  *FG YTDL*\n\n▢ *⚖️${mssg.size}*: ${size}\n▢ *🎞️${mssg.quality}*: ${quality}\n\n▢ _${mssg.limitdl}_ *+${limit} MB*` : '✅ Descarga Completada' }`, ["▬▭▭▭▭▭", "▬▬▭▭▭▭", "▬▬▬▭▭▭", "▬▬▬▬▭▭", "▬▬▬▬▬▭", "▬▬▬▬▬▬"], m)
 	  if(!isLimit) conn.sendFile(m.chat, dl_url, title + '.mp' + (3 + /2$/.test(command)), `
- ≡  *FG YTDL 2*
+ 🌸 *FG YTDL 2* 🌸
   
 *📌${mssg.title}* : ${title}
 *🎞️${mssg.quality}* : ${quality}
