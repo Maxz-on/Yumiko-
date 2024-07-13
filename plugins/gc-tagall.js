@@ -14,7 +14,7 @@ const oi = `┆ A??: ${pesan}\n┆Personitas: _*${participants.length}*_
     teks += `┆ @${mem.id.split('@')[0]}\n`;
   }
   teks += `╭─────────────►
-┆🌸 Yumiko Bot 🌸
+┆🌸 *YUMIKO BOT* 🌸
 ╰─────────────►`;
   conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)} );
 };
