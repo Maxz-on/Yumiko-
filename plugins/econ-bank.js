@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let user = global.db.data.users[who];
     let username = conn.getName(who);
 
-    if (!(who in global.db.data.users)) throw `✳️ Este usuario no está en mi base de datos`;
+    if (!(who in global.db.data.users)) throw `🌸 Este usuario no está en mi base de datos 🌸`;
 
     const line = '━━━━━━━━━━━━━━━━━';
 
@@ -29,7 +29,7 @@ ${line}
 ${line}
 
 *💎 DIAMANTES:* _${user.diamond.toLocaleString()}_
-*🍒 GENECOINS:* _${user.coin.toLocaleString()}_
+*🌸 COINS:* _${user.coin.toLocaleString()}_
 
 💼 *NIVEL DE RIQUEZA*: ${wealthLevel()}
 ${line}
