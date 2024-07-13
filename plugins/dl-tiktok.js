@@ -3,11 +3,11 @@ import axios from 'axios'
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-    if (!args[0])  m.reply(`🍭 Ingresa un enlace del vídeo de TikTok junto al comando.\n\nEjemplo:\n${usedPrefix + command} https://vm.tiktok.com/ZMMCYHnxf/`)
+    if (!args[0])  m.reply(`🌸 Ingresa un enlace del vídeo de TikTok junto al comando.🌸\n\nEjemplo:\n${usedPrefix + command} https://vm.tiktok.com/ZMMCYHnxf/`)
 
     try {
         let { title, published, quality, likes, commentCount, shareCount, views, dl_url } = await Scraper.tiktokdl(args[0])
-            let txt = '`𝗔𝗤𝗨𝗜 𝗧𝗜𝗘𝗡𝗘𝗦` 🐈‍⬛\n'
+            let txt = '🌸 𝗔𝗤𝗨𝗜 𝗧𝗜𝗘𝗡𝗘𝗦 🌸\n'
 
         await conn.sendMessage(m.chat, { video: { url: dl_url }, caption: txt }, { quoted: m })
     } catch {
@@ -17,7 +17,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
         if (data.status) {
             const { author, view, comment, play, share, download, duration, title, video } = data.data;
-            let txt = '`𝗔𝗤𝗨𝗜 𝗧𝗜𝗘𝗡𝗘𝗦` 🐈‍⬛\n'
+            let txt = '🌸 𝗔𝗤𝗨𝗜 𝗧𝗜𝗘𝗡𝗘𝗦 🌸\n'
 
             await conn.sendMessage(m.chat, { video: { url: video }, caption: txt }, { quoted: m })
         }
@@ -31,7 +31,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
             const publishedDate = formatDate(published)
             const fileSize = convertBytesToMB(meta.media[0].size_org)
 
-            let txt = '`𝗔𝗤𝗨𝗜 𝗧𝗜𝗘𝗡𝗘𝗦` 🐈‍⬛\n'
+            let txt = '🌸 𝗔𝗤𝗨𝗜 𝗧𝗜𝗘𝗡𝗘𝗦 🌸\n'
 
             await conn.sendMessage(m.chat, { video: { url: meta.media[0].org }, caption: txt }, { quoted: m })
         }
