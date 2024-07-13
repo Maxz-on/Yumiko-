@@ -5,7 +5,7 @@ let handler = async function (m, { conn, text, usedPrefix }) {
   if (text) {
     chat.rules = text
     m.reply(`✅ ${mssg.rulesMsgOn}`)
-  } else throw `✳️ ${mssg.rulesMsg}`
+  } else throw `🌸 ${mssg.rulesMsg} 🌸`
      
 }
 handler.help = ['setrules <text>']
