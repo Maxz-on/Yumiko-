@@ -2,7 +2,7 @@ const handler = async (m, {conn, text, command}) => {
 m.react('✅') 
   const yh = global.kalahari;
   const url = yh[Math.floor(Math.random() * yh.length)];
-  conn.sendMessage(m.chat, {image: {url: url}, caption: '*🐈‍⬛ MAPA KALAHARI 2024 🐈‍⬛*'}, {quoted: m});
+  conn.sendMessage(m.chat, {image: {url: url}, caption: '🌸 *MAPA KALAHARI* 🌸'}, {quoted: m});
 };
 handler.command = /^(mapakalahari|kalahari)$/i;
 handler.tags = ['mapas'];
