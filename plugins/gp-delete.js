@@ -1,7 +1,7 @@
 
 let handler = async (m, { conn, usedPrefix, command }) => {
 	
-if (!m.quoted) throw `✳️ ${mssg.reply}`
+if (!m.quoted) throw `🌸 ${mssg.reply} 🌸`
 try {
 let delet = m.message.extendedTextMessage.contextInfo.participant
 let bang = m.message.extendedTextMessage.contextInfo.stanzaId
