@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, args, isPrems, isOwner, usedPrefix, comman
 
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
-if (!args || !args[0]) conn.reply(m.chat, `*🚩 Escribe la URL de un video de YouTube que deseas descargar.*`,  m, fake,)
+if (!args || !args[0]) conn.reply(m.chat, `🌸 *Escribe la URL de un video de YouTube que deseas descargar.* 🌸`,  m, fake,)
 if (!args[0].match(/youtu/gi)) return conn.reply(m.chat, `Verifica que la *URL* sea de YouTube`, m).then(_ => m.react('✖️'))
 let q = '128kbps'
 
@@ -22,7 +22,7 @@ let { thumbnail, url } = vid
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m).then(_ => m.react('✖️'))
 
 await conn.sendMessage(m.chat, {
-        text: `💿 *_CARGANDO..._*\n🍒 *_ESPERA_* @${m.sender.split`@`[0]}`,
+        text: `💿 *_CARGANDO..._*\n🌸 *_ESPERA_* @${m.sender.split`@`[0]}`,
         contextInfo: { 
           mentionedJid: [m.sender],
         }
@@ -48,7 +48,7 @@ let { thumbnail, url } = vid
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat,`El archivo pesa mas de ${limit} MB, se canceló la Descarga.`,  m, fake,).then(_ => m.react('✖️'))
 
 await conn.sendMessage(m.chat, {
-        text: `💿 *_CARGANDO..._*\n🍒 *_ESPERA_* @${m.sender.split`@`[0]}`,
+        text: `💿 *_CARGANDO..._*\n🌸 *_ESPERA_* @${m.sender.split`@`[0]}`,
         contextInfo: { 
           mentionedJid: [m.sender],
         }
