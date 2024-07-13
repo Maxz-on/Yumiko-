@@ -27,7 +27,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
       break 
       case 'spank':
       case 'azotar':
-      if (!who2) return m.reply(`✳️ ${mssg.noMention}\n\n📌 ${mssg.example} : ${usedPrefix + command} @tag`)
+      if (!who2) return m.reply(`🌸 ${mssg.noMention} 🌸\n\n🌸 ${mssg.example} 🌸: ${usedPrefix + command} @tag`)
       let az = global.API('fgmods', '/api/maker/spank', { url: me, url2: pp }, 'apikey')
       conn.sendFile(m.chat, az, 'img.png', `✅ ${mssg.result}`, m)
       m.react(done)
