@@ -7,11 +7,11 @@ let handler = async (m, { conn, args, text, isPrems, isOwner, usedPrefix, comman
 
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
-if (!args || !args[0]) return conn.reply(m.chat, `*🚩 Escribe la URL de un video de YouTube que deseas descargar.*`, m)
+if (!args || !args[0]) return conn.reply(m.chat, `🌸 Escribe la URL de un video de YouTube que deseas descargar.🌸`, m)
 if (!args[0].match(/youtu/gi)) return conn.reply(m.chat,`Verifica que la *URL* sea de YouTube`, m).then(_ => m.react('✖️'))
 let q = args[1] || '360p'
 
-await m.react('📀')
+await m.react('🫠')
 try {
 const yt = await fg.ytv(args[0], q)
 let { title, dl_url, size } = yt 
@@ -20,7 +20,7 @@ let vid = (await yts(text)).all[0]
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m).then(_ => m.react('✖️'))
 
 await conn.sendMessage(m.chat, {
-        text: `📀 *_CARGANDO..._*\n🍒 *_ESPERA_* @${m.sender.split`@`[0]}`,
+        text: `🫠*_CARGANDO..._*\n🌸 *_ESPERA_* @${m.sender.split`@`[0]}`,
         contextInfo: { 
           mentionedJid: [m.sender],
         }
@@ -37,7 +37,7 @@ let vid = (await yts(text)).all[0]
 if (size.split('MB')[0] >= limit) return conn.reply(m.chat, `El archivo pesa mas de ${limit} MB, se canceló la Descarga.`, m).then(_ => m.react('✖️'))
 
 await conn.sendMessage(m.chat, {
-        text: `📀 *_CARGANDO..._*\n🍒 *_ESPERA_* @${m.sender.split`@`[0]}`,
+        text: `🫠 *_CARGANDO..._*\n🌸 *_ESPERA_* @${m.sender.split`@`[0]}`,
         contextInfo: { 
           mentionedJid: [m.sender],
         }
