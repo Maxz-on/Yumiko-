@@ -6,7 +6,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     
 ${Object.keys(modes).join(' | ')} 
   
-*📌${mssg.example}:* _${usedPrefix+command} normal_`
+🌸*${mssg.example}:🌸* _${usedPrefix+command} normal_`
     
   if (args.length < 1) throw te
   let mode = args[0].toLowerCase()
