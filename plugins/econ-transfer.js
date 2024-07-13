@@ -5,26 +5,26 @@ async function handler(m, { conn, args, usedPrefix, command }) {
     if (confirmation[m.sender]) return m.reply(mssg.onTransfer)
     let user = global.db.data.users[m.sender]
     const item = items.filter(v => v in user && typeof user[v] == 'number')
-    let lol = `✳️ ${mssg.useCmd}
+    let lol = `🌸 ${mssg.useCmd} 🌸
 *${usedPrefix + command}*  [${mssg.type}] [${mssg.amount}] [@user]
 
-📌 ${mssg.example} : 
+🌸 ${mssg.example} 🌸: 
 *${usedPrefix + command}* coin 65 @${m.sender.split('@')[0]}
 
-📍 ${mssg.transItem}
-┌──────────────
-▢ *diamond* = ${mssg.dmd} 💎
-▢ *coin* = ${mssg.money} 🪙
-└──────────────
+☁️ ${mssg.transItem} ☁️
+╭─────────────►
+┆ *diamond* = ${mssg.dmd} 💎
+┆ *coin* = ${mssg.money} 🪙
+╰─────────────►
 `.trim()
     const type = (args[0] || '').toLowerCase()
     if (!item.includes(type)) return conn.reply(m.chat, lol, m, { mentions: [m.sender] })
     const count = Math.min(Number.MAX_SAFE_INTEGER, Math.max(1, (isNumber(args[1]) ? parseInt(args[1]) : 1))) * 1
-    if (!/^[1-9]\d*$/.test(args[1])) throw `✳️ ${mssg.isNan}`; //-- test
+    if (!/^[1-9]\d*$/.test(args[1])) throw `🌸 ${mssg.isNan} 🌸`; //-- test
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : args[2] ? (args[2].replace(/[@ .+-]/g, '') + '@s.whatsapp.net') : ''
-    if (!who) return m.reply(`✳️ ${mssg.noMention}`)
-    if (!(who in global.db.data.users)) return m.reply(`✳️ ${mssg.userDb}`)
-    if (user[type] * 1 < count) return m.reply(`✳️  *${type}* ${mssg.payNan}`)
+    if (!who) return m.reply(`🌸 ${mssg.noMention} 🌸`)
+    if (!(who in global.db.data.users)) return m.reply(`🌸 ${mssg.userDb} 🌸`)
+    if (user[type] * 1 < count) return m.reply(`🌸  *${type}* ${mssg.payNan} 🌸`)
     let confirm = `
 ¿${mssg.confirm} *${count}* _*${type}*_ ${mssg.to}  *@${(who || '').replace(/@s\.whatsapp\.net/g, '')}* ? 
 
