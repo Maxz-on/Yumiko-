@@ -1,11 +1,11 @@
 
 import yts from 'yt-search'
 let handler = async (m, {conn, text }) => {
-  if (!text) throw `✳️ ${mssg.search('YouTube')}`
+  if (!text) throw `🌸 ${mssg.search('YouTube')} 🌸`
   let results = await yts(text)
 	let tes = results.videos
 let teks = tes.map(v => `
-📌 ${v.title}
+🌸 ${v.title} 🌸
 *⌚${mssg.duration}:* ${v.timestamp}
 *📆${mssg.aploud}:* ${v.ago}
 *👀${mssg.views}:* ${v.views.toLocaleString()}
