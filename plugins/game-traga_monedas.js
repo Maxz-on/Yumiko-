@@ -4,7 +4,7 @@ let maxap = 20000
 let cooldown = 30000
 let handler = async (m, { conn, args, usedPrefix, command }) => {
     let fa = `
-📌 ${mssg.example} :
+🌸 ${mssg.example} 🌸
 *${usedPrefix + command}* 100`.trim()
 
     if (!args[0]) throw fa
@@ -12,11 +12,11 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let apuesta = parseInt(args[0])
     let user = global.db.data.users[m.sender]
     if (new Date - user.lastslot < cooldown) throw `⏳ ${mssg.rouletCd} *${msToTime((user.lastslot + cooldown) - new Date())}*`
-    if (apuesta < 100) throw `✳️ ${mssg.betMin} *100 🪙*`
-    if (user.coin < apuesta)throw `✳️ ${mssg.coinNan}`
+    if (apuesta < 100) throw `🌸 ${mssg.betMin} 🌸 *100 🪙*`
+    if (user.coin < apuesta)throw `🌸 ${mssg.coinNan} 🌸`
    if (maxap < apuesta) return m.reply(`🎰 ${mssg.betMax} *${maxap} 🪙*`) 
    	
-    let emojis = ["🍒", "🦀", "🦎"];
+    let emojis = ["🌸", "🪐", "🦎"];
     let a = Math.floor(Math.random() * emojis.length);
     let b = Math.floor(Math.random() * emojis.length);
     let c = Math.floor(Math.random() * emojis.length);
@@ -36,14 +36,14 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     for (let i = 0; i < 3; i++) {
         z[i] = emojis[c];
         c++;
-        if (c == emojis.length) c = 0;
+        if (c == emojis.length) c = 0; 
     }
     let end;
     if (a == b && b == c) {
         end = `🎁 ${mssg.win}\n *+${apuesta} 🪙*`
         user.coin += apuesta
     } else if (a == b || a == c || b == c) {
-        end = `🔮 ${mssg.slotC}\n  *+${reg} 🪙*`
+        end = `🗣️ ${mssg.slotC}\n  *+${reg} 🪙*`
         user.coin += reg
     } else {
         end = `😔 ${mssg.lost}  *-${apuesta} 🪙*`
