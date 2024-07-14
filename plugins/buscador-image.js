@@ -7,7 +7,7 @@ try {
 const res = await googleImage(text)
 let image = res.getRandom()
 let link = image
-conn.sendButton(m.chat, `${packname}`, 'Aqui tiene 🍃', link, [['SIGUIENTE', `/imagen ${text}`]], null, null, m)
+conn.sendButton(m.chat, `${packname}`, '🌸 Aqui tiene 🌸', link, [['🌸 SIGUIENTE 🌸', `/imagen ${text}`]], null, null, m)
 } catch (e) {
 console.log(`${errorBB}`)
 console.log(e)
