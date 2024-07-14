@@ -4,7 +4,7 @@ let free = 150 // limite de descarga
 let prem = 500
 let handler = async (m, { conn, args, usedPrefix, command, isOwner, isPrems }) => {
 
-	if (!args[0]) throw `✳️ ${mssg.noLink('Google Drive')}`
+	if (!args[0]) throw `🌸 ${mssg.noLink('Google Drive')} 🌸`
 	m.react(rwait) 
 	
 	try {
@@ -13,7 +13,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner, isPrems }) =
 	let limit = isPrems || isOwner ? prem : free
     let isLimit = limit * 1024 < res.fileSizeB
 	 await m.reply(`
-≡ *Google Drive DL*
+🌸 *Google Drive DL* 🌸
 
 *📌${mssg.name}:* ${res.fileName}
 *⚖️${mssg.size}:* ${res.fileSize}
