@@ -27,7 +27,7 @@ let handler = async (m, { conn: _conn, args, usedPrefix, command, isOwner }) => 
 
   let parent = args[0] && args[0] == 'plz' ? _conn : await global.conn
   if (!((args[0] && args[0] == 'plz') || (await global.conn).user.jid == _conn.user.jid)) {
-	throw `📌 ${mssg.nobbot}\n\n wa.me/${global.conn.user.jid.split`@`[0]}?text=${usedPrefix}botclone`
+	throw `🌸 ${mssg.nobbot} 🌸\n\n wa.me/${global.conn.user.jid.split`@`[0]}?text=${usedPrefix}botclone`
 }
 
 	//=====
@@ -84,20 +84,20 @@ let conn = makeWASocket(connectionOptions)
 
 if (methodCode && !conn.authState.creds.registered) {
     if (!phoneNumber) {
-        //parent.sendMessage(m.chat, { text: `✴️ Su número de teléfono no está definido` }, { quoted: m })
+        //parent.sendMessage(m.chat, { text: `🌸 Su número de teléfono no está definido 🌸` }, { quoted: m })
         process.exit(0);
     }
     let cleanedNumber = phoneNumber.replace(/[^0-9]/g, '');
     if (!Object.keys(PHONENUMBER_MCC).some(v => cleanedNumber.startsWith(v))) {
-        //parent.sendMessage(m.chat, { text: `✴️ Su número debe comenzar con el código de país` }, { quoted: m })
+        //parent.sendMessage(m.chat, { text: `🌸 Su número debe comenzar con el código de país 🌸` }, { quoted: m })
         process.exit(0);
     }
 
     setTimeout(async () => {
         let codeBot = await conn.requestPairingCode(cleanedNumber);
         codeBot = codeBot?.match(/.{1,4}/g)?.join("-") || codeBot;
-         //parent.sendFile(m.chat, 'https://i.ibb.co/SKKdvRb/code.jpg', 'qrcode.png', `➤ CODE: *${codeBot}*\n\n${mssg.botqr}`, m)
-	 parent.sendButton(m.chat, `➤ CODE: *${codeBot}*\n\n${mssg.botqr}`, mssg.ig, 'https://i.ibb.co/SKKdvRb/code.jpg', [], codeBot, null, m) 
+         //parent.sendFile(m.chat, 'https://i.ibb.co/SKKdvRb/code.jpg', 'qrcode.png', `🌸 CODE 🌸: *${codeBot}*\n\n${mssg.botqr}`, m)
+	 parent.sendButton(m.chat, `🌸 CODE 🌸: *${codeBot}*\n\n${mssg.botqr}`, mssg.ig, 'https://i.ibb.co/SKKdvRb/code.jpg', [], codeBot, null, m) 
         rl.close();
     }, 3000);
 }
