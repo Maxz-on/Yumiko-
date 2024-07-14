@@ -17,7 +17,7 @@ https://github.com/Maxz-on/Yumiko-.git
 
 > ${mssg.ig}
 `
-let img = 'https://i.ibb.co/jHctydb/Genesis-Bot.jpg'
+let img = 'https://telegra.ph/file/cb42a7ab77c44d16bc7f0.jpg'
 conn.sendFile(m.chat, img, 'img.jpg', don, fkontak, null, rcanal)
 //conn.sendPayment(m.chat, '2000', 'USD', don, m.sender, m)
 }
