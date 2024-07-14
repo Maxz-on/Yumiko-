@@ -3,7 +3,7 @@ import cheerio from 'cheerio'
 
 
 let handler = async (m, { text }) => {
-	if (!text) throw `✳️ ${mssg.search('Wikipedia')}` 
+	if (!text) throw `🌸 ${mssg.search('Wikipedia')} 🌸` 
 	
     try {
 	const link =  await axios.get(`https://es.wikipedia.org/wiki/${text}`)
