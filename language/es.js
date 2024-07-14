@@ -272,7 +272,7 @@ const translations = {
     avisoGene3: '🌸 𝗔𝗗𝗩𝗘𝗥𝗧𝗘𝗡𝗖𝗜𝗔 🌸',
     avisoGene4: '🌸 𝗬𝗨𝗠𝗜𝗞𝗢 𝗕𝗢𝗧 🌸',
     igt: `🌸 Sígueme en Instagram\n${fgig} 🌸`,
-    ig: `© 2024 | By: YUMIKO  Bot.`
+    ig: `© 2024 | By: Mxz.`
 }
 
 export default translations
