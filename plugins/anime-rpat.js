@@ -6,7 +6,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
    let who
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
     else who = m.chat
-     if (!who) throw `✳️ ${mssg.noMention}\n\n📌 ${mssg.example} : ${usedPrefix + command} @tag`
+     if (!who) throw `🌸 ${mssg.noMention} 🌸\n\n🌸 ${mssg.example} 🌸: ${usedPrefix + command} @tag`
      
    let name = conn.getName(who) 
    let name2 = conn.getName(m.sender) 
