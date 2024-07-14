@@ -3,7 +3,7 @@ import uploadImage from '../lib/uploadImage.js';
 const handler = async (m) => {
   const q = m.quoted ? m.quoted : m;
   const mime = (q.msg || q).mimetype || '';
-  if (!mime) throw'${mssg.avisoGene3}\n\n🌸 *RESPONDA A UNA IMAGEN O VIDEO PARA HACERLO URL* 🌸';
+  if (!mime) throw 🌸 *RESPONDA A UNA IMAGEN O VIDEO PARA HACERLO URL* 🌸';
 m.react('🌸')
   const media = await q.download();
   const isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime);
