@@ -24,7 +24,7 @@ let handler = async (m, { conn }) => {
   })
 
   if (api.data.data) {
-    let txt = `*ä¹‚  I B B  -  U P L O A D E R*\n\n`
+    let txt = `*ä¹‚I B B  -  U P L O A D E R*\n\n`
         txt += `» Titulo* : ${q.filename || 'x'}\n`
         txt += `» Id* : ${api.data.data.id}\n`
         txt += `» Enlace* : ${api.data.data.url}\n`
