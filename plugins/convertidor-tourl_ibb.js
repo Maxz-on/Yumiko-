@@ -7,9 +7,9 @@ let handler = async (m, { conn }) => {
 
   let q = m.quoted ? m.quoted : m
   let mime = (q.msg || q).mimetype || ''
-  
+
   if (!mime.startsWith('image/')) {
-    return m.reply('🌸 Responde a una *Imagen.* 🌸')
+    return m.reply('Responde a una *Imagen.*')
   }
   await m.react('✅')
 
@@ -24,7 +24,7 @@ let handler = async (m, { conn }) => {
   })
 
   if (api.data.data) {
-    let txt = `*ä¹‚I B B  -  U P L O A D E R*\n\n`
+    let txt = `*ä¹‚  I B B  -  U P L O A D E R*\n\n`
         txt += `» Titulo* : ${q.filename || 'x'}\n`
         txt += `» Id* : ${api.data.data.id}\n`
         txt += `» Enlace* : ${api.data.data.url}\n`
@@ -33,8 +33,8 @@ let handler = async (m, { conn }) => {
         txt += `» File* : ${q.filename || 'x.jpg'}\n`
         txt += `» Extension* : ${api.data.data.image.extension}\n`
         txt += `» Delete* : ${api.data.data.delete_url}\n\n`
-        txt += `© By: YUMIKO BOT`
-    await conn.sendFile(m.chat, api.data.data.url, 'ibb.jpg', txt, m, null, rcanal)
+        txt += `© By: Genesis`
+    await conn.sendFile(m.chat, api.data.data.url, 'ibb.jpg', txt, m, null, fwc)
     await m.react('✅')
   } else {
     await m.react('✅')
