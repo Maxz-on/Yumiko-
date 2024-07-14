@@ -19,12 +19,12 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = 'Yumiko Bot' 
+global.packname = 'YUMIKO BOT' 
 global.author = '@mxz.18l' 
 global.descripcion = 'Solo Preguntas Del Bot'
 
 //--info FG
-global.botName = 'Yumiko'
+global.botName = 'YUMIKO'
 global.fgig = 'Solo Preguntas Del Bot' 
 global.fgigt = 'https://instagram.com/max_xitado.pe' 
 global.fgsc = 'https://github.com/karim-off/GenesisBot-Pro' 
@@ -49,7 +49,7 @@ global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
 
-global.wait = '*🌸 `LOADING....*'
+global.wait = '🌸 *LOADING*....'
 global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✅'
