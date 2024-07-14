@@ -28,7 +28,7 @@ let m2 = `
 ┊ .:𝘤
 ╰────────────►
 `
-    let pp = 'https://i.ibb.co/jHctydb/Genesis-Bot.jpg' 
+    let pp = 'https://telegra.ph/file/cb42a7ab77c44d16bc7f0.jpg' 
 
 global.fcontact = {
         key: {
