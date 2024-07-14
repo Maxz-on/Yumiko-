@@ -5,7 +5,7 @@ export async function all(m) {
     if (m.chat.endsWith('broadcast')) return
     if (user.premiumTime != 0 && user.prem) {
         if (new Date() * 1 >= user.premiumTime) {
-          await m.reply(`✳️ Premium expirado`)
+          await m.reply(`🌸 Premium expirado 🌸`)
             user.premiumTime = 0
             user.prem = false
         }
