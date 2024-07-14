@@ -602,10 +602,10 @@ export async function deleteUpdate(message) {
         if (chat.delete)
             return
         await this.reply(msg.chat, `
-≡ Borró un mensaje  
-┌─⊷  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀 
-▢ *Nombre :* @${participant.split`@`[0]} 
-└─────────────
+ 🌸 Borró un mensaje 🌸
+╭──► 𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀 
+┆ *Nombre :* @${participant.split`@`[0]} 
+╰────────────►
 Para desactivar esta función, escriba 
 */off antidelete*
 *.enable delete*
