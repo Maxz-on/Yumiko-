@@ -33,7 +33,7 @@ let handler = async (m, { conn }) => {
         txt += `» File* : ${q.filename || 'x.jpg'}\n`
         txt += `» Extension* : ${api.data.data.image.extension}\n`
         txt += `» Delete* : ${api.data.data.delete_url}\n\n`
-        txt += `© By: Genesis`
+        txt += `© By: YUMIKO BOT`
     await conn.sendFile(m.chat, api.data.data.url, 'ibb.jpg', txt, m, null, rcanal)
     await m.react('✅')
   } else {
