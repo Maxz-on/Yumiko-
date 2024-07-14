@@ -54,11 +54,12 @@ const defaultMenu = {
 ╰─────────────►
 `.trimStart(),
   header: '╭──►%category ',
-  body: '┃ » %cmd %isdiamond %isPremium',
-  footer: '┃╰━─━──━─≪ ✧ ≫─━──━─━╯\n✧⃝━━━━━━━━⧔✰⧕━━━━━━━✰\n',
+  body: '┊  %cmd %isdiamond %isPremium',
+  footer: '╰─────────────►\n\n',
   after: `
 `,
 }
+let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
