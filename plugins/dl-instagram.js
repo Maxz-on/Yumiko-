@@ -1,7 +1,7 @@
 import Starlights from '@StarlightsTeam/Scraper'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (!args[0]) return conn.reply(m.chat, '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*INGRESA EL ENLACE*\n_.ig <link>_', m, rcanal)
+if (!args[0]) return conn.reply(m.chat, '🌸 *YUMIKO BOT* 🌸\n\n*INGRESA EL ENLACE*\n_.ig <link>_', m, rcanal)
 await m.react('🕓')
 try {
 let { dl_url } = await Starlights.igdl(args[0])
