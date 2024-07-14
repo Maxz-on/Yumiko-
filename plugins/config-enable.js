@@ -10,37 +10,34 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 ╭─────────────►
 ┆  Admins 
 ╰─────────────►
-> ￫. _Captcha_
-> ￫. _Welcome_
-> ￫. _Antilink_
-> ￫. _Detect_ 
-> ￫. _Document_
-> ￫. _Nsfw_
-> ￫. _Modohorny_
-> ￫. _Promote_ (_dar_)
-> ￫. _Demote_ (_sacar_)
-> *l┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈l*
+┆ .Captcha
+┆ .Welcome
+┆ .Antilink
+┆ .Detect
+┆ .Document
+┆ .Nsfw
+┆ .Modohorny
+┆ .Promote
+┆ .Demote
 ╭─────────────►
 ┆ Usuarios 
 ╰─────────────►
-> ￫. _Autolevelup_
-> ￫. _Chatbot_ 
-> *l┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈l*
+┆ .Autolevelup
+┆ .Chatbot
 ╭─────────────►
 ┆ owner 
 ╰─────────────►
-> ￫. _Antibotclone_
-> ￫. _Public_
-> ￫. _Solopv_
-> ￫. _Sologp_
-> *l┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈l*
+┆ .Antibotclone
+┆ .Public
+┆ .Solopv
+┆ .Sologp
 ╭─────────────►
 ┆ Ejemplo 
 ╰─────────────►
-> ￫ .on welcome
-> ￫ .off welcome
-> ￫ .on welcome
-> ￫ .off welcome
+┆ .on welcome
+┆ .off welcome
+┆ .on welcome
+┆ .off welcome
  
  ${usedPrefix}on antiprivado 
  ${usedPrefix}off antiprivado`.trim();
@@ -52,7 +49,7 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
   const type = (args[0] || '').toLowerCase();
   let isAll = false; const isUser = false;
   switch (type) {
-    case 'welcome':
+     case 'welcome':
       if (!m.isGroup) {
         if (!isOwner) {
           global.dfail('group', m, conn);
