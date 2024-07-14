@@ -44,9 +44,9 @@ let m2 = `
 ┊ .sagiri
 ┊ .sasuke
 ┊ .sakura
-┊ .cosplay*_
-┊ .blackpink*_
-┊ .cristianoronaldo*_
+┊ .cosplay
+┊ .blackpink
+┊ .cristianoronaldo
 ┊ .cr7
 ┊ .loli
 ┊ .lolivid
