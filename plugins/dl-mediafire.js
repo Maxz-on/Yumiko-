@@ -6,7 +6,7 @@ let free = 150 // limite de descarga
 let prem = 500
 let handler = async (m, { conn, args, text, usedPrefix, command, isOwner, isPrems }) => {
 	  
-   if (!args[0]) throw '➤ `𝗔𝗩𝗜𝗦𝗢` 🐈‍⬛\n\n*INGRESE EL LINK MEDIAFIRE*\n_Ejemplo: .mediafire <link>_';
+   if (!args[0]) throw '🌸 *YUMIKO BOT* 🌸\n\n*INGRESE EL LINK MEDIAFIRE*\n_Ejemplo: .mediafire <link>_';
     if (!args[0].match(/mediafire/gi)) throw `❎ ${mssg.noLink('Mediafire')}`
     m.react(rwait)
 
