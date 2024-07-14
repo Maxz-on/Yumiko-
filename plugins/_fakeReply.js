@@ -40,7 +40,7 @@ export async function before(m, { conn }) {
         mediaType: 'VIDEO',
         description: 'canal del grupo',
         title: packname,
-        body: '_Gosala reyna_',
+        body: '𝙈𝙓𝙕',
         thumbnailUrl: pp,
         sourceUrl: fgcanal
       }
