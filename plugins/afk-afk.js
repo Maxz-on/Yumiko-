@@ -1,7 +1,7 @@
 
 let handler = async (m, { text, conn }) => {
     let user = global.db.data.users[m.sender]
-    if (text.length >= 90) throw `✳️ ${mssg.afktemx}`
+    if (text.length >= 90) throw `🌸 ${mssg.afktemx} 🌸`
     user.afk = + new Date
     user.afkReason = text
     m.reply(`
