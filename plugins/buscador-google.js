@@ -4,7 +4,7 @@ import googleIt from 'google-it'
 let handler = async (m, { conn, usedPrefix, command, args }) => {
   let full = /f$/i.test(command)
   let text = args.join` `
-  if (!text) return conn.reply(m.chat, `✳️ ${mssg.search('Google')}`, m)
+  if (!text) return conn.reply(m.chat, `🌸 ${mssg.search('Google')} 🌸`, m)
  m.react(rwait)
   let url = 'https://google.com/search?q=' + encodeURIComponent(text)
   let search = await googleIt({ query: text })
