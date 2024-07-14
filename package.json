@@ -1,5 +1,5 @@
 { 
-    "name": "GenesisBot-Pro",
+    "name": "Yumiko bot",
     "version": "3.0.0",
     "description": "La mejor Bot de WhatsApp",
     "main": "index.js",
@@ -23,19 +23,19 @@
         "dylux-bot",
         "genesis",
         "multi-device",
-        "genesis-bot",
+        "Yumiko-bot",
         "baileys-md"
     ],
-    "homepage": "https://github.com/karim-off/GenesisBot-Pro",
+    "homepage": "https://github.com/Maxz-on/Yumiko-.git",
     "author": {
-        "name": "Angelito"
+        "name": "Mxz"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/karim-off/GenesisBot-Pro.git"
+        "url": "git+https://github.com/Maxz-on/Yumiko-.git"
     },
     "bugs": {
-        "url": "https://github.com/karim-off/GenesisBot-Pro/issues"
+        "url": "https://github.com/Maxz-on/Yumiko-.git/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
