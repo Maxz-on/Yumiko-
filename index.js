@@ -36,7 +36,7 @@ say(`Genesis-Bot By: Angelito`, {
 })
 
 app.listen(port, () => {
-  console.log(chalk.green(`🐈‍⬛ Puerto ${port} esta abierto`));
+  console.log(chalk.green(`🌸 Puerto ${port} esta abierto 🌸`));
 });
 
 var isRunning = false
