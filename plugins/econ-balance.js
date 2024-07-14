@@ -8,8 +8,8 @@ let handler = async (m, {conn, usedPrefix}) => {
  🌸 *CLIENTE:* @${who.split('@')[0]}
  💰 *C A R T E R A*
 
-*💎 DIAMANTES:* _${user.diamond.toLocaleString()}_
-*🌸 COINS:* _${user.coin.toLocaleString()}_
+*💎 DIAMANTES:* ${user.diamond.toLocaleString()}
+*🌸 COINS:* ${user.coin.toLocaleString()}
 `, m, { mentions: [who] })
 }
 
