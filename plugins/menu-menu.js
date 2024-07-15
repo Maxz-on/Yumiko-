@@ -5,60 +5,58 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
-  'ai': 'IA-BOT 🌸',
-  'info': 'INFORMACIÓN ☠️',
-  'main': 'ACERCA DE 🪐',
-  'bebot': 'SUB BOTS 🤖',
-  'game': 'JUEGOS 🎮',
-  'convertir': 'CONVERTIR ♻️',
-  'econ': 'NIVEL & ECONOMIA 🍀',
-  'rpg': 'REGISTRO 📈',
-  'pop': 'POPULAR 🅿️',
-  'sticker': 'STICKER ☕',
-  'img': 'IMAGEN 🌱',
-  'maker': 'MAKER ✍️',
-  'prem': 'PREMIUM 🎫',
-  'group': 'GRUPO 👥',
-  //'nable': 'ON/OFF OPCIONES 🟢', 
-  //'nime': 'ANIME 🕊️',
-  'rnime': 'ANIME REACCION 🕊️',
-  'dl': 'DESCARGAS 📥',
-  'tools': 'TOOLS 🧸',
-  'fun': 'FUN 🔮',
-  'cmd': 'DATABASE 💻',
-  'nsfw': 'NSFW 🔞',
-  'ansfw': 'NSFW ANIME 🔞', 
-  'owner': 'OWNER 🫅', 
-  'advanced': 'AVANZADO 👹',
+  'new': 'ɴ ᴇ ᴡ  ᴄ ᴏ ᴍ ᴀ ɴ ᴅ',
+  'ai': 'ᴀ ɪ - ʙ ᴏ ᴛ',
+  'ff': 'ꜰ ʀ ᴇ ᴇ  ꜰ ɪ ʀ ᴇ',
+  'info': 'ɪ ɴ ꜰ ᴏ ʀ ᴍ ᴀ ᴄ ɪ ᴏ ɴ',
+  'main': 'ᴀ ᴄ ᴇ ʀ ᴄ ᴀ  ᴅ ᴇ',
+  'bebot': 'ꜱ ᴜ ʙ  ʙ ᴏ ᴛ ꜱ',
+  'game': 'ᴊ ᴜ ᴇ ɢ ᴏ ꜱ',
+  'convertir': 'ᴄ ᴏ ɴ ᴠ ᴇ ʀ ᴛ ɪ ʀ',
+  'econ': 'ᴇ ᴄ ᴏ ɴ ᴏ ᴍ ɪ ᴀ',
+  'rpg': 'ʀ ᴇ ɢ ɪ ꜱ ᴛ ʀ ᴏ',
+  'pop': 'ᴘ ᴏ ᴘ ᴜ ʟ ᴀ ʀ',
+  'sticker': 'ꜱ ᴛ ɪ ᴄ ᴋ ᴇ ʀ ꜱ',
+  'img': 'ɪ ᴍ ᴀ ɢ ᴇ ɴ',
+  'maker': 'ᴍ ᴀ ᴋ ᴇ ʀ',
+  'prem': 'ᴘ ʀ ᴇ ᴍ ɪ ᴜ ᴍ',
+  'group': 'ɢ ʀ ᴜ ᴘ ᴏ ꜱ',
+  'nable': 'ᴏ ɴ - ᴏ ꜰ ꜰ', 
+  'nime': 'ᴀ ɴ ɪ ᴍ ᴇ',
+  'rnime': 'ᴀ ɴ ɪ ᴍ ᴇ  ʀ ᴇ ᴀ ᴄ',
+  'dl': 'ᴅ ᴇ ꜱ ᴄ ᴀ ʀ ɢ ᴀ ꜱ',
+  'tools': 'ᴛ ᴏ ʟ ꜱ',
+  'fun': 'ꜰ ᴜ ɴ',
+  'cmd': 'ᴅ ᴀ ᴛ ᴀ ʙ ᴀ ꜱ ᴇ',
+  'nsfw': 'ɴ ꜱ ꜰ ᴡ',
+  'ansfw': 'ɴ ꜱ ꜰ ᴡ ᴀ ɴ ɪ ᴍ ᴇ', 
+  'owner': 'ᴏ ᴡ ɴ ᴇ ʀ', 
+  'advanced': 'ᴀ ᴠ ᴀ ɴ ᴢ ᴀ ᴅ ᴏ',
+  'random': 'ɪ ᴍ ɢ  ʀ ᴀ ɴ ᴅ ᴏ ᴍ',
+  'internet': 'ɪ ɴ ᴛ ᴇ ʀ ɴ ᴇ ᴛ',
 }
 const defaultMenu = {
   before: `
-✧⃝━━━━━━━━⧔ `YUMIKO BOT` ⧕━━━━━━━✰
+*▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬*
 
-╭─────────────►
-┆   Info Bot
-╰─────────────►
-┌┆  _*🦅 Modo*_ : Público
-┆  _*📖 Baileys*_: Multi Device
-┆  _*⏳ Tiempo Activo*_ : %muptime
-┆  *👥 Usuarios* : %totalreg
-╰─────────────►
-%readmore
-╭─────────────►
-┆  Info user 
-╰─────────────►
-┌┆  _*☁️ Nombre*_: %name
-┆  _*📊Nivel*_ : %level
-┆  *🖇️ XP* : %totalexp
-╰─────────────►
+. .╭─── ︿︿︿︿︿ .   .   .   .   .   . 
+. .┊• *ɴᴏᴍʙʀᴇ* :: %name
+. .╰─── ︶︶︶︶ ♡⃕  ⌇. . .
+ . . ┊⿻ [ *ᴠᴇʀꜱɪᴏɴ ʙᴏᴛ* :: 1.3.0 ] . .
+ . . ┊⿻ [ *ᴀᴄᴛɪᴠᴏ* :: %muptime %sbot ] . .
+ . . ┊⿻ [ *ꜰᴇᴄʜᴀ* :: ${fecha}]. . 
+ . . ┊⿻ [ *ᴜꜱᴜᴀʀɪᴏꜱ* :: %rtotalreg ] . .
+ . . ┊⿻ [ *ᴄʀᴇᴀᴅᴏʀ* :: Angelito ]. . 
+ . . ╰─────────╮
+
+*▬▭▬▭▬ ᴀʟʟᴍᴇɴᴜ ▬▭▬▭▬*\n
 `.trimStart(),
-  header: '╭──►%category ',
-  body: '┊  %cmd %isdiamond %isPremium',
-  footer: '╰─────────────►\n\n',
+  header: '*╭─「 `%category` 」*',
+  body: '*┊᥀·࣭࣪̇˖🐈‍⬛◗*  _*%cmd*_ %isdiamond %isPremium',
+  footer: '*╰─────────────────┈°✿︎*\n\n',
   after: `
 `,
 }
-
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
@@ -165,15 +163,14 @@ global.fcontact = {
         },
         message: {
             contactMessage: {
-                displayName: `\n 🌸 𝙔𝙐𝙈𝙄𝙆𝙊 𝘽𝙊𝙏 🌸 
-𝙇𝘼 𝙈𝙀𝙅𝙊𝙍 𝙍𝙀𝙔𝙉𝘼`,
+                displayName: `\nɢ ᴇ ɴ ᴇ ꜱ ɪ ꜱ  ʙ ᴏ ᴛ  ᴘ ʀ ᴏ`,
                 vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:xd\nitem1.TEL;waid=${m.sender.split("@")[0]}:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
             },
         },
     };
 
     let pp = 'https://i.ibb.co/xFZzGjp/file.jpg'
-    await conn.reply(m.chat, '🌸 𝙇𝙊𝘼𝘿𝙄𝙉𝙂....🌸', fcontact);
+    await conn.reply(m.chat, '🐈‍⬛ `𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢 𝗠𝗘𝗡𝗨....`', fcontact);
 
     /*conn.sendButton(m.chat, text.trim(), `▢ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
@@ -181,7 +178,7 @@ global.fcontact = {
       ['⌬ Grupos', `${_p}gpdylux`]
     ], m, rpl)*/
     conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(),m, null, fwc)
-    m.react('🌸') 
+    m.react('🐈‍⬛') 
 
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error', m)
