@@ -181,11 +181,6 @@ global.fcontact = {
       ['⏍ Info', `${_p}botinfo`],
       ['⌬ Grupos', `${_p}gpdylux`]
     ], m, rpl)*/
-conn.sendMessage(m.chat, {
-      video: {url: "https://telegra.ph/file/376a262f5339c27e3ee9c.mp4},
-      gifPlayback: true,
-      caption: text.trim(),
-      })
 //    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), null, m)
     m.react('🌸') 
 
