@@ -28,13 +28,13 @@
 
 ### <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Prueba La Bot Aqui" width="42" height="42"> Prueba La Bot Aqui
 
-> Si Deseas Probar La Bot Antes De Instalarlo, Click Abajo.🟢
+> Si Deseas Probar La Bot Antes De Instalarlo,🌸 Click Abajo.🌸
 
 [![Click Aquí](https://img.shields.io/badge/Grupo-Yoshiko-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/Em1J2VaglHc1fe26YtBDCS)
 
 
 - ### ⚙️ Configuracion
- Clonar Repo : Genesis [Aqui.](https://github.com/karim-off/GenesisBot-Pro/fork)
+ Clonar Repo : Yumiko [Aqui.](https://github.com/karim-off/GenesisBot-Pro/fork)
 
 
 - ###  ⌨️ Instalar Por Render
