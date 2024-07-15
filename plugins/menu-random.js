@@ -55,7 +55,7 @@ let m2 = `
 ┊ .waifu
 ╰─────────────────►
 `
-    let pp = 'https://i.ibb.co/wYFY4xB/file.png' 
+    let pp = 'https://i.ibb.co/wYFY4xB/Yumiko-bot.png' 
 
 global.fcontact = {
         key: {
