@@ -59,8 +59,7 @@ const defaultMenu = {
   after: `
 `,
 }
-let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
-let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
+
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
