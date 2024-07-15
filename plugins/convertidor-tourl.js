@@ -1,49 +1,44 @@
-import uploadtoimgur from '../lib/imgur.js';
-import fs from 'fs';
-import path from 'path';
+import uploadFile from '../lib/uploadFile.js'
+import uploadImage from '../lib/uploadImage.js'
+import fetch from 'node-fetch'
 
 let handler = async (m) => {
-  let q = m.quoted ? m.quoted : m;
-  let mime = (q.msg || q).mimetype || '';
+  let q = m.quoted ? m.quoted : m
+  let mime = (q.msg || q).mimetype || ''
+  if (!mime) return conn.reply(m.chat, '${mssg.avisoGene3}\n\n*RESPONDA A UNA IMAGEN O VIDEO PARA HACERLO URL*', m, fwc)
+  await m.react('🕓')
+  try {
+  let media = await q.download()
+  let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
+  let link = await (isTele ? uploadImage : uploadFile)(media)
+  let img = await (await fetch(`${link}`)).buffer()
+  let txt = ``
+      txt += `  *Enlace* : ${link}\n`
+      txt += `  *Acortado* : ${await shortUrl(link)}\n`
+      txt += `  *Tamaño* : ${formatBytes(media.length)}\n`
+      txt += `  *Expiración* : ${isTele ? 'No expira' : 'Desconocido'}\n\n`
+      txt += ``
 
-  if (!mime) {
-    throw '✳️ Responde ala imagen/video';
+await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, fwc)
+await m.react('✅')
+} catch {
+await m.react('✖️')
+}}
+handler.help = ['tourl']
+handler.tags = ['tools']
+handler.command = /^(tourl|upload)$/i
+export default handler
+
+function formatBytes(bytes) {
+  if (bytes === 0) {
+    return '0 B';
   }
-  let mediaBuffer = await q.download();
+  const sizes = ['B', 'KB', 'MB', 'GB', 'TB']
+  const i = Math.floor(Math.log(bytes) / Math.log(1024))
+  return `${(bytes / 1024 ** i).toFixed(2)} ${sizes[i]}`;
+}
 
-
-  if (mediaBuffer.length > 10 * 1024 * 1024) {
-    throw '✴️ El tamaño del medio supera los 10 MB. Por favor sube un archivo más pequeño.';
-  }
-
-  let currentModuleDirectory = path.dirname(new URL(import.meta.url).pathname);
-
-  let tmpDir = path.join(currentModuleDirectory, '../tmp');
-  if (!fs.existsSync(tmpDir)) {
-    fs.mkdirSync(tmpDir);
-  }
-
-  let mediaPath = path.join(tmpDir, `media_${Date.now()}.${mime.split('/')[1]}`);
-  fs.writeFileSync(mediaPath, mediaBuffer);
-
-  let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime);
-
-  if (isTele) {
-    let link = await uploadtoimgur(mediaPath);
-
-    const fileSizeMB = (mediaBuffer.length / (1024 * 1024)).toFixed(2);
-
-    m.reply(`✅ *Exelente*\n♕ *File Size:* ${fileSizeMB} MB\n♕ *URL:* ${link}`);
-  } else {
-    m.reply(`♕ ${mediaBuffer.length} Byte(s) 
-    ♕ (Unknown)`);
-  }
-
-  fs.unlinkSync(mediaPath);
-};
-
-handler.help = ['tourl'];
-handler.tags = ['tools'];
-handler.command = ['url', 'tourl'];
-
-export default handler;
+async function shortUrl(url) {
+        let res = await fetch(`https://tinyurl.com/api-create.php?url=${url}`)
+        return await res.text()
+}
