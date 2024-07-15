@@ -182,7 +182,7 @@ global.fcontact = {
       ['⌬ Grupos', `${_p}gpdylux`]
     ], m, rpl)*/
 conn.sendMessage(m.chat, {
-      video: {url: "https://telegra.ph/file/73662c98598a85c136083.png"},
+      video: {url: "https://telegra.ph/file/376a262f5339c27e3ee9c.mp4},
       gifPlayback: true,
       caption: text.trim(),
       })
