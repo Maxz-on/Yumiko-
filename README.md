@@ -46,7 +46,7 @@
 [`CREAR SERVIDOR`](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=738341999&ref=master&geo=UsEast)
 ***
 
-### 🍒 INSTALACIÓN TERMUX
+### 🌸 INSTALACIÓN TERMUX 🌸
 > **Note** Comandos para instalar de forma manual en termux o otra app
 ```bash
 termux-setup-storage
@@ -55,7 +55,7 @@ termux-setup-storage
 apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 ```bash
-git clone https://github.com/Karim-off/GenesisBot-Pro && cd GenesisBot-Pro
+git clone https://github.com/Maxz-on/Yumiko-.git && cd Yumiko-
 ```
 ```bash
 yarn install
@@ -75,12 +75,12 @@ npm start
 * #### APLICACIÓN RECOMENDADA PARA EDITAR [`NÚMERO DE OWNER`](https://play.google.com/store/apps/details?id=com.rhmsoft.code)
 > **Note** Guardar los archivos en la ubicación: storage/downloads/RubyBot-MD-master/RubyBot-MD-master   
 ----
-### 🔥 USAR GENESIS 24/7 EN TERMUX 
+### 🌸 USAR YUMIKO 24/7 EN TERMUX 🌸
 > Ejecutar estos comandos dentro de la carpeta XiaBot-MD
 ```bash
 termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ```
-### ⚡ REPLIT - GENESIS BOT
+### ⚡ REPLIT - YUMIKO BOT
 <a target="_blank" href="https://replit.com/github/karim-off/GenesisBot-Pro"><img alt="Run on Replit" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg"></a>
 <a href="https://replit.com/github/GataNina-Li/GataBot-MD"> <img src="https://media0.giphy.com/media/lMwu8EJAnv9kmn51KQ/giphy.gif" height="29px"></a>
 ------------------
@@ -90,7 +90,7 @@ termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ### 🌎 GRUPO GLOBAL
 <a href="https://chat.whatsapp.com/EVl0wxlCww74HV3vvZq83a" target="blank"><img src="https://img.shields.io/badge/GRUPO_DE_SOPORTE-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
-### 🍒 GRUPO DE SOPORTE
+### 🌸 GRUPO DE SOPORTE
 <a href="https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6" target="blank"><img src="https://img.shields.io/badge/GRUPO_DE_SOPORTE-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 ### 📄 CANAL DE WHATSAPP
