@@ -181,7 +181,7 @@ global.fcontact = {
       ['⌬ Grupos', `${_p}gpdylux`]
     ], m, rpl)*/
     conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(),m, null, fwc)
-    m.react('🐈‍⬛') 
+    m.react('🌸') 
 
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error', m)
