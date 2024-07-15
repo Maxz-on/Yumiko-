@@ -171,7 +171,7 @@ global.fcontact = {
     };
 
     let pp = 'https://i.ibb.co/xFZzGjp/file.jpg'
-    await conn.reply(m.chat, '🐈‍⬛ `𝗖𝗔𝗥𝗚𝗔𝗡𝗗𝗢 𝗠𝗘𝗡𝗨....`', fcontact);
+    await conn.reply(m.chat, '🌸 ....🌸', fcontact);
 
     /*conn.sendButton(m.chat, text.trim(), `▢ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
@@ -179,7 +179,7 @@ global.fcontact = {
       ['⌬ Grupos', `${_p}gpdylux`]
     ], m, rpl)*/
     conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(),m, null, fwc)
-    m.react('🐈‍⬛') 
+    m.react('🌸') 
 
   } catch (e) {
     conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error', m)
