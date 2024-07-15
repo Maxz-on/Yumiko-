@@ -110,7 +110,3 @@ termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
   - Te ofrecemos opciones exclusivas: **[Instagram](https://www.instagram.com/gata_dios/)**, **[Telegram](https://t.me/SoporteGataBot)**, y **[correo electrónico](centergatabot@gmail.com)**.
 </details>
 
-
-### 🔮 CREADOR 
-[![Karim-off](https://github.com/Karim-off.png?size=100)](https://github.com/Karim-off) 
-> ©️ Copyright 2024 **[Karim-off](https://github.com/Karim-off/XiaBot-Pro/blob/master/LICENSE)**.
