@@ -173,7 +173,7 @@ global.fcontact = {
         },
     };
 
-    let pp = 'https://imgur.com/gallery/menu-h9s67Ld'
+    let pp = 'https://i.ibb.co/wYFY4xB/file.png'
         await conn.reply(m.chat, '🌸 𝙇𝙊𝘼𝘿𝙄𝙉𝙂....🌸', fcontact);
 
     /*conn.sendButton(m.chat, text.trim(), `▢ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
