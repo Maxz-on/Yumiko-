@@ -171,7 +171,7 @@ global.fcontact = {
     };
 
     let pp = 'https://i.ibb.co/xFZzGjp/file.jpg'
-    await conn.reply(m.chat, '🌸 ....🌸', fcontact);
+    await conn.reply(m.chat, '🌸 𝙇𝙊𝘼𝘿𝙄𝙉𝙂....🌸', fcontact);
 
     /*conn.sendButton(m.chat, text.trim(), `▢ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
