@@ -33,7 +33,7 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-✧⃝━━━━━━━━⧔ `YUMIKO BOT` ⧕━━━━━━━✰
+*_◌⃘࣭࣪࣪࣪۬🌸─ׅ YUMIKO BOT ──◌⃘࣭ٜ࣪࣪࣪۬🌸_*
 
 ╭─────────────►
 ┆   Info Bot
