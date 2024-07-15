@@ -181,7 +181,7 @@ global.fcontact = {
       ['⏍ Info', `${_p}botinfo`],
       ['⌬ Grupos', `${_p}gpdylux`]
     ], m, rpl)*/
-//    conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), null, m)
+   conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), null, m)
     m.react('🌸') 
 
   } catch (e) {
