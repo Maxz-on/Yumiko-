@@ -58,7 +58,7 @@ let m2 = `
 ┊ .hentai (ⓓ)
 ╰────────────►
 `
-    let pp = 'https://i.ibb.co/jHctydb/Genesis-Bot.jpg' 
+        let pp = 'https://i.ibb.co/FqPNdLD/file.jpg' 
 
 global.fcontact = {
         key: {
@@ -80,15 +80,9 @@ global.fcontact = {
       ['⏍ Info', `${usedPrefix}botinfo`],
       ['⌬ Grupos', `${usedPrefix}gpdylux`]
     ],m, rpyt)*/
-    /*conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rcanal)*/
-conn.sendMessage(m.chat, {
-      video: {url: "https://telegra.ph/file/376a262f5339c27e3ee9c.mp4"},
-      gifPlayback: true,
-      caption: m2.trim(),
-      })
+    conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rcanal)
 
 }
-
 handler.help = ['labiblia']
 handler.tags = ['main']
 handler.command = ['menu+18', 'labiblia'] 
