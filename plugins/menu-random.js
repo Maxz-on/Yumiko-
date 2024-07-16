@@ -55,7 +55,7 @@ let m2 = `
 ┊ .waifu
 ╰─────────────────►
 `
-    let pp = 'https://i.ibb.co/wYFY4xB/Yumiko-bot.png' 
+    let pp = 'https://i.ibb.co/FqPNdLD/file.jpg' 
 
 global.fcontact = {
         key: {
@@ -77,7 +77,7 @@ global.fcontact = {
       ['⏍ Info', `${usedPrefix}botinfo`],
       ['⌬ Grupos', `${usedPrefix}gpdylux`]
     ],m, rpyt)*/
-    *conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rcanal)*/
+    conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rcanal)*/
 
 
 }
