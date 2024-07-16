@@ -77,7 +77,7 @@ global.fcontact = {
       ['⏍ Info', `${usedPrefix}botinfo`],
       ['⌬ Grupos', `${usedPrefix}gpdylux`]
     ],m, rpyt)*/
-    /*conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rcanal)*/
+    *conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rcanal)*/
 
 
 }
