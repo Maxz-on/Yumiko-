@@ -37,7 +37,7 @@ let m2 = `
 ┊ .slot <apuesta>
 ╰─────────────►
 `
-    let pp = 'https://i.ibb.co/jHctydb/Genesis-Bot.jpg' 
+       let pp = 'https://i.ibb.co/FqPNdLD/file.jpg' 
 
 global.fcontact = {
         key: {
@@ -59,13 +59,7 @@ global.fcontact = {
       ['⏍ Info', `${usedPrefix}botinfo`],
       ['⌬ Grupos', `${usedPrefix}gpdylux`]
     ],m, rpyt)*/
-    /*conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rcanal)*/
-conn.sendMessage(m.chat, {
-      video: {url: "https://telegra.ph/file/e3333165610b07351b4cd.mp4"},
-      gifPlayback: true,
-      caption: m2.trim(),
-      })
-
+    conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, rcanal)
 
 }
 
