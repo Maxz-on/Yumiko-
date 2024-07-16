@@ -245,8 +245,8 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = '╭──► @group \n┆🌸 GRANDIOSO TENERTE ! 🌸\n┆ @user \n┆ Lee la descripcion*\n╰─────────────►'
-  conn.bye = '╭─────────────►\n┆🌸 ADIOS CUERNUDX! 🌸\n┆ @user \n┆ Espero no vuelvas*\n╰────────────►'
+  conn.welcome = '╭──► @group \n┆🌸 HAI 👋 🌸\n┆ @user \n┆ Lee la descripcion\n╰─────────────►'
+  conn.bye = '╭─────────────►\n┆🌸 CHAU PERRX 🌸\n┆ @user \n┆ Espero no vuelvas*\n╰────────────►'
   conn.spromote = '@user promovió a admin'
   conn.sdemote = '@user degradado'
   conn.sDesc = 'La descripción ha sido cambiada a \n@desc'
