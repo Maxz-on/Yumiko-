@@ -518,8 +518,8 @@ export async function participantsUpdate({ id, participants, action }) {
             if (chat.welcome) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
-                    let pp = 'https://i.ibb.co/jHctydb/Genesis-Bot.jpg'
-                    let ppgp = 'https://i.ibb.co/jHctydb/Genesis-Bot.jpg'
+                    let pp = 'https://i.ibb.co/wQ5Zx1n/file.jpg'
+                    let ppgp = 'https://i.ibb.co/wQ5Zx1n/file.jpg'
                     try {
                         pp = await this.profilePictureUrl(user, 'image')
                         ppgp = await this.profilePictureUrl(id, 'image')
@@ -533,7 +533,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                background: 'https://i.ibb.co/BP2NQZ8/Welcome-Genesis-Bot.jpg'
+                                background: 'https://i.ibb.co/1zDLdgx/file.jpg'
                             }, 'apikey')
 
                             let lea = API('fgmods', '/api/goodbye2', {
@@ -542,7 +542,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                background: 'https://i.ibb.co/vZgTw15/Bye-Genesis-Bot.jpg'
+                                background: 'https://i.ibb.co/kBwqRR2/file.jpg'
                             }, 'apikey')
 
                             this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
