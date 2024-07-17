@@ -2,7 +2,7 @@ var handler = async (m, { conn, command, text }) => {
 
 if (!text) return conn.reply(m.chat, '🌸 *Ingrese el nombre de alguna persona*🌸   \n\nEjemplo, !personalidad Mxz', m, rcanal, )
 
-let personalidad = `> *Nombre* : ${text}
+let personalidad = ` *Nombre* : ${text}
  *Buena Moral* : ${pickRandom(['6%','12%','20%','27%','35%','41%','49%','54%','60%','66%','73%','78%','84%','92%','93%','94%','96%','98,3%','99,7%','99,9%','1%','2,9%','0%','0,4%'])}
  *Mala Moral* : ${pickRandom(['6%','12%','20%','27%','35%','41%','49%','54%','60%','66%','73%','78%','84%','92%','93%','94%','96%','98,3%','99,7%','99,9%','1%','2,9%','0%','0,4%'])}
  *Tipo de persona* : ${pickRandom(['De buen corazón','Arrogante','Tacaño','Generoso','Humilde','Tímido','Cobarde','Entrometido','Cristal','No binarie XD', 'Pendejo'])}
