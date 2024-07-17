@@ -1,25 +1,30 @@
-import fetch from 'node-fetch';
+var handler = async (m, { conn, command, text }) => {
 
-let handler = async (m, { conn, text }) => {
-if (!text) return conn.reply(m.chat, '🚩 *¿Que Pokémon quieres buscar?.*', m, rcanal)
-await m.react(rwait)
-conn.reply(m.chat, `🍟 *Buscando ${text}*`, m, {
-contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
-title: packname,
-body: wm,
-previewType: 0, thumbnail: icons,
-sourceUrl: channel }}})
-const url = `https://some-random-api.com/pokemon/pokedex?pokemon=${encodeURIComponent(text)}`;
-const response = await fetch(url);
-const json = await response.json();
-if (!response.ok) {
-await m.react(error)
-return conn.reply(m.chat, '🍟 *¡Oops! Parece que hubo un error al buscar el Pokémon. Por favor, inténtalo de nuevo más tarde.*', m, rcanal)}
-const luffypokedex = `🚩 *Pokedex - Información de ${json.name}*\n\n🍟 *Nombre:* ${json.name}\n🍟 *ID:* ${json.id}\n🍟 *Tipo:* ${json.type}\n🍟 *Habilidades:* ${json.abilities}\n*Tamaño:* ${json.height}\n🍟 *Peso:* ${json.weight}\n\n📖 *Descripción:*\n${json.description}\n\n🔍 ¡Encuentra más detalles sobre este Pokémon en la Pokedex! 🔍\n\n🔗 https://www.pokemon.com/es/pokedex/${json.name.toLowerCase()}`
-conn.reply(m.chat, luffypokedex, m, rcanal)
-await m.react(done) }
+if (!text) return conn.reply(m.chat, '🚩 *Ingrese el nombre de alguna persona*\n\nEjemplo, !personalidad Luffy', m, rcanal, )
 
-handler.help = ['pokedex *<pokemon>*']
+let personalidad = `> *Nombre* : ${text}
+> *Buena Moral* : ${pickRandom(['6%','12%','20%','27%','35%','41%','49%','54%','60%','66%','73%','78%','84%','92%','93%','94%','96%','98,3%','99,7%','99,9%','1%','2,9%','0%','0,4%'])}
+> *Mala Moral* : ${pickRandom(['6%','12%','20%','27%','35%','41%','49%','54%','60%','66%','73%','78%','84%','92%','93%','94%','96%','98,3%','99,7%','99,9%','1%','2,9%','0%','0,4%'])}
+> *Tipo de persona* : ${pickRandom(['De buen corazón','Arrogante','Tacaño','Generoso','Humilde','Tímido','Cobarde','Entrometido','Cristal','No binarie XD', 'Pendejo'])}
+> *Siempre* : ${pickRandom(['Pesado','De malas','Distraido','De molestoso','Chismoso','Pasa jalandosela','De compras','Viendo anime','Chatea en WhatsApp porque esta soltero','Acostado bueno para nada','De mujeriego','En el celular'])}
+> *Inteligencia* : ${pickRandom(['9%','12%','20%','27%','35%','41%','49%','54%','60%','66%','73%','78%','84%','92%','93%','94%','96%','98,3%','99,7%','99,9%','1%','2,9%','0%','0,4%'])}
+> *Morosidad* : ${pickRandom(['6%','12%','20%','27%','35%','41%','49%','54%','60%','66%','73%','78%','84%','92%','93%','94%','96%','98,3%','99,7%','99,9%','1%','2,9%','0%','0,4%'])}
+> *Coraje* : ${pickRandom(['6%','12%','20%','27%','35%','41%','49%','54%','60%','66%','73%','78%','84%','92%','93%','94%','96%','98,3%','99,7%','99,9%','1%','2,9%','0%','0,4%'])}
+> *Miedo* : ${pickRandom(['6%','12%','20%','27%','35%','41%','49%','54%','60%','66%','73%','78%','84%','92%','93%','94%','96%','98,3%','99,7%','99,9%','1%','2,9%','0%','0,4%'])}
+> *Fama* : ${pickRandom(['6%','12%','20%','27%','35%','41%','49%','54%','60%','66%','73%','78%','84%','92%','93%','94%','96%','98,3%','99,7%','99,9%','1%','2,9%','0%','0,4%'])}
+> *Género* : ${pickRandom(['Hombre', 'Mujer', 'Homosexual', 'Bisexual', 'Pansexual', 'Feminista', 'Heterosexual', 'Macho alfa', 'Mujerzona', 'Marimacha', 'Palosexual', 'PlayStationSexual', 'Sr. Manuela', 'Pollosexual'])}`
+
+conn.reply(m.chat, personalidad, m, rcanal, )
+
+}
+handler.help = ['personalidad']
 handler.tags = ['fun']
-handler.command = /^pokedex/i
+handler.command = /^personalidad/i
+
+handler.register = true
+
 export default handler
+
+function pickRandom(list) {
+return list[Math.floor(Math.random() * list.length)]
+}
