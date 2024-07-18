@@ -19,8 +19,10 @@ let estado = `
  🌸 𝘈𝘝𝘐𝘚𝘖𝘚 🌸
 • ${bgp}
 
- 🌸 𝘎𝘌𝘕𝘌𝘚𝘐𝘚 𝘟 𝘞𝘐𝘌𝘙 🌸
+ 🌸 𝘎𝘌𝘕𝘌𝘚𝘐𝘚 🌸
 • https://chat.whatsapp.com/GO5l3kShGE30eV9dN82elb
+
+🌸 𝘠𝘜𝘔𝘐𝘒𝘖 𝘎𝘓𝘖𝘉𝘈𝘓
 `
 await conn.sendButton(m.chat, estado, 'GenesisBot-Pro', pp, [
 ['🤴 DUEÑO 🤴', '.owner'], ['☁️ DONAR ☁️', '.donate']], null, [['🌸 CANAL 🌸', `${fgcanal}`]], m)
