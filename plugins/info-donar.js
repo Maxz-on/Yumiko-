@@ -26,7 +26,7 @@ let estado = `
 
 
 `
-await conn.sendButton(m.chat, estado, <' By: Mxz', pp, [
+await conn.sendButton(m.chat, estado, ' By: Mxz', pp, [
 ['🤴 DUEÑO 🤴', '.owner'], ['🫀GRUPOS 🫀', '/grupos']], null, [['🌸 CANAL 🌸', `${fgcanal}`]], m)
 }
 handler.help = ['donate']
