@@ -215,6 +215,7 @@ handler.command = ['bebot', 'serbot', 'jadibot', 'botclone', 'clonebot']
 handler.rowner = false
 
 export default handler
+handler.premium = true
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
