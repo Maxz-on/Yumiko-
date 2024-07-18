@@ -533,7 +533,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                background: 'https://i.ibb.co/1zDLdgx/file.jpg'
+                                background: 'https://i.ibb.co/17SmnDt/file.jpg'
                             }, 'apikey')
 
                             let lea = API('fgmods', '/api/goodbye2', {
