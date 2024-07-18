@@ -1,6 +1,6 @@
 
 let handler = async (m, { conn, command, usedPrefix }) => {
-let pp = 'https://telegra.ph/file/50fd9ea68114f67f4d4c2.jpg'
+let pp = 'https://telegra.ph/file/20b04f440534d860564c2.jpg'
 m.react('✅')
 let name = await conn.getName(m.sender)
 let _uptime = process.uptime() * 1000
@@ -22,7 +22,8 @@ let estado = `
  🌸 𝘎𝘌𝘕𝘌𝘚𝘐𝘚 🌸
 • https://chat.whatsapp.com/GO5l3kShGE30eV9dN82elb
 
-🌸 𝘠𝘜𝘔𝘐𝘒𝘖 𝘎𝘓𝘖𝘉𝘈𝘓
+🌸 𝘠𝘜𝘔𝘐𝘒𝘖 𝘎𝘓𝘖𝘉𝘈𝘓 🌸
+.https://chat.whatsapp.com/E8krRQKttIl3NpX3T1qZwv
 `
 await conn.sendButton(m.chat, estado, 'GenesisBot-Pro', pp, [
 ['🤴 DUEÑO 🤴', '.owner'], ['☁️ DONAR ☁️', '.donate']], null, [['🌸 CANAL 🌸', `${fgcanal}`]], m)
