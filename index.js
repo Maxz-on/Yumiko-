@@ -88,7 +88,7 @@ async function start(file) {
   console.log(chalk.yellow(`💾 Total RAM: ${ramInGB.toFixed(2)} GB`));
   const freeRamInGB = os.freemem() / (1024 * 1024 * 1024);
   console.log(chalk.yellow(`💽 Free RAM: ${freeRamInGB.toFixed(2)} GB`));
-  console.log(chalk.yellow(`📃 Script by Angelito`));
+  console.log(chalk.yellow(`📃 Script by Mxz`));
 
   const packageJsonPath = path.join(path.dirname(currentFilePath), './package.json');
     try {
