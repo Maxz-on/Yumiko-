@@ -1,1 +1,26 @@
-0qTLUQQzhuapDBE2X8y/PDBR3OJrLYTAoV4nyjByK9EQWabzFn76JQUEjKVMtb/eifj2uMU6xNxznnFlyvnF0IK7WKFpBbamQ2YL2N7y7RA4O6q7bG9H255Vb9aL8tDvMYVDAIpRGJ96tNbu7FUa9qhyNjmOrA6yt0iAgG9/atYqngJ0sxOqDrjQsonWCUoUNKRZwzAMA/wI0heDyJPQIuYhhttp6W7WjLoc9SadV42z7Wi2TWZYhCtohMam/tqzN4wzO7tJ7DkmYeudzH2Vm4PcgfVWUfxJ83mnK0F3V6JZtS18amiUf9Viqrfcn2fJeYh1l115t5n7pakBuk6fu1kfIYJtc7PdTS8icMjjMnr7wc41QUnMVmM/G+ypIkOuuENHY9dfAe6YdzehSOAKHJmQt7ivV0ix4+HxcmVvPVenBFvS4mHkTakkPpwDZP83sx2HWn/ivh4vXYfEvOHR5Q6rQwhtm4GE7/bOb8+bTuhW9dJFlIk2IteIT6ApZRLI/KSnEYT3HcQKqCSC+CGiO2XxDL3YRNMmg9dyStyAJW+pH03kl9+vbyyYNLf46FxE/6CGvF6EfRXf8qmDpWA9v3E+uudVv+rIIersbwz3oBzpmHss57ZjpEyueCeqij5sMcDPkfHtFqD59IK/M7aqhY4PxdqJJDYOLka673Yu4wP+GACQNZr7u8Cl1b+IO9c+wgR4paJ6sopH3zw6jBWPPQN4oCCLcEGfLIKpK4uCnv2T4Dz+F3tr8Rf4pD1h4uDyL+Odg8d262G675SdyBXIhUVNTzbPN1+CThDqnY7ABogoM50dnmMBOBxadLvQeKa2ZO690IXu89hK7exuFtFhtGZEMVwrolqWj39aDm0EYOfVOeJz3hbCTPpBg+JfVekmwl8qjmF+FOi/7ocR7XdSVi6bnGcSoL9GaTtp5xcWpzTL+MygUM5VarzPj++DYGqPqySRQc9diTxpaBXWD74niMzY7/EIbX4rtV4rl6JkmICR608TAnTlFXFj/S9yeThESww3tzp0Y6spGMuH2UoYoQMCJ/aUBeWv/DOpY9KEHooBd+F5kJm8O+6JGp3f4m8dKUoxBYzo78ek7No5J6l0C46q4z2UJCB1dwJRbJW87Zbm/1qDszhrkhUTGwvQCYhC9QjPonZNk+AGNAc/pVggxFtlnuytdlokYseC2vYQQbpYz/plHTmy6cU08vt8y3IBSXCr04vOoJsH+gHoyg9M4kN95MdqNj4c2897Af8KBbFGwvcvzejB5v+Lse5bKPVofeH9Xs3Kend5PmLOqOXFMoqnOb7htegZ0X2EnxOAujeIPz7Apv0Br6E812oMdq25S72tcwTzmTp/+XI0TC/Rdw==
+const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, command, usedPrefix}) => {
+  if (usedPrefix == 'a' || usedPrefix == 'A') return;
+m.react('🌸') 
+  if (!(isAdmin || isOwner)) {
+    global.dfail('admin', m, conn);
+    throw false;
+  }
+  const pesan = args.join` `;
+const oi = `┆ A??: ${pesan}\n┆Personitas: _*${participants.length}*_
+╰─────────────►`;
+  let teks = `╭─────────────►
+┆ Despierten \n${oi}\n\n\n`;
+  for (const mem of participants) {
+    teks += `┆ @${mem.id.split('@')[0]}\n`;
+  }
+  teks += `╭─────────────►
+┆🌸 *YUMIKO BOT* 🌸
+╰─────────────►`;
+  conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)} );
+};
+handler.help = ['tagall <mesaje>', 'invocar <mesaje>'];
+handler.tags = ['group'];
+handler.command = /^(tagall|invocar|invocacion|todos|invocación)$/i;
+handler.admin = true;
+handler.group = true;
+export default handler;
