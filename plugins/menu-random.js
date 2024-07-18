@@ -5,54 +5,55 @@ let handler = async function (m, { conn, text, usedPrefix }) {
 
 let m2 = `
 *_◌⃘࣭࣪࣪࣪۬🌸─ׅ YUMIKO BOT ──◌⃘࣭ٜ࣪࣪࣪۬🌸_*
+*꒷꒦꒷꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷*
 
 🌸 𝗛𝗼𝗹𝗮 ! 🌸
 
 
 ╭──► *RANDOM*
-┊ .akira
-┊ .akiyama
-┊ .anna
-┊ .asuna
-┊ .ayuzawa
-┊ .boruto
-┊ .chiho
-┊ .chitoge
-┊ .deidara
-┊ .erza
-┊ .elaina
-┊ .eba
-┊ .emilia
-┊ .hestia
-┊ .hinata
-┊ .inori
-┊ .isuzu
-┊ .itachi
-┊ .itori
-┊ .kaga
-┊ .kagura
-┊ .kaori
-┊ .keneki
-┊ .kotori
-┊ .kurumi
-┊ .madara
-┊ .mikasa
-┊ .miku
-┊ .minato
-┊ .naruto
-┊ .nezuko
-┊ .sagiri
-┊ .sasuke
-┊ .sakura
-┊ .cosplay
-┊ .blackpink
-┊ .cristianoronaldo
-┊ .cr7
-┊ .loli
-┊ .lolivid
-┊ .messi
-┊ .neko
-┊ .waifu
+┊✰ .akira
+┊✰ .akiyama
+┊✰ .anna
+┊✰ .asuna
+┊✰ .ayuzawa
+┊✰ .boruto
+┊✰ .chiho
+┊✰.chitoge
+┊✰ .deidara
+┊✰ .erza
+┊✰ .elaina
+┊✰ .eba
+┊✰ .emilia
+┊✰ .hestia
+┊✰ .hinata
+┊✰ .inori
+┊✰ .isuzu
+┊✰ .itachi
+┊✰ .itori
+┊✰ .kaga
+┊✰ .kagura
+┊✰ .kaori
+┊✰ .keneki
+┊✰ .kotori
+┊✰ .kurumi
+┊✰ .madara
+┊✰ .mikasa
+┊✰ .miku
+┊✰ .minato
+┊✰ .naruto
+┊✰ .nezuko
+┊✰ .sagiri
+┊✰ .sasuke
+┊✰ .sakura
+┊✰ .cosplay
+┊✰ .blackpink
+┊✰ .cristianoronaldo
+┊✰ .cr7
+┊✰ .loli
+┊✰ .lolivid
+┊✰ .messi
+┊✰ .neko
+┊✰ .waifu
 ╰─────────────────►
 `
        let pp = 'https://i.ibb.co/FqPNdLD/file.jpg' 
