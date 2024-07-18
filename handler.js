@@ -533,7 +533,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                background: 'https://i.ibb.co/17SmnDt/file.jpg'
+                                background: 'https://i.ibb.co/3hf9Nmc/file.jpg'
                             }, 'apikey')
 
                             let lea = API('fgmods', '/api/goodbye2', {
@@ -542,7 +542,7 @@ export async function participantsUpdate({ id, participants, action }) {
                                 groupicon: ppgp,
                                 membercount: groupMetadata.participants.length,
                                 profile: pp,
-                                background: 'https://i.ibb.co/17SmnDt/file.jpg'
+                                background: 'https://i.ibb.co/3hf9Nmc/file.jpg'
                             }, 'apikey')
 
                             this.sendFile(id, action === 'add' ? wel : lea, 'pp.jpg', text, null, false, { mentions: [user] })
