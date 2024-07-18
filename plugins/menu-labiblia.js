@@ -5,6 +5,7 @@ let handler = async function (m, { conn, text, usedPrefix }) {
 
 let m2 = `
 *_◌⃘࣭࣪࣪࣪۬🌸─ׅ YUMIKO BOT ──◌⃘࣭ٜ࣪࣪࣪۬🌸_*
+*꒷꒦꒷꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷*
 
 🌸 𝗛𝗼𝗹𝗮 ! 🌸
 
