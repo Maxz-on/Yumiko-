@@ -28,9 +28,7 @@ const { id_ }= (await axios.post("https://chat.chatgptdemo.net/new_chat",{user_i
 
 }})).data
 
-const json = {"question":query,"chat_id": id_,"timestamp":new Date().getTime()}
-
-    m.react('🌸') 
+const json = {"question":query,"chat_id": id_,"timestamp":new Date().getTime()} 
 
 const { data } = await axios.post("https://chat.chatgptdemo.net/chat_api_stream",json,{headers:{
 "Content-Type": "application/json",
