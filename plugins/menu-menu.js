@@ -34,25 +34,27 @@ let tags = {
 const defaultMenu = {
   before: `
 *_◌⃘࣭࣪࣪࣪۬🌸─ׅ YUMIKO BOT ──◌⃘࣭ٜ࣪࣪࣪۬🌸_*
+*꒷꒦꒷꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷*
+
 ╭─────────────►
 ┆   Info Bot
 ╰─────────────►
-┌┆  _*🦅 Modo*_ : Privado
-┆  _*📖 Baileys*_: Multi Device
-┆  _*⏳ Tiempo Activo*_ : %muptime
-┆  *👥 Usuarios* : %totalreg
+┌┆✰ _*🖇️ Modo*_ : Privado
+┆ ✰ _*📚 Baileys*_: Multi Device
+┆ ✰ _*⏳ Tiempo Activo*_ : %muptime
+┆ ✰ _*👥 Usuarios*_ : %totalreg
 ╰─────────────►
 %readmore
 ╭─────────────►
 ┆  Info user 
 ╰─────────────►
-┌┆  _*☁️ Nombre*_: %name
-┆  _*📊Nivel*_ : %level
-┆  *🖇️ XP* : %totalexp
+┌┆ ✰ _*🧧 Nombre*_: %name
+┆ ✰ _*📊 Nivel*_ : %level
+┆ ✰ *🌐 XP* : %totalexp
 ╰─────────────►
 `.trimStart(),
   header: '╭──►%category ',
-  body: '┊  %cmd %isdiamond %isPremium',
+  body: '┊✰  %cmd %isdiamond %isPremium',
   footer: '╰─────────────►\n\n',
   after: `
 `,
@@ -63,7 +65,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     let { exp, diamond, level, role } = global.db.data.users[m.sender]
     let { min, xp, max } = xpRange(level, global.multiplier)
     let name = await conn.getName(m.sender)
-    let d = new Date(new Date + 3600000)
+     let d = new Date(new Date + 3600000)
     let locale = 'es'
     // d.getTimeZoneOffset()
     // Offset -420 is 18.00
