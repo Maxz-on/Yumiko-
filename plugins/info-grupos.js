@@ -25,7 +25,7 @@ let estado = `
 🌸 𝘠𝘜𝘔𝘐𝘒𝘖 𝘎𝘓𝘖𝘉𝘈𝘓 🌸
 •https://chat.whatsapp.com/E8krRQKttIl3NpX3T1qZwv
 `
-await conn.sendButton(m.chat, estado, 'GenesisBot-Pro', pp, [
+await conn.sendButton(m.chat, estado, 'by: Mxz', pp, [
 ['🤴 DUEÑO 🤴', '.owner'], ['☁️ DONAR ☁️', '.donate']], null, [['🌸 CANAL 🌸', `${fgcanal}`]], m)
 }
 handler.help = ['grupos']
