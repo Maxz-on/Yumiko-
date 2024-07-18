@@ -37,7 +37,7 @@ const defaultMenu = {
 ╭─────────────►
 ┆   Info Bot
 ╰─────────────►
-┌┆  _*🦅 Modo*_ : Público
+┌┆  _*🦅 Modo*_ : Privado
 ┆  _*📖 Baileys*_: Multi Device
 ┆  _*⏳ Tiempo Activo*_ : %muptime
 ┆  *👥 Usuarios* : %totalreg
