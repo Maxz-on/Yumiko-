@@ -13,6 +13,7 @@ let handler = async (m, { conn, text }) => {
         m.reply('error cik:/ ' + err);
     }
 }
+    m.react('🌸') 
 
 handler.command = handler.help = ['demo'];
 handler.tags = ['ai'];
