@@ -100,7 +100,7 @@ await m.reply(`🌸 *SOPA DE LETRAS* 🌸
 *ESCRIBA EL NÚMERO DE FILA Y COLUMNA DEL COMIENZO DE LA PRIMERA LETRA _"${PALABRA.charAt(0)}"_ DE LA PALABRA _"${PALABRA}"_ TIENE _${intentos}_ INTENTOS!!*
 
 *EJEMPLO:*
-❇️ \`\`\`${usedPrefix + command} 28\`\`\`
+🌸 \`\`\`${usedPrefix + command} 28\`\`\`
 ➡️ \`\`\`FILA 2\`\`\`    ⬇️ \`\`\`COLUMNA 8\`\`\``.trim())
 await m.reply(`🔠 *${PALABRA.split("").join(" ")}* 🔠\n\n` + sopaDeLetrasConBordes.trimEnd())
 fila = filaInicial 
