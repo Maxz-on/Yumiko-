@@ -3,7 +3,7 @@ let totalf = Object.values(global.plugins).filter(
     (v) => v.help && v.tags
   ).length;
 conn.reply(m.chat, `*🌸 Total de Funciones* 🌸: 
-_${totalf}_ `,m)
+     ${totalf}`,m)
 }
 
 handler.help = ['totalfunciones']
