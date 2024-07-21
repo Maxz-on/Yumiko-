@@ -1,52 +1,70 @@
-// COMBINACIÓN DE MENSAJES
-// Adaptar el simple.js
-let handler = async (m, { conn, usedPrefix, command, text }) => {
+// by https://github.com/elrebelde21/The-LoliBot-MD
 
-// MENSAJE CARUSEL CON TODOS LOS BOTONES DISPONIBLES
-// Si las ids no te funciona con usedPrefix, tendrás que definirlas, ejemplo /menu
-const sections = [{
-title: `Título de la sección`,
-rows: [
-{ header: 'Encabezado1', title: "Título1", description: 'Descripción1', id: usedPrefix + "menu" }, 
-{ header: 'Encabezado2', title: "Título2", description: 'Descripción2', id: "Id2" }, 
-{ header: 'Encabezado3', title: "Título3", description: 'Descripción3', id: "Id3" }, 
-{ header: 'Encabezado4', title: "Título4", description: 'Descripción4', id: "Id4" }, 
-]},]  
-const messages = [[ // CARRUSEL 1
-'Descripción de Carrusel 1', 
-'Footer de Carrusel 1',
-'https://telegra.ph/file/24b24c495b5384b218b2f.jpg',
-[['Botón1', usedPrefix + 'menu'], ['Botón2', 'Id2'] /* etc... */],
-[['Texto para copiar 1'], ['Texto para copiar 2'] /* etc... */],
-[['Enlace1', canal2], ['Enlace2', 'https://example.com/link2'] /* etc... */],
-[['Botón Lista 1', sections], ['Botón Lista 2', sections] /* etc... */]
-], [ // CARRUSEL 2
-'Descripción de Carrusel 2',
-'Footer de Carrusel 2',
-'https://telegra.ph/file/e9239fa926d3a2ef48df2.jpg',
-[['Botón1', 'Id1'], ['Botón2', 'Id2']],
-[['Texto para copiar 1'], ['Texto para copiar 2']],
-[['Enlace1', 'https://example.com/link1'], ['Enlace2', 'https://example.com/link2']],
-[['Botón Lista 1', sections], ['Botón Lista 2', sections]]
-], [ // CARRUSEL 3
-'Descripción de Carrusel 3',
-'Footer de Carrusel 3',
-'https://telegra.ph/file/ec725de5925f6fb4d5647.jpg',
-[['Botón1', 'Id1'], ['Botón2', 'Id2']],
-[['Texto para copiar 1'], ['Texto para copiar 2']],
-[['Enlace1', 'https://example.com/link1'], ['Enlace2', 'https://example.com/link2']],
-[['Botón Lista 1', sections], ['Botón Lista 2', sections]]
-], [ // CARRUSEL 4
-'Descripción de Carrusel 4',
-'Footer de Carrusel 4',
-'https://telegra.ph/file/7acad0975febb71446da5.jpg',
-[['Botón1', 'Id1'], ['Botón2', 'Id2']],
-[['Texto para copiar 1'], ['Texto para copiar 2']],
-[['Enlace1', 'https://example.com/link1'], ['Enlace2', 'https://example.com/link2']],
-[['Botón Lista 1', sections], ['Botón Lista 2', sections]]
-]] /* etc... */
-await conn.sendCarousel(m.chat, 'Texto', 'Footer', 'Titulo de Carrusel', messages, m)            
+let handler = m => m
+handler.all = async function (m) {
+let chat = global.db.data.chats[m.chat]
+let name = conn.getName(m.sender)
+
+if (/^todo bien$/i.test(m.text) ) { //sem prefixo
+    conn.reply(m.chat, `𝑩𝒊𝒆𝒏 𝒄𝒂𝒑𝒐 😎 𝒚 𝒕𝒖`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
 }
-handler.command = /^(carousel)$/i
+
+if (/^e$/i.test(m.text) ) { //sem prefixo
+    conn.reply(m.chat, `𝑸𝒖𝒆 𝒃𝒖𝒆𝒏𝒐 𝒔𝒂𝒃𝒆𝒓 𝒍𝒂 𝒍𝒆𝒕𝒓𝒂 𝒆`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+
+}
+
+if (/^51907913096|5999977839292928272799282828299|@58292928190929282979139292992096$/i.test(m.text) ) { //sem prefixo
+    conn.reply(m.chat, `*_[ ⚠ ️] No etiquetes a mi creador, si tiene alguna consulta o dudas, hablarle el pv solo por tema del bot_*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+
+}
+
+/* if (/^Mande porno|porno|paja$/i.test(m.text) ) { //sem prefixo
+    let teks = `
+${pickRandom([` 𝑨𝒔𝒊́ 𝒒𝒖𝒆 𝒒𝒖𝒊𝒆𝒓𝒂 𝒉𝒂𝒈𝒂 𝒑𝒖𝒕𝒊𝒕𝒐 🧐`, `_uff mire un pajero_`, `_pagame y paso mi pack😏🥵_`, `_que_`, `_que quiere pija dice 🤣`, `_pasa el pack de tu hermana😏_`, `_mire un gilipolla_`, `_siuuu sexo sexo sexo😈_`, '_callarte putito_'])}
+`.trim()
+conn.reply(m.chat, teks, m, { mentions: { mentionedJid: [m.sender] }})
+
+}
+*/
+/* if (/^reglas|normas|Reglas$/i.test(m.text) ) { //sem prefixo
+    conn.reply(m.chat, `*┌───⊷ *${lb}*
+┆ ───────•••───────
+┆ ⚠️ 𝗢𝗯𝗲𝗱𝗲𝗰𝗲 𝗹𝗮𝘀 𝗿𝗲𝗴𝗹𝗮𝘀 ⚠️
+┆───────•••───────
+┆➽❌ 𝐏𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨 𝐥𝐥𝐚𝐦𝐚𝐫 𝐚𝐥 𝐁𝐨𝐭
+┆➽❌ 𝐏𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨 𝐒𝐩𝐚𝐦 𝐚𝐥 𝐁𝐨𝐭
+┆➽❌ 𝐍𝐨 𝐚𝐠𝐫𝐞𝐠𝐚𝐫 𝐚𝐥 𝐁𝐨𝐭
+┆➽❌ 𝐑𝐞𝐬𝐩𝐞𝐭𝐚 𝐥𝐨𝐬 𝐭𝐞𝐫𝐦𝐢𝐧𝐨𝐬 𝐲 𝐜𝐨𝐧𝐝𝐢𝐜𝐢𝐨𝐧𝐞𝐬
+┆ 
+┆ 「 🅣🅗🅔 🅛🅞🅛🅘🅑🅞🅣-🅜🅓 」
+╰──────────────────`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+
+}
+*/
+/* if (/^¿que es un bot?|Que es un bot$/i.test(m.text) ) { //sem prefixo
+    conn.reply(m.chat, `┌───⊷ *${lb}*
+┆ ───────•••───────
+┆ ☆::¿𝐐𝐮𝐞́ 𝐞𝐬 𝐮𝐧 𝐁𝐨𝐭 𝐝𝐞 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩?::☆*
+┆───────•••───────
+┆ 𝐔𝐧 𝐁𝐨𝐭 𝐞𝐬 𝐮𝐧𝐚 𝐢𝐧𝐭𝐞𝐥𝐢𝐠𝐞𝐧𝐜𝐢𝐚 𝐚𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐪𝐮𝐞 𝐫𝐞𝐚𝐥𝐢𝐳𝐚 𝐭𝐚𝐫𝐞𝐚𝐬
+┆ 𝐪𝐮𝐞 𝐥𝐞 𝐢𝐧𝐝𝐢𝐪𝐮𝐞 𝐜𝐨𝐧 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬, 𝐞𝐧 𝐞𝐥 𝐜𝐚𝐬𝐨 𝐝𝐞 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 
+┆ 𝐩𝐮𝐞𝐝𝐞𝐬 𝐜𝐫𝐞𝐚𝐫 𝐬𝐭𝐢𝐜𝐤𝐞𝐫𝐬, 𝐝𝐞𝐬𝐜𝐚𝐫𝐠𝐚𝐫 𝐦𝐮́𝐬𝐢𝐜𝐚, 𝐯𝐢𝐝𝐞𝐨𝐬, 
+┆ 𝐜𝐫𝐞𝐚𝐫 𝐥𝐨𝐠𝐨𝐬 𝐩𝐞𝐫𝐬𝐨𝐧𝐚𝐥𝐢𝐳𝐚𝐝𝐨𝐬 𝐲 𝐦𝐮𝐜𝐡𝐨 𝐦𝐚𝐬, 
+┆ 𝐞𝐬𝐭𝐨 𝐝𝐞 𝐟𝐨𝐫𝐦𝐚 𝐚𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐳𝐚𝐝𝐚, 𝐨 𝐬𝐞𝐚 𝐪𝐮𝐞 𝐮𝐧 𝐡𝐮𝐦𝐚𝐧𝐨 
+┆ 𝐧𝐨 𝐢𝐧𝐭𝐞𝐫𝐟𝐢𝐞𝐫𝐞 𝐞𝐧 𝐞𝐥 𝐩𝐫𝐨𝐜𝐞𝐬𝐨 
+┆ 𝐏𝐚𝐫𝐚 𝐯𝐞𝐫 𝐞𝐥 𝐦𝐞𝐧𝐮́ 𝐝𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬 𝐩𝐮𝐞𝐝𝐞𝐬 𝐮𝐬𝐚𝐫 #menu
+┆ 
+┆ 「 🅣🅗🅔 🅛🅞🅛🅘🅑🅞🅣-🅜🅓 」
+╰──────────────────`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+
+}
+
+return !0 
+}
 export default handler
+
+function pickRandom(list) {
+    return list[Math.floor(Math.random() * list.length)]
+}
