@@ -93,7 +93,7 @@ sopaDeLetrasConBordes += fila + "\n"
 //sopaDeLetrasConBordes += "   *╰" + "┄".repeat(LADO) + '┄┄' + "╯*"
 sopaDeLetrasConBordes = sopaDeLetrasConBordes.replace(/[a-zA-Z]/g, letra => LETRAS_POSIBLES[letra.charCodeAt() - 65] || letra)
 
-await m.reply(`🔠 *SOPA DE LETRAS* 🔠
+await m.reply(`🌸 *SOPA DE LETRAS* 🌸
 *PALABRA:* \`\`\`"${PALABRA}"\`\`\`
 *TIENE 3 MINUTOS PARA ENCONTRAR LA RESPUESTA CORRECTA!!*
 
