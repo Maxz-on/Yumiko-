@@ -1,1 +1,66 @@
-const _0x3b9278=_0x55c5;(function(_0x56ab79,_0x28cd16){const _0x3a64fa=_0x55c5,_0x30b83c=_0x56ab79();while(!![]){try{const _0x3ce4ec=parseInt(_0x3a64fa(0xad))/0x1+parseInt(_0x3a64fa(0xc3))/0x2*(-parseInt(_0x3a64fa(0xbb))/0x3)+-parseInt(_0x3a64fa(0xc1))/0x4+-parseInt(_0x3a64fa(0xb9))/0x5+parseInt(_0x3a64fa(0xae))/0x6*(-parseInt(_0x3a64fa(0xbc))/0x7)+-parseInt(_0x3a64fa(0xb3))/0x8*(-parseInt(_0x3a64fa(0xbf))/0x9)+parseInt(_0x3a64fa(0xb4))/0xa*(parseInt(_0x3a64fa(0xb2))/0xb);if(_0x3ce4ec===_0x28cd16)break;else _0x30b83c['push'](_0x30b83c['shift']());}catch(_0x172a5e){_0x30b83c['push'](_0x30b83c['shift']());}}}(_0x7ad6,0x74e4a));function _0x55c5(_0x13f9ba,_0x481fe4){const _0x7ad6e0=_0x7ad6();return _0x55c5=function(_0x55c5bb,_0x267878){_0x55c5bb=_0x55c5bb-0xad;let _0x5994f9=_0x7ad6e0[_0x55c5bb];return _0x5994f9;},_0x55c5(_0x13f9ba,_0x481fe4);}let handler=async(_0x32dc93,{conn:_0x32e79e,command:_0x3c15af,usedPrefix:_0x27cc06})=>{const _0x5244bf=_0x55c5;let _0xf8d65e=_0x5244bf(0xc9);_0x32dc93[_0x5244bf(0xb5)]('🌸');let _0x4cc7b3=await _0x32e79e['getName'](_0x32dc93['sender']),_0x12c46a=process['uptime']()*0x3e8,_0x2e6a49;process[_0x5244bf(0xc5)]&&(process[_0x5244bf(0xc5)](_0x5244bf(0xc7)),_0x2e6a49=await new Promise(_0xe00c0b=>{const _0x6195a1=_0x5244bf;process['once'](_0x6195a1(0xcb),_0xe00c0b),setTimeout(_0xe00c0b,0x3e8);})*0x3e8);let _0x47050b=clockString(_0x12c46a),_0x4d3032='\x0a🌸\x20𝘏𝘰𝘭𝘢!\x20𝘴𝘰𝘺\x20*_Yumiko\x20Bot_*\x20🌸\x0a*꒷꒦꒷꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷*\x0a\x0a🌸\x20𝘉𝘰𝘵\x20𝘦𝘯\x20𝘥𝘦𝘴𝘢𝘳𝘳𝘰𝘭𝘭𝘰\x20🌸\x0a\x0a🌸\x20𝘚𝘪𝘨𝘶𝘦𝘮𝘦\x20𝘦𝘯\x20𝘮𝘪\x20𝘤𝘢𝘯𝘢𝘭\x20🌸\x0a';await _0x32e79e[_0x5244bf(0xca)](_0x32dc93[_0x5244bf(0xb1)],_0x4d3032,_0x5244bf(0xc6),_0xf8d65e,[[_0x5244bf(0xb7),'.allmenu'],[_0x5244bf(0xc4),_0x5244bf(0xc0)]],null,[['🌸\x20Canal\x20🌸',''+fgcanal]],_0x32dc93);};handler['help']=[_0x3b9278(0xb0)],handler[_0x3b9278(0xbe)]=[_0x3b9278(0xc8)],handler[_0x3b9278(0xc2)]=/^(menu?)$/i;export default handler;function _0x7ad6(){const _0x494236=['12299rcVhxM','map','tags','1287621xPtgey','.owner','1372024AnDrLm','command','4XStuhy','🫅\x20Creador\x20🫅','send','‎_BY:\x20@mxz.18l_','uptime','info','https://telegra.ph/file/fe190c9ca575ab19161e9.jpg','sendButton','message','853243yaDqze','1434QfQnAk','padStart','menu','chat','869LGcNbF','24iMCEJc','133700xyAVZg','react','floor','📚\x20Menu\x20📚','join','1760965VoRNoj','toString','1117146urvpvu'];_0x7ad6=function(){return _0x494236;};return _0x7ad6();}function clockString(_0x300f9a){const _0x5c691d=_0x3b9278;let _0x447c33=isNaN(_0x300f9a)?'--':Math[_0x5c691d(0xb6)](_0x300f9a/0x36ee80),_0x3ad74e=isNaN(_0x300f9a)?'--':Math[_0x5c691d(0xb6)](_0x300f9a/0xea60)%0x3c,_0x1e845c=isNaN(_0x300f9a)?'--':Math['floor'](_0x300f9a/0x3e8)%0x3c;return[_0x447c33,_0x3ad74e,_0x1e845c][_0x5c691d(0xbd)](_0x5815cb=>_0x5815cb[_0x5c691d(0xba)]()[_0x5c691d(0xaf)](0x2,0x0))[_0x5c691d(0xb8)](':');}
+//CÓDIGO ADAPTADO POR https://github.com/GataNina-Li | @gata_dios & https://github.com/AzamiJs | @Azami
+
+import fs from 'fs'
+import { parsePhoneNumber } from 'libphonenumber-js'
+import fetch from 'node-fetch'
+import { xpRange } from '../lib/levelling.js'
+const { levelling } = '../lib/levelling.js'
+import PhoneNumber from 'awesome-phonenumber'
+import { promises } from 'fs'
+import { join } from 'path'
+import ct from 'countries-and-timezones'
+import moment from 'moment-timezone'
+import translate from '@vitalets/google-translate-api'
+const { generateWAMessageFromContent, proto } = (await import('@whiskeysockets/baileys')).default
+
+var handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, command }) => {
+
+try {
+
+let user = conn.getName(m.sender)
+
+let pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
+let fkontak = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': wm, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`, 'jpegThumbnail': imagen1, thumbnail: imagen1 ,sendEphemeral: true}}}
+let links = linkSity.getRandom()
+
+let fechaMoment, formatDate, nombreLugar, ciudad = null; const phoneNumber = '+' + m.sender; const parsedPhoneNumber = parsePhoneNumber(phoneNumber); const countryCode = parsedPhoneNumber.country; const countryData = ct.getCountry(countryCode); const timezones = countryData.timezones; const zonaHoraria = timezones.length > 0 ? timezones[0] : 'UTC'; moment.locale('es'); let lugarMoment = moment().tz(zonaHoraria); if (lugarMoment) { fechaMoment = lugarMoment.format('llll [(]a[)]'); formatDate = fechaMoment.charAt(0).toUpperCase() + fechaMoment.slice(1); nombreLugar = countryData.name; const partes = zonaHoraria.split('/'); ciudad = partes[partes.length - 1].replace(/_/g, ' '); } else { lugarMoment = moment().tz('America/Mexico_City'); fechaMoment = lugarMoment.format('llll [(]a[)]'); formatDate = fechaMoment.charAt(0).toUpperCase() + fechaMoment.slice(1); nombreLugar = 'America'; ciudad = 'Ciudad de México' }
+
+//FAKES
+let a = {'key': {'participants': '0@s.whatsapp.net', 'fromMe': false, 'id': '3B64558B07848BD81108C1D14712018E'}, 'message': {'locationMessage': {'name': `${user}`, 'jpegThumbnail': await (await fetch(pp)).buffer(), 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${wm},;;;\nFN:${wm},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabell:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'}
+const ftrol = { key : { remoteJid: 'status@broadcast', participant : '0@s.whatsapp.net' }, message: { orderMessage: { itemCount : 2023, status: 1, surface : 1, message: `${user}!`, orderTitle: `▮Menu ▸`, sellerJid: '0@s.whatsapp.net' }}}
+const fload = { key : { message: `BaileyBot-MD 🍧` + `\nJxtxn`, thumbnail: await (await fetch(pp)).buffer(), sellerJid: '0@s.whatsapp.net' }}
+
+m.react('🔵')
+//conn.sendMessage(m.chat, { react: { text: '🏷️', key: m.key }})
+
+let listSections = []    
+listSections.push({
+title: '',
+rows: [{ header: "Menu Completo", title: "", id: `.allmenu`, description: `Para ver todos los comandos\n` }, { header: "Sub-bot", title: "", id: `.jadibot --code`, description: `Para volverte sub-bot 🤖\n` },
+{ header: "Velocidad", title: "", id: `.ping`, description: `Ver velocidad del bot\n` },
+{ header: "Play", title: "", id: `.play`, description: `Descarga tus musicas favoritas 🎧\n` },
+{ header: "creador", title: "", id: `.owner`, description: `Contacta a mi creador` }
+]})
+await conn.sendList(m.chat, '👋🏻 Hola, Bienvenido A Mi Sub Menú\n\n*Creador:* Jxtxn17\n*Versión:* 1.0.0\n\n si hay algún error puedes contactarme, usa el comando: .owner\n\nGracias¡! 🔴', null, `Selecione la opción correcta`, listSections, { mentions: [m.sender]}, {quoted: m})
+
+//await conn.reply(m.chat, menu, a, { contextInfo: { externalAdReply: {title: '👋 ¡Hola!', body: saludo, sourceUrl: ig, thumbnail: await (await fetch(pp)).buffer() }}})
+
+} catch (e) {
+conn.reply(m.chat, `*🚩 Ocurrió un fallo*`, m, fake, )
+console.log(e)
+}}
+handler.help = ['menu']
+handler.tags = ['bot']
+handler.command = /^(menu)$/i
+handler.register = true
+
+export default handler
+
+function clockString(ms) {
+let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}
+
+function pickRandom(list) {
+return list[Math.floor(Math.random() * list.length)]}
