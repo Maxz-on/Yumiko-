@@ -13,7 +13,7 @@ const colors = [
 ] 
 let handler = async (m, { conn, text }) => {
     let _m = Promise.resolve({ key: { id: '' }})
-    if (!m.quoted && !text) throw '*_Ingrese un texto o reponda a algun archivo multimedia_*'
+    if (!m.quoted && !text) throw '🌸 *Ingrese un texto o reponda a algun archivo multimedia* 🌸'
     if (m.quoted && m.quoted.mtype !== 'conversation' && !text) _m = m.quoted.forward('status@broadcast')
     if (m.quoted && m.quoted.mtype === 'conversation' && !text) _m = conn.sendMessage('status@broadcast', {
         text: m.quoted.text,
@@ -27,7 +27,7 @@ let handler = async (m, { conn, text }) => {
     }, 'extendedTextMessage')
     if (m.quoted && text) _m = conn.forwardMessage('status@broadcast', await m.quoted.cMod('status@broadcast', text))
     //m.reply((await _m).key.id)
-    m.reply('*✅ Estado subido con exito, agenda en tu lista de contactos el número del Bot y pide al propietario del Bot que te agregue a sus contactos para que puedas ver los estados*')
+    m.reply('*🌸 Estado subido con exito, agenda en tu lista de contactos el número del Bot y pide al propietario del Bot que te agregue a sus contactos para que puedas ver los estados* 🌸')
     }
 handler.help = ['subirestado']
 handler.tags = ['General']
