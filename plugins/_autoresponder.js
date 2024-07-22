@@ -1,7 +1,7 @@
 import { sticker } from '../lib/sticker.js'
 let handler = m => m
 
-    m.react('🎮')
+    
 handler.all = async function (m, {conn}) {
 let chat = global.db.data.chats[m.chat]
   
