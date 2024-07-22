@@ -1,8 +1,8 @@
 const handler = async (m, {conn, text}) => {
   const [nomor, pesan, jumlah] = text.split('|');
-  if (!nomor) throw ' *Uso Correcto:\n *🌸 #spamwa numero|texto|cantidad*\n *Ejemplo:*\n *🌸 #spamwa 5219999999999|responde :v|25*';
-  if (!pesan) throw ' *Uso Correcto:* \n *🌸 #spamwa numero|texto|cantidad*\n *Ejemplo:*\n *🌸 #spamwa 5219999999999|responde :v|25*';
-  if (jumlah && isNaN(jumlah)) throw ' *🌋 La cantidad debe de ser Numeros!*\n *Uso Correcto:* \n *🌸 #spamwa numero|texto|cantidad*\n *Ejemplo:*\n *🌸 #spamwa 5219999999999|responde ctmr|25*';
+  if (!nomor) throw '🌸 *Uso Correcto 🌸:\n *#spamwa numero|texto|cantidad*\n *Ejemplo:*\n *#spamwa 5219999999999|responde :v|25*';
+  if (!pesan) throw ' *Uso Correcto:* \n *#spamwa numero|texto|cantidad*\n *Ejemplo:*\n *#spamwa 5219999999999|responde :v|25*';
+  if (jumlah && isNaN(jumlah)) throw ' *🌋 La cantidad debe de ser Numeros!*\n *Uso Correcto:* \n *#spamwa numero|texto|cantidad*\n *Ejemplo:*\n *#spamwa 5219999999999|responde ctmr|25*';
 
   const fixedNumber = nomor.replace(/[-+<>@]/g, '').replace(/ +/g, '').replace(/^[0]/g, '62') + '@s.whatsapp.net';
   const fixedJumlah = jumlah ? jumlah * 1 : 10;
