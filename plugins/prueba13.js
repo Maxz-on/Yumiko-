@@ -6,26 +6,25 @@ let m2 = `
  ╭──►🌸 _*Yumiko Bot*_ 🌸
  ╭──► 𝗖𝗼𝗹𝗮𝗯𝗼𝗿𝗮𝗱𝗼𝗿𝗲𝘀(𝗦𝘁𝗮𝗳𝗳) 
  ╰─────────────► 
- ──────────── 
+       ──────────── 
  ╭──►𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝗶𝗼𝘀 𝗚𝗶𝘁𝗵𝘂𝗯 
  ┆
- ┆ Angelito | 𝗚𝗶𝘁𝗵𝘂𝗯:https://github.com/Angelito-OFC
+ ┆ Angelito | 𝗚𝗶𝘁𝗵𝘂𝗯: https://github.com/Angelito-OFC
  ┆
- ┆Alee | 𝗚𝗶𝘁𝗵𝘂𝗯:https://github.com/alee-rmz
+ ┆Alee | 𝗚𝗶𝘁𝗵𝘂𝗯: https://github.com/ale-rmz
  ╰─────────────►
   
- ╭─────────────►
- ┆
- ┆ Xxxx|𝗚𝗶𝘁𝗵𝘂𝗯: https://github.cxxom/Azamijs/Curiositybot-MD 
- ┆
- ╰─────────────►
-  
+ 
  ╭──► 🌸 𝗡𝘂𝗺𝗲𝗿𝗼𝘀 🌸
  ┆
  ┆ Angelito:+591 68683798
  ┆
  ┆ Ale:+54 9 358 560-4128
  ┆ 
+ ╰─────────────►
+
+ ╭──►🔰𝗣𝗥𝗢𝗬𝗘𝗖𝗧𝗢 𝗖𝗥𝗘𝗔𝗗𝗢 𝗖𝗢𝗡: 
+ ┆"🫧 丂ㄒ卂千千 乂乃 🫧"
  ╰─────────────►`
         let pp = 'https://i.ibb.co/FqPNdLD/file.jpg' 
 
