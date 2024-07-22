@@ -45,7 +45,6 @@ const rtotalreg = Object.values(global.db.data.users).filter((user) => user.regi
  }; 
  handler.command = /^(colab|colaboradores)$/i; 
  handler.exp = 50; 
- handler.fail = null; 
  export default handler; 
  function clockString(ms) { 
    const h = isNaN(ms) ? '--' : Math.floor(ms / 3600000); 
