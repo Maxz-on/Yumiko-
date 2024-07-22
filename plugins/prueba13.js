@@ -15,23 +15,17 @@ let m2 = `
   
  ╭─────────────►
  ┆
- ┆ Xxxx|𝗚𝗶𝘁𝗵𝘂𝗯: https://github.com/Azamijs/Curiositybot-MD 
+ ┆ Xxxx|𝗚𝗶𝘁𝗵𝘂𝗯: https://github.cxxom/Azamijs/Curiositybot-MD 
  ┆
  ╰─────────────►
   
- ┣𝗛𝗮𝗰𝗵𝗲𝗷𝗼𝘁𝗮|𝗚𝗶𝘁𝗵𝘂𝗯: https://github.com/HACHEJOTA/Hachiko-bot-MD 
-  
- ┣𝙀𝙣𝙙𝙚𝙧|𝗚𝗶𝘁𝗵𝘂𝗯: https://github.com/Ender-GB-Isis777/LOBO-BOT-MD
-  
- ┣𝗘𝗱𝗲𝗿|𝗚𝗶𝘁𝗵𝘂𝗯:https://github.com/Aleixon127271 
-  
- ┣┅⟣✦𝗡𝘂𝗺𝗲𝗿𝗼𝘀  
- ┣𝘼𝙭𝙚𝙡:+51 929 972 576
- ┣𝗔𝘇𝗮𝗺𝗶:+52 729 488 8993 
- ┣𝗛𝗮𝗰𝗵𝗲𝗷𝗼𝘁𝗮:+52 443 786 3111 
- ┣𝙀𝙣𝙙𝙚𝙧:+505 5812 4470
- ┣𝗘𝗱𝗲𝗿:+57 310 6040746 
- ┗━━━━━━━━━━━━━━━━━━┛`
+ ╭──► 🌸 𝗡𝘂𝗺𝗲𝗿𝗼𝘀 🌸
+ ┆
+ ┆ Angelito:+591 68683798
+ ┆
+ ┆ Ale:+52 729 488 8993 
+ ┆ 
+ ╰─────────────►`
         let pp = 'https://i.ibb.co/FqPNdLD/file.jpg' 
 
 global.fcontact = {
