@@ -1,11 +1,8 @@
-const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length; 
-     const more = String.fromCharCode(8206); 
-     const readMore = more.repeat(850); 
-     const url = global.md 
-     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0]; 
-     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document']; 
-     const document = doc[Math.floor(Math.random() * doc.length)]; 
-     const str = `┏━━━━━━━━━━━━━━━━━━ 
+let handler = async function (m, { conn, text, usedPrefix }) {
+
+    m.react('🔞')
+
+let m2 = `┏━━━━━━━━━━━━━━━━━━ 
  ┣┅⟣✦ 𝘽𝙖𝙞𝙡𝙚𝙮𝗕𝗼𝘁-𝗠𝗗 
  ┣┅⟣✦ 𝗖𝗼𝗹𝗮𝗯𝗼𝗿𝗮𝗱𝗼𝗿𝗲𝘀(𝗦𝘁𝗮𝗳𝗳) 
  ┗━━━━━━━━━━━━━━━━━━┛ 
@@ -28,27 +25,34 @@ const rtotalreg = Object.values(global.db.data.users).filter((user) => user.regi
  ┣𝗛𝗮𝗰𝗵𝗲𝗷𝗼𝘁𝗮:+52 443 786 3111 
  ┣𝙀𝙣𝙙𝙚𝙧:+505 5812 4470
  ┣𝗘𝗱𝗲𝗿:+57 310 6040746 
- ┗━━━━━━━━━━━━━━━━━━┛ 
-  `.trim(); 
-     if (m.isGroup) { 
-       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true}) 
-       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'}; 
-       conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: m}); 
-     } else { 
-       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true}) 
-       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'}; 
-       conn.sendMessage(m.chat, {image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net')}, {quoted: fkontak2}); 
-     } 
-   } catch { 
-     conn.reply(m.chat, '[❕] 𝗔𝗹𝗴𝗼 𝘀𝗮𝗹𝗶𝗼 𝗺𝗮𝗹, 𝗽𝗼𝗿 𝗳𝗮𝘃𝗼𝗿 𝗿𝗲𝗽𝗼𝗿𝘁𝗲𝗹𝗼 𝗮𝗹 𝗦𝘁𝗮𝗳𝗳', m); 
-   } 
- }; 
- handler.command = /^(colab|colaboradores)$/i; 
- handler.exp = 50; 
- export default handler; 
- function clockString(ms) { 
-   const h = isNaN(ms) ? '--' : Math.floor(ms / 3600000); 
-   const m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60; 
-   const s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60; 
-   return [h, m, s].map((v) => v.toString().padStart(2, 0)).join(':'); 
-       }
+ ┗━━━━━━━━━━━━━━━━━━┛`
+        let pp = 'https://i.ibb.co/FqPNdLD/file.jpg' 
+
+global.fcontact = {
+        key: {
+            fromMe: false,
+            participant: `0@s.whatsapp.net`,
+            remoteJid: "status@broadcast",
+        },
+        message: {
+            contactMessage: {
+                displayName: `\n 🌸 𝙔𝙐𝙈𝙄𝙆𝙊 𝘽𝙊𝙏 🌸 \n
+𝙇𝘼 𝙈𝙀𝙅𝙊𝙍 𝙍𝙀𝙔𝙉𝘼`,
+                vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:xd\nitem1.TEL;waid=${m.sender.split("@")[0]}:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
+            },
+        },
+    };
+
+    await conn.reply(m.chat, '🌸 𝙇𝙊𝘼𝘿𝙄𝙉𝙂....🌸', fcontact);
+    /*conn.sendButton(m.chat, m2, mssg.ig, pp, [
+      ['⏍ Info', `${usedPrefix}botinfo`],
+      ['⌬ Grupos', `${usedPrefix}gpdylux`]
+    ],m, rpyt)*/
+    conn.sendFile(m.chat, pp, 'menu.jpg', m2, m, null, fwc)
+
+}
+handler.help = ['Creditos']
+handler.tags = ['main']
+handler.command = ['Creditos', 'creditos', 'credito', 'credit'] 
+
+export default handler
