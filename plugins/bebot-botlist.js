@@ -6,7 +6,7 @@ async function handler(m, { usedPrefix }) {
  m.reply(` 
 🌸 *${mssg.botlist}* 🌸
 
-▢ *${mssg.total}:* ${users.length} 
+🌹 *${mssg.total}:* ${users.length} 🌹
 
 ${b}`) 
   
