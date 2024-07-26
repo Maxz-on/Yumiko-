@@ -5,31 +5,31 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
-  'ai': 'IA-BOT 🌸',
-  'info': 'INFORMACIÓN ☠️',
-  'main': 'ACERCA DE 🪐',
-  'bebot': 'SUB BOTS 🤖',
-  'game': 'JUEGOS 🎮',
-  'convertir': 'CONVERTIR ♻️',
-  'econ': 'NIVEL & ECONOMIA 🍀',
-  'rpg': 'REGISTRO 📈',
-  'pop': 'POPULAR 🅿️',
-  'sticker': 'STICKER ☕',
-  'img': 'IMAGEN 🌱',
-  'maker': 'MAKER ✍️',
-  'prem': 'PREMIUM 🎫',
-  'group': 'GRUPO 👥',
-  'nable': 'ON/OFF OPCIONES 🟢', 
+  'ai': 'IA-BOT',
+  'info': 'INFORMACIÓN',
+  'main': 'ACERCA DE',
+  'bebot': 'SUB BOTS',
+  'game': 'JUEGOS',
+  'convertir': 'CONVERTIR',
+  'econ': 'NIVEL & ECONOMIA',
+  'rpg': 'REGISTRO',
+  'pop': 'POPULAR',
+  'sticker': 'STICKER',
+  'img': 'IMAGEN',
+  'maker': 'MAKER',
+  'prem': 'PREMIUM',
+  'group': 'GRUPO',
+  'nable': 'ON/OFF OPCIONES', 
   'nime': 'ANIME 🕊️',
-  'rnime': 'ANIME REACCION 🕊️',
-  'dl': 'DESCARGAS 📥',
-  'tools': 'TOOLS 🧸',
-  'fun': 'FUN 🔮',
-  'cmd': 'DATABASE 💻',
-  'nsfw': 'NSFW 🔞',
-  'ansfw': 'NSFW ANIME 🔞', 
-  'owner': 'OWNER 🫅', 
-  'advanced': 'AVANZADO 👹',
+  'rnime': 'ANIME REACCION',
+  'dl': 'DESCARGAS',
+  'tools': 'TOOLS',
+  'fun': 'FUN',
+  'cmd': 'DATABASE',
+  'nsfw': 'NSFW',
+  'ansfw': 'NSFW ANIME', 
+  'owner': 'OWNER', 
+  'advanced': 'AVANZADO',
 }
 const defaultMenu = {
   before: `
@@ -38,9 +38,9 @@ const defaultMenu = {
 ╔════════⫹✰⫺════════╗
 ║\t\t\t\t𝐼𝑁𝐹𝑂𝑈𝑆𝐸𝑅
 ╠═══
-╠ ☆  _*🦅 Modo*_ : Público
-╠ ☆  _*📖 Baileys*_: Multi Device
-╠ ☆  _*⏳ Tiempo Activo*_ : %muptime
+╠ ☆  _*🍡 Modo*_ : Público
+╠ ☆  _*📚 Baileys*_: Multi Device
+╠ ☆  _*🕐 Tiempo Activo*_ : %muptime
 ╠ ☆  _*👥 Usuarios*_ : %totalreg
 ╚═══════════════════╝
 %readmore
