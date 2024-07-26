@@ -54,7 +54,7 @@ const defaultMenu = {
 ╚═══════════════════╝
 `.trimStart(),
   header: '╔════════⫹✰⫺════════╗\n║\t\t\t`%category`\n╠════════⫹✰⫺════════╝\n✧⃝━━━━━━━━⫹✧⫺━━━━━━━✰\n┃╭━─━─━──≪ ✧ ≫─━──━─━╮',
-  body: '┃ » %cmd %isdiamond %isPremium',
+  body: '┃ ✰ %cmd %isdiamond %isPremium',
   footer: '┃╰━─━──━─≪ ✧ ≫─━──━─━╯\n✧⃝━━━━━━━━⧔✰⧕━━━━━━━✰\n',
   after: `
 `,
