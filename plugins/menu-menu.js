@@ -20,7 +20,7 @@ let tags = {
   'prem': 'PREMIUM',
   'group': 'GRUPO',
   'nable': 'ON/OFF OPCIONES', 
-  'nime': 'ANIME 🕊️',
+  'nime': 'ANIME',
   'rnime': 'ANIME REACCION',
   'dl': 'DESCARGAS',
   'tools': 'TOOLS',
@@ -173,7 +173,7 @@ global.fcontact = {
     };
 
     let pp = 'https://i.ibb.co/j64r2PF/file.png'
-    await conn.reply(m.chat, '🌸 Cargando menu de Yumi 🌸', fcontact);
+    await conn.reply(m.chat, '🌸 `Cargando menu de Yumi` 🌸', fcontact);
 
     /*conn.sendButton(m.chat, text.trim(), `▢ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
