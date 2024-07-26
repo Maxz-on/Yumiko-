@@ -173,7 +173,7 @@ global.fcontact = {
     };
 
     let pp = 'https://i.ibb.co/j64r2PF/file.png'
-    await conn.reply(m.chat, '🌸 `Cargando menu de Yumi` 🌸', fcontact);
+    await conn.reply(m.chat, '🌸 `𝐂𝐚𝐫𝐠𝐚𝐧𝐝𝐨 𝐦𝐞𝐧𝐮 𝐝𝐞 𝐘𝐮𝐦𝐢` 🌸', fcontact);
 
     /*conn.sendButton(m.chat, text.trim(), `▢ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
