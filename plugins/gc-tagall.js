@@ -6,8 +6,7 @@ m.react('🌸')
     throw false;
   }
   const pesan = args.join` `;
-const oi = `┆ A??: ${pesan}\n┆Personitas: _*${participants.length}*_
-            ╰─────────────►`;
+const oi = `┆ A??: ${pesan}\n┆Personitas: _*${participants.length}*_  ╰─────────────►`;
   let teks = `╭─────────────►
 ┆ Despierten \n${oi}\n\n\n`;
   for (const mem of participants) {
