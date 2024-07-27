@@ -19,7 +19,7 @@ const oi = `┆ A??: ${pesan}\n┆Personitas: _*${participants.length}*_ ╰─�
 };
 handler.help = ['tagall <mesaje>', 'invocar <mesaje>'];
 handler.tags = ['group'];
-handler.command = /^(tagall|invocar|invocacion|todos|invocación)$/i;
+handler.command = /^(tagall|invocar|invocacion|todos|M)$/i;
 handler.admin = true;
 handler.group = true;
 export default handler;
