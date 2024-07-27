@@ -6,7 +6,8 @@ m.react('🌸')
     throw false;
   }
   const pesan = args.join` `;
-const oi = `┆ A??: ${pesan}\n┆Personitas: _*${participants.length}*_ ╰─────────────►`;
+const oi = `┆ A??: ${pesan}\n┆Personitas: _*${participants.length}*_
+╰─────────────►`;
   let teks = `╭─────────────►
 ┆ Despierten \n${oi}\n\n\n`;
   for (const mem of participants) {
@@ -19,7 +20,7 @@ const oi = `┆ A??: ${pesan}\n┆Personitas: _*${participants.length}*_ ╰─�
 };
 handler.help = ['tagall <mesaje>', 'invocar <mesaje>'];
 handler.tags = ['group'];
-handler.command = /^(tagall|invocar|invocacion|todos|M)$/i;
+handler.command = /^(tagall|invocar|invocacion|todos|Mxz)$/i;
 handler.admin = true;
 handler.group = true;
 export default handler;
