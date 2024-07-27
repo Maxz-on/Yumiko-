@@ -5,57 +5,57 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
-  'ai': 'IA-BOT',
-  'info': 'INFORMACIÓN',
-  'main': 'ACERCA DE',
-  'bebot': 'SUB BOTS',
-  'game': 'JUEGOS',
-  'convertir': 'CONVERTIR',
-  'econ': 'NIVEL & ECONOMIA',
-  'rpg': 'REGISTRO',
-  'pop': 'POPULAR',
-  'sticker': 'STICKER',
-  'img': 'IMAGEN',
-  'maker': 'MAKER',
-  'prem': 'PREMIUM',
-  'group': 'GRUPO',
-  //'nable': 'ON/OFF OPCIONES', 
-  //'nime': 'ANIME',
-  //'rnime': 'ANIME REACCION',
-  'dl': 'DESCARGAS',
-  'tools': 'TOOLS',
-  'fun': 'FUN',
-  'cmd': 'DATABASE',
-  'nsfw': 'NSFW',
-  'ansfw': 'NSFW ANIME', 
-  'owner': 'OWNER', 
-  'advanced': 'AVANZADO',
+  'ai': '🌸 IA-BOT 🌸',
+  'info': '☠️ INFORMACIÓN ☠️',
+  'main': '🪐 ACERCA DE 🪐',
+  'bebot': '🤖 SUB BOTS 🤖',
+  'game': '🎮 JUEGOS 🎮',
+  'convertir': '♻️ CONVERTIR ♻️',
+  'econ': '🍀 NIVEL & ECONOMIA 🍀',
+  'rpg': '📈 REGISTRO 📈',
+  'pop': '🅿️ POPULAR 🅿️',
+  'sticker': '☕ STICKER ☕',
+  'img': '🌱 IMAGEN 🌱',
+  'maker': '✍️ MAKER ✍️',
+  'prem': '🎫 PREMIUM 🎫',
+  'group': '👥 GRUPO 👥',
+  //'nable': 'ON/OFF OPCIONES 🟢', 
+  //'nime': 'ANIME 🕊️',
+  'rnime': '🕊️ ANIME REACCION 🕊️',
+  'dl': '📥 DESCARGAS 📥',
+  'tools': '🧸 TOOLS 🧸',
+  'fun': '☄️ FUN ☄️',
+  'cmd': '💻 DATABASE 💻',
+  'nsfw': '🔞 NSFW 🔞',
+  'ansfw': '🔞 NSFW ANIME 🔞', 
+  'owner': '🫅 OWNER 🫅', 
+  //'advanced': 'AVANZADO 👹',
 }
 const defaultMenu = {
   before: `
 *_◌⃘࣭࣪࣪࣪۬🌸─ׅ YUMIKO BOT ──◌⃘࣭ٜ࣪࣪࣪۬🌸_*
+*꒷꒦꒷꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷*
 
-╔════════⫹✰⫺════════╗
-║\t\t\t\t`INFO USER`
-╠═══
-╠ ☆  🍡 Modo: Público
-╠ ☆  📚 Baileys: Multi Device
-╠ ☆  🕐 Tiempo Activo: %muptime
-╠ ☆  👥 Usuarios: %totalreg
-╚═══════════════════╝
+╭─────────────►
+┆   Info Bot
+╰─────────────►
+┌┆✰ _*🖇️ Modo*_ : Publico
+┆ ✰ _*📚 Baileys*_: Multi Device
+┆ ✰ _*⏳ Tiempo Activo*_ : %muptime
+┆ ✰ _*👥 Usuarios*_ : %totalreg
+╰─────────────►
 %readmore
-╔════════⫹✰⫺════════╗
-║\t\t\t `INFO USER` 
-╠═══
-╠ ☆  ☁️ Nombre: %name
-╠ ☆  💵 coins: %limit
-╠ ☆  📊Nivel: %level
-╠ ☆  🖇️ XP: %totalexp
-╚═══════════════════╝
+╭─────────────►
+┆  Info user 
+╰─────────────►
+┌┆ ✰ _*🧧 Nombre*_: %name
+┆ ✰ _*📊 Nivel*_ : %level
+┆ ✰ *🌐 XP* : %totalexp
+╰─────────────►
 `.trimStart(),
-  header: '╔════════⫹✰⫺════════╗\n║\t\t\t`%category`\n╠════════⫹✰⫺════════╝\n✧⃝━━━━━━━━⫹✧⫺━━━━━━━✰\n┃╭━─━─━──≪ ✧ ≫─━──━─━╮',
-  body: '┃ ✰ %cmd %isdiamond %isPremium',
-  footer: '┃╰━─━──━─≪ ✧ ≫─━──━─━╯\n✧⃝━━━━━━━━⧔✰⧕━━━━━━━✰\n',
+  header: '╭──►%category ',
+  body: '┊✰  %cmd %isdiamond %isPremium',
+  footer: '╰─────────────►\n\n',
   after: `
 `,
 }
@@ -172,8 +172,8 @@ global.fcontact = {
         },
     };
 
-    let pp = 'https://i.ibb.co/j64r2PF/file.png'
-    await conn.reply(m.chat, '🌸 `𝙇𝙊𝘼𝘿𝙄𝙉𝙂`🌸', fcontact);
+    let pp = 'https://i.ibb.co/KVQvJDX/file.jpg'
+    await conn.reply(m.chat, '🌸 𝙇𝙊𝘼𝘿𝙄𝙉𝙂....🌸', fcontact);
 
     /*conn.sendButton(m.chat, text.trim(), `▢ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
