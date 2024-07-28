@@ -3,7 +3,7 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url' 
 
 global.owner = [
-  ['5493536568522', 'CREADOR ', true],
+  ['5493536568522', '𝐂𝐑𝐄𝐀𝐃𝐎𝐑 ', true],
 ] //Numeros de owner 
 
 global.mods = [''] 
@@ -19,13 +19,13 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = 'YUMIKO BOT' 
-global.author = '@mxz.18l' 
-global.descripcion = 'Solo Preguntas Del Bot'
+global.packname = '𝐘𝐔𝐌𝐈𝐊𝐎' 
+global.author = '@𝐌𝐱𝐳.18𝐥' 
+global.descripcion = '𝐒𝐨𝐥𝐨 𝐩𝐫𝐞𝐠𝐮𝐧𝐭𝐚𝐬 𝐝𝐞𝐥 𝐛𝐨𝐭'
 
 //--info FG
-global.botName = 'YUMIKO'
-global.fgig = 'Solo Preguntas Del Bot' 
+global.botName = '𝐘𝐔𝐌𝐈𝐊𝐎'
+global.fgig = '𝐒𝐨𝐥𝐨 𝐩𝐫𝐞𝐠𝐮𝐧𝐭𝐚𝐬 𝐝𝐞𝐥 𝐛𝐨𝐭' 
 global.fgigt = 'https://instagram.com/max_xitado.pe' 
 global.fgsc = 'https://github.com/Maxz-on/Yumiko-.git' 
 global.fgyt = ''
@@ -49,7 +49,7 @@ global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
 
-global.wait = '🌸 *LOADING*....'
+global.wait = '🌸 𝐂𝐚𝐫𝐠𝐚𝐧𝐝𝐨....'
 global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✅'
