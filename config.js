@@ -26,7 +26,7 @@ global.descripcion = '𝐒𝐨𝐥𝐨 𝐩𝐫𝐞𝐠𝐮𝐧𝐭𝐚𝐬 𝐝
 //--info FG
 global.botName = '𝐘𝐔𝐌𝐈𝐊𝐎'
 global.fgig = '𝐒𝐨𝐥𝐨 𝐩𝐫𝐞𝐠𝐮𝐧𝐭𝐚𝐬 𝐝𝐞𝐥 𝐛𝐨𝐭' 
-global.fgigt = 'https://instagram.com/max_xitado.pe' 
+global.fgigt = 'https://instagram.com/Mxz.18.l' 
 global.fgsc = 'https://github.com/Maxz-on/Yumiko-.git' 
 global.fgyt = ''
 global.fgpyp = ''
@@ -34,7 +34,7 @@ global.fglog = ''
 
 //--- Grupos WA
 global.id_canal = '120363302454592275@newsletter' //-ID de canal de WhatsApp
-global.fgcanal = 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y'
+global.fgcanal = 'https://whatsapp.com/channel/0029VafBXQtDDmFbtwvkt20J'
 global.bgp = 'https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6'
 global.bgp2 = 'https://chat.whatsapp.com/EVl0wxlCww74HV3vvZq83a'
 global.bgp3 = 'https://chat.whatsapp.com/Fn5Ipyxu6mE6qEQlwWZTwU' //--GP NSFW
