@@ -5,7 +5,7 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
-  'ai': 'IA-BOT 🌸',
+  ai: 'IA-BOT 🌸',
   'info': 'INFORMACIÓN ☠️',
   'main': 'ACERCA DE 🪐',
   'bebot': 'SUB BOTS 🤖',
