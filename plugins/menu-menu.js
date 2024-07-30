@@ -142,7 +142,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       '%': '%',
       p: _p, uptime, muptime,
       me: conn.getName(conn.user.jid),
-      sbot: (conn.user.jid == global.conn.user.jid ? '' : `\n▢ ✨ *Sub-Bot de:*\nwa.me/${global.conn.user.jid.split`@`[0]}`), 
+      sbot: (conn.user.jid == global.conn.user.jid ? '' : `\n✰ ✨ *Sub-Bot de:*\nwa.me/${global.conn.user.jid.split`@`[0]}`), 
       npmname: _package.name,
       npmdesc: _package.description,
       version: _package.version,
