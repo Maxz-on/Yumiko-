@@ -173,7 +173,7 @@ global.fcontact = {
     };
 
     let pp = 'https://i.ibb.co/j64r2PF/file.png'
-    await conn.reply(m.chat, '🌸 𝐂𝐀𝐑𝐆𝐀𝐍𝐃𝐎 メ 𝐌𝐄𝐍𝐔....', fcontact);
+    await conn.reply(m.chat, ' 𝐂𝐀𝐑𝐆𝐀𝐍𝐃𝐎 メ 𝐌𝐄𝐍𝐔 シ︎', fcontact);
 
     /*conn.sendButton(m.chat, text.trim(), `✰ DyLux  ┃ ᴮᴼᵀ\n${mssg.ig}`, pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
@@ -184,7 +184,7 @@ global.fcontact = {
     m.react('🌸') 
 
   } catch (e) {
-    conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error', m)
+    conn.reply(m.chat, '❎ 𝐋𝐎 𝐒𝐈𝐄𝐍𝐓𝐎, 𝐄𝐋 𝐌𝐄𝐍𝐔́ 𝐓𝐈𝐄𝐍𝐄 𝐔𝐍 𝐄𝐑𝐑𝐎𝐑', m)
     throw e
   }
 }
