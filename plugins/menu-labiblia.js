@@ -11,41 +11,41 @@ let m2 = `
 ╠════════⫹✰⫺════════╝
 ✧⃝━━━━━━━━⧔✰⧕━━━━━━━✰
 ┃╭━─━─━──≪ ✧ ≫─━──━─━╮
-┊ ✰ .nsfwloli
-┊✰ .nsfwfoot
-┊✰ .nsfwass
-┊✰ .nsfwbdsm
-┊✰ .nsfwcum
-┊✰ .nsfwero
-┊✰ .nsfwfemdom
-┊✰ .nsfwfoot
-┊✰ .nsfwglass
-┊✰ .nsfworgy
-┊✰ .yuri
-┊✰ .yuri2
-┊✰ .yaoi
-┊✰ .yaoi2
-┊✰ .panties
-┊✰ .tetas
-┊✰ .booty
-┊✰ .ecchi
-┊✰ .furro
-┊✰ .hentai
-┊✰ .trapito
-┊✰ .imagenlesbians
-┊✰ .pene
-┊✰ .porno
-┊✰ .randomxxx
-┊✰ .pechos
-┊✰ .takeda
-┆✰ .asuma
-┊✰ .endeavor
-┊✰ .ass (ⓓ)
-┊✰ .boobs (ⓓ)
-┊✰ .lesbiana (ⓓ)
-┊✰ .pack (ⓓ)
-┊✰ .pussy (ⓓ)
-┊ ✰ .xnxx (ⓓ)
+┃ ✰ .nsfwloli
+┃ ✰ .nsfwfoot
+┃ ✰ .nsfwass
+┃ ✰ .nsfwbdsm
+┃ ✰ .nsfwcum
+┃ ✰ .nsfwero
+┃ ✰ .nsfwfemdom
+┃ ✰ .nsfwfoot
+┃ ✰ .nsfwglass
+┃ ✰ .nsfworgy
+┃ ✰ .yuri
+┃ ✰ .yuri2
+┃ ✰ .yaoi
+┃ ✰ .yaoi2
+┃ ✰ .panties
+┃ ✰ .tetas
+┃ ✰ .booty
+┃ ✰ .ecchi
+┃ ✰ .furro
+┃ ✰ .hentai
+┃ ✰ .trapito
+┃ ✰ .imagenlesbians
+┃ ✰ .pene
+┃ ✰ .porno
+┃ ✰ .randomxxx
+┃ ✰ .pechos
+┃ ✰ .takeda
+┃ ✰ .asuma
+┃ ✰ .endeavor
+┃ ✰ .ass (ⓓ)
+┃ ✰ .boobs (ⓓ)
+┃ ✰ .lesbiana (ⓓ)
+┃ ✰ .pack (ⓓ)
+┃ ✰ .pussy (ⓓ)
+┃ ✰ .xnxx (ⓓ)
 ┃╰━─━──━─≪ ✧ ≫─━──━─━╯
 ✧⃝━━━━━━━━⧔✰⧕━━━━━━━✰
 
@@ -55,17 +55,17 @@ let m2 = `
 ╠════════⫹✰⫺════════╝
 ✧⃝━━━━━━━━⧔✰⧕━━━━━━━✰
 ┃╭━─━─━──≪ ✧ ≫─━──━─━╮
-┊✰ .xwaifu (ⓓ)
-┊✰ .xneko (ⓓ)
-┊✰ .blowjob (ⓓ)
-┊✰ .trap (ⓓ)
-┊✰ .yuri (ⓓ)
-┊✰ .cum (ⓓ)
-┊✰ .hentai (ⓓ)
+┃ ✰ .xwaifu (ⓓ)
+┃ ✰ .xneko (ⓓ)
+┃ ✰ .blowjob (ⓓ)
+┃ ✰ .trap (ⓓ)
+┃ ✰ .yuri (ⓓ)
+┃ ✰ .cum (ⓓ)
+┃ ✰ .hentai (ⓓ)
 ┃╰━─━──━─≪ ✧ ≫─━──━─━╯
 ✧⃝━━━━━━━━⧔✰⧕━━━━━━━✰
 `
-        let pp = 'https://i.ibb.co/FqPNdLD/file.jpg' 
+        let pp = 'https://i.ibb.co/ggkMx19/file.png' 
 
 global.fcontact = {
         key: {
