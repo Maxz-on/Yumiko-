@@ -4,10 +4,7 @@ let handler = async function (m, { conn, text, usedPrefix }) {
     m.react('🔞')
 
 let m2 = `
-*_◌⃘࣭࣪࣪࣪۬🌸─ׅ YUMIKO BOT ──◌⃘࣭ٜ࣪࣪࣪۬🌸_*
-*꒷꒦꒷꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷*
-
-🌸 𝗛𝗼𝗹𝗮 ! 🌸
+🌸 𝐘𝐔𝐌𝐈𝐊𝐎 メ 𝐁𝐎𝐓  🌸
 
 
 ╭──► *NSFW* 
