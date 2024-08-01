@@ -6,8 +6,11 @@ let handler = async function (m, { conn, text, usedPrefix }) {
 let m2 = `
 🌸 𝐘𝐔𝐌𝐈𝐊𝐎 メ 𝐁𝐎𝐓  🌸
 
-
-╭──► *NSFW* 
+╔════════⫹✰⫺════════╗
+║    𝐌𝐄𝐍𝐔 メ 𝐑𝐀𝐍𝐃𝐎𝐌
+╠════════⫹✰⫺════════╝
+✧⃝━━━━━━━━⧔✰⧕━━━━━━━✰
+┃╭━─━─━──≪ ✧ ≫─━──━─━╮
 ┊✰ .nsfwloli
 ┊✰ .nsfwfoot
 ┊✰ .nsfwass
