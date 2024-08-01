@@ -14,7 +14,7 @@ let usuario = `@${m.sender.split`@`[0]}`
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let users = participants.map(u => conn.decodeJid(u.id))
 if (m.messageStubType == 21) {
-await this.sendMessage(m.chat, { text: `🌸 *YUMIKO BOT* 🌸\n\n *${usuario}*\n 𝗠𝗢𝗗𝗜𝗙𝗜𝗖𝗢 𝗘𝗟 𝗡𝗢𝗠𝗕𝗥𝗘:\n\n *${m.messageStubParameters[0]}*`, mentions: [m.sender], mentions: (await conn.groupMetadata(m.chat)).participants.map(v => v.id) }, { quoted: fkontak, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100}) 
+await this.sendMessage(m.chat, { text: `< 🌸 *YUMIKO BOT* 🌸\n\n *${usuario}*\n 𝗠𝗢𝗗𝗜𝗙𝗜𝗖𝗢 𝗘𝗟 𝗡𝗢𝗠𝗕𝗥𝗘:\n\n *${m.messageStubParameters[0]}*`, mentions: [m.sender], mentions: (await conn.groupMetadata(m.chat)).participants.map(v => v.id) }, { quoted: fkontak, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100}) 
 } else if (m.messageStubType == 22) {
 await this.sendMessage(m.chat, { text: `🌸 *YUMIKO BOT* 🌸\n\n *${usuario}* \n 𝗠𝗢𝗗𝗜𝗙𝗜𝗖𝗢 𝗟𝗔 𝗙𝗢𝗧𝗢`, mentions: [m.sender] }, { quoted: fkontak, ephemeralExpiration: 24*60*100, disappearingMessagesInChat: 24*60*100}) 
 } else if (m.messageStubType == 24) {
