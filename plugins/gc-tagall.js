@@ -6,7 +6,7 @@ m.react('🌸')
     throw false;
   }
   const pesan = args.join` `;
-const oi = ` A??: ${pesan}\n Personitas: _*${participants.length}*_
+const oi = ` 𝐀𝐇: ${pesan}\n 𝐏𝐄𝐑𝐒𝐎𝐍𝐀𝐒: _*${participants.length}*_
 `;
   let teks = `
  𝐋𝐋𝐀𝐌𝐀𝐍𝐃𝐎 メ 𝐆𝐑𝐔𝐏𝐎 シ︎ \n${oi}\n\n\n`;
