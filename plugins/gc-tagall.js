@@ -6,17 +6,15 @@ m.react('🌸')
     throw false;
   }
   const pesan = args.join` `;
-const oi = `┆ A??: ${pesan}\n┆Personitas: _*${participants.length}*_
-╰─────────────►`;
-  let teks = `╭─────────────►
-┆ Despierten \n${oi}\n\n\n`;
+const oi = `A??: ${pesan}\n┆Personitas: _*${participants.length}*_
+`;
+  let teks = `
+ Despierten \n${oi}\n\n\n`;
   for (const mem of participants) {
     teks += `┆ @${mem.id.split('@')[0]}\n`;
-*꒷꒦꒷꒷꒦꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷꒷꒦꒷꒷꒦꒷꒷꒦꒷꒦꒷꒦꒷*
+
   }
-  teks += `╭─────────────►
-┆🌸 *YUMIKO BOT* 🌸
-╰─────────────►`;
+  teks += ``;
   conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)} );
 };
 handler.help = ['tagall <mesaje>', 'invocar <mesaje>'];
