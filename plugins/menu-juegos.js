@@ -11,32 +11,33 @@ let m2 = `
 ╠════════⫹✰⫺════════╝
 ✧⃝━━━━━━━━⧔✰⧕━━━━━━━✰
 ┃╭━─━─━──≪ ✧ ≫─━──━─━╮
-┊✰ .acertijo
-┊✰ .dado
-┊✰ .mates <modo>
-┊✰ .ppt
-┊✰ .love
-┊✰ .topgays
-┊✰ .topotakus
-┊✰ .toppotaxies
-┊✰ .topintegrantes
-┊✰ .topintegrante
-┊✰ .toplagrasa
-┊✰ .topgrasa
-┊✰ .toppanafrescos
-┊✰ .toppanafresco
-┊✰ .topshiposters
-┊✰ .topshipost
-┊✰ .toppajer@s
-┊✰ .toplindos
-┊✰ .toplind@s
-┊✰ .topput@s
-┊✰ .topfamosos
-┊✰ .topfamos@s
-┊✰ .topparejas
-┊✰ .top5parejas
-┊✰ .slot <apuesta>
-╰─────────────►
+┃ ✰ .acertijo
+┃ ✰ .dado
+┃ ✰ .mates <modo>
+┃ ✰ .ppt
+┃ ✰ .love
+┃ ✰ .topgays
+┃ ✰ .topotakus
+┃ ✰ .toppotaxies
+┃ ✰ .topintegrantes
+┃ ✰ .topintegrante
+┃ ✰ .toplagrasa
+┃ ✰ .topgrasa
+┃ ✰ .toppanafrescos
+┃ ✰ .toppanafresco
+┃ ✰ .topshiposters
+┃ ✰ .topshipost
+┃ ✰ .toppajer@s
+┃ ✰ .toplindos
+┃ ✰ .toplind@s
+┃ ✰ .topput@s
+┃ ✰ .topfamosos
+┃ ✰ .topfamos@s
+┃ ✰ .topparejas
+┃ ✰ .top5parejas
+┃ ✰ .slot <apuesta>
+┃╰━─━──━─≪ ✧ ≫─━──━─━╯
+✧⃝━━━━━━━━⧔✰⧕━━━━━━━✰
 `
        let pp = 'https://i.ibb.co/FqPNdLD/file.jpg' 
 
