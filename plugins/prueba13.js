@@ -33,7 +33,7 @@ let m2 = `
 ┃ ✰."𝐓𝐈𝐓𝐀𝐍 𝐓𝐄𝐀𝐌 シ︎"
 ┃╰━─━──━─≪ ✧ ≫─━──━─━╯
 ✧⃝━━━━━━━━⧔✰⧕━━━━━━━✰`
-        let pp = 'https://i.ibb.co/FqPNdLD/file.jpg' 
+        let pp = 'https://i.ibb.co/KxNss3N/file.jpg' 
 
 global.fcontact = {
         key: {
