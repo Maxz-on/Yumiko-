@@ -25,12 +25,12 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   user.registered = true
   let sn = createHash('md5').update(m.sender).digest('hex')
   let regi = `
-🌸 *REGISTRO* 🌸
+ 𝐑𝐄𝐆𝐈𝐒𝐓𝐑𝐎 シ︎
 
-. *NOMBRE:* ${name}
-. *EDAD:* ${age}
-. *GENERO:* ${genStr}
-. *N° SERIE:*\n\n${sn}`
+ 𝐍𝐎𝐌𝐁𝐑𝐄: ${name} [✰]
+ 𝐄𝐃𝐀𝐃: ${age} [✰]
+ 𝐆𝐄𝐍𝐄𝐑𝐎: ${genStr} [✰]
+ 𝐍 𝐒𝐄𝐑𝐈𝐄:\n\n${sn} [✰]`
   conn.sendFile(m.chat, pp, 'img.jpg', regi, m)
 }
 
