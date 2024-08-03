@@ -18,7 +18,7 @@ let sn = createHash('md5').update(who).digest('hex')
 let str = `
   𝐏𝐄𝐑𝐅𝐈𝐋 シ︎
 
-.𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒: @${who.replace(/@.+/, '')}
+.𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒: @${who.replace(/@.+/, '')} [✰]
 .𝐍𝐎𝐌𝐁𝐑𝐄:
  • ${username} ${registered ? '\n   • ' + name + ' ': ''}
 .𝐍𝐔𝐌𝐄𝐑𝐎: ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
