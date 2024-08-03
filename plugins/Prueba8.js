@@ -1,23 +1,18 @@
-import similarity from 'similarity';
-const threshold = 0.72;
-const handler = {
-  async before(m) {
-    const id = m.chat;
-    if (!m.quoted || !m.quoted.fromMe || !m.quoted.isBaileys || !/ADIVINA EL TITULO DE LA CANCION/i.test(m.quoted.text)) return !0;
-    this.tebaklagu = this.tebaklagu ? this.tebaklagu : {};
-    if (!(id in this.tebaklagu)) return m.reply('El juego ha terminado');
-    if (m.quoted.id == this.tebaklagu[id][0].id) {
-      const json = JSON.parse(JSON.stringify(this.tebaklagu[id][1]));
-      if (m.text.toLowerCase() == json.jawaban.toLowerCase().trim()) {
-        global.db.data.users[m.sender].exp += this.tebaklagu[id][2];
-        m.reply(`✅Correcto!\n+${this.tebaklagu[id][2]} XP`);
-        clearTimeout(this.tebaklagu[id][3]);
-        delete this.tebaklagu[id];
-      } else if (similarity(m.text.toLowerCase(), json.jawaban.toLowerCase().trim()) >= threshold) m.reply(`Casii!`);
-      else m.reply(`❌Incorrecto!`);
-    }
-    return !0;
-  },
-  exp: 0,
-};
-export default handler;
+// Función creada por Katashi Fukushima. Está a libre edición de videos para el envío del saludo
+
+let handler = async (m, { conn, usedPrefix, command}) => {
+let pp = ['https://qu.ax/Tvpv.mp4', 'https://qu.ax/Tvpv.mp4','https://qu.ax/Tvpv.mp4']
+//let pp2 = 'https://tinyurl.com/294oahv9'
+let who
+if (m.isGroup) who = m.mentionedJid[0]
+else who = m.chat
+if (!who) throw '😸 *Etiqueta al usuario que quieres saludar.* 👋\nEjemplo:\n.saludar @GataBot'
+let name2 = conn.getName(who)
+let name = conn.getName(m.sender)
+
+await conn.sendMessage(m.chat, { video: { url: pp.getRandom() }, gifPlayback: true, caption: `*${name}*` + ' está saludando a' + ` *${name2}*` + ' 🙌', contextInfo: fakeChannel }, { quoted: m })
+}
+handler.help = ['saludar <@user>']
+handler.tags = ['fun']
+handler.command = ['saludar', 'hola']
+export default handler
