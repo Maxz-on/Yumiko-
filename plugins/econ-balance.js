@@ -5,11 +5,11 @@ let handler = async (m, {conn, usedPrefix}) => {
     let user = global.db.data.users[who]
     if (!(who in global.db.data.users)) throw `🌸 ${mssg.userDb} 🌸`
     conn.reply(m.chat, `
- 🌸 *CLIENTE:* @${who.split('@')[0]}
+ *CLIENTE:* @${who.split('@')[0]} [✰]
  💰 *C A R T E R A*
 
-*💎 DIAMANTES:* ${user.diamond.toLocaleString()}
-*🌸 COINS:* ${user.coin.toLocaleString()}
+*💎 DIAMANTES:* ${user.diamond.toLocaleString()} [✰]
+*🌸 COINS:* ${user.coin.toLocaleString()} [✰]
 `, m, { mentions: [who] })
 }
 
