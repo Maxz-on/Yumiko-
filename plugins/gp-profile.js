@@ -16,22 +16,22 @@ let premG = global.prems.includes(who.split`@`[0]) || prem
 let sn = createHash('md5').update(who).digest('hex')
 
 let str = `
-🌸 *PERFIL* 🌸
+🌸 𝐏𝐄𝐑𝐅𝐈𝐋
 
-.𝗨𝘀𝘂𝗮𝗿𝗶𝗼: @${who.replace(/@.+/, '')}
-.𝗡𝗼𝗺𝗯𝗿𝗲𝘀:
+.𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒: @${who.replace(/@.+/, '')}
+.𝐍𝐎𝐌𝐁𝐑𝐄:
  • ${username} ${registered ? '\n   • ' + name + ' ': ''}
-.𝗡𝘂𝗺𝗲𝗿𝗼: ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
-.𝗟𝗶𝗻𝗸: wa.me/${who.split`@`[0]}${registered ? `\n🍀 𝗘𝗱𝗮𝗱: ${age}\n 🧬 𝗚𝗲𝗻𝗲𝗿𝗼: ${genero}` : ''}
-.𝗜𝗱𝗶𝗼𝗺𝗮: ${language}
-.𝗔𝗱𝘃𝗲𝗿𝘁𝗲𝗻𝗰𝗶𝗮𝘀: ${warn}/${maxwarn}
-.𝗖𝗼𝗶𝗻𝘀: ${coin.toLocaleString()}
-.𝗗𝗶𝗮𝗺𝗮𝗻𝘁𝗲𝘀: ${diamond.toLocaleString()}
-.𝗡𝗶𝘃𝗲𝗹: ${level}
-.𝗫𝗣: ${mssg.total} ${exp}
-.𝗥𝗮𝗻𝗴𝗼: ${role}
-.𝗥𝗲𝗴𝗶𝘀𝘁𝗿𝗮𝗱𝗼: ${registered ? '✅': '❎'}
-.𝗣𝗿𝗲𝗺𝗶𝘂𝗺: ${premG ? '✅' : '❎'}
+.𝐍𝐔𝐌𝐄𝐑𝐎: ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
+.𝐋𝐈𝐍𝐊: wa.me/${who.split`@`[0]}${registered ? `\n 𝐄𝐃𝐀𝐃: ${age}\n 𝐆𝐄𝐍𝐄𝐑𝐎: ${genero}` : ''}
+.𝐈𝐃𝐈𝐎𝐌𝐀: ${language}
+.𝐀𝐃𝐕: ${warn}/${maxwarn}
+.𝐂𝐎𝐈𝐍𝐒: ${coin.toLocaleString()}
+.𝐃𝐈𝐀𝐌𝐀𝐍𝐓𝐄𝐒: ${diamond.toLocaleString()}
+.𝐍𝐈𝐕𝐄𝐋: ${level}
+.𝐗𝐏: ${mssg.total} ${exp}
+.𝐑𝐀𝐍𝐆𝐎: ${role}
+.𝐑𝐄𝐆: ${registered ? '✅': '❎'}
+.𝐏𝐑𝐄𝐌: ${premG ? '✅' : '❎'}
 
 > ${mssg.ig}`
     conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
