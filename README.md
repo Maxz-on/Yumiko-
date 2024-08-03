@@ -16,6 +16,7 @@
 <a href="https://api.whatsapp.com/send/?phone=+59897246324&text=Hola  soporte de Yumiko Bot &type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/Whatsapp-30302f?style=flat&logo=whatsapp" /></a>
 
 > 𝐍𝐎𝐓𝐀 [✰]
+
 > **Este Bot recibe soporte 24/7 diariamente si presenta fallos solo repórtelo para que lo solucionemos**
 > **Se rediseño el Menu.**
 
@@ -26,7 +27,8 @@
 
 ***
 
-### <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Prueba La Bot Aqui" width="42" height="42"> Prueba La Bot Aqui
+### <img src="https://i.pinimg.com/originals/19/80/6e/19806e91932e6054965fc83b85241270.gif" alt="Prueba
+ La Bot Aqui" width="42" height="42"> Prueba La Bot Aqui
 
 > Si Deseas Probar La Bot Antes De Instalarlo,🌸 Click Abajo.🌸
 
