@@ -10,10 +10,10 @@ try {
 let searchResults = await searchPornhub(args[0]);
 let teks = searchResults.result.map((v, i) => 
 `🌸 𝐏𝐎𝐑𝐍𝐇𝐔𝐁 メ 𝐒𝐄𝐀𝐑𝐂𝐇 🌸 
-• *Título:* ${v.title}
-• *Duración:* ${v.duration}
-• *Vistas:* ${v.views}
-• *Link:* ${v.url}
+ *Título:* ${v.title} [✰]
+ *Duración:* ${v.duration} [✰]
+ *Vistas:* ${v.views} [✰]
+ *Link:* ${v.url} [✰]
 ---------------------------------------------------\n`).join('\n\n');
 if (searchResults.result.length === 0) {
 teks = '*Sin resultados*';
