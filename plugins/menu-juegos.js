@@ -39,7 +39,7 @@ let m2 = `
 ┃╰━─━──━─≪ ✧ ≫─━──━─━╯
 ✧⃝━━━━━━━━⧔✰⧕━━━━━━━✰
 `
-       let pp = 'https://i.ibb.co/DkNGSqq/file.jpg' 
+       let pp = 'https://i.ibb.co/dmdP0yS/file.jpg' 
 
 global.fcontact = {
         key: {
