@@ -20,8 +20,8 @@ let str = `
 
 .𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒: @${who.replace(/@.+/, '')} [✰]
 .𝐍𝐎𝐌𝐁𝐑𝐄:
- • ${username} ${registered ? '\n   • ' + name + ' ': ''}
-.𝐍𝐔𝐌𝐄𝐑𝐎: ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
+ • ${username} ${registered ? '\n   • ' + name + ' ': ''} [✰]
+.𝐍𝐔𝐌𝐄𝐑𝐎: ${PhoneNumber('+' + who.replace('@s.whatsapp.net',[✰] '')).getNumber('international')} [✰]
 .𝐋𝐈𝐍𝐊: wa.me/${who.split`@`[0]}${registered ? `\n 𝐄𝐃𝐀𝐃: ${age}\n 𝐆𝐄𝐍𝐄𝐑𝐎: ${genero}` : ''}
 .𝐈𝐃𝐈𝐎𝐌𝐀: ${language}
 .𝐀𝐃𝐕: ${warn}/${maxwarn}
