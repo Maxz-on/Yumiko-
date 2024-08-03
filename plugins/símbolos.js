@@ -18,7 +18,7 @@ const handler = async (m, {conn, usedPrefix}) => {
   const old = performance.now();
   const neww = performance.now();
   const speed = neww - old;
-  const info = ` 𝗧𝗔𝗕𝗟𝗘 𝐁𝐘: 🌸 𝐘𝐔𝐌𝐈𝐊𝐎 メ 𝐁𝐎𝐓  🌸
+  const info = ` 𝐓𝐀𝐁𝐋𝐄 𝐁𝐘: 🌸 𝐘𝐔𝐌𝐈𝐊𝐎 メ 𝐁𝐎𝐓  🌸
 
 
 tabla de letras 🌀
