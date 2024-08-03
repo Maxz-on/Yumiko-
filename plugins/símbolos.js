@@ -288,7 +288,7 @@ H⃟༻ I⃟༻ J⃟༻K⃟༻ L⃟༻M⃟༻ N⃟༻O⃟༻ P⃟༻ Q⃟༻R⃟
   conn.reply(m.chat, info, m, {
     contextInfo: {externalAdReply: {mediaUrl: null, mediaType: 1, description: null,
       title: '𝐈𝐍𝐅𝐎  𝐁𝐎𝐓',
-      body: ' 𝐁𝐎𝐓',
+      body: '🌸 𝐘𝐔𝐌𝐈𝐊𝐎 メ 𝐁𝐎𝐓  🌸',
       previewType: 0, thumbnail: fs.readFileSync('./Menu2.jpg'),
       sourceUrl: ``}}});
 };
