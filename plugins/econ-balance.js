@@ -3,7 +3,7 @@ let handler = async (m, {conn, usedPrefix}) => {
 
     let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     let user = global.db.data.users[who]
-    if (!(who in global.db.data.users)) throw `🌸 ${mssg.userDb} 🌸`
+    if (!(who in global.db.data.users)) throw `${mssg.userDb} [✰]`
     conn.reply(m.chat, `
   @${who.split('@')[0]} [✰]
   𝐂𝐀𝐑𝐓𝐄𝐑𝐀 シ︎
