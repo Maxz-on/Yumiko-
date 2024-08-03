@@ -294,7 +294,7 @@ H⃟༻ I⃟༻ J⃟༻K⃟༻ L⃟༻M⃟༻ N⃟༻O⃟༻ P⃟༻ Q⃟༻R⃟
 };
 handler.help = ['roax'];
 handler.tags = ['roax'];
-handler.command = /^(symbols)$/i;
+handler.command = /^(sbl)$/i;
 export default handler;
 
 function clockString(ms) {
