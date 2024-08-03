@@ -3,12 +3,12 @@ let poin = 200
 let cooldown = 15000
 let handler = async (m, { conn, args, usedPrefix, command }) => {
     
-    let reseqv = `🌸 ${mssg.ppt(usedPrefix, command)} 🌸`
+    let reseqv = `${mssg.ppt(usedPrefix, command)} [✰]`
     if (!args[0]) throw reseqv
     let text = args[0].toLowerCase()
     let user = global.db.data.users[m.sender]
     if (new Date - user.lastppt < cooldown) throw `⏱️ ${mssg.pptCd} *${msToTime((user.lastppt + cooldown) - new Date())}*`
-    if (user.coin < poin) return m.reply(`🌸 ${mssg.coinNan} 🌸`) 
+    if (user.coin < poin) return m.reply(`${mssg.coinNan} [✰]`) 
     var astro = Math.random()
     
     if (astro < 0.34) {
