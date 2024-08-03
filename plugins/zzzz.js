@@ -9,7 +9,7 @@ if (!args[0]) throw `*Formato incorrecto*\nEjemplo:\n\n${usedPrefix + command} c
 try {
 let searchResults = await searchPornhub(args[0]);
 let teks = searchResults.result.map((v, i) => 
-`「 🌸 𝐏𝐎𝐑𝐍𝐇𝐔𝐁  - 𝐒𝐄𝐀𝐑𝐂𝐇 🌸 」
+`🌸 𝐏𝐎𝐑𝐍𝐇𝐔𝐁 メ 𝐒𝐄𝐀𝐑𝐂𝐇 🌸 
 • *Título:* ${v.title}
 • *Duración:* ${v.duration}
 • *Vistas:* ${v.views}
