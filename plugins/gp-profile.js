@@ -30,8 +30,8 @@ let str = `
 .𝐍𝐈𝐕𝐄𝐋: ${level}
 .𝐗𝐏: ${mssg.total} ${exp}
 .𝐑𝐀𝐍𝐆𝐎: ${role}
-.𝐑𝐄𝐆: ${registered ? '✅': '❎'}
-.𝐏𝐑𝐄𝐌: ${premG ? '✅' : '❎'}
+.𝐑𝐄𝐆: ${registered ? '[✓]': '[メ]'}
+.𝐏𝐑𝐄𝐌: ${premG ? '[✓]' : '[メ]'}
 
 > ${mssg.ig}`
     conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
