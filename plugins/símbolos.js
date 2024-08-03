@@ -1,4 +1,3 @@
-// créditos sebas MD シ
 import os from 'os';
 import util from 'util';
 import sizeFormatter from 'human-readable';
@@ -18,7 +17,7 @@ const handler = async (m, {conn, usedPrefix}) => {
   const old = performance.now();
   const neww = performance.now();
   const speed = neww - old;
-  const info = ` 𝐓𝐀𝐁𝐋𝐄 𝐁𝐘: 🌸 𝐘𝐔𝐌𝐈𝐊𝐎 メ 𝐁𝐎𝐓  🌸
+  const info = ` 𝗧𝗔𝗕𝗟𝗘 𝐁𝐘: tanjiro-bot🔥
 
 
 tabla de letras 🌀
@@ -283,18 +282,18 @@ H⃟༻ I⃟༻ J⃟༻K⃟༻ L⃟༻M⃟༻ N⃟༻O⃟༻ P⃟༻ Q⃟༻R⃟
 
 ৢۜ͜͡  -  ๖ۣۜ͡ஓீ͜͜͡❥  -  ঔৣ͜͡ீ͜❥͜  -   ू ፝͜❥  -  ৎ❥̤֟٭ۣۜ  -  ✦ۣۜۜ☆ۣۜۜ͜͡   -  ঔৣֳ᷌᷈͜͡❀  -   ৎ✿̤֟٭  -  ✦҈͜͡➳  -  ঔৣ͜͡➳  -  ๖ۣۜ͡ஓீ͜͡   -  ஓீ͜͡   -    - ஓீ͜  -  ్మాై  -   ೈ፝͜͡๖ۣۜ   -   ೈ ፝  -   ீ͜ৡৢ͜͡    -   ๖ۣۜۜ͜͡ீ͜   -  ঔৣ͜͡   -  ৢۜ͜͡⍣   -  🔥፝⃟    -   ꦿ⃟ۜ✯  -     ⃟ۣ❃ -  ༻⃟༆  -  ༆⃟᠁  -  ွဳ⃟ꦿ  -  💸⃟ꦿ⸼  -  ⋆⃟ۣۜ᭪➣  -    ⃘⃤꙰
 
-𝐁𝐘:🌸 𝐘𝐔𝐌𝐈𝐊𝐎 メ 𝐁𝐎𝐓  🌸
+𝐁𝐘: tanjiro-bot
 `.trim();
   conn.reply(m.chat, info, m, {
     contextInfo: {externalAdReply: {mediaUrl: null, mediaType: 1, description: null,
-      title: '𝐈𝐍𝐅𝐎  𝐁𝐎𝐓',
-      body: '🌸 𝐘𝐔𝐌𝐈𝐊𝐎 メ 𝐁𝐎𝐓  🌸',
+      title: '𝙸𝙽𝙵𝙾  𝙱𝙾𝚃',
+      body: 'ᴛʜᴇ tanjiro ﹣ ʙᴏᴛ',
       previewType: 0, thumbnail: fs.readFileSync('./Menu2.jpg'),
       sourceUrl: ``}}});
 };
 handler.help = ['roax'];
 handler.tags = ['roax'];
-handler.command = /^(sbl)$/i;
+handler.command = /^(symbols)$/i;
 export default handler;
 
 function clockString(ms) {
