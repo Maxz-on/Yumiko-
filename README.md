@@ -13,9 +13,9 @@
 
 
  <a href="http://www.instagram.com/mxz.18l" target="blank"><img src="https://img.shields.io/badge/Instagram-30302f?style=flat&logo=instagram" /></a>
-<a href="https://api.whatsapp.com/send/?phone=+59897246324&text=Hola 👋 soporte de Génesis Bot &type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/Whatsapp-30302f?style=flat&logo=whatsapp" /></a>
+<a href="https://api.whatsapp.com/send/?phone=+59897246324&text=Hola  soporte de Yumiko Bot &type=phone_number&app_absent=0" target="blank"><img src="https://img.shields.io/badge/Whatsapp-30302f?style=flat&logo=whatsapp" /></a>
 
-> [!NOTE]
+> 𝐍𝐎𝐓𝐀 [✰]
 > **Este Bot recibe soporte 24/7 diariamente si presenta fallos solo repórtelo para que lo solucionemos**
 > **Se rediseño el Menu.**
 
