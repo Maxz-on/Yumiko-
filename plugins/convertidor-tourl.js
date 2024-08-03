@@ -16,7 +16,7 @@ let handler = async (m) => {
       txt += `  𝐄𝐍𝐋𝐀𝐂𝐄 : ${link} [✰]\n`
       txt += `  𝐀𝐂𝐎𝐑𝐓𝐀𝐃𝐎 : ${await shortUrl(link)} [✰]\n`
       txt += `  𝐓𝐀𝐌𝐀𝐍̃𝐎 : ${formatBytes(media.length)} [✰]\n`
-      txt += `  𝐄𝐗𝐏𝐈𝐑𝐀 : ${isTele ? 'No expira' : 'Desconocido'} [✰]\n\n`
+      txt += `  𝐄𝐗𝐏𝐈𝐑𝐀 : ${isTele ? '𝐍𝐎 𝐄𝐗𝐏𝐈𝐑𝐀' : '𝐃𝐄𝐒𝐂𝐎𝐍𝐎𝐂𝐈𝐃𝐎'} [✰]\n\n`
       txt += ``
 
 await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, fwc)
