@@ -1,33 +1,26 @@
-let handler = async (m, { usedPrefix, command }) => {
-let uptime = await process.uptime()
-let runtime = `${global.packname}
 
-✰ 𝗧𝗶𝗲𝗺𝗽𝗼 𝗔𝗰𝘁𝗶𝘃𝗮: ${rTime(uptime)}`
-conn.reply(m.chat, runtime, m, { contextInfo: { externalAdReply: { mediaUrl: false, mediaType: 1, description: false, title: packname, body: '🍟 ¡Super Bot De WhatsApp!', previewType: 0, thumbnail: icons, sourceUrl: channel}}})
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+
+        let _muptime
+    if (process.send) {
+      process.send('uptime')
+      _muptime = await new Promise(resolve => {
+        process.once('message', resolve)
+        setTimeout(resolve, 1000)
+      }) * 1000
+    }
+    let muptime = clockString(_muptime)
+   m.reply(`🏮 *${mssg.uptime}*  \n\n${muptime}`) 
 }
-handler.help = ['runtime']
-handler.tags = ['main']
-handler.command = /^(uptime|runtime)$/i
+handler.help = ['runtime'] 
+handler.tags = ['info']
+handler.command = ['runtime', 'uptime']
+export default handler 
 
-export default handler
-
-const dd = new Date(new Date + 3600000);
-const time = dd.toLocaleString('en-US', { 
-      hour: 'numeric',
-      minute: 'numeric',
-      second: 'numeric',
-      hour12: true 
-    });
-
-function rTime(seconds) {
-  seconds = Number(seconds);
-  var d = Math.floor(seconds / (3600 * 24));
-  var h = Math.floor((seconds % (3600 * 24)) / 3600);
-  var m = Math.floor((seconds % 3600) / 60);
-  var s = Math.floor(seconds % 60);
-  var dDisplay = d > 0 ? d + (d == 1 ? " dia, " : " Dias, ") : "";
-  var hDisplay = h > 0 ? h + (h == 1 ? " hora, " : " Horas, ") : "";
-  var mDisplay = m > 0 ? m + (m == 1 ? " minuto, " : " Minutos, ") : "";
-  var sDisplay = s > 0 ? s + (s == 1 ? " segundo" : " Segundos") : "";
-  return dDisplay + hDisplay + mDisplay + sDisplay;
-};
+function clockString(ms) {
+  let d = isNaN(ms) ? '--' : Math.floor(ms / 86400000)
+  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
+  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+  return [d, 'd ', h, 'h ', m, 'm ', s, 's '].map(v => v.toString().padStart(2, 0)).join('')
+}
