@@ -5,8 +5,8 @@ import fetch from 'node-fetch'
 let handler = async (m) => {
   let q = m.quoted ? m.quoted : m
   let mime = (q.msg || q).mimetype || ''
-  if (!mime) return conn.reply(m.chat, '\n🌸 *RESPONDA A UNA IMAGEN O VIDEO PARA HACERLO URL* 🌸', m, fwc)
-  await m.react('🕓')
+  if (!mime) return conn.reply(m.chat, '\n𝐑𝐄𝐒𝐏𝐎𝐍𝐃𝐀 𝐀 𝐔𝐍𝐀 𝐈𝐌𝐆 𝐎 𝐕𝐈𝐃𝐄𝐎 𝐏𝐀𝐑𝐀 𝐇𝐀𝐂𝐄𝐑 𝐔𝐑𝐋 [✰]', m, fwc)
+  await m.react('🌸')
   try {
   let media = await q.download()
   let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime)
