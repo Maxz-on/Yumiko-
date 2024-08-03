@@ -16,7 +16,7 @@ let premG = global.prems.includes(who.split`@`[0]) || prem
 let sn = createHash('md5').update(who).digest('hex')
 
 let str = `
-  𝐏𝐄𝐑𝐅𝐈𝐋 [✰]
+  𝐏𝐄𝐑𝐅𝐈𝐋 シ︎
 
 .𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒: @${who.replace(/@.+/, '')}
 .𝐍𝐎𝐌𝐁𝐑𝐄:
