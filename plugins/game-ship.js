@@ -5,7 +5,7 @@ let [text1, ...text2] = text.split(' ')
 
 text2 = (text2 || []).join(' ')
 if (!text2) return conn.reply(m.chat, ` 𝐄𝐒𝐂𝐑𝐈𝐁𝐄 𝐄𝐋 𝐍𝐎𝐌𝐁𝐑𝐄 𝐃𝐄 𝐋𝐀 𝐒𝐔𝐆𝐔𝐍𝐃𝐀 𝐏𝐄𝐑𝐒𝐎𝐍𝐀 [✰]`, m, rcanal, )
-let love = `❤️ *${text1}* tu oportunidad de enamorarte de *${text2}* es de ${Math.floor(Math.random() * 100)}% 👩🏻‍❤️‍👨🏻`
+let love = `❤️ *${text1}* 𝐓𝐔 𝐎𝐏𝐎𝐑𝐓𝐔𝐍𝐈𝐃𝐀𝐃 𝐃𝐄 𝐄𝐍𝐀𝐌𝐎𝐑𝐀𝐑𝐓𝐄 𝐃𝐄 *${text2}* 𝐄𝐒 𝐃𝐄 ${Math.floor(Math.random() * 100)}% 👩🏻‍❤️‍👨🏻`
 
 m.reply(love, null, { mentions: conn.parseMention(love) })
 
