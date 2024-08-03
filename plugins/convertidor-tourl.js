@@ -13,10 +13,10 @@ let handler = async (m) => {
   let link = await (isTele ? uploadImage : uploadFile)(media)
   let img = await (await fetch(`${link}`)).buffer()
   let txt = ``
-      txt += `  *Enlace* : ${link}\n`
-      txt += `  *Acortado* : ${await shortUrl(link)}\n`
-      txt += `  *Tamaño* : ${formatBytes(media.length)}\n`
-      txt += `  *Expiración* : ${isTele ? 'No expira' : 'Desconocido'}\n\n`
+      txt += `  𝐄𝐍𝐋𝐀𝐂𝐄 : ${link}\n`
+      txt += `  𝐀𝐂𝐎𝐑𝐓𝐀𝐃𝐎 : ${await shortUrl(link)}\n`
+      txt += `  𝐓𝐀𝐌𝐀𝐍̃𝐎 : ${formatBytes(media.length)}\n`
+      txt += `  𝐄𝐗𝐏𝐈𝐑𝐀 : ${isTele ? 'No expira' : 'Desconocido'}\n\n`
       txt += ``
 
 await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, fwc)
