@@ -1,7 +1,7 @@
 #### Version De Yumiko: Beta
 ### 🌸 YUMIKO BOT  🌸
 <p align="center">
-<img src="https://telegra.ph/file/73662c98598a85c136083.png" alt="GenesisBot-Pro" width="900"/>
+<img src="https://telegra.ph/file/6ab031b1f73b0ec4a157d.jpg" alt="GenesisBot-Pro" width="900"/>
 </p>
 
 #### Creador y Dueño: Mxz 🫅
