@@ -1,4 +1,4 @@
-// créditos sebas Md ✰
+// créditos sebas MD シ
 import os from 'os';
 import util from 'util';
 import sizeFormatter from 'human-readable';
