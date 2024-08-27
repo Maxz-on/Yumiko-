@@ -1,6 +1,6 @@
 //código creado por Karim-off
 let handler = async (m, { conn, command, usedPrefix }) => {
-let pp = 'https://telegra.ph/file/566df617bff1d9209b452.jpg
+let pp = 'https://telegra.ph/file/566df617bff1d9209b452.jpg'
         m.react('🌸') 
 let name = await conn.getName(m.sender)
 let _uptime = process.uptime() * 1000
