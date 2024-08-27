@@ -8,7 +8,7 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 let name = await conn.getName(who)
 let edtr = `@${m.sender.split`@`[0]}`
 
-let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:WhatsApp;𝐌𝐗𝐙 ✰\nNICKNAME:𝐌𝐗𝐙 ✰\nORG:𝐌𝐗𝐙 ✰\nTITLE:soft\nitem1.TEL;waid=5493536568522:+54 9 353 656-8522\nitem1.X-ABLabel:📞 WhatsApp Owner\nitem2.URL:https://github.com/karim-off/GenesisBot-Pro1\nitem2.X-ABLabel:💬 More\nitem3.EMAIL;type=INTERNET: agasistencia2@gmail.com\nitem3.X-ABLabel:💌 Correo soporte\nitem4.ADR:;;🇦🇷 Argentina;;;;\nitem4.X-ABADR:💬 More\nitem4.X-ABLabel: Localización 🫧\nBDAY;value=date: 09-12-2007\nEND:VCARD`
+let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:WhatsApp;𝐌𝐗𝐙 ✰\nNICKNAME:𝐌𝐗𝐙 ✰\nORG:𝐌𝐗𝐙 ✰\nTITLE:soft\nitem1.TEL;waid=56983298345:+56 9 8329 8345\nitem1.X-ABLabel:📞 WhatsApp Owner\nitem2.URL:https://github.com/karim-off/GenesisBot-Pro1\nitem2.X-ABLabel:💬 More\nitem3.EMAIL;type=INTERNET: agasistencia2@gmail.com\nitem3.X-ABLabel:💌 Correo soporte\nitem4.ADR:;;🇦🇷 Argentina;;;;\nitem4.X-ABADR:💬 More\nitem4.X-ABLabel: Localización 🫧\nBDAY;value=date: 09-12-2007\nEND:VCARD`
 const tag_own = await conn.sendMessage(m.chat, { contacts: { displayName: packname, contacts: [{ vcard }] }}, { quoted: fkontak })
 let caption = ` 𝐇𝐎𝐋𝐀 ${edtr}, 𝐄𝐒𝐓𝐄 𝐄𝐒 𝐄𝐋 𝐍𝐔𝐌𝐄𝐑𝐎 𝐃𝐄 𝐌𝐈 𝐂𝐑𝐄𝐀𝐃𝐎𝐑 シ︎`
     await conn.reply(m.chat, caption, tag_own, { mentions: conn.parseMention(caption) })
